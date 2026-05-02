@@ -116,7 +116,7 @@
     "region": "South East",
     "ics": "Kent and Medway",
     "correspondent": "Alison",
-    "url": "https://www.mtw.nhs.uk/about-us/board-papers/"
+    "url": "https://www.mtw.nhs.uk/about-us/trust-board/board-meetings-and-papers/"
   },
   {
     "ods_code": "RX2",
@@ -128,7 +128,7 @@
     "region": "South East",
     "ics": "Sussex",
     "correspondent": "Alison",
-    "url": "https://www.sussexpartnership.nhs.uk/about-us/board-papers/"
+    "url": "https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/board-meetings"
   },
   {
     "ods_code": "RXC",
@@ -339,7 +339,7 @@
     "region": "Midlands",
     "ics": "Leicester, Leicestershire and Rutland",
     "correspondent": "Annabelle",
-    "url": "https://www.uhl-tr.nhs.uk/about-us/board-papers/"
+    "url": "https://www.uhleicester.nhs.uk/about/board/board-papers-and-meetings/"
   },
   {
     "ods_code": "RX1",
@@ -533,7 +533,7 @@
     "region": "Midlands",
     "ics": "Coventry and Warwickshire",
     "correspondent": "Caitlin",
-    "url": "https://www.geh.nhs.uk/about-us/board-papers/"
+    "url": "https://www.geh.nhs.uk/about-us/trust-board/public-board-papers"
   },
   {
     "ods_code": "RLY",
@@ -1070,7 +1070,7 @@
     "region": "North East and Yorkshire",
     "ics": "South Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.therotherhamft.nhs.uk/about-us/board-papers/"
+    "url": "https://www.rdash.nhs.uk/about-us/governance/board-of-directors/board-of-directors-meetings/"
   },
   {
     "ods_code": "RXF",
@@ -1298,7 +1298,7 @@
     "region": "East of England",
     "ics": "Cambridgeshire and Peterborough",
     "correspondent": "James",
-    "url": "https://www.cambscommunityservices.nhs.uk/about-us/board-papers/"
+    "url": "https://eastofenglandcommunityhealthandcare.nhs.uk/about-us/our-board/board-meetings-and-reports/"
   },
   {
     "ods_code": "R0D",
@@ -1751,7 +1751,7 @@
     "region": "London",
     "ics": "North Central London",
     "correspondent": "Matt D",
-    "url": "https://www.gosh.nhs.uk/about-us/board-papers/"
+    "url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/"
   },
   {
     "ods_code": "RRU",
@@ -1789,7 +1789,7 @@
     "region": "London",
     "ics": "North West London",
     "correspondent": "Matt D",
-    "url": "https://www.westlondon.nhs.uk/about-us/board-papers/"
+    "url": "https://www.westlondon.nhs.uk/about-us/trust-board/board-papers"
   },
   {
     "ods_code": "RNK",
@@ -1828,7 +1828,7 @@
     "region": "London",
     "ics": "North Central London",
     "correspondent": "Matt D",
-    "url": "https://www.cnwl.nhs.uk/about-us/board-papers/"
+    "url": "https://www.cnwl.nhs.uk/about/planning-performance-and-reports"
   },
   {
     "ods_code": "RWK",
@@ -1856,7 +1856,7 @@
     "region": "North East and Yorkshire",
     "ics": "North East and North Cumbria",
     "correspondent": "Matt M",
-    "url": "https://www.stsft.nhs.uk/about-us/board-papers/"
+    "url": "https://www.stsft.nhs.uk/about-us/our-board/meeting-times-agendas-and-papers"
   },
   {
     "ods_code": "RNN",
@@ -2010,7 +2010,7 @@
     "region": "South East",
     "ics": "Frimley",
     "correspondent": "Mimi",
-    "url": "https://www.fhft.nhs.uk/about-us/board-papers/"
+    "url": "https://www.fhft.nhs.uk/about-us/how-we-are-run/trust-board"
   },
   {
     "ods_code": "RHM",
@@ -2089,7 +2089,7 @@
     "region": "South East",
     "ics": "Buckinghamshire, Oxfordshire and Berkshire West",
     "correspondent": "Mimi",
-    "url": "https://www.ouh.nhs.uk/about-us/board-papers/"
+    "url": "https://www.ouh.nhs.uk/about/trust-board/meetings-and-papers/"
   },
   {
     "ods_code": "RW1",
@@ -2236,7 +2236,7 @@
     "region": "North West",
     "ics": "Greater Manchester",
     "correspondent": "Nick",
-    "url": "https://www.stockport.nhs.uk/boardmeets"
+    "url": "https://www.stockport.nhs.uk/about/board/board-meetings/"
   },
   {
     "ods_code": "RXV",
@@ -2351,7 +2351,7 @@
     "region": "East of England",
     "ics": "Hertfordshire and West Essex",
     "correspondent": "TBC",
-    "url": "https://www.hpft.nhs.uk/about-us/board-papers/"
+    "url": "https://www.hpft.nhs.uk/about-us/our-board-papers-and-publications/"
   },
   {
     "ods_code": "RY4",
@@ -2576,7 +2576,7 @@
     "region": "North West",
     "ics": "Cheshire and Merseyside",
     "correspondent": "Zoe",
-    "url": "https://www.cwp.nhs.uk/about-us/board-papers/"
+    "url": "https://www.cwp.nhs.uk/about-us/our-board-and-governors/"
   },
   {
     "ods_code": "RXL",
@@ -2658,7 +2658,7 @@
     "region": "London",
     "ics": "North Central London",
     "correspondent": "Matt D",
-    "url": "https://www.candi.nhs.uk/about-us/board-papers/"
+    "url": "https://www.northlondonmentalhealth.nhs.uk/meetings-and-papers/"
   },
   {
     "ods_code": "RX6",
