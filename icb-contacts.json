@@ -1,0 +1,362 @@
+[
+  {
+    "icb_name": "BNSSG ICB",
+    "press_email": "bnssg.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://bnssg.icb.nhs.uk/contact-us/",
+    "foi_email": "bnssg.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://bnssg.icb.nhs.uk/contact-us/freedom-of-information-requests/",
+    "notes": null
+  },
+  {
+    "icb_name": "Bath and North East Somerset, Swindon and Wiltshire ICB",
+    "press_email": "bswicb.media@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "Temp/Comms contacts.xlsx (May 2026)",
+    "foi_email": "bswicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://bsw.icb.nhs.uk/about-us/freedom-of-information/",
+    "notes": "TODO — added 4 May 2026 during schema migration; press email not yet researched.; Forwarded to South Central and West CSU for processing"
+  },
+  {
+    "icb_name": "Birmingham and Solihull ICB",
+    "press_email": "communications.bsolicb@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.birminghamsolihull.icb.nhs.uk/contact-us",
+    "foi_email": "bsol.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.birminghamsolihull.icb.nhs.uk/what-we-do/freedom-information",
+    "notes": "Confirmed correct by Dave May 2026 (replaces earlier contactusbsolics@nhs.net which was a general contact address)."
+  },
+  {
+    "icb_name": "Black Country ICB",
+    "press_email": "comms.blackcountry@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://blackcountry.icb.nhs.uk/contact-us",
+    "foi_email": "bcicb.foiteam@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://blackcountry.icb.nhs.uk/legal-info",
+    "notes": null
+  },
+  {
+    "icb_name": "Central East ICB",
+    "press_email": "blmkicb.contactus@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.centraleast.icb.nhs.uk/contact/media-enquiries/",
+    "foi_email": "foi@centraleast.nhs.uk",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.centraleast.icb.nhs.uk/about/requests/foi/",
+    "notes": "New merged entity from 1 April 2026 (BLMK + Cambs & Peterborough + Herts & West Essex). Use BLMK predecessor address for now per Dave May 2026 â€” new ICB site offers only a contact form."
+  },
+  {
+    "icb_name": "Cheshire and Merseyside ICB",
+    "press_email": "media@cheshireandmerseyside.nhs.uk",
+    "press_email_alt": null,
+    "press_source_url": "https://www.cheshireandmerseyside.nhs.uk/contact/media/",
+    "foi_email": "FOI@cheshireandmerseyside.nhs.uk",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.cheshireandmerseyside.nhs.uk/contact/freedom-of-information-foi/",
+    "notes": null
+  },
+  {
+    "icb_name": "Cornwall and Isles of Scilly ICB",
+    "press_email": "ciosicb.mediarelations@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "Temp/Comms contacts.xlsx (May 2026)",
+    "foi_email": "ciosicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://cios.icb.nhs.uk/about/foi/",
+    "notes": "Site behind captcha/bot-protection layer. Dave has a direct line.; site behind Cloudflare protection - no FOI page reachable via WebFetch; Live site behind Cloudflare; email confirmed via Wayback Machine archive (Sep 2024 capture)"
+  },
+  {
+    "icb_name": "Coventry and Warwickshire ICB",
+    "press_email": "cwicb.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.happyhealthylives.uk/contact-us/general-enquiries/",
+    "foi_email": "cwicb.hwicb_foi@nhs.net",
+    "foi_email_alt": "agem.cwicb.foi@nhs.net",
+    "foi_source_url": "https://www.happyhealthylives.uk/contact-us/freedom-of-information/",
+    "notes": "happyhealthylives.uk pages returning 403 - blocked"
+  },
+  {
+    "icb_name": "Derby and Derbyshire ICB",
+    "press_email": "ddicb.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://joinedupcarederbyshire.co.uk/contact-us/staff-and-media-contacting-us/",
+    "foi_email": "ddicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://joinedupcarederbyshire.co.uk/derbyshire-integrated-care-board/freedom-of-information/",
+    "notes": null
+  },
+  {
+    "icb_name": "Devon ICB",
+    "press_email": "D-icb.Communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://onedevon.org.uk/contact-us/",
+    "foi_email": "D-CCG.FOI@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://devon.icb.nhs.uk/freedom-of-information/",
+    "notes": null
+  },
+  {
+    "icb_name": "Dorset ICB",
+    "press_email": "communication@nhsdorset.nhs.uk",
+    "press_email_alt": null,
+    "press_source_url": "https://ourdorset.org.uk/media/",
+    "foi_email": "FOI.Requests@nhsdorset.nhs.uk",
+    "foi_email_alt": null,
+    "foi_source_url": "https://nhsdorset.nhs.uk/about/foi/",
+    "notes": null
+  },
+  {
+    "icb_name": "Gloucestershire ICB",
+    "press_email": "glicb.enquiries@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.nhsglos.nhs.uk/about-us/who-we-are-and-what-we-do/contact-us/media-enquiries/",
+    "foi_email": "GLICB.FOI@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.nhsglos.nhs.uk/about-us/how-we-meet-our-duties/using-your-information/freedom-of-information/",
+    "notes": "General enquiries â€” site has dedicated press page but no email listed."
+  },
+  {
+    "icb_name": "Greater Manchester ICB",
+    "press_email": "gmhscp.media@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://gmintegratedcare.org.uk/get-involved/contact-us/",
+    "foi_email": "nhsgm.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://gmintegratedcare.org.uk/freedom-of-information/",
+    "notes": null
+  },
+  {
+    "icb_name": "Hampshire and Isle of Wight ICB",
+    "press_email": "hiowicb-hsi.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.hantsiow.icb.nhs.uk/contact-us/general-enquiries",
+    "foi_email": "hiowicb-hsi.foi@nhs.net",
+    "foi_email_alt": "hsiccg.foi@nhs.net",
+    "foi_source_url": "https://www.hantsiow.icb.nhs.uk/contact-us/freedom-information-foi",
+    "notes": null
+  },
+  {
+    "icb_name": "Herefordshire and Worcestershire ICB",
+    "press_email": "hw.comms@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://herefordshireandworcestershire.icb.nhs.uk/contact-us/",
+    "foi_email": "cwicb.hwicb_foi@nhs.net",
+    "foi_email_alt": "MLCSU.FOITeam@nhs.net",
+    "foi_source_url": "https://herefordshireandworcestershire.icb.nhs.uk/contact-us",
+    "notes": "Online form preferred via Corestream"
+  },
+  {
+    "icb_name": "Humber and North Yorkshire ICB",
+    "press_email": "hnyicb.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://humberandnorthyorkshire.icb.nhs.uk/contact-us/",
+    "foi_email": "hnyicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://humberandnorthyorkshire.icb.nhs.uk/foi",
+    "notes": null
+  },
+  {
+    "icb_name": "Kent and Medway ICB",
+    "press_email": "kmicb.comms@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.kentandmedway.icb.nhs.uk/contact-us",
+    "foi_email": "kmicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.kentandmedway.icb.nhs.uk/freedom-of-information-requests",
+    "notes": "Mailto link points here; display text shows kmicb.engagecomms@nhs.net â€” either should work."
+  },
+  {
+    "icb_name": "Lancashire and South Cumbria ICB",
+    "press_email": "lscicb.media@nhs.net",
+    "press_email_alt": "healthierlsc.media@nhs.net",
+    "press_source_url": "https://www.lancashireandsouthcumbria.icb.nhs.uk/contact-us/media-office",
+    "foi_email": "mlcsu.foiteam@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.lancashireandsouthcumbria.icb.nhs.uk/contact-us/foi",
+    "notes": "FOI handled by Midlands and Lancashire CSU"
+  },
+  {
+    "icb_name": "Leicester Leicestershire and Rutland ICB",
+    "press_email": "llricb-llr.pressoffice@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/contact/",
+    "foi_email": "llricb-llr.FOI@nhs.net",
+    "foi_email_alt": "llricb-llr.enquiries@nhs.net",
+    "foi_source_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/about/freedom-of-information/",
+    "notes": null
+  },
+  {
+    "icb_name": "Lincolnshire ICB",
+    "press_email": "LICB.office@nhs.net",
+    "press_email_alt": "charley.blyth@nhs.net",
+    "press_source_url": "https://lincolnshire.icb.nhs.uk/contact-us/",
+    "foi_email": "agem.lincolnshireicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://lincolnshire.icb.nhs.uk/freedom-of-information",
+    "notes": "General office address â€” no published press-specific email."
+  },
+  {
+    "icb_name": "NHS Essex ICB",
+    "press_email": "communications@midandsouthessex.ics.nhs.uk",
+    "press_email_alt": null,
+    "press_source_url": "https://www.midandsouthessex.ics.nhs.uk/contact/",
+    "foi_email": "mseicb-foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.midandsouthessex.ics.nhs.uk/contact/foi/",
+    "notes": "New merged entity from 1 April 2026; predecessor Mid and South Essex address still active.; input website seed was mid and south Essex ICB"
+  },
+  {
+    "icb_name": "Norfolk and Suffolk ICB",
+    "press_email": "nwicb.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.norfolkandsuffolk.icb.nhs.uk/contact/",
+    "foi_email": "nwicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.norfolkandsuffolk.icb.nhs.uk/about/governance/foi/",
+    "notes": "Email obfuscated via Cloudflare; decoded from data-cfemail (legacy Norfolk and Waveney prefix)"
+  },
+  {
+    "icb_name": "North East London ICB",
+    "press_email": "necsu.media@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://northeastlondon.icb.nhs.uk/contact-us/media-enquiries/",
+    "foi_email": "nelondonicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://northeastlondon.icb.nhs.uk/contact-us/freedom-of-information/",
+    "notes": "NEL CSU shared press inbox; covers the ICB. Page also lists nelcsu.media@nhs.net."
+  },
+  {
+    "icb_name": "North East and North Cumbria ICB",
+    "press_email": "nencicb.comms@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://northeastnorthcumbria.nhs.uk/contact-us/",
+    "foi_email": "nencicb.foi@nhs.net",
+    "foi_email_alt": "necsu.ICBfoi@nhs.net",
+    "foi_source_url": "https://northeastnorthcumbria.nhs.uk/about-us/corporate-information/freedom-of-information/",
+    "notes": "Confirmed correct by Dave May 2026 (replaces earlier Nencicb-sun.reception@nhs.net which was a general reception address)."
+  },
+  {
+    "icb_name": "Northamptonshire ICB",
+    "press_email": "northantsicb.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.icnorthamptonshire.org.uk/contact",
+    "foi_email": "agem.foi.northants@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.icnorthamptonshire.org.uk/contact",
+    "notes": null
+  },
+  {
+    "icb_name": "Nottingham and Nottinghamshire ICB",
+    "press_email": "nnicb-nn.comms@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://notts.icb.nhs.uk/contact-us/general-enquiries/",
+    "foi_email": "nnicb-nn.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://notts.icb.nhs.uk/contact-us/freedom-of-information/",
+    "notes": "Live page returning 504 gateway timeout; email confirmed via Wayback Machine archive (Jan 2026 capture)"
+  },
+  {
+    "icb_name": "Shropshire, Telford and Wrekin ICB",
+    "press_email": "stw.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.shropshiretelfordandwrekin.nhs.uk/contact-us/",
+    "foi_email": "stw.ssot.foi@nhs.net",
+    "foi_email_alt": "mlcsu.foiteam@nhs.net",
+    "foi_source_url": "https://www.shropshiretelfordandwrekin.nhs.uk/contact-us/",
+    "notes": null
+  },
+  {
+    "icb_name": "Somerset ICB",
+    "press_email": "somicb.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://nhssomerset.nhs.uk/contact-us/",
+    "foi_email": "somicb.foi@nhs.net",
+    "foi_email_alt": "somccg.foi@nhs.net",
+    "foi_source_url": "https://nhssomerset.nhs.uk/about-us/freedom-of-information/",
+    "notes": null
+  },
+  {
+    "icb_name": "South East London ICB",
+    "press_email": "media@selondonics.nhs.uk",
+    "press_email_alt": null,
+    "press_source_url": "https://www.selondonics.org/contact-us/",
+    "foi_email": "FOI@selondonics.nhs.uk",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.selondonics.org/contact-us/",
+    "notes": null
+  },
+  {
+    "icb_name": "South West London ICB",
+    "press_email": "pressoffice@swlondon.nhs.uk",
+    "press_email_alt": null,
+    "press_source_url": "https://www.southwestlondon.icb.nhs.uk/contact/",
+    "foi_email": "foi@swlondon.nhs.uk",
+    "foi_email_alt": "swl.igandfoiteam@swlondon.nhs.uk",
+    "foi_source_url": "https://www.southwestlondon.icb.nhs.uk/contact/freedom-of-information-requests/",
+    "notes": null
+  },
+  {
+    "icb_name": "South Yorkshire ICB",
+    "press_email": "syicb.communications@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://southyorkshire.icb.nhs.uk/contact-us",
+    "foi_email": "syicb-sheffield.freedomofinformation@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://southyorkshire.icb.nhs.uk/our-information/freedom-information-foi",
+    "notes": null
+  },
+  {
+    "icb_name": "Staffordshire and Stoke-on-Trent ICB",
+    "press_email": "ssotics.comms@staffsstoke.icb.nhs.uk",
+    "press_email_alt": "mediacsu@nhs.net",
+    "press_source_url": "https://staffsstoke.icb.nhs.uk/contact-us/",
+    "foi_email": "staffsstokefoi@staffsstoke.icb.nhs.uk",
+    "foi_email_alt": null,
+    "foi_source_url": "https://staffsstoke.icb.nhs.uk/your-nhs-integrated-care-board/freedom-of-information/",
+    "notes": null
+  },
+  {
+    "icb_name": "Surrey and Sussex ICB",
+    "press_email": "sxicb.comms@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.sussex.ics.nhs.uk/contact-us/",
+    "foi_email": "sxicb.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.sussex.ics.nhs.uk/nhs-sussex/freedom-of-information/",
+    "notes": "Legacy Sussex ICB address â€” new Surrey and Sussex site has form only. Likely still routed correctly.; Input seed was Sussex ICS website; Surrey may have separate contact"
+  },
+  {
+    "icb_name": "Thames Valley ICB",
+    "press_email": "frimleyicb.public@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://thamesvalley.icb.nhs.uk/contact-us",
+    "foi_email": "SCWCSU.FOI@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information",
+    "notes": "Predecessor Frimley general address â€” new merged Thames Valley ICB has no dedicated press email yet.; Email obfuscated on page (joomla-hidden-mail base64); decoded from page source. Handled by South Central and West CSU"
+  },
+  {
+    "icb_name": "West Yorkshire ICB",
+    "press_email": "wyicb.wymedia@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.wypartnership.co.uk/contact-us",
+    "foi_email": "wyicb.foi@nhs.net",
+    "foi_email_alt": "wyicb-wak.foi@nhs.net",
+    "foi_source_url": "https://www.westyorkshire.icb.nhs.uk/contact/submit-information-request",
+    "notes": null
+  },
+  {
+    "icb_name": "West and North London ICB",
+    "press_email": "nhsnwl.media@nhs.net",
+    "press_email_alt": null,
+    "press_source_url": "https://www.nwlondonicb.nhs.uk/contact-us/media-enquiries",
+    "foi_email": "nhsnwl.foi@nhs.net",
+    "foi_email_alt": null,
+    "foi_source_url": "https://www.westandnorthlondon.icb.nhs.uk/how-we-are-run/your-information-feedback-and-your-rights/freedom-information-requests",
+    "notes": "New merged entity from 1 April 2026 (NCL + NW London). Site is hosted at nwlondonicb.nhs.uk with new branding at westandnorthlondon.icb.nhs.uk."
+  }
+]
