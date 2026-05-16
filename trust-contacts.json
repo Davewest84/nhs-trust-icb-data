@@ -225,10 +225,10 @@
     "press_email": "cuh.press@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.cuh.nhs.uk/contact-us/media-enquiries/",
-    "foi_email": "foi.contact@addenbrookes.nhs.uk",
-    "foi_email_alt": null,
-    "foi_source_url": "Temp/Comms contacts.xlsx (May 2026)",
-    "notes": "CUH FOI page returned 404; FOI process exists but specific email not confirmed; CUH contact page lists only phone numbers; FOI sub-pages 404 across multiple paths."
+    "foi_email": "cuh.foi@nhs.net",
+    "foi_email_alt": "foi.contact@addenbrookes.nhs.uk",
+    "foi_source_url": "https://www.cuh.nhs.uk/about-us/freedom-information/",
+    "notes": "CUH FOI page returned 404; FOI process exists but specific email not confirmed; CUH contact page lists only phone numbers; FOI sub-pages 404 across multiple paths.; FOI primary updated 2026-05-16 from https://www.cuh.nhs.uk/about-us/freedom-information/; prior value moved to _alt"
   },
   {
     "trust_name": "Cambridgeshire and Peterborough NHS Foundation Trust",
@@ -1300,13 +1300,13 @@
   {
     "trust_name": "Nottingham University Hospitals NHS Trust",
     "ods_code": "RX1",
-    "press_email": "NUHMedia@nuh.nhs.uk",
-    "press_email_alt": null,
-    "press_source_url": "Temp/Comms contacts.xlsx (May 2026)",
+    "press_email": "nuhnt.nuhmedia@nhs.net",
+    "press_email_alt": "NUHMedia@nuh.nhs.uk",
+    "press_source_url": "https://www.nuh.nhs.uk/media-enquiries/",
     "foi_email": "nuhnt.dutyin@nhs.net",
     "foi_email_alt": "FOI@nuh.nhs.uk",
     "foi_source_url": "https://www.nuh.nhs.uk/freedom-of-information/",
-    "notes": "Nottingham UH: contact-us, comms and news-media URLs all 404; no public press email surfaced."
+    "notes": "Nottingham UH: contact-us, comms and news-media URLs all 404; no public press email surfaced.; press primary updated 2026-05-16 from https://www.nuh.nhs.uk/media-enquiries/; prior value moved to _alt"
   },
   {
     "trust_name": "Nottinghamshire Healthcare NHS Foundation Trust",
@@ -2117,10 +2117,10 @@
     "press_email": "ncm.media@nhs.net",
     "press_email_alt": "whh.communications@nhs.net",
     "press_source_url": "https://northcheshireandmersey.nhs.uk/contact-us",
-    "foi_email": "whh.foi@nhs.net",
-    "foi_email_alt": null,
+    "foi_email": "ncm.foi@nhs.net",
+    "foi_email_alt": "whh.foi@nhs.net",
     "foi_source_url": "https://northcheshireandmersey.nhs.uk/about-us/freedom-of-information/",
-    "notes": null
+    "notes": "FOI primary updated 2026-05-16 from https://northcheshireandmersey.nhs.uk/about-us/freedom-of-information/; prior value moved to _alt"
   },
   {
     "trust_name": "West Hertfordshire Teaching Hospitals NHS Trust",

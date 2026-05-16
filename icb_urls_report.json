@@ -1,0 +1,333 @@
+{
+  "generated_at": "2026-05-16T12:58:56.028785+00:00",
+  "label": "ICB",
+  "total": 36,
+  "ok": 35,
+  "broken": 1,
+  "results": [
+    {
+      "ods_code": "QYG",
+      "name": "Cheshire and Merseyside ICB",
+      "url": "https://www.cheshireandmerseyside.nhs.uk/get-involved/meeting-and-event-archive/nhs-cheshire-and-merseyside-integrated-care-board/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.cheshireandmerseyside.nhs.uk/get-involved/meeting-and-event-archive/nhs-cheshire-and-merseyside-integrated-care-board/",
+      "error": null
+    },
+    {
+      "ods_code": "QOP",
+      "name": "Greater Manchester ICB",
+      "url": "https://gmintegratedcare.org.uk/meetings-and-events/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://gmintegratedcare.org.uk/meetings-and-events/",
+      "error": null
+    },
+    {
+      "ods_code": "QE1",
+      "name": "Lancashire and South Cumbria ICB",
+      "url": "https://www.lancashireandsouthcumbria.icb.nhs.uk/about-us/board/meetings-and-papers",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.lancashireandsouthcumbria.icb.nhs.uk/about-us/board/meetings-and-papers",
+      "error": null
+    },
+    {
+      "ods_code": "QHM",
+      "name": "North East and North Cumbria ICB",
+      "url": "https://northeastnorthcumbria.nhs.uk/about-us/corporate-information/governance/meetings-and-agendas/integrated-care-board/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://northeastnorthcumbria.nhs.uk/about-us/corporate-information/governance/meetings-and-agendas/integrated-care-board/",
+      "error": null
+    },
+    {
+      "ods_code": "QOQ",
+      "name": "Humber and North Yorkshire ICB",
+      "url": "https://humberandnorthyorkshire.icb.nhs.uk/meetings-and-papers/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://humberandnorthyorkshire.icb.nhs.uk/meetings-and-papers/",
+      "error": null
+    },
+    {
+      "ods_code": "QF7",
+      "name": "South Yorkshire ICB",
+      "url": "https://southyorkshire.icb.nhs.uk/our-information/meetings-and-papers",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://southyorkshire.icb.nhs.uk/our-information/meetings-and-papers",
+      "error": null
+    },
+    {
+      "ods_code": "QWO",
+      "name": "West Yorkshire ICB",
+      "url": "https://www.westyorkshire.icb.nhs.uk/meetings/integrated-care-board",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.westyorkshire.icb.nhs.uk/meetings/integrated-care-board",
+      "error": null
+    },
+    {
+      "ods_code": "QHL",
+      "name": "Birmingham and Solihull ICB",
+      "url": "https://www.birminghamsolihull.icb.nhs.uk/about-us/our-committees/integrated-care-board/integrated-care-board-papers/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.birminghamsolihull.icb.nhs.uk/about-us/our-committees/integrated-care-board/integrated-care-board-papers",
+      "error": null
+    },
+    {
+      "ods_code": "QUA",
+      "name": "Black Country ICB",
+      "url": "https://blackcountry.icb.nhs.uk/about-us/how-we-make-decisions",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://blackcountry.icb.nhs.uk/about-us/how-we-make-decisions",
+      "error": null
+    },
+    {
+      "ods_code": "QWU",
+      "name": "Coventry and Warwickshire ICB",
+      "url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/\nCall l"
+    },
+    {
+      "ods_code": "QGH",
+      "name": "Herefordshire and Worcestershire ICB",
+      "url": "https://herefordshireandworcestershire.icb.nhs.uk/meetings/board-papers",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://herefordshireandworcestershire.icb.nhs.uk/meetings/board-papers",
+      "error": null
+    },
+    {
+      "ods_code": "QJ2",
+      "name": "Derby and Derbyshire ICB",
+      "url": "https://joinedupcarederbyshire.co.uk/derbyshire-integrated-care-board/integrated-care-board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://joinedupcarederbyshire.co.uk/derbyshire-integrated-care-board/integrated-care-board-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QJM",
+      "name": "Lincolnshire ICB",
+      "url": "https://lincolnshire.icb.nhs.uk/about-us/our-board-and-committees/icb-board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://lincolnshire.icb.nhs.uk/about-us/meet-the-board/icb-board-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QT1",
+      "name": "Nottingham and Nottinghamshire ICB",
+      "url": "https://notts.icb.nhs.uk/about-us/our-icb-board/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://notts.icb.nhs.uk/about-us/our-icb-board/",
+      "error": null
+    },
+    {
+      "ods_code": "QK1",
+      "name": "Leicester, Leicestershire and Rutland ICB",
+      "url": "https://leicesterleicestershireandrutland.icb.nhs.uk/about/board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/about/board-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QPM",
+      "name": "Northamptonshire ICB",
+      "url": "https://www.icnorthamptonshire.org.uk/icbboardmeetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.icnorthamptonshire.org.uk/icbboardmeetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QOC",
+      "name": "Shropshire, Telford and Wrekin ICB",
+      "url": "https://www.shropshiretelfordandwrekin.nhs.uk/about-us/how-we-are-run/meetings-committees-and-events/governing-body-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.shropshiretelfordandwrekin.nhs.uk/about-us/how-we-are-run/meetings-committees-and-events/governing-body-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QNC",
+      "name": "Staffordshire and Stoke-on-Trent ICB",
+      "url": "https://staffsstoke.icb.nhs.uk/your-nhs-integrated-care-board/our-publications/board-papers/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://staffsstoke.icb.nhs.uk/your-nhs-integrated-care-board/our-publications/board-papers/",
+      "error": null
+    },
+    {
+      "ods_code": "S1Y5D",
+      "name": "Central East ICB",
+      "url": "https://www.hertsandwestessex.ics.nhs.uk/about/icb/board/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.hertsandwestessex.ics.nhs.uk/about/icb/board/",
+      "error": null
+    },
+    {
+      "ods_code": "D7T5G",
+      "name": "Essex ICB",
+      "url": "https://www.essex.icb.nhs.uk/publications/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.essex.icb.nhs.uk/publications/",
+      "error": null
+    },
+    {
+      "ods_code": "T6Y0W",
+      "name": "Norfolk and Suffolk ICB",
+      "url": "https://www.norfolkandsuffolk.icb.nhs.uk/about/governance/board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.norfolkandsuffolk.icb.nhs.uk/about/governance/board-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QMF",
+      "name": "North East London ICB",
+      "url": "https://northeastlondon.icb.nhs.uk/board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://northeastlondon.icb.nhs.uk/board-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QKK",
+      "name": "South East London ICB",
+      "url": "https://www.selondonics.org/icb/meetings-board-papers-reports/icb-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.selondonics.org/icb/meetings-board-papers-reports/icb-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QWE",
+      "name": "South West London ICB",
+      "url": "https://www.southwestlondon.icb.nhs.uk/publications/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.southwestlondon.icb.nhs.uk/publications/",
+      "error": null
+    },
+    {
+      "ods_code": "Z9B2Z",
+      "name": "West and North London ICB",
+      "url": "https://www.westandnorthlondon.icb.nhs.uk/how-we-are-run/meetings/w-plus-nl-board-meetings",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.westandnorthlondon.icb.nhs.uk/how-we-are-run/meetings/w-plus-nl-board-meetings",
+      "error": null
+    },
+    {
+      "ods_code": "QRL",
+      "name": "Hampshire and Isle of Wight ICB",
+      "url": "https://www.hantsiow.icb.nhs.uk/icb/integrated-care-board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.hantsiow.icb.nhs.uk/icb/integrated-care-board-meetings",
+      "error": null
+    },
+    {
+      "ods_code": "QKS",
+      "name": "Kent and Medway ICB",
+      "url": "https://www.kentandmedway.icb.nhs.uk/events-calender",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.kentandmedway.icb.nhs.uk/events-calender",
+      "error": null
+    },
+    {
+      "ods_code": "S0E4D",
+      "name": "Thames Valley ICB",
+      "url": "https://www.thamesvalley.icb.nhs.uk/policies-and-documents/how-we-make-decisions/board-papers/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.thamesvalley.icb.nhs.uk/policies-and-documents/how-we-make-decisions/board-papers/",
+      "error": null
+    },
+    {
+      "ods_code": "S9B9J",
+      "name": "Surrey and Sussex ICB",
+      "url": "https://www.surreysussex.icb.nhs.uk/board-meetings-and-papers/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.surreysussex.icb.nhs.uk/board-meetings-and-papers/",
+      "error": null
+    },
+    {
+      "ods_code": "QOX",
+      "name": "Bath and North East Somerset, Swindon and Wiltshire ICB",
+      "url": "https://bsw.icb.nhs.uk/document-category/administration/meeting-agendas-and-papers/icb-meetings-papers/board-meeting-papers-archive/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://bsw.icb.nhs.uk/document-category/administration/meeting-agendas-and-papers/icb-meetings-papers/board-meeting-papers-archive/",
+      "error": null
+    },
+    {
+      "ods_code": "QVV",
+      "name": "Dorset ICB",
+      "url": "https://nhsdorset.nhs.uk/about/board/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nhsdorset.nhs.uk/about/board/",
+      "error": null
+    },
+    {
+      "ods_code": "QSL",
+      "name": "Somerset ICB",
+      "url": "https://nhssomerset.nhs.uk/publications/board-papers/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nhssomerset.nhs.uk/publications/board-papers/",
+      "error": null
+    },
+    {
+      "ods_code": "QUY",
+      "name": "Bristol, North Somerset and South Gloucestershire ICB",
+      "url": "https://bnssghealthiertogether.org.uk/events/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://bnssghealthiertogether.org.uk/events/",
+      "error": null
+    },
+    {
+      "ods_code": "QR1",
+      "name": "Gloucestershire ICB",
+      "url": "https://www.nhsglos.nhs.uk/category/board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nhsglos.nhs.uk/category/board-meetings/",
+      "error": null
+    },
+    {
+      "ods_code": "QT6",
+      "name": "Cornwall and the Isles of Scilly ICB",
+      "url": "https://cios.icb.nhs.uk/about/meetings/",
+      "ok": true,
+      "status": 403,
+      "final_url": "https://cios.icb.nhs.uk/about/meetings/",
+      "error": "(rescued by playwright fallback)"
+    },
+    {
+      "ods_code": "QJK",
+      "name": "Devon ICB",
+      "url": "https://devon.icb.nhs.uk/nhs-devon-board/meetings-and-papers/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://devon.icb.nhs.uk/nhs-devon-board/meetings-and-papers/",
+      "error": null
+    }
+  ]
+}
