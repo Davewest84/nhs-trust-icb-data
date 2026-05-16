@@ -20,3 +20,6 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Playwright MCP session state — created by Claude during weekly run
+.playwright-mcp/

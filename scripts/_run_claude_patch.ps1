@@ -33,6 +33,13 @@ Write-Log "Refresh run started. Repo: $repo"
 # Sync the repo to origin/main before running. If anything's accumulated
 # locally (a previous run that didn't push, or manual edits), we don't want
 # to start from stale state.
+#
+# Native git writes informational text ("From https://...") to stderr even on
+# success, which under $ErrorActionPreference='Stop' triggers a NativeCommandError
+# and kills the script. We localise EAP to 'Continue' around git invocations
+# so they can complete normally.
+$savedEAP = $ErrorActionPreference
+$ErrorActionPreference = 'Continue'
 & git fetch origin main 2>&1 | Out-File -FilePath $logFile -Append -Encoding utf8
 $divergence = & git rev-list --left-right --count HEAD...origin/main 2>$null
 Write-Log "HEAD vs origin/main: $divergence  (LHS=local-ahead, RHS=remote-ahead)"
@@ -40,6 +47,22 @@ if ($divergence -match '^\d+\s+[1-9]') {
     # Remote ahead — fast-forward if we can
     & git pull --ff-only origin main 2>&1 | Out-File -FilePath $logFile -Append -Encoding utf8
     Write-Log "Pulled remote changes."
+}
+$ErrorActionPreference = $savedEAP
+
+# Load GITHUB_TOKEN from the parent project's .env so Claude's `git push`
+# can authenticate headlessly. Without this, plain `git push` hangs forever
+# in git-credential-manager waiting for a UI prompt that nobody can see.
+$envFile = "C:\Users\davew\OneDrive - HSJ Information Ltd\Claude code assistant\.claude\.env"
+if (Test-Path $envFile) {
+    Get-Content $envFile | Where-Object { $_ -match '^\s*export\s+GITHUB_TOKEN\s*=' } | ForEach-Object {
+        if ($_ -match '=\s*"?([^"]+)"?\s*$') {
+            $env:GITHUB_TOKEN = $Matches[1].Trim('"')
+            Write-Log "Loaded GITHUB_TOKEN from .env (length: $($env:GITHUB_TOKEN.Length))"
+        }
+    }
+} else {
+    Write-Log "WARNING: $envFile not found — GITHUB_TOKEN unavailable, headless push will hang"
 }
 
 # Find latest claude.exe

@@ -147,9 +147,15 @@ Steps:
    Commit message should mention which ods_codes were patched in each DB and
    which orgs were visited for contact refresh.
 
-   Push (use GITHUB_TOKEN from env for headless auth):
-       source ~/.bashrc 2>/dev/null  # or wherever GITHUB_TOKEN lives
+   Push using the token-URL pattern — plain `git push` hangs in this
+   headless context because git-credential-manager pops a UI prompt
+   nobody can see. The bootstrap script (_run_claude_patch.ps1) exports
+   GITHUB_TOKEN into the env before invoking you, so this works as-is:
+
        git push "https://${GITHUB_TOKEN}@github.com/Davewest84/nhs-trust-icb-data.git" main
+
+   Never fall back to plain `git push origin main` — it will hang the
+   whole run for 72 hours.
 
 7. Mirror local Data/Lookup. After the public push has succeeded, sync the
    four JSONs + their CSV companions to the user's workspace lookup folder
