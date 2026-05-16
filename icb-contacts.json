@@ -1,6 +1,7 @@
 [
   {
     "icb_name": "BNSSG ICB",
+    "ods_code": "QUY",
     "press_email": "bnssg.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://bnssg.icb.nhs.uk/contact-us/",
@@ -11,6 +12,7 @@
   },
   {
     "icb_name": "Bath and North East Somerset, Swindon and Wiltshire ICB",
+    "ods_code": "QOX",
     "press_email": "bswicb.media@nhs.net",
     "press_email_alt": null,
     "press_source_url": "Temp/Comms contacts.xlsx (May 2026)",
@@ -21,6 +23,7 @@
   },
   {
     "icb_name": "Birmingham and Solihull ICB",
+    "ods_code": "QHL",
     "press_email": "communications.bsolicb@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.birminghamsolihull.icb.nhs.uk/contact-us",
@@ -31,6 +34,7 @@
   },
   {
     "icb_name": "Black Country ICB",
+    "ods_code": "QUA",
     "press_email": "comms.blackcountry@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://blackcountry.icb.nhs.uk/contact-us",
@@ -41,6 +45,7 @@
   },
   {
     "icb_name": "Central East ICB",
+    "ods_code": "S1Y5D",
     "press_email": "blmkicb.contactus@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.centraleast.icb.nhs.uk/contact/media-enquiries/",
@@ -51,6 +56,7 @@
   },
   {
     "icb_name": "Cheshire and Merseyside ICB",
+    "ods_code": "QYG",
     "press_email": "media@cheshireandmerseyside.nhs.uk",
     "press_email_alt": null,
     "press_source_url": "https://www.cheshireandmerseyside.nhs.uk/contact/media/",
@@ -61,6 +67,7 @@
   },
   {
     "icb_name": "Cornwall and Isles of Scilly ICB",
+    "ods_code": "QT6",
     "press_email": "ciosicb.mediarelations@nhs.net",
     "press_email_alt": null,
     "press_source_url": "Temp/Comms contacts.xlsx (May 2026)",
@@ -71,6 +78,7 @@
   },
   {
     "icb_name": "Coventry and Warwickshire ICB",
+    "ods_code": "QWU",
     "press_email": "cwicb.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.happyhealthylives.uk/contact-us/general-enquiries/",
@@ -81,6 +89,7 @@
   },
   {
     "icb_name": "Derby and Derbyshire ICB",
+    "ods_code": "QJ2",
     "press_email": "ddicb.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://joinedupcarederbyshire.co.uk/contact-us/staff-and-media-contacting-us/",
@@ -91,6 +100,7 @@
   },
   {
     "icb_name": "Devon ICB",
+    "ods_code": "QJK",
     "press_email": "D-icb.Communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://onedevon.org.uk/contact-us/",
@@ -101,6 +111,7 @@
   },
   {
     "icb_name": "Dorset ICB",
+    "ods_code": "QVV",
     "press_email": "communication@nhsdorset.nhs.uk",
     "press_email_alt": null,
     "press_source_url": "https://ourdorset.org.uk/media/",
@@ -111,6 +122,7 @@
   },
   {
     "icb_name": "Gloucestershire ICB",
+    "ods_code": "QR1",
     "press_email": "glicb.enquiries@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.nhsglos.nhs.uk/about-us/who-we-are-and-what-we-do/contact-us/media-enquiries/",
@@ -121,6 +133,7 @@
   },
   {
     "icb_name": "Greater Manchester ICB",
+    "ods_code": "QOP",
     "press_email": "gmhscp.media@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://gmintegratedcare.org.uk/get-involved/contact-us/",
@@ -131,6 +144,7 @@
   },
   {
     "icb_name": "Hampshire and Isle of Wight ICB",
+    "ods_code": "QRL",
     "press_email": "hiowicb-hsi.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.hantsiow.icb.nhs.uk/contact-us/general-enquiries",
@@ -141,6 +155,7 @@
   },
   {
     "icb_name": "Herefordshire and Worcestershire ICB",
+    "ods_code": "QGH",
     "press_email": "hw.comms@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://herefordshireandworcestershire.icb.nhs.uk/contact-us/",
@@ -151,6 +166,7 @@
   },
   {
     "icb_name": "Humber and North Yorkshire ICB",
+    "ods_code": "QOQ",
     "press_email": "hnyicb.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://humberandnorthyorkshire.icb.nhs.uk/contact-us/",
@@ -161,6 +177,7 @@
   },
   {
     "icb_name": "Kent and Medway ICB",
+    "ods_code": "QKS",
     "press_email": "kmicb.comms@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.kentandmedway.icb.nhs.uk/contact-us",
@@ -171,6 +188,7 @@
   },
   {
     "icb_name": "Lancashire and South Cumbria ICB",
+    "ods_code": "QE1",
     "press_email": "lscicb.media@nhs.net",
     "press_email_alt": "healthierlsc.media@nhs.net",
     "press_source_url": "https://www.lancashireandsouthcumbria.icb.nhs.uk/contact-us/media-office",
@@ -181,6 +199,7 @@
   },
   {
     "icb_name": "Leicester Leicestershire and Rutland ICB",
+    "ods_code": "QK1",
     "press_email": "llricb-llr.pressoffice@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/contact/",
@@ -191,6 +210,7 @@
   },
   {
     "icb_name": "Lincolnshire ICB",
+    "ods_code": "QJM",
     "press_email": "LICB.office@nhs.net",
     "press_email_alt": "charley.blyth@nhs.net",
     "press_source_url": "https://lincolnshire.icb.nhs.uk/contact-us/",
@@ -201,6 +221,7 @@
   },
   {
     "icb_name": "NHS Essex ICB",
+    "ods_code": "D7T5G",
     "press_email": "communications@midandsouthessex.ics.nhs.uk",
     "press_email_alt": null,
     "press_source_url": "https://www.midandsouthessex.ics.nhs.uk/contact/",
@@ -211,6 +232,7 @@
   },
   {
     "icb_name": "Norfolk and Suffolk ICB",
+    "ods_code": "T6Y0W",
     "press_email": "nwicb.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.norfolkandsuffolk.icb.nhs.uk/contact/",
@@ -221,6 +243,7 @@
   },
   {
     "icb_name": "North East London ICB",
+    "ods_code": "QMF",
     "press_email": "necsu.media@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://northeastlondon.icb.nhs.uk/contact-us/media-enquiries/",
@@ -231,6 +254,7 @@
   },
   {
     "icb_name": "North East and North Cumbria ICB",
+    "ods_code": "QHM",
     "press_email": "nencicb.comms@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://northeastnorthcumbria.nhs.uk/contact-us/",
@@ -241,6 +265,7 @@
   },
   {
     "icb_name": "Northamptonshire ICB",
+    "ods_code": "QPM",
     "press_email": "northantsicb.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.icnorthamptonshire.org.uk/contact",
@@ -251,6 +276,7 @@
   },
   {
     "icb_name": "Nottingham and Nottinghamshire ICB",
+    "ods_code": "QT1",
     "press_email": "nnicb-nn.comms@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://notts.icb.nhs.uk/contact-us/general-enquiries/",
@@ -261,6 +287,7 @@
   },
   {
     "icb_name": "Shropshire, Telford and Wrekin ICB",
+    "ods_code": "QOC",
     "press_email": "stw.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.shropshiretelfordandwrekin.nhs.uk/contact-us/",
@@ -271,6 +298,7 @@
   },
   {
     "icb_name": "Somerset ICB",
+    "ods_code": "QSL",
     "press_email": "somicb.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://nhssomerset.nhs.uk/contact-us/",
@@ -281,6 +309,7 @@
   },
   {
     "icb_name": "South East London ICB",
+    "ods_code": "QKK",
     "press_email": "media@selondonics.nhs.uk",
     "press_email_alt": null,
     "press_source_url": "https://www.selondonics.org/contact-us/",
@@ -291,6 +320,7 @@
   },
   {
     "icb_name": "South West London ICB",
+    "ods_code": "QWE",
     "press_email": "pressoffice@swlondon.nhs.uk",
     "press_email_alt": null,
     "press_source_url": "https://www.southwestlondon.icb.nhs.uk/contact/",
@@ -301,6 +331,7 @@
   },
   {
     "icb_name": "South Yorkshire ICB",
+    "ods_code": "QF7",
     "press_email": "syicb.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://southyorkshire.icb.nhs.uk/contact-us",
@@ -311,6 +342,7 @@
   },
   {
     "icb_name": "Staffordshire and Stoke-on-Trent ICB",
+    "ods_code": "QNC",
     "press_email": "ssotics.comms@staffsstoke.icb.nhs.uk",
     "press_email_alt": "mediacsu@nhs.net",
     "press_source_url": "https://staffsstoke.icb.nhs.uk/contact-us/",
@@ -321,6 +353,7 @@
   },
   {
     "icb_name": "Surrey and Sussex ICB",
+    "ods_code": "S9B9J",
     "press_email": "sxicb.comms@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.sussex.ics.nhs.uk/contact-us/",
@@ -331,6 +364,7 @@
   },
   {
     "icb_name": "Thames Valley ICB",
+    "ods_code": "S0E4D",
     "press_email": "frimleyicb.public@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://thamesvalley.icb.nhs.uk/contact-us",
@@ -341,6 +375,7 @@
   },
   {
     "icb_name": "West Yorkshire ICB",
+    "ods_code": "QWO",
     "press_email": "wyicb.wymedia@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.wypartnership.co.uk/contact-us",
@@ -351,6 +386,7 @@
   },
   {
     "icb_name": "West and North London ICB",
+    "ods_code": "Z9B2Z",
     "press_email": "nhsnwl.media@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.nwlondonicb.nhs.uk/contact-us/media-enquiries",

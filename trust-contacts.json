@@ -55,17 +55,6 @@
     "notes": null
   },
   {
-    "trust_name": "Barnet, Enfield and Haringey Mental Health NHS Trust",
-    "ods_code": "RRP",
-    "press_email": "nlft.communications@nhs.net",
-    "press_email_alt": "beh-tr.communications@nhs.net",
-    "press_source_url": "https://www.northlondonmentalhealth.nhs.uk/contact-us",
-    "foi_email": "nlft.freedom.information@nhs.net",
-    "foi_email_alt": "beh-tr.foi@nhs.net",
-    "foi_source_url": "https://www.northlondonmentalhealth.nhs.uk/contact-us",
-    "notes": null
-  },
-  {
     "trust_name": "Barnsley Hospital NHS Foundation Trust",
     "ods_code": "RFF",
     "press_email": "communications.barnsley@nhs.net",
@@ -242,17 +231,6 @@
     "notes": "CUH FOI page returned 404; FOI process exists but specific email not confirmed; CUH contact page lists only phone numbers; FOI sub-pages 404 across multiple paths."
   },
   {
-    "trust_name": "Cambridgeshire Community Services NHS Trust",
-    "ods_code": "RYV",
-    "press_email": "ccs.communications@nhs.net",
-    "press_email_alt": null,
-    "press_source_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us/",
-    "foi_email": "ccs.accesstoinfo@nhs.net",
-    "foi_email_alt": null,
-    "foi_source_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us/",
-    "notes": "Cambridgeshire CS now part of East of England Community Health and Care; legacy ccs. namespace retained"
-  },
-  {
     "trust_name": "Cambridgeshire and Peterborough NHS Foundation Trust",
     "ods_code": "RT1",
     "press_email": "communications@cpft.nhs.uk",
@@ -262,17 +240,6 @@
     "foi_email_alt": null,
     "foi_source_url": "https://www.cpft.nhs.uk/freedom-of-information",
     "notes": null
-  },
-  {
-    "trust_name": "Camden and Islington NHS Foundation Trust",
-    "ods_code": "TAF",
-    "press_email": "nlft.communications@nhs.net",
-    "press_email_alt": "communications@candi.nhs.uk",
-    "press_source_url": "https://northlondonmentalhealth.nhs.uk/contact-us",
-    "foi_email": "nlft.Freedom.Information@nhs.net",
-    "foi_email_alt": "freedom.information@candi.nhs.uk",
-    "foi_source_url": "https://northlondonmentalhealth.nhs.uk/freedom-of-information",
-    "notes": "Camden & Islington FT merged into North London NHS Foundation Trust; using new domain"
   },
   {
     "trust_name": "Central London Community Healthcare NHS Trust",
@@ -804,7 +771,7 @@
   },
   {
     "trust_name": "Isle of Wight NHS Trust",
-    "ods_code": "R1F1",
+    "ods_code": "R1F",
     "press_email": "pho-tr.communications@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.iow.nhs.uk/contact-us",
@@ -1155,7 +1122,7 @@
     "notes": "FOI page lists webrequests inbox; may be IG-handled rather than dedicated FOI"
   },
   {
-    "trust_name": "Norfolk Community Health and Care NHS Trust",
+    "trust_name": "East of England Community Health and Care NHS Trust",
     "ods_code": "RY3",
     "press_email": "ccs.communications@nhs.net",
     "press_email_alt": "Communications@nchc.nhs.uk",
@@ -1163,7 +1130,7 @@
     "foi_email": "ccs.accesstoinfo@nhs.net",
     "foi_email_alt": "FreedomOfInformationProvider@nchc.nhs.uk",
     "foi_source_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us",
-    "notes": "Norfolk Community merged into East of England Community Health & Care; shared CCS inbox"
+    "notes": "Norfolk Community merged into East of England Community Health & Care; shared CCS inbox; renamed from 'Norfolk Community Health and Care NHS Trust' on 2026-05-16 after April 2026 merger with Cambridgeshire Community Services (RYV)"
   },
   {
     "trust_name": "Norfolk and Norwich University Hospitals NHS Foundation Trust",
@@ -2286,5 +2253,27 @@
     "foi_email_alt": null,
     "foi_source_url": "https://www.yas.nhs.uk/contact-us/",
     "notes": null
+  },
+  {
+    "trust_name": "North London NHS Foundation Trust",
+    "ods_code": "G6V2S",
+    "press_email": null,
+    "press_email_alt": null,
+    "press_source_url": null,
+    "foi_email": null,
+    "foi_email_alt": null,
+    "foi_source_url": null,
+    "notes": "added 2026-05-16; new entity formed Nov 2024 from merger of Camden & Islington FT (TAF) and Barnet, Enfield and Haringey MH Trust (RRP); contacts to be populated by next rotation batch"
+  },
+  {
+    "trust_name": "The Online NHS Trust",
+    "ods_code": "K0N6A",
+    "press_email": null,
+    "press_email_alt": null,
+    "press_source_url": null,
+    "foi_email": null,
+    "foi_email_alt": null,
+    "foi_source_url": null,
+    "notes": "added 2026-05-16; new entity Apr 2026; board papers URL TBD"
   }
 ]
