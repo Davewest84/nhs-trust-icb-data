@@ -170,13 +170,80 @@ Steps:
    The XLSX files don't get mirrored to Data/Lookup by default — they're for
    human browsing and live in the public repo. Adjust if Dave wants them too.
 
+8. ODS reconciliation audit (READ-ONLY — flags membership drift, never edits the
+   DBs). Purpose: catch trusts/ICBs that have merged, dissolved, or newly
+   appeared, so the curated membership of trust_urls.json / icb_urls.json doesn't
+   silently drift away from the official register. This step NEVER adds or removes
+   DB entries — a new org needs a board-papers URL found plus region/correspondent
+   assigned by hand. It only writes a flag report for Dave to action.
+
+   ODS gotcha this relies on: a merged/dissolved org KEEPS Status "Active" and gets
+   NO end on its Operational date. The only reliable death signal is a `Date` of
+   Type "Legal" with an `End` in the past, plus a `Succs`->`Succ` "Successor" link
+   naming the surviving org. Read the Legal End date, never Status.
+
+   ORD API base (no auth, <5 req/s): https://directory.spineservices.nhs.uk/ORD/2-0-0/
+
+   a. Live superset via search (codes only, page with Limit/Offset):
+        trusts: /organisations?PrimaryRoleId=RO197&Status=Active  AND  ...&PrimaryRoleId=RO57
+        ICBs:   /organisations?PrimaryRoleId=RO318&Status=Active
+      Union the trust codes -> set A_trust; ICB codes -> set A_icb. (Status=Active is
+      a SUPERSET of truly-live orgs — it still includes recently-merged ones, which
+      the detail checks below filter out.)
+
+   b. DB membership: B_trust = ods_codes in trust_urls.json; B_icb = ods_codes in
+      icb_urls.json.
+
+   c. ADD candidates (in A, not in B): GET each org's full record, inspect
+      Date[Legal].End.
+        - Legal.End <= today  -> actually dead; ignore.
+        - else                -> genuinely-live org missing from the DB. FLAG as ADD
+          with name, role, and best-guess region (derive via RE5 parent -> ICB -> region).
+
+   d. REMOVE candidates (in B, not in A): GET each org's full record. FLAG with
+      Status, Legal.End, and Successor (Succs->Succ->Target.extension + name) if present.
+
+   e. Freshly-dissolved orgs still sitting in the DB (present in BOTH A and B): catch
+      via the change feed, not 250 weekly detail calls —
+        GET /sync?LastChangeDate={last_ods_sync_date}
+      Filter to PrimaryRoleId RO197 / RO57 / RO318. For each changed org that is in B,
+      GET its full record; if Date[Legal].End <= today -> FLAG as REMOVE, naming its
+      Successor. (If last_ods_sync_date is absent in the state file, seed it to
+      today - 30 days for the first run.)
+
+   f. Write findings to `ods_reconciliation_report.json` at the repo root:
+        { "generated_at": "...", "last_ods_sync_date_used": "...",
+          "add_candidates":    [ { "ods", "name", "role", "suggested_region", "note" } ],
+          "remove_candidates": [ { "ods", "name", "successor_ods", "successor_name",
+                                   "legal_end", "note" } ] }
+      Write the report even when both arrays are empty (records that the audit ran clean).
+      Then set "last_ods_sync_date" = today in refresh-rotation-state.json. Leave the
+      contacts-rotation fields (last_run_date, last_batch_completed) untouched.
+
+   g. Commit + push JUST the report and the state file, isolated from the main refresh
+      commit so a reconciliation hiccup can't disturb the core data:
+        git add -- ods_reconciliation_report.json refresh-rotation-state.json
+        git commit -m "ODS reconciliation $(date +%Y-%m-%d) — A add / R remove candidates"
+        git push "https://${GITHUB_TOKEN}@github.com/Davewest84/nhs-trust-icb-data.git" main
+      Then mirror ods_reconciliation_report.json to Data/Lookup as in step 7 (best-effort).
+
+   h. If there are any flags, surface a one-line summary in the run output / status
+      sentinel so Dave sees "N trusts/ICBs to add, M to remove" at a glance.
+
 Safety rules:
-- Only modify files explicitly named in steps 1-7 of this prompt:
+- Only modify files explicitly named in steps 1-8 of this prompt:
   trust_urls.json / .csv / .xlsx, icb_urls.json / .csv / .xlsx,
   trust-contacts.json / .csv / .xlsx, icb-contacts.json / .csv / .xlsx,
   refresh-rotation-state.json, trust_urls_report.json, icb_urls_report.json,
-  plus the Data/Lookup copies in step 7. Do not touch any other file in any
-  repo.
+  ods_reconciliation_report.json, plus the Data/Lookup copies in steps 7-8. Do
+  not touch any other file in any repo.
+- Step 8 (ODS reconciliation) is READ-ONLY with respect to trust_urls.json,
+  icb_urls.json and the contacts files — it must NEVER add, remove, or edit
+  entries in them. It only writes ods_reconciliation_report.json and the
+  last_ods_sync_date field of refresh-rotation-state.json. Acting on its flags
+  is a manual decision for Dave.
+- When deciding whether an org is dead, trust the Legal End date and the
+  Successor link, NEVER Status — a merged org keeps Status "Active".
 - If fewer than half of the broken URLs in EITHER DB can be verified,
   something is wrong with the approach — stop and report rather than commit
   a bad batch. (You can still proceed for the DB whose half-failure

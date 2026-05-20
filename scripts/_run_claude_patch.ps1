@@ -27,6 +27,66 @@ function Write-Log($msg) {
     "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] $msg" | Out-File -FilePath $logFile -Append -Encoding utf8
 }
 
+# Resolve a Python launcher for the summary email (py, then python).
+$pyCmd = Get-Command py -ErrorAction SilentlyContinue
+if (-not $pyCmd) { $pyCmd = Get-Command python -ErrorAction SilentlyContinue }
+$pyExe = if ($pyCmd) { $pyCmd.Source } else { $null }
+$sendEmailScript = "C:\Users\davew\OneDrive - HSJ Information Ltd\Claude code assistant\tools\send_email.py"
+
+# Emails Dave a weekly summary to Gmail. Best-effort: a failure here is logged but
+# never aborts the run. Called on every exit path so it doubles as a heartbeat —
+# Dave gets an email each Saturday whether or not anything changed. Pulls the
+# commit list for the run and inlines the ODS reconciliation flags (step 8).
+function Send-Summary($status) {
+    try {
+        if (-not $pyExe) { Write-Log "WARNING: no python launcher found - summary email skipped."; return }
+        $date = Get-Date -Format "yyyy-MM-dd"
+        $lines = @("Weekly NHS trust + ICB data refresh - $date", "Status: $status", "")
+
+        if ($headBefore -and $headAfter -and ($headBefore -ne $headAfter)) {
+            $lines += "Commits this run:"
+            $log = & git log "$headBefore..$headAfter" --pretty=format:"  %h  %s" 2>$null
+            if ($log) { $lines += $log }
+            $lines += ""
+        } else {
+            $lines += "No commit made this run."
+            $lines += ""
+        }
+
+        $reconPath = Join-Path $repo "ods_reconciliation_report.json"
+        if (Test-Path $reconPath) {
+            try {
+                $recon = Get-Content $reconPath -Raw | ConvertFrom-Json
+                $adds = @($recon.add_candidates)
+                $removes = @($recon.remove_candidates)
+                $lines += "ODS reconciliation (action needed if non-zero):"
+                $lines += "  To ADD (live in ODS, missing from DB): $($adds.Count)"
+                foreach ($a in $adds) { $lines += "    + $($a.ods)  $($a.name)  [$($a.role)]  region~$($a.suggested_region)" }
+                $lines += "  To REMOVE (gone from ODS, still in DB): $($removes.Count)"
+                foreach ($r in $removes) { $lines += "    - $($r.ods)  $($r.name) -> successor $($r.successor_ods) $($r.successor_name) (legal end $($r.legal_end))" }
+                if ($adds.Count -eq 0 -and $removes.Count -eq 0) { $lines += "  (no membership changes flagged this week)" }
+            } catch {
+                $lines += "ODS reconciliation report present but unparseable: $($_.Exception.Message)"
+            }
+        } else {
+            $lines += "ODS reconciliation report not found (step 8 may not have completed)."
+        }
+        $lines += ""
+        $lines += "Full log: $logFile"
+
+        $body = ($lines -join "`n")
+        $bodyTmp = "$logFile.email.txt"
+        [System.IO.File]::WriteAllText($bodyTmp, $body, (New-Object System.Text.UTF8Encoding $false))
+        $subject = "NHS data refresh $date - $status"
+        & $pyExe $sendEmailScript send --account gmail --to "davewest84@gmail.com" --subject $subject --body-file $bodyTmp 2>&1 |
+            Out-File -FilePath $logFile -Append -Encoding utf8
+        Remove-Item $bodyTmp -Force -ErrorAction SilentlyContinue
+        Write-Log "Summary email sent to Gmail (status=$status)."
+    } catch {
+        Write-Log "WARNING: summary email failed: $($_.Exception.Message)"
+    }
+}
+
 Set-Location $repo
 Write-Log "Refresh run started. Repo: $repo"
 
@@ -75,6 +135,7 @@ $claudeExe = @(Get-ChildItem -Path $extRoot -Filter "anthropic.claude-code-*-win
 if (-not $claudeExe) {
     Write-Log "ERROR: claude.exe not found under $extRoot"
     "$(Get-Date -Format 'o') FAIL no-claude-exe" | Out-File -FilePath $statusFile -Encoding utf8
+    Send-Summary "FAIL no-claude-exe"
     exit 1
 }
 Write-Log "Using claude.exe: $claudeExe"
@@ -129,10 +190,12 @@ Write-Log "HEAD after: $headAfter"
 if ($headBefore -eq $headAfter) {
     Write-Log "WARNING: HEAD unchanged. Claude ran but made no commit. (No URL changes + no contacts in this batch?)"
     "$(Get-Date -Format 'o') FAIL no-commit (claude exit=$claudeExit, log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
+    Send-Summary "FAIL no-commit"
     exit 2
 } else {
     Write-Log "OK: New commit created. HEAD moved $headBefore -> $headAfter"
     "$(Get-Date -Format 'o') OK $headAfter (log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
+    Send-Summary "OK"
 }
 
 # Prune old logs (keep last 12 weeks)
