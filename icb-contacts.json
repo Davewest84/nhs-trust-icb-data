@@ -178,13 +178,13 @@
   {
     "icb_name": "Kent and Medway ICB",
     "ods_code": "QKS",
-    "press_email": "kmicb.comms@nhs.net",
-    "press_email_alt": null,
+    "press_email": "kmicb.engagecomms@nhs.net",
+    "press_email_alt": "kmicb.comms@nhs.net",
     "press_source_url": "https://www.kentandmedway.icb.nhs.uk/contact-us",
     "foi_email": "kmicb.foi@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "https://www.kentandmedway.icb.nhs.uk/freedom-of-information-requests",
-    "notes": "Mailto link points here; display text shows kmicb.engagecomms@nhs.net â€” either should work."
+    "notes": "Mailto link points here; display text shows kmicb.engagecomms@nhs.net â€” either should work. | press primary updated 2026-05-29 from [https://www.kentandmedway.icb.nhs.uk/contact-us]; prior value kmicb.comms@nhs.net moved to _alt"
   },
   {
     "icb_name": "Lancashire and South Cumbria ICB",

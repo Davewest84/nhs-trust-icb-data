@@ -116,7 +116,25 @@
     "region": "South East",
     "ics": "Kent and Medway",
     "correspondent": "Alison",
-    "url": "https://www.mtw.nhs.uk/about-us/trust-board/board-meetings-and-papers/"
+    "url": "https://www.mtw.nhs.uk/about-us/trust-board/board-meetings-and-papers/",
+    "access_notes": "Strategy: /about-us/trust-board/board-meetings-and-papers/ is the correct page (Google indexes it as 'Board meetings and papers'), but the site's WAF returns 404 to non-browser fetchers. Pattern E anti-bot — fetch with a real browser / Playwright; do not treat the 404 as a dead URL.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Boardbook",
+      "Board papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "needs_playwright",
+    "validation_notes": "WAF returns 404 to bots; Google confirms URL is the live 'Board meetings and papers' page."
   },
   {
     "ods_code": "RX2",
@@ -141,7 +159,25 @@
     "region": "South East",
     "ics": "Sussex",
     "correspondent": "Alison",
-    "url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/"
+    "url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
+    "access_notes": "Strategy: /about-us/trust-board/meetings-in-public/ is correct (with an /archive/ sub-page of dated agenda-papers PDFs, one per meeting). Site intermittently drops bot connections (ConnectionReset), so a health-check may show it down even though it is live for browsers. Pattern A behind Pattern E anti-bot; retry / use a browser UA.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Trust Board meeting in public",
+      "agenda papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "URL confirmed correct (Google index); health-check ConnectionReset is transient anti-bot, not a dead URL."
   },
   {
     "ods_code": "RXX",
@@ -153,7 +189,26 @@
     "region": "South East",
     "ics": "Surrey Heartlands",
     "correspondent": "Alison",
-    "url": "https://www.sabp.nhs.uk/aboutus/board-of-directors/board-meetings-papers"
+    "url": "https://www.sabp.nhs.uk/aboutus/board-of-directors/board-meetings-papers",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (63 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=63, year_archives=0, meeting_subpages=4."
   },
   {
     "ods_code": "RXY",
@@ -229,7 +284,26 @@
     "region": "Midlands",
     "ics": "Nottingham and Nottinghamshire",
     "correspondent": "Annabelle",
-    "url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/"
+    "url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/",
+    "access_notes": "Strategy: landing shows a weak board-papers signal to a static parser (few dated PDFs found). Papers are likely present but loaded via JS or one click into a 'papers'/'meetings' sub-page. Confirm by following the board-papers / meetings link; prefer the main combined pack. Pattern A/C — review on next pass.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Agenda and Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Validator (static) weak signal: dated_pdfs=0, year_archives=0, meeting_subpages=1; review."
   },
   {
     "ods_code": "RNQ",
@@ -370,7 +444,26 @@
     "region": "Midlands",
     "ics": "Lincolnshire",
     "correspondent": "Annabelle",
-    "url": "https://lincolnshirecommunityhealthservices.nhs.uk/about-us/our-trust-board/trust-board-papers"
+    "url": "https://lincolnshirecommunityhealthservices.nhs.uk/about-us/our-trust-board/trust-board-papers",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (57 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=57, year_archives=0, meeting_subpages=0."
   },
   {
     "ods_code": "RY8",
@@ -406,7 +499,26 @@
     "region": "Midlands",
     "ics": "Shropshire, Telford and Wrekin",
     "correspondent": "Caitlin",
-    "url": "https://www.shropscommunityhealth.nhs.uk/board-meetings-and-papers"
+    "url": "https://www.shropscommunityhealth.nhs.uk/board-meetings-and-papers",
+    "access_notes": "Strategy: JS-rendered listing — static fetch returns a near-empty body, but Playwright (wait_until=networkidle) reaches dated PDFs such as 'Public Agenda', 'Public Information Pack' and 'Board Meetings in Common' for the current month. Pattern D.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Public Information Pack",
+      "Public Agenda",
+      "Board Meetings in Common"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "needs_playwright",
+    "validation_notes": "Static body near-empty; Playwright reaches dated PDFs incl 'Public Information Pack 14.05.2026'."
   },
   {
     "ods_code": "RBK",
@@ -432,7 +544,25 @@
     "region": "Midlands",
     "ics": "Coventry and Warwickshire",
     "correspondent": "Caitlin",
-    "url": "https://www.swft.nhs.uk/meetings-and-events/board-meetings"
+    "url": "https://www.swft.nhs.uk/meetings-and-events/board-meetings",
+    "access_notes": "Strategy: /meetings-and-events/board-meetings is an events calendar (next meeting shown, incl Joint Board with George Eliot). Actual papers are one click away at /about-us/publications/Board-of-Directors-papers-minutes. Pattern C; follow the publications link for dated packs and minutes.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board of Directors papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Landing is a meetings calendar; papers at /about-us/publications/Board-of-Directors-papers-minutes (one click away)."
   },
   {
     "ods_code": "RJE",
@@ -515,7 +645,26 @@
     "region": "Midlands",
     "ics": "Coventry and Warwickshire",
     "correspondent": "Caitlin",
-    "url": "https://www.geh.nhs.uk/about-us/trust-board/public-board-papers"
+    "url": "https://www.geh.nhs.uk/about-us/trust-board/public-board-papers",
+    "access_notes": "Strategy: landing lists per-meeting entries (31 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Combined Pack",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=26, year_archives=0, meeting_subpages=31."
   },
   {
     "ods_code": "RLY",
@@ -527,7 +676,25 @@
     "region": "Midlands",
     "ics": "Staffordshire and Stoke-on-Trent",
     "correspondent": "Caitlin",
-    "url": "https://www.combined.nhs.uk/about/our-board/board-meetings/"
+    "url": "https://www.combined.nhs.uk/about/our-board/board-meetings/",
+    "access_notes": "Strategy: /about/our-board/board-meetings/ is correct (papers posted before each meeting; previous meetings at /about-us/our-board/previous-board-meetings/; archive from Jan 2014). Site intermittently drops bot connections (ConnectionReset). Pattern C behind Pattern E anti-bot; retry / use a browser.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Trust Board",
+      "board papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "URL confirmed correct (Google index); health-check ConnectionReset is transient anti-bot."
   },
   {
     "ods_code": "RNA",
@@ -555,7 +722,25 @@
     "region": "Midlands",
     "ics": "Birmingham and Solihull",
     "correspondent": "Caitlin",
-    "url": "https://www.bwc.nhs.uk/board-of-directors/"
+    "url": "https://www.bwc.nhs.uk/board-of-directors/",
+    "access_notes": "Strategy: /board-of-directors/ is an overview hub; the dated agendas and papers are on the related 'Board meetings and minutes' page (linked from this page). Pattern C; follow that link for the per-meeting packs. Trust office: bwc.foundationtrustoffice@nhs.net.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board meetings and minutes",
+      "agenda and papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Landing is a board overview; papers on the linked 'Board meetings and minutes' page (one click away)."
   },
   {
     "ods_code": "RRE",
@@ -593,7 +778,25 @@
     "region": "Midlands",
     "ics": "Birmingham and Solihull",
     "correspondent": "Caitlin",
-    "url": "https://www.uhb.nhs.uk/about-us/board-papers/"
+    "url": "https://www.uhb.nhs.uk/about/trust-management/bod/papers/",
+    "access_notes": "Strategy: correct page is /about/trust-management/bod/papers/ ('Papers from meetings of the Board of Directors'); the board packs load from an embedded online document store, so static fetch returns a near-empty body. Use Playwright (wait_until=networkidle) to reach the listing. Pattern D + F: old /about-us/board-papers/ 404'd; corrected 2026-05-29.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Board of Directors",
+      "papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "needs_playwright",
+    "validation_notes": "Old URL 404'd; correct papers page renders via embedded JS document store (Playwright needed)."
   },
   {
     "ods_code": "RWP",
@@ -606,7 +809,25 @@
     "region": "Midlands",
     "ics": "Herefordshire and Worcestershire",
     "correspondent": "Caitlin",
-    "url": "https://www.worcsacute.nhs.uk/about-us/trust-board/"
+    "url": "https://www.worcsacute.nhs.uk/about-us/trust-board/",
+    "access_notes": "Strategy: landing lists year archives (5 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=5, meeting_subpages=1."
   },
   {
     "ods_code": "RXK",
@@ -644,7 +865,26 @@
     "region": "Midlands",
     "ics": "Shropshire, Telford and Wrekin",
     "correspondent": "Caitlin",
-    "url": "https://www.sath.nhs.uk/about-us/board-papers/"
+    "url": "https://www.sath.nhs.uk/about-us/board-papers/",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (348 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=348, year_archives=2, meeting_subpages=1."
   },
   {
     "ods_code": "RYG",
@@ -656,7 +896,26 @@
     "region": "Midlands",
     "ics": "Coventry and Warwickshire",
     "correspondent": "Caitlin",
-    "url": "https://www.covwarkpt.nhs.uk/trust-board-dates-and-papers"
+    "url": "https://www.covwarkpt.nhs.uk/trust-board-dates-and-papers",
+    "access_notes": "Strategy: landing lists per-meeting entries (18 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Combined Pack",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=27, year_archives=0, meeting_subpages=18."
   },
   {
     "ods_code": "RYW",
@@ -680,7 +939,26 @@
     "region": "Midlands",
     "ics": "Black Country",
     "correspondent": "Caitlin",
-    "url": "https://www.blackcountryhealthcare.nhs.uk/about-us/our-board-of-directors"
+    "url": "https://www.blackcountryhealthcare.nhs.uk/about-us/our-board-of-directors",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (59 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=59, year_archives=0, meeting_subpages=6."
   },
   {
     "ods_code": "RAX",
@@ -771,7 +1049,25 @@
     "region": "London",
     "ics": "South West London",
     "correspondent": "Ella",
-    "url": "https://www.epsom-sthelier.nhs.uk/about-us/board-papers/"
+    "url": "https://www.epsom-sthelier.nhs.uk/our-board",
+    "access_notes": "Strategy: /our-board is the board hub; follow the 'Board papers and agendas' link to dated meeting papers. Static fetch works for the hub. Pattern F: old /about-us/board-papers/ went stale and resolved to the generic About-us page; corrected to /our-board 2026-05-29.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board papers and agendas",
+      "Public Board"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Old board-papers URL resolved to generic about-us; /our-board hub links to 'Board papers and agendas'."
   },
   {
     "ods_code": "RP6",
@@ -822,7 +1118,26 @@
     "region": "London",
     "ics": "",
     "correspondent": "Ella",
-    "url": "https://www.clch.nhs.uk/about-us/our-board/"
+    "url": "https://www.clch.nhs.uk/about-us/our-board/",
+    "access_notes": "Strategy: landing shows a weak board-papers signal to a static parser (few dated PDFs found). Papers are likely present but loaded via JS or one click into a 'papers'/'meetings' sub-page. Confirm by following the board-papers / meetings link; prefer the main combined pack. Pattern A/C — review on next pass.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Agenda and Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Validator (static) weak signal: dated_pdfs=1, year_archives=0, meeting_subpages=0; review."
   },
   {
     "ods_code": "RAE",
@@ -834,7 +1149,25 @@
     "region": "North East and Yorkshire",
     "ics": "West Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.bradfordhospitals.nhs.uk/our-trust/bod-meetings/"
+    "url": "https://www.bradfordhospitals.nhs.uk/our-trust/bod-meetings/",
+    "access_notes": "Strategy: 'Board of Directors Meetings' page renders via JS (static body near-empty). Even rendered, the landing shows no direct PDFs — papers are reached by selecting a year / opening a per-meeting entry. Use Playwright and drill into the meeting list. Pattern C/D.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Board of Directors",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "needs_playwright",
+    "validation_notes": "Renders via JS; landing has no direct PDFs, papers nested behind year/meeting selection."
   },
   {
     "ods_code": "RCB",
@@ -914,7 +1247,26 @@
     "region": "North East and Yorkshire",
     "ics": "South Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.therotherhamft.nhs.uk/about-us/board-meetings"
+    "url": "https://www.therotherhamft.nhs.uk/about-us/board-meetings",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (29 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=29, year_archives=0, meeting_subpages=0."
   },
   {
     "ods_code": "RGD",
@@ -941,7 +1293,25 @@
     "region": "North East and Yorkshire",
     "ics": "South Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.sth.nhs.uk/about-us/board-meetings/"
+    "url": "https://www.sth.nhs.uk/about-us/board-meetings/",
+    "access_notes": "Strategy: landing lists year archives (4 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=4, meeting_subpages=0."
   },
   {
     "ods_code": "RJL",
@@ -1085,7 +1455,26 @@
     "region": "North East and Yorkshire",
     "ics": "West Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.bdct.nhs.uk/about-us/board-meetings-and-papers/"
+    "url": "https://www.bdct.nhs.uk/about-us/board-meetings-and-papers/",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (89 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=89, year_archives=0, meeting_subpages=1."
   },
   {
     "ods_code": "TAH",
@@ -1097,7 +1486,26 @@
     "region": "North East and Yorkshire",
     "ics": "South Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.shsc.nhs.uk/about-us/board-directors"
+    "url": "https://www.shsc.nhs.uk/about-us/board-directors",
+    "access_notes": "Strategy: landing shows a weak board-papers signal to a static parser (few dated PDFs found). Papers are likely present but loaded via JS or one click into a 'papers'/'meetings' sub-page. Confirm by following the board-papers / meetings link; prefer the main combined pack. Pattern A/C — review on next pass.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Agenda and Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Validator (static) weak signal: dated_pdfs=0, year_archives=1, meeting_subpages=0; review."
   },
   {
     "ods_code": "RCX",
@@ -1319,7 +1727,26 @@
     "region": "South West",
     "ics": "Dorset",
     "correspondent": "Joe",
-    "url": "https://www.dorsethealthcare.nhs.uk/about-us/trust-board"
+    "url": "https://www.dorsethealthcare.nhs.uk/about-us/trust-board",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (14 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=14, year_archives=0, meeting_subpages=0."
   },
   {
     "ods_code": "REF",
@@ -1332,7 +1759,26 @@
     "region": "South West",
     "ics": "Cornwall and the Isles of Scilly",
     "correspondent": "Joe",
-    "url": "https://www.royalcornwall.nhs.uk/our-organisation/about/your-trust-board/"
+    "url": "https://www.royalcornwall.nhs.uk/our-organisation/about/your-trust-board/",
+    "access_notes": "Strategy: board papers reachable from this landing; confirm navigation on next deep pass. Prefer the main combined board pack.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "broken",
+    "validation_notes": "Validator classification: broken."
   },
   {
     "ods_code": "RH5",
@@ -1435,7 +1881,26 @@
     "region": "South West",
     "ics": "Gloucestershire",
     "correspondent": "Joe",
-    "url": "https://www.ghc.nhs.uk/who-we-are/board-and-governors/"
+    "url": "https://www.ghc.nhs.uk/who-we-are/board-and-governors/",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (25 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=25, year_archives=0, meeting_subpages=1."
   },
   {
     "ods_code": "RVJ",
@@ -1471,7 +1936,25 @@
     "region": "South West",
     "ics": "Devon",
     "correspondent": "Joe",
-    "url": "https://www.dpt.nhs.uk/publications/"
+    "url": "https://www.dpt.nhs.uk/publications/",
+    "access_notes": "Strategy: landing lists year archives (3 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=3, meeting_subpages=0."
   },
   {
     "ods_code": "RPG",
@@ -1498,7 +1981,22 @@
     "region": "London",
     "ics": "South West London",
     "correspondent": "Ella",
-    "url": "https://www.stgeorges.nhs.uk/about-us/board-papers/"
+    "url": "https://swlstg.nhs.uk/our-board",
+    "access_notes": "Strategy: board papers, agendas and minutes are listed directly on the trust-board landing page (swlstg.nhs.uk/our-board), grouped by year, one entry per bi-monthly meeting. Prefer the 'Trust Board Part A' main pack (skip Part B / private). Static fetch works. Pattern F: DB URL was previously the wrong domain (stgeorges.nhs.uk = St George's University Hospitals, a different trust); corrected 2026-05-29.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Trust Board Part A",
+      "main pack",
+      "supplementary pack"
+    ],
+    "exclude_patterns": [
+      "Part B",
+      "Minutes only",
+      "private"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Corrected from wrong domain; new page shows 2025-2026 Trust Board Part A main + supplementary packs."
   },
   {
     "ods_code": "RV5",
@@ -1551,7 +2049,25 @@
     "region": "London",
     "ics": "North Central London",
     "correspondent": "Matt D",
-    "url": "https://www.royalfree.nhs.uk/about-us/trust-board/trust-board-meetings"
+    "url": "https://www.royalfree.nhs.uk/about-us/trust-board/trust-board-meetings",
+    "access_notes": "Strategy: /about-us/trust-board/trust-board-meetings is correct (archive at /about-us/trust-board/archived-board-papers; also hosts former North Middlesex board papers). Site WAF returns 403/500 to non-browser fetchers. Pattern E anti-bot — use a browser/Playwright; bi-monthly meetings.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Board papers",
+      "Agenda"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "needs_playwright",
+    "validation_notes": "WAF returns 403/500 to bots; Google confirms URL is the live 'Trust board meetings' page."
   },
   {
     "ods_code": "RAS",
@@ -1601,7 +2117,25 @@
     "region": "London",
     "ics": "North West London",
     "correspondent": "Matt D",
-    "url": "https://www.chelwest.nhs.uk/about-us/board-of-directors/"
+    "url": "https://www.chelwest.nhs.uk/about-us/board-of-directors/",
+    "access_notes": "Strategy: landing lists year archives (5 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=5, meeting_subpages=2."
   },
   {
     "ods_code": "RQX",
@@ -1626,7 +2160,26 @@
     "region": "London",
     "ics": "North Central London",
     "correspondent": "Matt D",
-    "url": "https://www.uclh.nhs.uk/about-us/who-we-are/board-directors/board-meetings-and-papers"
+    "url": "https://www.uclh.nhs.uk/about-us/who-we-are/board-directors/board-meetings-and-papers",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (12 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=12, year_archives=17, meeting_subpages=6."
   },
   {
     "ods_code": "RYJ",
@@ -1652,7 +2205,26 @@
     "region": "London",
     "ics": "North West London",
     "correspondent": "Matt D",
-    "url": "https://www.rnoh.nhs.uk/about-us/corporate-information/board-meetings"
+    "url": "https://www.rnoh.nhs.uk/about-us/corporate-information/board-meetings",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (34 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=34, year_archives=0, meeting_subpages=1."
   },
   {
     "ods_code": "RP4",
@@ -1704,7 +2276,26 @@
     "region": "London",
     "ics": "North West London",
     "correspondent": "Matt D",
-    "url": "https://www.westlondon.nhs.uk/about-us/trust-board/board-papers"
+    "url": "https://www.westlondon.nhs.uk/about-us/trust-board/board-papers",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (55 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=55, year_archives=0, meeting_subpages=0."
   },
   {
     "ods_code": "RNK",
@@ -1846,7 +2437,26 @@
     "region": "North East and Yorkshire",
     "ics": "North East and North Cumbria",
     "correspondent": "Matt M",
-    "url": "https://www.tewv.nhs.uk/about/board/papers-previous-board-meetings/"
+    "url": "https://www.tewv.nhs.uk/about/board/papers-previous-board-meetings/",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (53 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=53, year_archives=0, meeting_subpages=0."
   },
   {
     "ods_code": "RX4",
@@ -1938,7 +2548,25 @@
     "region": "South East",
     "ics": "Hampshire and Isle of Wight",
     "correspondent": "Mimi",
-    "url": "https://www.porthosp.nhs.uk/about-us/our-trust/our-trust-board"
+    "url": "https://www.porthosp.nhs.uk/about-us/our-trust/our-trust-board",
+    "access_notes": "Strategy: landing lists year archives (3 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=3, year_archives=3, meeting_subpages=0."
   },
   {
     "ods_code": "RHW",
@@ -2107,7 +2735,26 @@
     "region": "North West",
     "ics": "Greater Manchester",
     "correspondent": "Nick",
-    "url": "https://www.wwl.nhs.uk/about-us/board-papers/"
+    "url": "https://www.wwl.nhs.uk/about-us/board-papers/",
+    "access_notes": "Strategy: /about-us/board-papers/ is correct and working — it lists upcoming meetings, a '<year> Board Papers' section with per-meeting 'Meeting papers' PDF bundles, and an archive. The 'Meeting papers' links load via JS, which is why a static parser sees no PDFs. Pattern A/C; prefer the public bundle PDF.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Meeting papers",
+      "public bundle",
+      "Board Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Working page with 2026 'Meeting papers' bundles; static parser missed JS-loaded PDF links (false no_papers_visible)."
   },
   {
     "ods_code": "RT2",
@@ -2159,7 +2806,26 @@
     "region": "East of England",
     "ics": "Mid and South Essex",
     "correspondent": "TBC",
-    "url": "https://eput.nhs.uk/about-us/board-of-directors/board-meetings/board-papers/"
+    "url": "https://eput.nhs.uk/about-us/board-of-directors/board-meetings/board-papers/",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (28 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=28, year_archives=0, meeting_subpages=0."
   },
   {
     "ods_code": "RAJ",
@@ -2236,7 +2902,26 @@
     "region": "East of England",
     "ics": "Hertfordshire and West Essex",
     "correspondent": "TBC",
-    "url": "https://www.enherts-tr.nhs.uk/gp-professionals/publications/board-papers-september-2023/"
+    "url": "https://www.enherts-tr.nhs.uk/gp-professionals/publications/board-papers-september-2023/",
+    "access_notes": "Strategy: landing shows a weak board-papers signal to a static parser (few dated PDFs found). Papers are likely present but loaded via JS or one click into a 'papers'/'meetings' sub-page. Confirm by following the board-papers / meetings link; prefer the main combined pack. Pattern A/C — review on next pass.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Agenda and Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Validator (static) weak signal: dated_pdfs=1, year_archives=0, meeting_subpages=2; review."
   },
   {
     "ods_code": "RWR",
@@ -2261,7 +2946,26 @@
     "region": "East of England",
     "ics": "Hertfordshire and West Essex",
     "correspondent": "TBC",
-    "url": "https://www.hct.nhs.uk/our-board/"
+    "url": "https://www.hct.nhs.uk/our-board/",
+    "access_notes": "Strategy: landing lists per-meeting entries (97 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Combined Pack",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=13, year_archives=0, meeting_subpages=97."
   },
   {
     "ods_code": "RBL",
@@ -2353,7 +3057,25 @@
     "region": "North West",
     "ics": "Cheshire and Merseyside",
     "correspondent": "Zoe",
-    "url": "https://www.clatterbridgecc.nhs.uk/about-us/how-were-run/trust-board/board-meetings"
+    "url": "https://www.clatterbridgecc.nhs.uk/about-us/how-were-run/trust-board/board-meetings",
+    "access_notes": "Strategy: landing lists year archives (3 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=3, meeting_subpages=0."
   },
   {
     "ods_code": "REP",
@@ -2404,7 +3126,21 @@
     "region": "North West",
     "ics": "Cheshire and Merseyside",
     "correspondent": "Zoe",
-    "url": "https://www.coch.nhs.uk/about-us/board-papers/"
+    "url": "https://www.coch.nhs.uk/corporate-information/board-of-directors/board-of-directors-meeting-packs.aspx",
+    "access_notes": "Strategy: meeting packs page (/corporate-information/board-of-directors/board-of-directors-meeting-packs.aspx) lists ~54 dated PDFs under /media/, titled 'Agenda and Papers - <Month Year>', plus per-item Integrated Performance Reports. Older packs under .../meeting-packs/archive.aspx. Pattern A + F: old /about-us/board-papers/ was an error page; corrected 2026-05-29.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Public Board of Directors"
+    ],
+    "exclude_patterns": [
+      "Council of Governors",
+      "Minutes only",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Old URL was an error page; corrected page shows 54 dated 'Agenda and Papers' PDFs (2023-2026)."
   },
   {
     "ods_code": "RTX",
@@ -2416,7 +3152,26 @@
     "region": "North West",
     "ics": "Lancashire and South Cumbria",
     "correspondent": "Zoe",
-    "url": "https://www.uhmb.nhs.uk/our-trust/trust-board-and-council-governor-meetings"
+    "url": "https://www.uhmb.nhs.uk/our-trust/trust-board-and-council-governor-meetings",
+    "access_notes": "Strategy: landing lists per-meeting entries (42 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Combined Pack",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=17, year_archives=1, meeting_subpages=42."
   },
   {
     "ods_code": "RW4",
@@ -2470,7 +3225,26 @@
     "region": "North West",
     "ics": "Cheshire and Merseyside",
     "correspondent": "Zoe",
-    "url": "https://www.cwp.nhs.uk/about-us/our-board-and-governors/"
+    "url": "https://www.cwp.nhs.uk/about-us/our-board-and-governors/",
+    "access_notes": "Strategy: board papers reachable from this landing; confirm navigation on next deep pass. Prefer the main combined board pack.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "broken",
+    "validation_notes": "Validator classification: broken."
   },
   {
     "ods_code": "RXL",
@@ -2484,7 +3258,25 @@
     "region": "North West",
     "ics": "Lancashire and South Cumbria",
     "correspondent": "Zoe",
-    "url": "https://www.blackpoolteachinghospitals.nhs.uk/about-us/meet-board/board-meetings-public"
+    "url": "https://www.blackpoolteachinghospitals.nhs.uk/about-us/meet-board/board-meetings-public",
+    "access_notes": "Strategy: 'Board Meetings in Public' page renders via JS (static body near-empty). Landing shows no direct PDFs; papers are reached through per-meeting sub-pages. Use Playwright (wait_until=networkidle) and follow the meeting links. Pattern C/D.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Board Meetings in Public",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "needs_playwright",
+    "validation_notes": "Renders via JS; landing lists meetings, papers on per-meeting sub-pages."
   },
   {
     "ods_code": "RXN",
@@ -2510,7 +3302,22 @@
     "region": "North West",
     "ics": "Lancashire and South Cumbria",
     "correspondent": "Zoe",
-    "url": "https://elht.nhs.uk/about-us/board-meetings-including-agenda-and-papers"
+    "url": "https://elht.nhs.uk/about-us/our-trust-board/board-meetings-including-agenda-and-papers",
+    "access_notes": "Strategy: board page moved under /about-us/our-trust-board/. The papers page (/about-us/our-trust-board/board-meetings-including-agenda-and-papers) lists current-year meetings and links to per-year archive sub-pages (archive-2022, archive-2023, ...). Papers load via JS, so use Playwright. Pattern C/D + F: old /about-us/board-meetings-... path 404'd after restructure; corrected 2026-05-29.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "Trust Board",
+      "Agenda and Papers",
+      "Part 1"
+    ],
+    "exclude_patterns": [
+      "Part 2",
+      "private",
+      "Minutes only"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "needs_playwright",
+    "validation_notes": "Old path 404'd after site restructure; papers now under /our-trust-board/, JS-rendered with year archives."
   },
   {
     "ods_code": "RY2",

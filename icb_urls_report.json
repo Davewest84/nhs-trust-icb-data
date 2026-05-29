@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T12:58:56.028785+00:00",
+  "generated_at": "2026-05-29T10:51:05.262345+00:00",
   "label": "ICB",
   "total": 36,
-  "ok": 35,
-  "broken": 1,
+  "ok": 36,
+  "broken": 0,
   "results": [
     {
       "ods_code": "QYG",
@@ -90,10 +90,10 @@
       "ods_code": "QWU",
       "name": "Coventry and Warwickshire ICB",
       "url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/\nCall l"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
+      "error": null
     },
     {
       "ods_code": "QGH",

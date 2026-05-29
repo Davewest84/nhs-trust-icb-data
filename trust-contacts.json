@@ -519,13 +519,13 @@
   {
     "trust_name": "East and North Hertfordshire NHS Trust",
     "ods_code": "RWH",
-    "press_email": "communications.enh-tr@nhs.net",
-    "press_email_alt": null,
+    "press_email": "pressoffice@enherts-tr.nhs.uk",
+    "press_email_alt": "communications.enh-tr@nhs.net",
     "press_source_url": "https://www.enherts-tr.nhs.uk/contact/",
     "foi_email": "foi.enh-tr@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "https://www.enherts-tr.nhs.uk/foi/",
-    "notes": "Both emails obscured by Cloudflare email-protection on the pages"
+    "notes": "Both emails obscured by Cloudflare email-protection on the pages | press primary updated 2026-05-29 from [https://www.enherts-tr.nhs.uk/contact/]; prior value communications.enh-tr@nhs.net moved to _alt"
   },
   {
     "trust_name": "East of England Ambulance Service NHS Trust",
@@ -1432,13 +1432,13 @@
   {
     "trust_name": "Royal Free London NHS Foundation Trust",
     "ods_code": "RAL",
-    "press_email": "tr-rf.communications@nhs.net",
-    "press_email_alt": "rf.mediaenquiries@nhs.net",
+    "press_email": "rf-tr.mediaenquiries@nhs.net",
+    "press_email_alt": "tr-rf.communications@nhs.net",
     "press_source_url": "https://www.royalfree.nhs.uk/contact-us/contact-media-team",
     "foi_email": "rf-tr.foi@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "Temp/Comms contacts.xlsx (May 2026)",
-    "notes": "Site (incl FOI page) returned 403 to scraping; press email confirmed via search results. FOI email not extractable - likely rf-tr.foi@nhs.net but unverified; Royal Free FOI page returned 403 to WebFetch on multiple attempts; could not retrieve email."
+    "notes": "Site (incl FOI page) returned 403 to scraping; press email confirmed via search results. FOI email not extractable - likely rf-tr.foi@nhs.net but unverified; Royal Free FOI page returned 403 to WebFetch on multiple attempts; could not retrieve email. | press primary updated 2026-05-29 from [https://www.royalfree.nhs.uk/contact-us/contact-media-team]; prior value tr-rf.communications@nhs.net moved to _alt"
   },
   {
     "trust_name": "Royal National Orthopaedic Hospital NHS Trust",
@@ -1523,10 +1523,10 @@
     "press_email": "communications@sheffieldpartnership.nhs.uk",
     "press_email_alt": "communications.shsc@shsc.nhs.uk",
     "press_source_url": "https://www.sheffieldpartnership.nhs.uk/contact-us/media-enquiries",
-    "foi_email": "shsc@infreemation.co.uk",
-    "foi_email_alt": "foi@shsc.nhs.uk",
+    "foi_email": "shpu@infreemation.co.uk",
+    "foi_email_alt": "shsc@infreemation.co.uk",
     "foi_source_url": "https://www.sheffieldpartnership.nhs.uk/contact-us/freedom-information-requests",
-    "notes": "Sheffield Health & Social Care rebranded as Sheffield Partnership University FT; FOI uses Infreemation portal"
+    "notes": "Sheffield Health & Social Care rebranded as Sheffield Partnership University FT; FOI uses Infreemation portal | foi primary updated 2026-05-29 from [https://www.sheffieldpartnership.nhs.uk/contact-us/freedom-information-requests]; prior value shsc@infreemation.co.uk moved to _alt"
   },
   {
     "trust_name": "Sheffield Teaching Hospitals NHS Foundation Trust",

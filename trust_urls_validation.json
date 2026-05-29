@@ -1,0 +1,3426 @@
+{
+  "generated_at": "2026-05-29T10:47:16.946790+00:00",
+  "label": "trust",
+  "total": 206,
+  "counts": {
+    "papers_found": 127,
+    "papers_partial": 23,
+    "no_papers_visible": 35,
+    "needs_playwright": 6,
+    "broken": 15
+  },
+  "results": [
+    {
+      "ods_code": "RA2",
+      "name": "Royal Surrey County Hospital NHS Foundation Trust",
+      "url": "https://www.royalsurrey.nhs.uk/board-papers/",
+      "fetched_at": "2026-05-29T10:39:25.509261+00:00",
+      "status_code": 200,
+      "final_url": "https://www.royalsurrey.nhs.uk/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 7,
+        "meeting_subpages": 0,
+        "visible_text_len": 4328,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RDR",
+      "name": "Sussex Community NHS Foundation Trust",
+      "url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
+      "fetched_at": "2026-05-29T10:39:27.360512+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4394,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RN7",
+      "name": "Dartford and Gravesham NHS Trust",
+      "url": "https://www.dgt.nhs.uk/about-us/trust-management/trust-boardmanagement/trust-board-minutesagendas",
+      "fetched_at": "2026-05-29T10:39:29.230764+00:00",
+      "status_code": 200,
+      "final_url": "https://www.dgt.nhs.uk/about-us/trust-management/trust-boardmanagement/trust-board-minutesagendas",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 0,
+        "visible_text_len": 4264,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RPA",
+      "name": "Medway NHS Foundation Trust",
+      "url": "https://www.medway.nhs.uk/about-us/board-meetings/",
+      "fetched_at": "2026-05-29T10:39:31.170829+00:00",
+      "status_code": 200,
+      "final_url": "https://www.medway.nhs.uk/about-us/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 31,
+        "year_archives": 2,
+        "meeting_subpages": 12,
+        "visible_text_len": 5259,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RPC",
+      "name": "Queen Victoria Hospital NHS Foundation Trust",
+      "url": "https://www.qvh.nhs.uk/about-us/board-of-directors/meetings-in-public/",
+      "fetched_at": "2026-05-29T10:39:32.763022+00:00",
+      "status_code": 200,
+      "final_url": "https://www.qvh.nhs.uk/about-us/board-of-directors/meetings-in-public/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 10422,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTK",
+      "name": "Ashford and St Peter's Hospitals NHS Foundation Trust",
+      "url": "https://www.ashfordstpeters.nhs.uk/meetings",
+      "fetched_at": "2026-05-29T10:39:34.975806+00:00",
+      "status_code": 403,
+      "final_url": "https://www.ashfordstpeters.nhs.uk/meetings",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RTP",
+      "name": "Surrey and Sussex Healthcare NHS Trust",
+      "url": "https://www.surreyandsussex.nhs.uk/about-us/our-board/board-papers",
+      "fetched_at": "2026-05-29T10:39:36.583127+00:00",
+      "status_code": 200,
+      "final_url": "https://www.surreyandsussex.nhs.uk/about-us/our-board/board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 0,
+        "visible_text_len": 8220,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RVV",
+      "name": "East Kent Hospitals University NHS Foundation Trust",
+      "url": "https://www.ekhuft.nhs.uk/about-us/board-of-directors/",
+      "fetched_at": "2026-05-29T10:39:38.465765+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ekhuft.nhs.uk/about-us/board-of-directors/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 44,
+        "year_archives": 0,
+        "meeting_subpages": 5,
+        "visible_text_len": 13358,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWF",
+      "name": "Maidstone and Tunbridge Wells NHS Trust",
+      "url": "https://www.mtw.nhs.uk/about-us/trust-board/board-meetings-and-papers/",
+      "fetched_at": "2026-05-29T10:39:40.280627+00:00",
+      "status_code": 404,
+      "final_url": "https://www.mtw.nhs.uk/about-us/trust-board/board-meetings-and-papers/",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 404"
+    },
+    {
+      "ods_code": "RX2",
+      "name": "Sussex Partnership NHS Foundation Trust",
+      "url": "https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/board-meetings",
+      "fetched_at": "2026-05-29T10:39:42.012748+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 30,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 14133,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXC",
+      "name": "East Sussex Healthcare NHS Trust",
+      "url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
+      "fetched_at": "2026-05-29T10:39:44.683447+00:00",
+      "status_code": 200,
+      "final_url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 2,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3675,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXX",
+      "name": "Surrey and Borders Partnership NHS Foundation Trust",
+      "url": "https://www.sabp.nhs.uk/aboutus/board-of-directors/board-meetings-papers",
+      "fetched_at": "2026-05-29T10:39:46.707764+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sabp.nhs.uk/aboutus/board-of-directors/board-meetings-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 63,
+        "year_archives": 0,
+        "meeting_subpages": 4,
+        "visible_text_len": 7102,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXY",
+      "name": "Kent and Medway NHS and Social Care Partnership Trust",
+      "url": "https://www.kmpt.nhs.uk/about-us/trust-board/",
+      "fetched_at": "2026-05-29T10:39:48.801503+00:00",
+      "status_code": 200,
+      "final_url": "https://www.kentmedwaymentalhealth.nhs.uk:443/about-us/trust-board/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5156,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYR",
+      "name": "University Hospitals Sussex NHS Foundation Trust",
+      "url": "https://www.uhsussex.nhs.uk/resources/public-board-papers-10-november-2022/",
+      "fetched_at": "2026-05-29T10:39:50.562665+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhsussex.nhs.uk/resources/public-board-papers-10-november-2022/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 2,
+        "visible_text_len": 4282,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYY",
+      "name": "Kent Community Health NHS Foundation Trust",
+      "url": "https://www.kentcht.nhs.uk/about-us/who-we-are/the-board/",
+      "fetched_at": "2026-05-29T10:39:52.599110+00:00",
+      "status_code": 200,
+      "final_url": "https://www.kentcht.nhs.uk/about-us/who-we-are/the-board/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 31,
+        "year_archives": 5,
+        "meeting_subpages": 7,
+        "visible_text_len": 33080,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RFS",
+      "name": "Chesterfield Royal Hospital NHS Foundation Trust",
+      "url": "https://www.chesterfieldroyal.nhs.uk/about-us/our-board-directors/board-directors-papers-meetings-and-minutes",
+      "fetched_at": "2026-05-29T10:39:54.290299+00:00",
+      "status_code": 200,
+      "final_url": "https://www.chesterfieldroyal.nhs.uk/about-us/our-board-directors/board-directors-papers-meetings-and-minutes",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 25,
+        "year_archives": 3,
+        "meeting_subpages": 1,
+        "visible_text_len": 10590,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RHA",
+      "name": "Nottinghamshire Healthcare NHS Foundation Trust",
+      "url": "https://www.nottinghamshirehealthcare.nhs.uk/board-of-directors-and-meetings",
+      "fetched_at": "2026-05-29T10:39:56.376689+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nottinghamshirehealthcare.nhs.uk/board-of-directors-and-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 36,
+        "visible_text_len": 5866,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RK5",
+      "name": "Sherwood Forest Hospitals NHS Foundation Trust",
+      "url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/",
+      "fetched_at": "2026-05-29T10:39:58.393985+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 13065,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RNQ",
+      "name": "Kettering General Hospital NHS Foundation Trust",
+      "url": "https://www.kgh.nhs.uk/board-of-directors-and-board-meetings",
+      "fetched_at": "2026-05-29T10:40:00.008294+00:00",
+      "status_code": 200,
+      "final_url": "https://www.kgh.nhs.uk/board-of-directors-and-board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 3,
+        "year_archives": 1,
+        "meeting_subpages": 18,
+        "visible_text_len": 26914,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RNS",
+      "name": "Northampton General Hospital NHS Trust",
+      "url": "https://www.northamptongeneral.nhs.uk/About/Our-Trust-Board/Meeting-and-papers/Meeting-papers.aspx",
+      "fetched_at": "2026-05-29T10:40:02.663914+00:00",
+      "status_code": 200,
+      "final_url": "https://www.northamptongeneral.nhs.uk/About/Our-Trust-Board/Meeting-and-papers/Meeting-papers.aspx",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 12,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 6157,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RP1",
+      "name": "Northamptonshire Healthcare NHS Foundation Trust",
+      "url": "https://www.nhft.nhs.uk/board/",
+      "fetched_at": "2026-05-29T10:40:04.331505+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nhft.nhs.uk/board/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 6,
+        "meeting_subpages": 0,
+        "visible_text_len": 22699,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RP7",
+      "name": "Lincolnshire Partnership NHS Foundation Trust",
+      "url": "https://www.lpft.nhs.uk/get-involved/meeting-dates-and-minutes/board-directors-meetings",
+      "fetched_at": "2026-05-29T10:40:09.880777+00:00",
+      "status_code": 200,
+      "final_url": "https://www.lpft.nhs.uk/get-involved/meeting-dates-and-minutes/board-directors-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 3,
+        "meeting_subpages": 0,
+        "visible_text_len": 10982,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RT5",
+      "name": "Leicestershire Partnership NHS Trust",
+      "url": "https://www.leicspart.nhs.uk/about-us/trust-board/",
+      "fetched_at": "2026-05-29T10:40:13.178644+00:00",
+      "status_code": 200,
+      "final_url": "https://www.leicspart.nhs.uk/about/corporate-responsibilities/trust-board/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 391,
+        "year_archives": 2,
+        "meeting_subpages": 0,
+        "visible_text_len": 68683,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTG",
+      "name": "University Hospitals of Derby and Burton NHS Foundation Trust",
+      "url": "https://www.uhdb.nhs.uk/trust-board-members/",
+      "fetched_at": "2026-05-29T10:40:18.276695+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhdb.nhs.uk/trust-board-members/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 10,
+        "meeting_subpages": 0,
+        "visible_text_len": 24803,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWD",
+      "name": "United Lincolnshire Hospitals NHS Trust",
+      "url": "https://www.ulh.nhs.uk/about/board-meetings/",
+      "fetched_at": "2026-05-29T10:40:20.309773+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ulh.nhs.uk/about/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 112,
+        "visible_text_len": 14095,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWE",
+      "name": "University Hospitals of Leicester NHS Trust",
+      "url": "https://www.uhleicester.nhs.uk/about/board/board-papers-and-meetings/",
+      "fetched_at": "2026-05-29T10:40:22.290607+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhleicester.nhs.uk/about/board/board-papers-and-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 7,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5043,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RX1",
+      "name": "Nottingham University Hospitals NHS Trust",
+      "url": "https://www.nuh.nhs.uk/board-and-board-papers/",
+      "fetched_at": "2026-05-29T10:40:24.359022+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nuh.nhs.uk/board-and-board-papers/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4411,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXM",
+      "name": "Derbyshire Healthcare NHS Foundation Trust",
+      "url": "https://www.derbyshirehealthcareft.nhs.uk/about-us/our-board-directors/board-meetings",
+      "fetched_at": "2026-05-29T10:40:26.341527+00:00",
+      "status_code": 200,
+      "final_url": "https://www.derbyshirehealthcareft.nhs.uk/about-us/our-board-directors/board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 232,
+        "year_archives": 4,
+        "meeting_subpages": 0,
+        "visible_text_len": 18447,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RY5",
+      "name": "Lincolnshire Community Health Services NHS Trust",
+      "url": "https://lincolnshirecommunityhealthservices.nhs.uk/about-us/our-trust-board/trust-board-papers",
+      "fetched_at": "2026-05-29T10:40:28.627850+00:00",
+      "status_code": 200,
+      "final_url": "https://lincolnshirecommunityhealthservices.nhs.uk/about-us/our-trust-board/trust-board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 57,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 6776,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RY8",
+      "name": "Derbyshire Community Health Services NHS Foundation Trust",
+      "url": "https://dchs.nhs.uk/about-us/our-board",
+      "fetched_at": "2026-05-29T10:40:31.202944+00:00",
+      "status_code": 200,
+      "final_url": "https://dchs.nhs.uk/about-us/our-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 51,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 9191,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R1A",
+      "name": "Herefordshire and Worcestershire Health and Care NHS Trust",
+      "url": "https://www.hacw.nhs.uk/board-papers/",
+      "fetched_at": "2026-05-29T10:40:33.509072+00:00",
+      "status_code": 200,
+      "final_url": "https://www.hacw.nhs.uk/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 111,
+        "visible_text_len": 9887,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R1D",
+      "name": "Shropshire Community Health NHS Trust",
+      "url": "https://www.shropscommunityhealth.nhs.uk/board-meetings-and-papers",
+      "fetched_at": "2026-05-29T10:40:35.561816+00:00",
+      "status_code": 200,
+      "final_url": "https://www.shropscommunityhealth.nhs.uk/board-meetings-and-papers",
+      "classification": "needs_playwright",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 0,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBK",
+      "name": "Walsall Healthcare NHS Trust",
+      "url": "https://www.walsallhealthcare.nhs.uk/about-us/how-we-are-run/board-papers/",
+      "fetched_at": "2026-05-29T10:40:37.159846+00:00",
+      "status_code": 200,
+      "final_url": "https://www.walsallhealthcare.nhs.uk/about-us/how-we-are-run/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 20,
+        "year_archives": 1,
+        "meeting_subpages": 51,
+        "visible_text_len": 9126,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJC",
+      "name": "South Warwickshire University NHS Foundation Trust",
+      "url": "https://www.swft.nhs.uk/meetings-and-events/board-meetings",
+      "fetched_at": "2026-05-29T10:40:38.839956+00:00",
+      "status_code": 200,
+      "final_url": "https://www.swft.nhs.uk/meetings-and-events/board-meetings",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4356,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJE",
+      "name": "University Hospitals of North Midlands NHS Trust",
+      "url": "https://www.uhnm.nhs.uk/about-us/our-board/",
+      "fetched_at": "2026-05-29T10:40:40.844737+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhnm.nhs.uk/about-us/our-board/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 2817,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RKB",
+      "name": "University Hospitals Coventry and Warwickshire NHS Trust",
+      "url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
+      "fetched_at": "2026-05-29T10:40:42.510671+00:00",
+      "status_code": null,
+      "final_url": null,
+      "classification": "broken",
+      "evidence": null,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "ods_code": "RL1",
+      "name": "The Robert Jones and Agnes Hunt Orthopaedic Hospital NHS Foundation Trust",
+      "url": "https://www.rjah.nhs.uk/about-us/board-of-directors/board-of-directors-meeting-dates",
+      "fetched_at": "2026-05-29T10:40:44.042626+00:00",
+      "status_code": 200,
+      "final_url": "https://www.rjah.nhs.uk/about-us/board-of-directors/board-of-directors-meeting-dates",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3033,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RL4",
+      "name": "The Royal Wolverhampton NHS Trust",
+      "url": "https://www.royalwolverhampton.nhs.uk/about-us/our-board/",
+      "fetched_at": "2026-05-29T10:40:45.704428+00:00",
+      "status_code": 200,
+      "final_url": "https://royalwolverhampton.nhs.uk/about-our-trust/who-we-are/our-board/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 6,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 15380,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RLQ",
+      "name": "Wye Valley NHS Trust",
+      "url": "https://www.wyevalley.nhs.uk/about-us/the-trust-board.aspx",
+      "fetched_at": "2026-05-29T10:40:48.071746+00:00",
+      "status_code": 200,
+      "final_url": "https://www.wyevalley.nhs.uk/about-us/the-trust-board.aspx",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 2,
+        "meeting_subpages": 1,
+        "visible_text_len": 6231,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RLT",
+      "name": "George Eliot Hospital NHS Trust",
+      "url": "https://www.geh.nhs.uk/about-us/trust-board/public-board-papers",
+      "fetched_at": "2026-05-29T10:40:49.970740+00:00",
+      "status_code": 200,
+      "final_url": "https://www.geh.nhs.uk/about-us/trust-board/public-board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 26,
+        "year_archives": 0,
+        "meeting_subpages": 31,
+        "visible_text_len": 11910,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RLY",
+      "name": "North Staffordshire Combined Healthcare NHS Trust",
+      "url": "https://www.combined.nhs.uk/about/our-board/board-meetings/",
+      "fetched_at": "2026-05-29T10:40:52.077193+00:00",
+      "status_code": null,
+      "final_url": null,
+      "classification": "broken",
+      "evidence": null,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "ods_code": "RNA",
+      "name": "The Dudley Group NHS Foundation Trust",
+      "url": "https://www.dgft.nhs.uk/about-us/our-board/",
+      "fetched_at": "2026-05-29T10:40:53.604626+00:00",
+      "status_code": 200,
+      "final_url": "https://www.dgft.nhs.uk/about-our-trust/our-board/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 29332,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RQ3",
+      "name": "Birmingham Women's and Children's NHS Foundation Trust",
+      "url": "https://www.bwc.nhs.uk/board-of-directors/",
+      "fetched_at": "2026-05-29T10:40:55.910039+00:00",
+      "status_code": 200,
+      "final_url": "https://bwc.nhs.uk/board-of-directors/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3188,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RRE",
+      "name": "Midlands Partnership University NHS Foundation Trust",
+      "url": "https://www.mpft.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:40:58.043812+00:00",
+      "status_code": 200,
+      "final_url": "https://www.mpft.nhs.uk/about-us/board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 20,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4398,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RRJ",
+      "name": "The Royal Orthopaedic Hospital NHS Foundation Trust",
+      "url": "https://roh.nhs.uk/about-us/corporate-information/statutory-documents",
+      "fetched_at": "2026-05-29T10:41:01.201808+00:00",
+      "status_code": 200,
+      "final_url": "https://roh.nhs.uk/about-us/corporate-information/statutory-documents",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 25,
+        "meeting_subpages": 186,
+        "visible_text_len": 13431,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RRK",
+      "name": "University Hospitals Birmingham NHS Foundation Trust",
+      "url": "https://www.uhb.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:41:09.495506+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhb.nhs.uk/404",
+      "classification": "needs_playwright",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 375,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWP",
+      "name": "Worcestershire Acute Hospitals NHS Trust",
+      "url": "https://www.worcsacute.nhs.uk/about-us/trust-board/",
+      "fetched_at": "2026-05-29T10:41:11.137185+00:00",
+      "status_code": 200,
+      "final_url": "https://www.worcsacute.nhs.uk/our-trust/trust-board-meetings-2017/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 1,
+        "visible_text_len": 13377,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXK",
+      "name": "Sandwell and West Birmingham Hospitals NHS Trust",
+      "url": "https://www.swbh.nhs.uk/about-us/trust-board/",
+      "fetched_at": "2026-05-29T10:41:13.972879+00:00",
+      "status_code": 200,
+      "final_url": "https://www.swbh.nhs.uk/our-trust/trust-board/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 6077,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXT",
+      "name": "Birmingham and Solihull Mental Health NHS Foundation Trust",
+      "url": "https://www.bsmhft.nhs.uk/about-us/corporate-documents/trust-board-papers/",
+      "fetched_at": "2026-05-29T10:41:16.073176+00:00",
+      "status_code": 200,
+      "final_url": "https://www.bsmhft.nhs.uk/about-us/corporate-documents/trust-board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 33,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 10013,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXW",
+      "name": "The Shrewsbury and Telford Hospital NHS Trust",
+      "url": "https://www.sath.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:41:17.702682+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sath.nhs.uk/about-us/trust-information/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 348,
+        "year_archives": 2,
+        "meeting_subpages": 1,
+        "visible_text_len": 77701,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYG",
+      "name": "Coventry and Warwickshire Partnership NHS Trust",
+      "url": "https://www.covwarkpt.nhs.uk/trust-board-dates-and-papers",
+      "fetched_at": "2026-05-29T10:41:20.686207+00:00",
+      "status_code": 200,
+      "final_url": "https://www.covwarkpt.nhs.uk/trust-board-dates-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 27,
+        "year_archives": 0,
+        "meeting_subpages": 18,
+        "visible_text_len": 8775,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYW",
+      "name": "Birmingham Community Healthcare NHS Foundation Trust",
+      "url": "https://www.bhamcommunity.nhs.uk/our-board/",
+      "fetched_at": "2026-05-29T10:41:22.749247+00:00",
+      "status_code": 200,
+      "final_url": "https://www.bhamcommunity.nhs.uk/our-board/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3892,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "TAJ",
+      "name": "Black Country Healthcare NHS Foundation Trust",
+      "url": "https://www.blackcountryhealthcare.nhs.uk/about-us/our-board-of-directors",
+      "fetched_at": "2026-05-29T10:41:24.656459+00:00",
+      "status_code": 200,
+      "final_url": "https://www.blackcountryhealthcare.nhs.uk/about-us/our-board-of-directors",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 59,
+        "year_archives": 0,
+        "meeting_subpages": 6,
+        "visible_text_len": 24515,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RAX",
+      "name": "Kingston Hospital NHS Foundation Trust",
+      "url": "https://www.kingstonhospital.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:41:27.152722+00:00",
+      "status_code": 200,
+      "final_url": "https://www.kingstonandrichmond.nhs.uk/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 10146,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJ1",
+      "name": "Guy's and St Thomas' NHS Foundation Trust",
+      "url": "https://www.guysandstthomas.nhs.uk/about-us/our-board/agenda-and-papers",
+      "fetched_at": "2026-05-29T10:41:28.996487+00:00",
+      "status_code": 200,
+      "final_url": "https://www.guysandstthomas.nhs.uk/about-us/our-board/agenda-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 28,
+        "visible_text_len": 5180,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJ2",
+      "name": "Lewisham and Greenwich NHS Trust",
+      "url": "https://www.lewishamandgreenwich.nhs.uk/board-papers/",
+      "fetched_at": "2026-05-29T10:41:31.102002+00:00",
+      "status_code": 200,
+      "final_url": "https://www.lewishamandgreenwich.nhs.uk/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 17,
+        "year_archives": 0,
+        "meeting_subpages": 75,
+        "visible_text_len": 8401,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJ6",
+      "name": "Croydon Health Services NHS Trust",
+      "url": "https://www.croydonhealthservices.nhs.uk/board-timetable-and-papers",
+      "fetched_at": "2026-05-29T10:41:33.052104+00:00",
+      "status_code": 200,
+      "final_url": "https://www.croydonhealthservices.nhs.uk/board-timetable-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 49,
+        "year_archives": 2,
+        "meeting_subpages": 29,
+        "visible_text_len": 12694,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJ7",
+      "name": "St George's University Hospitals NHS Foundation Trust",
+      "url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
+      "fetched_at": "2026-05-29T10:41:35.151473+00:00",
+      "status_code": null,
+      "final_url": null,
+      "classification": "broken",
+      "evidence": null,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "ods_code": "RJZ",
+      "name": "King's College Hospital NHS Foundation Trust",
+      "url": "https://www.kch.nhs.uk/about/how-we-are-organised/board-of-directors/minutes-and-agendas/",
+      "fetched_at": "2026-05-29T10:41:36.708324+00:00",
+      "status_code": 200,
+      "final_url": "https://www.kch.nhs.uk/about/how-we-are-organised/board-of-directors/minutes-and-agendas/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 14,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3038,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RVR",
+      "name": "Epsom and St Helier University Hospitals NHS Trust",
+      "url": "https://www.epsom-sthelier.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:41:39.346092+00:00",
+      "status_code": 200,
+      "final_url": "https://www.epsom-sthelier.nhs.uk/about-us/board-papers/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 7011,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RP6",
+      "name": "Moorfields Eye Hospital NHS Foundation Trust",
+      "url": "https://www.moorfields.nhs.uk/about-us/our-organisation/corporate-publications/board-reports",
+      "fetched_at": "2026-05-29T10:41:41.169336+00:00",
+      "status_code": 200,
+      "final_url": "https://www.moorfields.nhs.uk/about-us/our-organisation/corporate-publications/board-reports",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 0,
+        "visible_text_len": 6252,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RPY",
+      "name": "The Royal Marsden NHS Foundation Trust",
+      "url": "https://www.royalmarsden.nhs.uk/board-meetings/",
+      "fetched_at": "2026-05-29T10:41:42.970310+00:00",
+      "status_code": 200,
+      "final_url": "https://www.royalmarsden.nhs.uk/about-royal-marsden/governance/board-meetings",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 3528,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RY9",
+      "name": "Hounslow and Richmond Community Healthcare NHS Trust",
+      "url": "https://www.hrch.nhs.uk/",
+      "fetched_at": "2026-05-29T10:41:44.763700+00:00",
+      "status_code": 200,
+      "final_url": "https://www.kingstonandrichmond.nhs.uk/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 10146,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYX",
+      "name": "Central London Community Healthcare NHS Trust",
+      "url": "https://www.clch.nhs.uk/about-us/our-board/",
+      "fetched_at": "2026-05-29T10:41:46.591610+00:00",
+      "status_code": 200,
+      "final_url": "https://www.clch.nhs.uk/about-us/our-board",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 16371,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RAE",
+      "name": "Bradford Teaching Hospitals NHS Foundation Trust",
+      "url": "https://www.bradfordhospitals.nhs.uk/our-trust/bod-meetings/",
+      "fetched_at": "2026-05-29T10:41:50.371964+00:00",
+      "status_code": 200,
+      "final_url": "https://www.bradfordhospitals.nhs.uk/our-trust/bod-meetings/",
+      "classification": "needs_playwright",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 0,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RCB",
+      "name": "York and Scarborough Teaching Hospitals NHS Foundation Trust",
+      "url": "https://www.yorkhospitals.nhs.uk/about-us/board-of-directors/board-of-directors-meetings/",
+      "fetched_at": "2026-05-29T10:41:51.940596+00:00",
+      "status_code": 200,
+      "final_url": "https://www.yorkhospitals.nhs.uk/about-us/board-of-directors/board-of-directors-meetings/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3741,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RCD",
+      "name": "Harrogate and District NHS Foundation Trust",
+      "url": "https://www.hdft.nhs.uk/about/board-meeting/",
+      "fetched_at": "2026-05-29T10:41:53.696485+00:00",
+      "status_code": 200,
+      "final_url": "https://www.hdft.nhs.uk/about/board-meeting/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 100,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 12269,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RCF",
+      "name": "Airedale NHS Foundation Trust",
+      "url": "https://www.airedale-trust.nhs.uk/about-us/our-board-and-leadership/",
+      "fetched_at": "2026-05-29T10:41:55.808513+00:00",
+      "status_code": 403,
+      "final_url": "https://www.airedale-trust.nhs.uk/about-us/our-board-and-leadership/",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RCU",
+      "name": "Sheffield Children's NHS Foundation Trust",
+      "url": "https://www.sheffieldchildrens.nhs.uk/about-us/board-of-directors/",
+      "fetched_at": "2026-05-29T10:41:57.382627+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sheffieldchildrens.nhs.uk/about-us/board-of-directors/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 2,
+        "meeting_subpages": 0,
+        "visible_text_len": 7266,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RFF",
+      "name": "Barnsley Hospital NHS Foundation Trust",
+      "url": "https://www.barnsleyhospital.nhs.uk/about/how-we-are-run/board-of-directors/meetings-and-papers",
+      "fetched_at": "2026-05-29T10:42:01.174975+00:00",
+      "status_code": 200,
+      "final_url": "https://www.barnsleyhospital.nhs.uk/about/how-we-are-run/board-of-directors/meetings-and-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4358,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RFR",
+      "name": "The Rotherham NHS Foundation Trust",
+      "url": "https://www.therotherhamft.nhs.uk/about-us/board-meetings",
+      "fetched_at": "2026-05-29T10:42:03.424047+00:00",
+      "status_code": 200,
+      "final_url": "https://www.therotherhamft.nhs.uk/about-us/board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 29,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3766,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RGD",
+      "name": "Leeds and York Partnership NHS Foundation Trust",
+      "url": "https://www.leedsandyorkpft.nhs.uk/about-us/board-of-directors/board-of-directors-meetings/",
+      "fetched_at": "2026-05-29T10:42:05.658822+00:00",
+      "status_code": 200,
+      "final_url": "https://www.leedsandyorkpft.nhs.uk/about-us/board-of-directors/board-of-directors-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 22,
+        "year_archives": 0,
+        "meeting_subpages": 6,
+        "visible_text_len": 9165,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RHQ",
+      "name": "Sheffield Teaching Hospitals NHS Foundation Trust",
+      "url": "https://www.sth.nhs.uk/about-us/board-meetings/",
+      "fetched_at": "2026-05-29T10:42:08.155739+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sth.nhs.uk/about-us/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 4,
+        "meeting_subpages": 0,
+        "visible_text_len": 3675,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJL",
+      "name": "Northern Lincolnshire and Goole NHS Foundation Trust",
+      "url": "https://www.nlg.nhs.uk/resources/board-papers-archive-2021/",
+      "fetched_at": "2026-05-29T10:42:09.813321+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nlg.nhs.uk/resources/board-papers-archive-2021/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 6,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4000,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RP5",
+      "name": "Doncaster and Bassetlaw Teaching Hospitals NHS Foundation Trust",
+      "url": "https://www.dbth.nhs.uk/board/",
+      "fetched_at": "2026-05-29T10:42:11.479297+00:00",
+      "status_code": 200,
+      "final_url": "https://www.dbth.nhs.uk/about-us/how-we-are-run/board-of-directors/board-directors-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 45,
+        "year_archives": 1,
+        "meeting_subpages": 3,
+        "visible_text_len": 6868,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RR8",
+      "name": "Leeds Teaching Hospitals NHS Trust",
+      "url": "https://www.leedsth.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:42:13.188292+00:00",
+      "status_code": 200,
+      "final_url": "https://www.leedsth.nhs.uk/about/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5388,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RV9",
+      "name": "Humber Teaching NHS Foundation Trust",
+      "url": "https://www.humber.nhs.uk/about/trust-board/",
+      "fetched_at": "2026-05-29T10:42:14.857187+00:00",
+      "status_code": 200,
+      "final_url": "https://www.humber.nhs.uk/about/trust-board/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 5668,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWA",
+      "name": "Hull University Teaching Hospitals NHS Trust",
+      "url": "https://www.hey.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:42:16.507514+00:00",
+      "status_code": 200,
+      "final_url": "https://www.hull.nhs.uk/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 1415,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWY",
+      "name": "Calderdale and Huddersfield NHS Foundation Trust",
+      "url": "https://www.cht.nhs.uk/publications/board-of-directors-meeting-dates-and-papers",
+      "fetched_at": "2026-05-29T10:42:21.004775+00:00",
+      "status_code": 200,
+      "final_url": "https://www.cht.nhs.uk/publications/board-of-directors-meeting-dates-and-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 12928,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXE",
+      "name": "Rotherham Doncaster and South Humber NHS Foundation Trust",
+      "url": "https://www.rdash.nhs.uk/about-us/governance/board-of-directors/board-of-directors-meetings/",
+      "fetched_at": "2026-05-29T10:42:22.798383+00:00",
+      "status_code": 200,
+      "final_url": "https://www.rdash.nhs.uk/about-us/governance/board-of-directors/board-of-directors-meetings/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3057,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXF",
+      "name": "Mid Yorkshire Teaching NHS Trust",
+      "url": "https://www.midyorks.nhs.uk/board-meetings/",
+      "fetched_at": "2026-05-29T10:42:24.411485+00:00",
+      "status_code": 200,
+      "final_url": "https://www.midyorks.nhs.uk/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 5,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 16321,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXG",
+      "name": "South West Yorkshire Partnership NHS Foundation Trust",
+      "url": "https://www.southwestyorkshire.nhs.uk/about-us-2/how-were-run/our-trust-board/meeting-papers/",
+      "fetched_at": "2026-05-29T10:42:26.918554+00:00",
+      "status_code": 403,
+      "final_url": "https://www.southwestyorkshire.nhs.uk/about-us-2/how-were-run/our-trust-board/meeting-papers/",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RY6",
+      "name": "Leeds Community Healthcare NHS Trust",
+      "url": "https://leedscommunityhealthcare.nhs.uk/about-us/board-of-directors/board-papers-and-meetings/",
+      "fetched_at": "2026-05-29T10:42:28.499731+00:00",
+      "status_code": 200,
+      "final_url": "https://leedscommunityhealthcare.nhs.uk/about-us/board-of-directors/board-papers-and-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 65,
+        "year_archives": 1,
+        "meeting_subpages": 2,
+        "visible_text_len": 12520,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "TAD",
+      "name": "Bradford District Care NHS Foundation Trust",
+      "url": "https://www.bdct.nhs.uk/about-us/board-meetings-and-papers/",
+      "fetched_at": "2026-05-29T10:42:30.544609+00:00",
+      "status_code": 200,
+      "final_url": "https://www.bdct.nhs.uk/about-us/our-trust/our-board/board-meetings-and-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 89,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 11769,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "TAH",
+      "name": "Sheffield Health and Social Care NHS Foundation Trust",
+      "url": "https://www.shsc.nhs.uk/about-us/board-directors",
+      "fetched_at": "2026-05-29T10:42:32.322655+00:00",
+      "status_code": 200,
+      "final_url": "https://www.sheffieldpartnership.nhs.uk:443/about-us/board-directors",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 4327,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RCX",
+      "name": "The Queen Elizabeth Hospital King's Lynn NHS Foundation Trust",
+      "url": "https://www.qehkl.nhs.uk/about-us/meetings-of-the-board-of-directors/",
+      "fetched_at": "2026-05-29T10:42:35.212496+00:00",
+      "status_code": 200,
+      "final_url": "https://www.qehkl.nhs.uk/about-us/meetings-of-the-board-of-directors/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 11,
+        "visible_text_len": 2713,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RDE",
+      "name": "East Suffolk and North Essex NHS Foundation Trust",
+      "url": "https://www.esneft.nhs.uk/about-us/how-we-work/board-of-directors-meetings/",
+      "fetched_at": "2026-05-29T10:42:36.799652+00:00",
+      "status_code": 200,
+      "final_url": "https://www.esneft.nhs.uk/about-us/how-we-work/board-of-directors-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 8,
+        "meeting_subpages": 24,
+        "visible_text_len": 11821,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RGM",
+      "name": "Royal Papworth Hospital NHS Foundation Trust",
+      "url": "https://royalpapworth.nhs.uk/our-hospital/how-we-are-run/our-board-directors/board-directors-meetings",
+      "fetched_at": "2026-05-29T10:42:38.410835+00:00",
+      "status_code": 200,
+      "final_url": "https://royalpapworth.nhs.uk/our-hospital/how-we-are-run/our-board-directors/board-directors-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 59,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 30262,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RGN",
+      "name": "North West Anglia NHS Foundation Trust",
+      "url": "https://www.nwangliaft.nhs.uk/trust-board/",
+      "fetched_at": "2026-05-29T10:42:41.235137+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nwangliaft.nhs.uk/trust-board/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 4660,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RGP",
+      "name": "James Paget University Hospitals NHS Foundation Trust",
+      "url": "https://www.jpaget.nhs.uk/about-us/our-board-and-governors/our-board-of-directors/",
+      "fetched_at": "2026-05-29T10:42:43.004462+00:00",
+      "status_code": 200,
+      "final_url": "https://www.jpaget.nhs.uk/about-us/our-board-and-governors/our-board-of-directors/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 23372,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RGR",
+      "name": "West Suffolk NHS Foundation Trust",
+      "url": "https://www.wsh.nhs.uk/our-organisation/how-we-are-run/trust-board",
+      "fetched_at": "2026-05-29T10:42:44.661196+00:00",
+      "status_code": 200,
+      "final_url": "https://www.wsh.nhs.uk/our-organisation/how-we-are-run/trust-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 7,
+        "year_archives": 0,
+        "meeting_subpages": 2,
+        "visible_text_len": 14978,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RGT",
+      "name": "Cambridge University Hospitals NHS Foundation Trust",
+      "url": "https://www.cuh.nhs.uk/about-us/board-directors/board-of-directors-meetings/",
+      "fetched_at": "2026-05-29T10:42:46.284220+00:00",
+      "status_code": 200,
+      "final_url": "https://www.cuh.nhs.uk/about-us/board-directors/board-of-directors-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 6,
+        "meeting_subpages": 0,
+        "visible_text_len": 8236,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RM1",
+      "name": "Norfolk and Norwich University Hospitals NHS Foundation Trust",
+      "url": "https://www.nnuh.nhs.uk/about-us/trust-board-meetings/",
+      "fetched_at": "2026-05-29T10:42:48.166603+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nnuh.nhs.uk/about-us/the-trust/trust-board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 8,
+        "year_archives": 1,
+        "meeting_subpages": 11,
+        "visible_text_len": 2144,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RMY",
+      "name": "Norfolk and Suffolk NHS Foundation Trust",
+      "url": "https://www.nsft.nhs.uk/board-papers/",
+      "fetched_at": "2026-05-29T10:42:50.602847+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nsft.nhs.uk/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 104,
+        "year_archives": 2,
+        "meeting_subpages": 15,
+        "visible_text_len": 17316,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RT1",
+      "name": "Cambridgeshire and Peterborough NHS Foundation Trust",
+      "url": "https://www.cpft.nhs.uk/board-of-directors/",
+      "fetched_at": "2026-05-29T10:42:53.007112+00:00",
+      "status_code": 200,
+      "final_url": "https://www.cpft.nhs.uk/board-of-directors/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 2,
+        "year_archives": 2,
+        "meeting_subpages": 0,
+        "visible_text_len": 17182,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RY3",
+      "name": "East of England Community Health and Care NHS Trust",
+      "url": "https://eastofenglandcommunityhealthandcare.nhs.uk/about-us/our-board/board-meetings-and-reports/",
+      "fetched_at": "2026-05-29T10:43:00.655830+00:00",
+      "status_code": 200,
+      "final_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/about-us/our-board/board-meetings-and-reports/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 86,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 16017,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R0D",
+      "name": "University Hospitals Dorset NHS Foundation Trust",
+      "url": "https://www.uhd.nhs.uk/about-us/our-performance/board-papers",
+      "fetched_at": "2026-05-29T10:43:02.474884+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhd.nhs.uk/about-us/our-performance/board-papers",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 3463,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RA7",
+      "name": "University Hospitals Bristol and Weston NHS Foundation Trust",
+      "url": "https://www.uhbw.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:43:04.272431+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhbw.nhs.uk/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 7,
+        "visible_text_len": 3916,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RA9",
+      "name": "Torbay and South Devon NHS Foundation Trust",
+      "url": "https://www.torbayandsouthdevon.nhs.uk/about-us/board-meetings/",
+      "fetched_at": "2026-05-29T10:43:06.435746+00:00",
+      "status_code": 200,
+      "final_url": "https://www.torbayandsouthdevon.nhs.uk/about-us/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 11,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4248,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBD",
+      "name": "Dorset County Hospital NHS Foundation Trust",
+      "url": "https://www.dchft.nhs.uk/about-us/trust-board/",
+      "fetched_at": "2026-05-29T10:43:08.026689+00:00",
+      "status_code": 200,
+      "final_url": "https://dchft.nhs.uk/about-us/trust-board/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 2524,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RD1",
+      "name": "Royal United Hospitals Bath NHS Foundation Trust",
+      "url": "https://www.ruh.nhs.uk/about/trustboard/index.asp",
+      "fetched_at": "2026-05-29T10:43:09.977135+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ruh.nhs.uk/about/trustboard/index.asp",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 11,
+        "visible_text_len": 3728,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RDY",
+      "name": "Dorset Healthcare University NHS Foundation Trust",
+      "url": "https://www.dorsethealthcare.nhs.uk/about-us/trust-board",
+      "fetched_at": "2026-05-29T10:43:11.699001+00:00",
+      "status_code": 200,
+      "final_url": "https://www.dorsethealthcare.nhs.uk/about-us/trust-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 14,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 7756,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "REF",
+      "name": "Royal Cornwall Hospitals NHS Trust",
+      "url": "https://www.royalcornwall.nhs.uk/our-organisation/about/your-trust-board/",
+      "fetched_at": "2026-05-29T10:43:13.779539+00:00",
+      "status_code": 403,
+      "final_url": "https://www.royalcornwall.nhs.uk/our-organisation/about/your-trust-board/",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RH5",
+      "name": "Somerset NHS Foundation Trust",
+      "url": "https://www.somersetft.nhs.uk/about-us/trust-board-meetings/",
+      "fetched_at": "2026-05-29T10:43:15.341732+00:00",
+      "status_code": 200,
+      "final_url": "https://www.somersetft.nhs.uk/about-us/about-us/our-leadership-and-governance/trust-board-sub-committees/trust-board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 22,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 8401,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RH8",
+      "name": "Royal Devon University Healthcare NHS Foundation Trust",
+      "url": "https://www.royaldevon.nhs.uk/about-us/board-of-directors/board-meetings-papers-minutes/",
+      "fetched_at": "2026-05-29T10:43:18.064322+00:00",
+      "status_code": 403,
+      "final_url": "https://www.royaldevon.nhs.uk/about-us/board-of-directors/board-meetings-papers-minutes/",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RJ8",
+      "name": "Cornwall Partnership NHS Foundation Trust",
+      "url": "https://www.cornwallft.nhs.uk/board-papers/",
+      "fetched_at": "2026-05-29T10:43:19.667381+00:00",
+      "status_code": 200,
+      "final_url": "https://www.cornwallft.nhs.uk/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 12,
+        "year_archives": 0,
+        "meeting_subpages": 8,
+        "visible_text_len": 7078,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RK9",
+      "name": "University Hospitals Plymouth NHS Trust",
+      "url": "https://www.plymouthhospitals.nhs.uk/trust-board-meetings-and-papers/",
+      "fetched_at": "2026-05-29T10:43:21.722486+00:00",
+      "status_code": 200,
+      "final_url": "https://www.plymouthhospitals.nhs.uk/trust-board-meetings-and-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 34,
+        "year_archives": 0,
+        "meeting_subpages": 14,
+        "visible_text_len": 5851,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RN3",
+      "name": "Great Western Hospitals NHS Foundation Trust",
+      "url": "https://www.gwh.nhs.uk/about-us/trust-board/board-meetings/",
+      "fetched_at": "2026-05-29T10:43:23.493914+00:00",
+      "status_code": 200,
+      "final_url": "https://www.gwh.nhs.uk/about-us/trust-board/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 46,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 2918,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RNZ",
+      "name": "Salisbury NHS Foundation Trust",
+      "url": "https://www.salisbury.nhs.uk/about-us/the-trust-board/trust-board-meetings/",
+      "fetched_at": "2026-05-29T10:43:25.110768+00:00",
+      "status_code": 200,
+      "final_url": "https://www.salisbury.nhs.uk/about-us/the-trust-board/trust-board-meetings/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 2982,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTE",
+      "name": "Gloucestershire Hospitals NHS Foundation Trust",
+      "url": "https://www.gloshospitals.nhs.uk/about-us/our-board/board-papers/",
+      "fetched_at": "2026-05-29T10:43:26.750773+00:00",
+      "status_code": 200,
+      "final_url": "https://www.gloshospitals.nhs.uk/about-us/our-board/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 20,
+        "visible_text_len": 4679,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTQ",
+      "name": "Gloucestershire Health and Care NHS Foundation Trust",
+      "url": "https://www.ghc.nhs.uk/who-we-are/board-and-governors/",
+      "fetched_at": "2026-05-29T10:43:28.983400+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ghc.nhs.uk/who-we-are/board-and-governors/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 25,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 23469,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RVJ",
+      "name": "North Bristol NHS Trust",
+      "url": "https://www.nbt.nhs.uk/about-us/meet-our-board/trust-board-meetings-20252026",
+      "fetched_at": "2026-05-29T10:43:32.097425+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nbt.nhs.uk/about-us/meet-our-board/trust-board-meetings-20262027/trust-board-meetings-20252026",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 18,
+        "year_archives": 5,
+        "meeting_subpages": 0,
+        "visible_text_len": 5360,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RVN",
+      "name": "Avon and Wiltshire Mental Health Partnership NHS Trust",
+      "url": "https://www.awp.nhs.uk/about-us/publications/board-papers",
+      "fetched_at": "2026-05-29T10:43:33.731999+00:00",
+      "status_code": 200,
+      "final_url": "https://www.awp.nhs.uk/about-us/publications/board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 0,
+        "visible_text_len": 4171,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWV",
+      "name": "Devon Partnership NHS Trust",
+      "url": "https://www.dpt.nhs.uk/publications/",
+      "fetched_at": "2026-05-29T10:43:35.891159+00:00",
+      "status_code": 200,
+      "final_url": "https://www.dpt.nhs.uk/publications/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 3,
+        "meeting_subpages": 0,
+        "visible_text_len": 2626,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RPG",
+      "name": "Oxleas NHS Foundation Trust",
+      "url": "https://www.oxleas.nhs.uk/board-papers/",
+      "fetched_at": "2026-05-29T10:43:37.797788+00:00",
+      "status_code": 200,
+      "final_url": "https://oxleas.nhs.uk/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 84,
+        "year_archives": 0,
+        "meeting_subpages": 97,
+        "visible_text_len": 14748,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RQY",
+      "name": "South West London and St George's Mental Health NHS Trust",
+      "url": "https://www.stgeorges.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:43:40.162060+00:00",
+      "status_code": null,
+      "final_url": null,
+      "classification": "broken",
+      "evidence": null,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "ods_code": "RV5",
+      "name": "South London and Maudsley NHS Foundation Trust",
+      "url": "https://www.slam.nhs.uk/about-us/trust-board/",
+      "fetched_at": "2026-05-29T10:43:41.703062+00:00",
+      "status_code": 200,
+      "final_url": "https://slam.nhs.uk/trust-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 46,
+        "year_archives": 0,
+        "meeting_subpages": 32,
+        "visible_text_len": 12757,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R1H",
+      "name": "Barts Health NHS Trust",
+      "url": "https://www.bartshealth.nhs.uk/board-meetings",
+      "fetched_at": "2026-05-29T10:43:44.795724+00:00",
+      "status_code": 200,
+      "final_url": "https://www.bartshealth.nhs.uk/board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 35,
+        "year_archives": 2,
+        "meeting_subpages": 4,
+        "visible_text_len": 8567,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R1K",
+      "name": "London North West University Healthcare NHS Trust",
+      "url": "https://www.nwl-acute-provider-group.nhs.uk/publications",
+      "fetched_at": "2026-05-29T10:43:46.561185+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nwl-acute-provider-group.nhs.uk/publications",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 4,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 1873,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RAL",
+      "name": "Royal Free London NHS Foundation Trust",
+      "url": "https://www.royalfree.nhs.uk/about-us/trust-board/trust-board-meetings",
+      "fetched_at": "2026-05-29T10:43:48.309087+00:00",
+      "status_code": null,
+      "final_url": null,
+      "classification": "broken",
+      "evidence": null,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.royalfree.nhs.uk', port=443): Read timed out. (read timeout=25)"
+    },
+    {
+      "ods_code": "RAS",
+      "name": "The Hillingdon Hospitals NHS Foundation Trust",
+      "url": "https://www.nwl-acute-provider-group.nhs.uk/about-us/board-in-common",
+      "fetched_at": "2026-05-29T10:44:14.841296+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nwl-acute-provider-group.nhs.uk/about-us/board-in-common",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 31754,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RF4",
+      "name": "Barking, Havering and Redbridge University Hospitals NHS Trust",
+      "url": "https://www.bhrhospitals.nhs.uk/papers-minutes/",
+      "fetched_at": "2026-05-29T10:44:16.649835+00:00",
+      "status_code": 200,
+      "final_url": "https://www.bhrhospitals.nhs.uk/papers-minutes/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 3,
+        "visible_text_len": 5280,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RKE",
+      "name": "Whittington Health NHS Trust",
+      "url": "https://www.whittington.nhs.uk/default.asp?c=20208",
+      "fetched_at": "2026-05-29T10:44:19.007562+00:00",
+      "status_code": 200,
+      "final_url": "https://www.whittington.nhs.uk/default.asp?c=20208",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 3,
+        "meeting_subpages": 29,
+        "visible_text_len": 14633,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RQM",
+      "name": "Chelsea and Westminster Hospital NHS Foundation Trust",
+      "url": "https://www.chelwest.nhs.uk/about-us/board-of-directors/",
+      "fetched_at": "2026-05-29T10:44:21.201805+00:00",
+      "status_code": 200,
+      "final_url": "https://www.chelwest.nhs.uk/about-us/organisation/board-of-directors",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 2,
+        "visible_text_len": 33540,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RQX",
+      "name": "Homerton Healthcare NHS Foundation Trust",
+      "url": "https://www.homerton.nhs.uk/board-papers/",
+      "fetched_at": "2026-05-29T10:44:23.048985+00:00",
+      "status_code": 200,
+      "final_url": "https://www.homerton.nhs.uk/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 11,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 4343,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RRV",
+      "name": "University College London Hospitals NHS Foundation Trust",
+      "url": "https://www.uclh.nhs.uk/about-us/who-we-are/board-directors/board-meetings-and-papers",
+      "fetched_at": "2026-05-29T10:44:24.982565+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uclh.nhs.uk/about-us/who-we-are/board-directors/board-meetings-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 12,
+        "year_archives": 17,
+        "meeting_subpages": 6,
+        "visible_text_len": 69289,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYJ",
+      "name": "Imperial College Healthcare NHS Trust",
+      "url": "https://www.imperial.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:44:27.521961+00:00",
+      "status_code": 200,
+      "final_url": "https://www.imperial.nhs.uk/about-us/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 65,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4157,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RAN",
+      "name": "Royal National Orthopaedic Hospital NHS Trust",
+      "url": "https://www.rnoh.nhs.uk/about-us/corporate-information/board-meetings",
+      "fetched_at": "2026-05-29T10:44:31.175250+00:00",
+      "status_code": 200,
+      "final_url": "https://www.rnoh.nhs.uk/about-us/corporate-information/board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 34,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 9702,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RP4",
+      "name": "Great Ormond Street Hospital for Children NHS Foundation Trust",
+      "url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
+      "fetched_at": "2026-05-29T10:44:33.104455+00:00",
+      "status_code": null,
+      "final_url": null,
+      "classification": "broken",
+      "evidence": null,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "ods_code": "RRU",
+      "name": "London Ambulance Service NHS Trust",
+      "url": "https://www.londonambulance.nhs.uk/about-us/how-we-are-run/trust-board/",
+      "fetched_at": "2026-05-29T10:44:34.638590+00:00",
+      "status_code": 200,
+      "final_url": "https://www.londonambulance.nhs.uk/about-us/how-we-are-run/trust-board/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 4,
+        "meeting_subpages": 1,
+        "visible_text_len": 4283,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RAT",
+      "name": "North East London NHS Foundation Trust",
+      "url": "https://www.nelft.nhs.uk/about-us-board-papers/",
+      "fetched_at": "2026-05-29T10:44:36.487535+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nelft.nhs.uk/about-us-board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 17,
+        "year_archives": 0,
+        "meeting_subpages": 3,
+        "visible_text_len": 3891,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RKL",
+      "name": "West London NHS Trust",
+      "url": "https://www.westlondon.nhs.uk/about-us/trust-board/board-papers",
+      "fetched_at": "2026-05-29T10:44:38.677986+00:00",
+      "status_code": 200,
+      "final_url": "https://www.westlondon.nhs.uk/about-us/trust-board/board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 55,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5579,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RNK",
+      "name": "Tavistock and Portman NHS Foundation Trust",
+      "url": "https://tavistockandportman.nhs.uk/about-us/our-board/",
+      "fetched_at": "2026-05-29T10:44:40.760490+00:00",
+      "status_code": 200,
+      "final_url": "https://tavistockandportman.nhs.uk/about-us/our-board/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4153,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RV3",
+      "name": "Central and North West London NHS Foundation Trust",
+      "url": "https://www.cnwl.nhs.uk/about/planning-performance-and-reports",
+      "fetched_at": "2026-05-29T10:44:42.684447+00:00",
+      "status_code": 200,
+      "final_url": "https://www.cnwl.nhs.uk/about/planning-performance-and-reports",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 13,
+        "year_archives": 0,
+        "meeting_subpages": 5,
+        "visible_text_len": 16973,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWK",
+      "name": "East London NHS Foundation Trust",
+      "url": "https://www.elft.nhs.uk/information-about-elft/our-board/trust-board-meetings",
+      "fetched_at": "2026-05-29T10:44:44.978137+00:00",
+      "status_code": 200,
+      "final_url": "https://www.elft.nhs.uk/information-about-elft/our-board/trust-board-meetings",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5463,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R0B",
+      "name": "South Tyneside and Sunderland NHS Foundation Trust",
+      "url": "https://www.stsft.nhs.uk/about-us/our-people/our-board/board-papers",
+      "fetched_at": "2026-05-29T10:44:46.661533+00:00",
+      "status_code": 200,
+      "final_url": "https://www.stsft.nhs.uk/about-us/our-people/our-board/board-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 12266,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RNN",
+      "name": "North Cumbria Integrated Care NHS Foundation Trust",
+      "url": "https://www.ncic.nhs.uk/trust/how-we-are-run/board-meetings",
+      "fetched_at": "2026-05-29T10:44:48.546541+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ncic.nhs.uk/trust/how-we-are-run/board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 4,
+        "meeting_subpages": 0,
+        "visible_text_len": 29469,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RR7",
+      "name": "Gateshead Health NHS Foundation Trust",
+      "url": "https://www.gatesheadhealth.nhs.uk/news/resources_type/board-papers/",
+      "fetched_at": "2026-05-29T10:44:50.657309+00:00",
+      "status_code": 200,
+      "final_url": "https://www.gatesheadhealth.nhs.uk/news/resources_type/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 2,
+        "year_archives": 0,
+        "meeting_subpages": 2,
+        "visible_text_len": 3707,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTD",
+      "name": "The Newcastle upon Tyne Hospitals NHS Foundation Trust",
+      "url": "https://www.newcastle-hospitals.nhs.uk/about/board-of-directors-2/board-of-directors-papers/",
+      "fetched_at": "2026-05-29T10:44:52.334245+00:00",
+      "status_code": 200,
+      "final_url": "https://www.newcastle-hospitals.nhs.uk/about/board-of-directors-2/board-of-directors-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 12,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5338,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTF",
+      "name": "Northumbria Healthcare NHS Foundation Trust",
+      "url": "https://www.northumbria.nhs.uk/about-us/corporate-information/strategies-and-reports/board-papers",
+      "fetched_at": "2026-05-29T10:44:54.074361+00:00",
+      "status_code": 200,
+      "final_url": "https://www.northumbria.nhs.uk/about-us/corporate-information/strategies-and-reports/board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 22,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 6968,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTR",
+      "name": "South Tees Hospitals NHS Foundation Trust",
+      "url": "https://www.southtees.nhs.uk/resources/board-of-directors-agenda-1-february-2022/",
+      "fetched_at": "2026-05-29T10:44:56.048476+00:00",
+      "status_code": 200,
+      "final_url": "https://www.southtees.nhs.uk/resources/board-of-directors-agenda-1-february-2022/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 2,
+        "visible_text_len": 4373,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RVW",
+      "name": "North Tees and Hartlepool NHS Foundation Trust",
+      "url": "https://www.nth.nhs.uk/about/board-meetings/",
+      "fetched_at": "2026-05-29T10:44:58.012403+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nth.nhs.uk/resources/board-declaration-of-interest/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4452,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RX3",
+      "name": "Tees, Esk and Wear Valleys NHS Foundation Trust",
+      "url": "https://www.tewv.nhs.uk/about/board/papers-previous-board-meetings/",
+      "fetched_at": "2026-05-29T10:45:00.072306+00:00",
+      "status_code": 200,
+      "final_url": "https://www.tewv.nhs.uk/about/board/papers-previous-board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 53,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3864,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RX4",
+      "name": "Cumbria, Northumberland, Tyne and Wear NHS Foundation Trust",
+      "url": "https://www.cntw.nhs.uk/about/publications/board-papers-27-may-2015/agenda-item-10-i-trust-board-models-of-care-front-sheet/",
+      "fetched_at": "2026-05-29T10:45:01.725296+00:00",
+      "status_code": 200,
+      "final_url": "https://www.cntw.nhs.uk/about/publications/board-papers-27-may-2015/agenda-item-10-i-trust-board-models-of-care-front-sheet/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 1,
+        "visible_text_len": 2751,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXP",
+      "name": "County Durham and Darlington NHS Foundation Trust",
+      "url": "https://www.cddft.nhs.uk/about-us/corporate-information/trust-board/board-meetings-and-papers",
+      "fetched_at": "2026-05-29T10:45:03.817574+00:00",
+      "status_code": 200,
+      "final_url": "https://www.cddft.nhs.uk/about-us/corporate-information/trust-board/board-meetings-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 9,
+        "meeting_subpages": 0,
+        "visible_text_len": 6289,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R1C",
+      "name": "Solent NHS Trust",
+      "url": "https://hiowhealthcare.nhs.uk/about-us/our-board/meetings-and-papers",
+      "fetched_at": "2026-05-29T10:45:06.790547+00:00",
+      "status_code": 200,
+      "final_url": "https://hiowhealthcare.nhs.uk/about-us/our-board/meetings-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 12,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 7229,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R1F",
+      "name": "Isle of Wight NHS Trust",
+      "url": "https://www.iow.nhs.uk/about-us/our-trust-board",
+      "fetched_at": "2026-05-29T10:45:09.149033+00:00",
+      "status_code": 200,
+      "final_url": "https://www.iow.nhs.uk/about-us/our-trust-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 11,
+        "meeting_subpages": 0,
+        "visible_text_len": 7756,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RDU",
+      "name": "Frimley Health NHS Foundation Trust",
+      "url": "https://www.fhft.nhs.uk/about-us/how-we-are-run/trust-board",
+      "fetched_at": "2026-05-29T10:45:11.313506+00:00",
+      "status_code": 200,
+      "final_url": "https://www.fhft.nhs.uk/about-us/how-we-are-run/trust-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 6,
+        "meeting_subpages": 0,
+        "visible_text_len": 6065,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RHM",
+      "name": "University Hospital Southampton NHS Foundation Trust",
+      "url": "https://www.uhs.nhs.uk/about-the-trust/how-the-trust-is-run/trust-board",
+      "fetched_at": "2026-05-29T10:45:13.542819+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhs.nhs.uk/about-the-trust/how-the-trust-is-run/trust-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 6,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 1876,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RHU",
+      "name": "Portsmouth Hospitals University National Health Service Trust",
+      "url": "https://www.porthosp.nhs.uk/about-us/our-trust/our-trust-board",
+      "fetched_at": "2026-05-29T10:45:15.443496+00:00",
+      "status_code": 200,
+      "final_url": "https://www.porthosp.nhs.uk/about-us/our-trust/our-trust-board",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 3,
+        "year_archives": 3,
+        "meeting_subpages": 0,
+        "visible_text_len": 24866,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RHW",
+      "name": "Royal Berkshire NHS Foundation Trust",
+      "url": "http://www.royalberkshire.nhs.uk/about-us/governance/open-meetings",
+      "fetched_at": "2026-05-29T10:45:17.802772+00:00",
+      "status_code": 200,
+      "final_url": "https://www.royalberkshire.nhs.uk:443/about-us/governance/open-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 35,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 7697,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RN5",
+      "name": "Hampshire Hospitals NHS Foundation Trust",
+      "url": "https://www.hampshirehospitals.nhs.uk/about-us/our-publications/board-directors-papers",
+      "fetched_at": "2026-05-29T10:45:19.876170+00:00",
+      "status_code": 200,
+      "final_url": "https://www.hampshirehospitals.nhs.uk/about-us/our-publications/board-directors-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 36,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 6435,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RNU",
+      "name": "Oxford Health NHS Foundation Trust",
+      "url": "https://www.oxfordhealth.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:45:21.738452+00:00",
+      "status_code": 200,
+      "final_url": "https://oxfordhealth.nhs.uk/about-us/governance/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 7,
+        "visible_text_len": 2610,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTH",
+      "name": "Oxford University Hospitals NHS Foundation Trust",
+      "url": "https://www.ouh.nhs.uk/about/trust-board/meetings-and-papers/",
+      "fetched_at": "2026-05-29T10:45:23.545071+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ouh.nhs.uk/about/trust-board/meetings-and-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 14,
+        "meeting_subpages": 35,
+        "visible_text_len": 21367,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RW1",
+      "name": "Southern Health NHS Foundation Trust",
+      "url": "https://hiowhealthcare.nhs.uk/about-us/our-board/meetings-and-papers",
+      "fetched_at": "2026-05-29T10:45:25.396284+00:00",
+      "status_code": 200,
+      "final_url": "https://hiowhealthcare.nhs.uk/about-us/our-board/meetings-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 12,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 7229,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWX",
+      "name": "Berkshire Healthcare NHS Foundation Trust",
+      "url": "https://www.berkshirehealthcare.nhs.uk/about-us/our-board-meetings",
+      "fetched_at": "2026-05-29T10:45:27.873239+00:00",
+      "status_code": 200,
+      "final_url": "https://www.berkshirehealthcare.nhs.uk/about-us/our-board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 3,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4090,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXQ",
+      "name": "Buckinghamshire Healthcare NHS Trust",
+      "url": "https://www.buckshealthcare.nhs.uk/publications/trust-board-papers/",
+      "fetched_at": "2026-05-29T10:45:29.550008+00:00",
+      "status_code": 200,
+      "final_url": "https://www.buckshealthcare.nhs.uk/publications/trust-board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 4,
+        "meeting_subpages": 0,
+        "visible_text_len": 2616,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R0A",
+      "name": "Manchester University NHS Foundation Trust",
+      "url": "https://www.mft.nhs.uk/about-us/board-of-directors/",
+      "fetched_at": "2026-05-29T10:45:31.490117+00:00",
+      "status_code": 200,
+      "final_url": "https://mft.nhs.uk/board-meetings/board-of-directors-meeting/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 9838,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBV",
+      "name": "The Christie NHS Foundation Trust",
+      "url": "https://www.christie.nhs.uk/about-us/the-foundation-trust/about-the-trust/board-of-directors-meetings",
+      "fetched_at": "2026-05-29T10:45:33.759060+00:00",
+      "status_code": 200,
+      "final_url": "https://www.christie.nhs.uk/about-us/the-foundation-trust/about-the-trust/board-of-directors-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 31,
+        "year_archives": 0,
+        "meeting_subpages": 8,
+        "visible_text_len": 15453,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RM3",
+      "name": "Northern Care Alliance NHS Foundation Trust",
+      "url": "https://www.northerncarealliance.nhs.uk/about-us/board-directors/board-dates-and-papers",
+      "fetched_at": "2026-05-29T10:45:35.449706+00:00",
+      "status_code": 200,
+      "final_url": "https://www.northerncarealliance.nhs.uk/about-us/board-directors/board-dates-and-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 9802,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RMC",
+      "name": "Bolton NHS Foundation Trust",
+      "url": "https://www.boltonft.nhs.uk/about-us/our-board/",
+      "fetched_at": "2026-05-29T10:45:37.892983+00:00",
+      "status_code": 200,
+      "final_url": "https://www.boltonft.nhs.uk/about-us/our-board/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4423,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RMP",
+      "name": "Tameside and Glossop Integrated Care NHS Foundation Trust",
+      "url": "https://tamesideandglossopicft.nhs.uk/about-us/trust-oversight/trust-board",
+      "fetched_at": "2026-05-29T10:45:39.564997+00:00",
+      "status_code": 200,
+      "final_url": "https://tamesideandglossopicft.nhs.uk/about-us/trust-oversight/trust-board",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 20187,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RRF",
+      "name": "Wrightington, Wigan and Leigh Teaching Hospitals NHS Foundation Trust",
+      "url": "https://www.wwl.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:45:42.052519+00:00",
+      "status_code": 200,
+      "final_url": "https://www.wwl.nhs.uk/board-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 10065,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RT2",
+      "name": "Pennine Care NHS Foundation Trust",
+      "url": "https://www.penninecare.nhs.uk/boardmeetings",
+      "fetched_at": "2026-05-29T10:45:44.139415+00:00",
+      "status_code": 200,
+      "final_url": "https://www.penninecare.nhs.uk/boardmeetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 113,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 8946,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWJ",
+      "name": "Stockport NHS Foundation Trust",
+      "url": "https://www.stockport.nhs.uk/about/board/board-meetings/",
+      "fetched_at": "2026-05-29T10:45:45.988322+00:00",
+      "status_code": 200,
+      "final_url": "https://www.stockport.nhs.uk/about/board/board-meetings/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 2,
+        "visible_text_len": 3458,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXV",
+      "name": "Greater Manchester Mental Health NHS Foundation Trust",
+      "url": "https://www.gmmh.nhs.uk/board-meetings/",
+      "fetched_at": "2026-05-29T10:45:47.601599+00:00",
+      "status_code": 200,
+      "final_url": "https://www.gmmh.nhs.uk/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 31,
+        "year_archives": 0,
+        "meeting_subpages": 8,
+        "visible_text_len": 26159,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "R1L",
+      "name": "Essex Partnership University NHS Foundation Trust",
+      "url": "https://eput.nhs.uk/about-us/board-of-directors/board-meetings/board-papers/",
+      "fetched_at": "2026-05-29T10:45:49.886541+00:00",
+      "status_code": 200,
+      "final_url": "https://www.eput.nhs.uk/about/board/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 28,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3416,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RAJ",
+      "name": "Mid and South Essex NHS Foundation Trust",
+      "url": "https://www.mse.nhs.uk/board-meetings/",
+      "fetched_at": "2026-05-29T10:45:52.150509+00:00",
+      "status_code": 200,
+      "final_url": "https://www.mse.nhs.uk/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 5,
+        "meeting_subpages": 0,
+        "visible_text_len": 4636,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RC9",
+      "name": "Bedfordshire Hospitals NHS Foundation Trust",
+      "url": "https://www.bedfordshirehospitals.nhs.uk/corporate-information/board-meetings-and-directors/board-meetings/",
+      "fetched_at": "2026-05-29T10:45:54.053562+00:00",
+      "status_code": 200,
+      "final_url": "https://www.bedfordshirehospitals.nhs.uk/corporate-information/board-meetings-and-directors/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 21,
+        "year_archives": 0,
+        "meeting_subpages": 4,
+        "visible_text_len": 6607,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RD8",
+      "name": "Milton Keynes University Hospital NHS Foundation Trust",
+      "url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
+      "fetched_at": "2026-05-29T10:45:56.114250+00:00",
+      "status_code": 403,
+      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RQW",
+      "name": "The Princess Alexandra Hospital NHS Trust",
+      "url": "https://www.pah.nhs.uk/about/board/board-papers/",
+      "fetched_at": "2026-05-29T10:45:57.697733+00:00",
+      "status_code": 200,
+      "final_url": "https://www.pah.nhs.uk/about/board/board-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 46,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3274,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWG",
+      "name": "West Hertfordshire Teaching Hospitals NHS Trust",
+      "url": "https://www.westhertshospitals.nhs.uk/about-us/our-board/board-meetings",
+      "fetched_at": "2026-05-29T10:45:59.352024+00:00",
+      "status_code": 200,
+      "final_url": "https://www.westhertshospitals.nhs.uk/about-us/our-board/board-meetings",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5475,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWH",
+      "name": "East and North Hertfordshire NHS Trust",
+      "url": "https://www.enherts-tr.nhs.uk/gp-professionals/publications/board-papers-september-2023/",
+      "fetched_at": "2026-05-29T10:46:01.503949+00:00",
+      "status_code": 200,
+      "final_url": "https://www.enherts-tr.nhs.uk/gp-professionals/publications/board-papers-september-2023/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 2,
+        "visible_text_len": 6161,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWR",
+      "name": "Hertfordshire Partnership University NHS Foundation Trust",
+      "url": "https://www.hpft.nhs.uk/about-us/corporate-information-and-governance/",
+      "fetched_at": "2026-05-29T10:46:03.488806+00:00",
+      "status_code": 403,
+      "final_url": "https://www.hpft.nhs.uk/about-us/corporate-information-and-governance/",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RY4",
+      "name": "Hertfordshire Community NHS Trust",
+      "url": "https://www.hct.nhs.uk/our-board/",
+      "fetched_at": "2026-05-29T10:46:05.105400+00:00",
+      "status_code": 200,
+      "final_url": "https://www.hct.nhs.uk/our-board/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 13,
+        "year_archives": 0,
+        "meeting_subpages": 97,
+        "visible_text_len": 10398,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBL",
+      "name": "Wirral University Teaching Hospital NHS Foundation Trust",
+      "url": "https://www.wuth.nhs.uk/about-us/who-we-are/board-meetings/",
+      "fetched_at": "2026-05-29T10:46:10.646211+00:00",
+      "status_code": 200,
+      "final_url": "https://www.wuth.nhs.uk/about-us/who-we-are/board-meetings/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 45,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 18756,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBN",
+      "name": "Mersey and West Lancashire Teaching Hospitals NHS Trust",
+      "url": "https://www.merseywestlancs.nhs.uk/trust-board-meetings-and-papers",
+      "fetched_at": "2026-05-29T10:46:13.443584+00:00",
+      "status_code": 200,
+      "final_url": "https://www.merseywestlancs.nhs.uk/trust-board-meetings-and-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 7,
+        "meeting_subpages": 1,
+        "visible_text_len": 6435,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBQ",
+      "name": "Liverpool Heart and Chest Hospital NHS Foundation Trust",
+      "url": "https://www.lhch.nhs.uk/board-of-directors-meetings",
+      "fetched_at": "2026-05-29T10:46:15.200020+00:00",
+      "status_code": 200,
+      "final_url": "https://www.lhch.nhs.uk/board-of-directors-meetings",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 2,
+        "visible_text_len": 14027,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBS",
+      "name": "Alder Hey Children's NHS Foundation Trust",
+      "url": "https://www.alderhey.nhs.uk/about-us/trust-board/",
+      "fetched_at": "2026-05-29T10:46:17.275477+00:00",
+      "status_code": 200,
+      "final_url": "https://www.alderhey.nhs.uk/about/publications/trust-board-meeting-10th-april-2018/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 1,
+        "meeting_subpages": 2,
+        "visible_text_len": 3240,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RBT",
+      "name": "Mid Cheshire Hospitals NHS Foundation Trust",
+      "url": "https://www.mcht.nhs.uk/about-us/board-directors/board-papers-and-minutes",
+      "fetched_at": "2026-05-29T10:46:19.467003+00:00",
+      "status_code": 200,
+      "final_url": "https://www.mcht.nhs.uk/about-us/board-directors/board-papers-and-minutes",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 3,
+        "meeting_subpages": 0,
+        "visible_text_len": 7265,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "REM",
+      "name": "Liverpool University Hospitals NHS Foundation Trust",
+      "url": "https://www.uhliverpool.nhs.uk/about-us/meet-our-board/trust-board-meetings",
+      "fetched_at": "2026-05-29T10:46:21.728352+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhliverpool.nhs.uk/about-us/meet-our-board/trust-board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 3,
+        "meeting_subpages": 0,
+        "visible_text_len": 8390,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "REN",
+      "name": "The Clatterbridge Cancer Centre NHS Foundation Trust",
+      "url": "https://www.clatterbridgecc.nhs.uk/about-us/how-were-run/trust-board/board-meetings",
+      "fetched_at": "2026-05-29T10:46:23.894847+00:00",
+      "status_code": 200,
+      "final_url": "https://www.clatterbridgecc.nhs.uk/about-us/how-were-run/trust-board/board-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 3,
+        "meeting_subpages": 0,
+        "visible_text_len": 8419,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "REP",
+      "name": "Liverpool Women's NHS Foundation Trust",
+      "url": "https://www.liverpoolwomens.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:46:26.002457+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhliverpool.nhs.uk/our-hospitals/liverpool-womens-university-hospital",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5095,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RET",
+      "name": "The Walton Centre NHS Foundation Trust",
+      "url": "https://www.thewaltoncentre.nhs.uk/trust-board/",
+      "fetched_at": "2026-05-29T10:46:28.135732+00:00",
+      "status_code": 200,
+      "final_url": "https://www.thewaltoncentre.nhs.uk/trust-board/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 64,
+        "year_archives": 1,
+        "meeting_subpages": 0,
+        "visible_text_len": 13174,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJN",
+      "name": "East Cheshire NHS Trust",
+      "url": "https://www.eastcheshire.nhs.uk/trust/board/reports-and-meetings/agm",
+      "fetched_at": "2026-05-29T10:46:30.076536+00:00",
+      "status_code": 200,
+      "final_url": "https://trust.eastcheshire.nhs.uk/board/reports-and-meetings/agm",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 2777,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RJR",
+      "name": "Countess of Chester Hospital NHS Foundation Trust",
+      "url": "https://www.coch.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:46:32.174579+00:00",
+      "status_code": 200,
+      "final_url": "https://www.coch.nhs.uk/about-us/board-papers/",
+      "classification": "needs_playwright",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 715,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RTX",
+      "name": "University Hospitals of Morecambe Bay NHS Foundation Trust",
+      "url": "https://www.uhmb.nhs.uk/our-trust/trust-board-and-council-governor-meetings",
+      "fetched_at": "2026-05-29T10:46:34.040441+00:00",
+      "status_code": 200,
+      "final_url": "https://www.uhmb.nhs.uk/our-trust/trust-board-and-council-governor-meetings",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 17,
+        "year_archives": 1,
+        "meeting_subpages": 42,
+        "visible_text_len": 26602,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RW4",
+      "name": "Mersey Care NHS Foundation Trust",
+      "url": "https://www.merseycare.nhs.uk/board-papers",
+      "fetched_at": "2026-05-29T10:46:36.491564+00:00",
+      "status_code": 200,
+      "final_url": "https://www.merseycare.nhs.uk/board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 47,
+        "year_archives": 5,
+        "meeting_subpages": 1,
+        "visible_text_len": 26952,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RW5",
+      "name": "Lancashire and South Cumbria NHS Foundation Trust",
+      "url": "https://www.lscft.nhs.uk/about-us/board/board-papers",
+      "fetched_at": "2026-05-29T10:46:38.752077+00:00",
+      "status_code": 200,
+      "final_url": "https://www.lscft.nhs.uk/about-us/board/board-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4843,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RWW",
+      "name": "Warrington and Halton Teaching Hospitals NHS Foundation Trust",
+      "url": "https://whh.nhs.uk/about-us/how-we-work/board-meetings-and-papers/",
+      "fetched_at": "2026-05-29T10:46:41.347915+00:00",
+      "status_code": 200,
+      "final_url": "https://whh.nhs.uk/about-us/how-we-work/board-meetings-and-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 31,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5368,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXA",
+      "name": "Cheshire and Wirral Partnership NHS Foundation Trust",
+      "url": "https://www.cwp.nhs.uk/about-us/our-board-and-governors/",
+      "fetched_at": "2026-05-29T10:46:43.003135+00:00",
+      "status_code": 403,
+      "final_url": "https://www.cwp.nhs.uk/about-us/our-board-and-governors/",
+      "classification": "broken",
+      "evidence": null,
+      "error": "HTTP 403"
+    },
+    {
+      "ods_code": "RXL",
+      "name": "Blackpool Teaching Hospitals NHS Foundation Trust",
+      "url": "https://www.blackpoolteachinghospitals.nhs.uk/about-us/meet-board/board-meetings-public",
+      "fetched_at": "2026-05-29T10:46:44.584134+00:00",
+      "status_code": 200,
+      "final_url": "https://www.blackpoolteachinghospitals.nhs.uk/about-us/meet-board/board-meetings-public",
+      "classification": "needs_playwright",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 0,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXN",
+      "name": "Lancashire Teaching Hospitals NHS Foundation Trust",
+      "url": "https://www.lancsteachinghospitals.nhs.uk/board-of-directors",
+      "fetched_at": "2026-05-29T10:46:46.143760+00:00",
+      "status_code": 200,
+      "final_url": "https://www.lancsteachinghospitals.nhs.uk/board-of-directors",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 2,
+        "meeting_subpages": 0,
+        "visible_text_len": 23212,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RXR",
+      "name": "East Lancashire Hospitals NHS Trust",
+      "url": "https://elht.nhs.uk/about-us/board-meetings-including-agenda-and-papers",
+      "fetched_at": "2026-05-29T10:46:48.074660+00:00",
+      "status_code": 200,
+      "final_url": "https://elht.nhs.uk/about-us/board-meetings-including-agenda-and-papers",
+      "classification": "needs_playwright",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 0,
+        "mentions_board_papers": false
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RY2",
+      "name": "Bridgewater Community Healthcare NHS Foundation Trust",
+      "url": "https://bridgewater.nhs.uk/about-us/how-we-work/board-meetings-and-papers/",
+      "fetched_at": "2026-05-29T10:46:49.647478+00:00",
+      "status_code": 200,
+      "final_url": "https://bridgewater.nhs.uk/about-us/how-we-work/board-meetings-and-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 31,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5368,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RY7",
+      "name": "Wirral Community Health and Care NHS Foundation Trust",
+      "url": "https://www.wchc.nhs.uk/about/board-governors/board-meetings-papers/",
+      "fetched_at": "2026-05-29T10:46:51.299855+00:00",
+      "status_code": 200,
+      "final_url": "https://www.wchc.nhs.uk/about/board-governors/board-meetings-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 9,
+        "visible_text_len": 2610,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RX6",
+      "name": "North East Ambulance Service NHS Foundation Trust",
+      "url": "https://www.neas.nhs.uk/about-us/trust-board",
+      "fetched_at": "2026-05-29T10:46:52.905290+00:00",
+      "status_code": 200,
+      "final_url": "https://www.neas.nhs.uk/about-us/trust-board",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 5907,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RX7",
+      "name": "North West Ambulance Service NHS Trust",
+      "url": "https://www.nwas.nhs.uk/publications/board-papers-26-april-2023/",
+      "fetched_at": "2026-05-29T10:46:54.944319+00:00",
+      "status_code": 200,
+      "final_url": "https://www.nwas.nhs.uk/publications/board-papers-26-april-2023/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 2,
+        "visible_text_len": 6008,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RX8",
+      "name": "Yorkshire Ambulance Service NHS Trust",
+      "url": "https://www.yas.nhs.uk/about-us/the-trust-board/",
+      "fetched_at": "2026-05-29T10:46:56.809012+00:00",
+      "status_code": 200,
+      "final_url": "https://www.yas.nhs.uk/about-us/the-trust-board/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 17265,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RX9",
+      "name": "East Midlands Ambulance Service NHS Trust",
+      "url": "https://www.emas.nhs.uk/about-us/trust-board/next-board-meeting/archive-board-papers",
+      "fetched_at": "2026-05-29T10:46:58.906660+00:00",
+      "status_code": 200,
+      "final_url": "https://www.emas.nhs.uk/about-us/trust-board/next-board-meeting/archive-board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 4,
+        "meeting_subpages": 0,
+        "visible_text_len": 4010,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYA",
+      "name": "West Midlands Ambulance Service University NHS Foundation Trust",
+      "url": "https://www.wmas.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:47:00.929849+00:00",
+      "status_code": 200,
+      "final_url": "https://www.wmas.nhs.uk/about-us/publications/?category=board-papers",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 1,
+        "meeting_subpages": 20,
+        "visible_text_len": 4446,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYC",
+      "name": "East of England Ambulance Service NHS Trust",
+      "url": "https://www.eastamb.nhs.uk/about-us/trust-board/public-board-meetings-and-papers",
+      "fetched_at": "2026-05-29T10:47:03.113409+00:00",
+      "status_code": 200,
+      "final_url": "https://www.eastamb.nhs.uk/about-us/trust-board/public-board-meetings-and-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3842,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYD",
+      "name": "South East Coast Ambulance Service NHS Foundation Trust",
+      "url": "https://www.secamb.nhs.uk/about-us/board-papers/",
+      "fetched_at": "2026-05-29T10:47:04.850168+00:00",
+      "status_code": 200,
+      "final_url": "https://www.secamb.nhs.uk/document/board-papers-11-january-2018-pdf/",
+      "classification": "papers_partial",
+      "evidence": {
+        "dated_pdfs": 1,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 3993,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYE",
+      "name": "South Central Ambulance Service NHS Foundation Trust",
+      "url": "https://www.scas.nhs.uk/about-us/board-of-directors/",
+      "fetched_at": "2026-05-29T10:47:07.105636+00:00",
+      "status_code": 200,
+      "final_url": "https://www.scas.nhs.uk/document/board-of-directors-in-public-meeting-papers-26-september-2024/",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 2440,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "RYF",
+      "name": "South Western Ambulance Service NHS Foundation Trust",
+      "url": "https://www.swast.nhs.uk/our-board/board-meeting-schedule-and-public-papers",
+      "fetched_at": "2026-05-29T10:47:10.848767+00:00",
+      "status_code": 200,
+      "final_url": "https://www.swast.nhs.uk/our-board/board-meeting-schedule-and-public-papers",
+      "classification": "no_papers_visible",
+      "evidence": {
+        "dated_pdfs": 0,
+        "year_archives": 0,
+        "meeting_subpages": 0,
+        "visible_text_len": 4561,
+        "mentions_board_papers": true
+      },
+      "error": null
+    },
+    {
+      "ods_code": "G6V2S",
+      "name": "North London NHS Foundation Trust",
+      "url": "https://www.northlondonmentalhealth.nhs.uk/meetings-and-papers/",
+      "fetched_at": "2026-05-29T10:47:15.056258+00:00",
+      "status_code": 200,
+      "final_url": "https://www.northlondonmentalhealth.nhs.uk/meetings-and-papers/",
+      "classification": "papers_found",
+      "evidence": {
+        "dated_pdfs": 38,
+        "year_archives": 0,
+        "meeting_subpages": 4,
+        "visible_text_len": 7248,
+        "mentions_board_papers": true
+      },
+      "error": null
+    }
+  ]
+}

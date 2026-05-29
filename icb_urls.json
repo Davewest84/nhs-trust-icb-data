@@ -58,7 +58,21 @@
     "url_root": "https://northeastnorthcumbria.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": null
+    "notes": null,
+    "access_notes": "Strategy: meetings-and-agendas/integrated-care-board/ lists upcoming ICB Board dates and a 'Previous Board meetings' link; each past meeting has its own sub-page with agenda/papers. Filter to ICB Board (skip ICP / committees). Pattern C; observe via nencicb-sun.icbcorporateoffice@nhs.net.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "ICB Board",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "ICP",
+      "committee",
+      "Minutes only"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Landing lists ICB Board dates; papers on per-meeting sub-pages via 'Previous Board meetings'."
   },
   {
     "ods_code": "QOQ",
@@ -73,7 +87,26 @@
     "url_root": "https://humberandnorthyorkshire.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": null
+    "notes": null,
+    "access_notes": "Strategy: landing lists per-meeting entries (39 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Combined Pack",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=2, meeting_subpages=39."
   },
   {
     "ods_code": "QF7",
@@ -103,7 +136,26 @@
     "url_root": "https://www.westyorkshire.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": "Papers hosted on wypartnership.co.uk; place-level papers also published separately by each of the 5 places (Wakefield, Leeds, Bradford, Calderdale, Kirklees)"
+    "notes": "Papers hosted on wypartnership.co.uk; place-level papers also published separately by each of the 5 places (Wakefield, Leeds, Bradford, Calderdale, Kirklees)",
+    "access_notes": "Strategy: landing lists per-meeting entries (27 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Combined Pack",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=2, meeting_subpages=27."
   },
   {
     "ods_code": "QHL",
@@ -118,7 +170,25 @@
     "url_root": "https://www.birminghamsolihull.icb.nhs.uk",
     "cluster_id": "BSOL-BC",
     "cluster_meeting_url": "https://www.birminghamsolihull.icb.nhs.uk/about-us/our-committees/integrated-care-board/integrated-care-board-papers/",
-    "notes": "Joint ICB Cluster Board with Black Country (QUA); joint pack hosted under the B&S domain"
+    "notes": "Joint ICB Cluster Board with Black Country (QUA); joint pack hosted under the B&S domain",
+    "access_notes": "Strategy: landing lists year archives (5 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=5, meeting_subpages=0."
   },
   {
     "ods_code": "QUA",
@@ -163,7 +233,26 @@
     "url_root": "https://www.hwics.org.uk",
     "cluster_id": "CW-HW",
     "cluster_meeting_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-    "notes": "Joint Board Meeting in Common with Coventry and Warwickshire (QWU); papers hosted on both happyhealthylives.uk and hwics.org.uk"
+    "notes": "Joint Board Meeting in Common with Coventry and Warwickshire (QWU); papers hosted on both happyhealthylives.uk and hwics.org.uk",
+    "access_notes": "Strategy: /meetings/board-papers is correct and working — it lists the current meeting's papers as direct per-agenda-item PDF/spreadsheet downloads (e.g. 20 May 2026: agenda, CEO report, finance, risk), with 'Past Board Papers' for archives. Static parser undercounts because items load by agenda number. Pattern A/C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "agenda",
+      "CEO report",
+      "Board papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Working page showing 20 May 2026 papers as per-item PDFs; static parser undercounted (false no_papers_visible)."
   },
   {
     "ods_code": "QJ2",
@@ -193,7 +282,26 @@
     "url_root": "https://lincolnshire.icb.nhs.uk",
     "cluster_id": "DLN",
     "cluster_meeting_url": "https://notts.icb.nhs.uk/about-us/our-icb-board/",
-    "notes": "DLN cluster; transformation fund page at https://lincolnshire.icb.nhs.uk/transformation-fund — note the April 2026 walk-back text"
+    "notes": "DLN cluster; transformation fund page at https://lincolnshire.icb.nhs.uk/transformation-fund — note the April 2026 walk-back text",
+    "access_notes": "Strategy: landing surfaces board papers directly (mix of dated PDFs and/or year links). Static fetch works. Prefer the main combined board pack; filter observer notes and Q&A. Pattern A/B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=1, meeting_subpages=6."
   },
   {
     "ods_code": "QT1",
@@ -290,7 +398,26 @@
     "url_root": "https://www.centraleast.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": "Formed 1 April 2026 from merger of Bedfordshire, Luton and Milton Keynes (QHG, bedfordshirelutonandmiltonkeynes.icb.nhs.uk), Cambridgeshire and Peterborough (QUE, cpics.org.uk), and Hertfordshire and West Essex (QM7, hertsandwestessex.ics.nhs.uk). Predecessor sites still host historical packs."
+    "notes": "Formed 1 April 2026 from merger of Bedfordshire, Luton and Milton Keynes (QHG, bedfordshirelutonandmiltonkeynes.icb.nhs.uk), Cambridgeshire and Peterborough (QUE, cpics.org.uk), and Hertfordshire and West Essex (QM7, hertsandwestessex.ics.nhs.uk). Predecessor sites still host historical packs.",
+    "access_notes": "Strategy: landing shows a weak board-papers signal to a static parser (few dated PDFs found). Papers are likely present but loaded via JS or one click into a 'papers'/'meetings' sub-page. Confirm by following the board-papers / meetings link; prefer the main combined pack. Pattern A/C — review on next pass.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Agenda and Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_partial",
+    "validation_notes": "Validator (static) weak signal: dated_pdfs=0, year_archives=0, meeting_subpages=1; review."
   },
   {
     "ods_code": "D7T5G",
@@ -327,7 +454,26 @@
     "url_root": "https://www.norfolkandsuffolk.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": "Formed 1 April 2026 from Norfolk and Waveney (QMM, improvinglivesnw.org.uk) plus the Suffolk parts of former Suffolk and North East Essex (QJG, suffolkandnortheastessex.icb.nhs.uk). Predecessor sites still host historical packs."
+    "notes": "Formed 1 April 2026 from Norfolk and Waveney (QMM, improvinglivesnw.org.uk) plus the Suffolk parts of former Suffolk and North East Essex (QJG, suffolkandnortheastessex.icb.nhs.uk). Predecessor sites still host historical packs.",
+    "access_notes": "Strategy: landing surfaces board papers directly (mix of dated PDFs and/or year links). Static fetch works. Prefer the main combined board pack; filter observer notes and Q&A. Pattern A/B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=0, meeting_subpages=8."
   },
   {
     "ods_code": "QMF",
@@ -375,7 +521,25 @@
     "url_root": "https://www.southwestlondon.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": null
+    "notes": null,
+    "access_notes": "Strategy: landing lists year archives (3 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board Papers",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=3, meeting_subpages=3."
   },
   {
     "ods_code": "Z9B2Z",
@@ -425,7 +589,26 @@
     "url_root": "https://www.kentandmedway.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": "ICB website board pack links have historically been broken; mirrors sometimes available via shepwayvox.org"
+    "notes": "ICB website board pack links have historically been broken; mirrors sometimes available via shepwayvox.org",
+    "access_notes": "Strategy: landing lists per-meeting entries (18 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and Papers",
+      "Combined Pack",
+      "Public Board Pack"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=0, meeting_subpages=18."
   },
   {
     "ods_code": "S0E4D",
@@ -462,7 +645,26 @@
     "url_root": "https://www.surreysussex.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": "Formed 1 April 2026 from Surrey Heartlands (QXU), Sussex (QNX, sussex.ics.nhs.uk) and the Surrey parts of former Frimley (QNQ). Predecessor sites still host historical packs."
+    "notes": "Formed 1 April 2026 from Surrey Heartlands (QXU), Sussex (QNX, sussex.ics.nhs.uk) and the Surrey parts of former Frimley (QNQ). Predecessor sites still host historical packs.",
+    "access_notes": "Strategy: dated board-pack PDFs listed directly on the landing page (17 found this run), one per meeting. Static fetch works. Prefer 'Public Board Pack' / 'Board Papers' / 'Agenda and Papers'; filter observer notes, Q&A and addendums. Pattern A.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=17, year_archives=0, meeting_subpages=0."
   },
   {
     "ods_code": "QOX",
@@ -493,7 +695,26 @@
     "url_root": "https://nhsdorset.nhs.uk",
     "cluster_id": "BSW-DOR-SOM",
     "cluster_meeting_url": null,
-    "notes": "Loose cluster with BSW (QOX) and Somerset (QSL); each has its own board"
+    "notes": "Loose cluster with BSW (QOX) and Somerset (QSL); each has its own board",
+    "access_notes": "Strategy: landing surfaces board papers directly (mix of dated PDFs and/or year links). Static fetch works. Prefer the main combined board pack; filter observer notes and Q&A. Pattern A/B.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Pack",
+      "Board Papers",
+      "Agenda and Papers"
+    ],
+    "exclude_patterns": [
+      "Observer notes",
+      "Q&A",
+      "ICP Board",
+      "Minutes only",
+      "Addendum",
+      "Part B",
+      "Confidential"
+    ],
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "Validator (static) found dated_pdfs=5, year_archives=1, meeting_subpages=0."
   },
   {
     "ods_code": "QSL",
