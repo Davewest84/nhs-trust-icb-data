@@ -72,7 +72,81 @@ Steps:
         BNSSG-GLO, SW-PEN), joint board pack may live on a partner ICB's
         domain — that's expected.
    c. If the top candidate doesn't verify, try the next one (max 3).
-   d. If none verify, leave the URL as-is and note in the commit message.
+   d. If none verify, ESCALATE — see step 3a below.
+
+3a. ESCALATE (when 3d applies — no candidate verified after 3 single-shot tries).
+    DO NOT leave as-is. Spawn a Task sub-agent (general-purpose subagent_type)
+    per stubborn org. Multiple sub-agents can run concurrently — send them in
+    a single message with multiple Task tool uses to parallelise. Each agent
+    gets this prompt template:
+
+      "You're an investigative URL-finder for NHS {trust|ICB} board papers.
+       Find the LIVE board papers archive URL for {org_name}. Their homepage
+       is {homepage}.
+
+       The URL DB currently has {current_url} — we've confirmed it doesn't
+       lead to the archive ({failure_mode_summary}).
+
+       Use any tools available: WebFetch (uses different infra than direct
+       requests, may bypass WAF where requests gets 403), WebSearch for
+       Google site: queries, Playwright if needed. Navigate the site like
+       a human would. Try in order:
+        1. WebFetch the homepage; read the main nav for 'About / Trust Board
+           / Meetings / Publications / Governance'.
+        2. WebFetch the URL DB's URL and look for any link to 'board meetings',
+           'papers', 'archive', 'agenda', 'previous meetings'.
+        3. Google searches: 'site:{domain} board papers' and '{org name} board
+           papers 2026'.
+        4. Common URL pattern probes: /board-papers/, /publications/, /our-board/,
+           /publications_type/board-papers/, /publications/board-papers/.
+        5. The trust's publication scheme (FOI requirement — usually links to
+           board papers).
+        6. Wayback Machine for snapshots of the archive page.
+        7. HSJ search API for past coverage that may cite the URL:
+           https://www.hsj.co.uk/searchajax?qkeyword={org}+board+papers&PageSize=10&SortOrder=1
+        8. Whether the trust uses a SEPARATE document-library subdomain
+           (eg doclibrary-rcht.cornwall.nhs.uk pattern).
+
+       FAILURE IS NOT AN OPTION. Every NHS trust publishes board papers
+       publicly (Health and Social Care Act). Don't give up after one or
+       two attempts. The papers exist; find them.
+
+       Return:
+        1. The correct landing URL for the board papers archive.
+        2. A description of how a crawler should navigate from that landing
+           URL to current dated board meetings (eg 'click year dropdown',
+           'follow per-meeting sub-pages', '3-level nav: landing→year→
+           meeting→PDFs').
+        3. At least 2 example URLs of specific 2025-2026 meeting PDFs or
+           pages you confirmed exist.
+        4. Notes on quirks: JS-rendered? Anti-bot still active? Cookie
+           required? Two-domain split? Filename patterns inconsistent?
+           Multiple PDFs per meeting (which to prefer)? Cluster board?"
+
+    For each sub-agent's findings:
+      - Set `url` to the correct landing URL (if changed from current).
+      - Set `access_notes` to a single paragraph synthesising the strategy
+        from the agent's crawl description, using the Appendix templates as
+        starting points.
+      - Set `pack_pattern_hints` from sample PDF title patterns.
+      - Set `exclude_patterns` from any 'avoid these' notes (eg FOI mixed in,
+        observer notes, ICP not ICB, declarations of interest, Q&A only).
+      - Set `needs_playwright` true iff the sub-agent confirms static fetch
+        fails on the archive.
+      - Set `last_validated` to today; `validation_status` based on what the
+        agent confirmed; `validation_notes` summarising the evidence.
+
+    Only resort to "leave as-is" when even sub-agent escalation can't find
+    a working archive after exhausting all eight angles. That should be rare;
+    if it happens for more than ~2% of escalated orgs, surface as a concern
+    in the commit message — it would suggest a systematic blocker (eg the
+    org has stopped publishing, which would itself be a newsworthy lead for
+    HSJ).
+
+    *(Added 2026-05-29 after a one-off pilot recovery for the risk-tracker:
+    parallel agent escalation took recoverable orgs from 9/18 to 17/18 where
+    single-shot search-and-verify had given up. Bake in the more aggressive
+    pattern as the default.)*
 
 3b. For each org patched in step 3 AND each org classified `needs_playwright`
     in step 1b AND each org in this week's rotation batch (see step 4) —

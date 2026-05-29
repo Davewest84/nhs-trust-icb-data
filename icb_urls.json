@@ -12,7 +12,14 @@
     "url_root": "https://www.cheshireandmerseyside.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": null
+    "notes": null,
+    "access_notes": "Strategy: 3-LEVEL navigation. Landing \u2192 year sub-page at /{YYYY}/ (eg /2026/) \u2192 per-meeting sub-page at /{DD-month-YYYY}/ (lowercase month, hyphen-separated, eg /29-january-2026/) \u2192 PDFs in /media/{8-char-hash}/{filename}.pdf. Multiple PDFs per meeting (full pack + Q&A + presentations) \u2014 grab all. Filenames are NOT predictable (some DDMMYY, some monthYYYY, some YYYYMM) \u2014 must scrape from the DOM. Upcoming meetings sit at /get-involved/upcoming-meetings-and-events/... until archived. C&M ICB publishes standalone (not a joint cluster board, despite regional cluster framing). System Primary Care Committee PDFs are a SEPARATE committee \u2014 exclude. Not JS-rendered; static HTML throughout.",
+    "needs_playwright": false,
+    "pack_pattern_hints": "full pack; agenda and papers; combined",
+    "exclude_patterns": "questions and responses; presentations; System Primary Care Committee; Committee",
+    "last_validated": "2026-05-29",
+    "validation_status": "papers_found",
+    "validation_notes": "16 in-window meetings via 3-level drill-down. May 2026 and March 2026 packs (4.3MB + 5.3MB) both have BAF sections \u2014 scores 87 and 367."
   },
   {
     "ods_code": "QOP",
@@ -171,24 +178,13 @@
     "cluster_id": "BSOL-BC",
     "cluster_meeting_url": "https://www.birminghamsolihull.icb.nhs.uk/about-us/our-committees/integrated-care-board/integrated-care-board-papers/",
     "notes": "Joint ICB Cluster Board with Black Country (QUA); joint pack hosted under the B&S domain",
-    "access_notes": "Strategy: landing lists year archives (5 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
-    "needs_playwright": false,
-    "pack_pattern_hints": [
-      "Board Papers",
-      "Public Board Pack"
-    ],
-    "exclude_patterns": [
-      "Observer notes",
-      "Q&A",
-      "ICP Board",
-      "Minutes only",
-      "Addendum",
-      "Part B",
-      "Confidential"
-    ],
+    "access_notes": "Strategy: landing lists year archives (5 'Board papers 20XX' year links). The year-link URLs are Concrete CMS navigate endpoints (.../navigate/13363/NNNN) that load via AJAX \u2014 static fetch returns no PDFs from the year pages. Playwright + interactive_dom strategy (render landing, click year tabs, re-scrape DOM) recovers 9 in-window meetings. PDF titles: 'ICB Board Pack {Month YYYY}' / 'Joint ICB Cluster Board Meeting - {Month YYYY}'.",
+    "needs_playwright": true,
+    "pack_pattern_hints": "ICB Board Pack; Joint ICB Cluster Board Meeting; Board Papers",
+    "exclude_patterns": "Committee; Q&A; Confidential; Part 2",
     "last_validated": "2026-05-29",
-    "validation_status": "papers_found",
-    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=5, meeting_subpages=0."
+    "validation_status": "needs_playwright",
+    "validation_notes": "Year archives are Concrete CMS AJAX navigate endpoints. Playwright + click-each-year-tab required. March 2026 (16MB, BAF score 414) and May 2026 (9MB) packs recovered."
   },
   {
     "ods_code": "QUA",
@@ -234,7 +230,7 @@
     "cluster_id": "CW-HW",
     "cluster_meeting_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
     "notes": "Joint Board Meeting in Common with Coventry and Warwickshire (QWU); papers hosted on both happyhealthylives.uk and hwics.org.uk",
-    "access_notes": "Strategy: /meetings/board-papers is correct and working — it lists the current meeting's papers as direct per-agenda-item PDF/spreadsheet downloads (e.g. 20 May 2026: agenda, CEO report, finance, risk), with 'Past Board Papers' for archives. Static parser undercounts because items load by agenda number. Pattern A/C.",
+    "access_notes": "Strategy: /meetings/board-papers is correct and working \u2014 it lists the current meeting's papers as direct per-agenda-item PDF/spreadsheet downloads (e.g. 20 May 2026: agenda, CEO report, finance, risk), with 'Past Board Papers' for archives. Static parser undercounts because items load by agenda number. Pattern A/C.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "agenda",
@@ -282,7 +278,7 @@
     "url_root": "https://lincolnshire.icb.nhs.uk",
     "cluster_id": "DLN",
     "cluster_meeting_url": "https://notts.icb.nhs.uk/about-us/our-icb-board/",
-    "notes": "DLN cluster; transformation fund page at https://lincolnshire.icb.nhs.uk/transformation-fund — note the April 2026 walk-back text",
+    "notes": "DLN cluster; transformation fund page at https://lincolnshire.icb.nhs.uk/transformation-fund \u2014 note the April 2026 walk-back text",
     "access_notes": "Strategy: landing surfaces board papers directly (mix of dated PDFs and/or year links). Static fetch works. Prefer the main combined board pack; filter observer notes and Q&A. Pattern A/B.",
     "needs_playwright": false,
     "pack_pattern_hints": [
@@ -399,7 +395,7 @@
     "cluster_id": null,
     "cluster_meeting_url": null,
     "notes": "Formed 1 April 2026 from merger of Bedfordshire, Luton and Milton Keynes (QHG, bedfordshirelutonandmiltonkeynes.icb.nhs.uk), Cambridgeshire and Peterborough (QUE, cpics.org.uk), and Hertfordshire and West Essex (QM7, hertsandwestessex.ics.nhs.uk). Predecessor sites still host historical packs.",
-    "access_notes": "Strategy: landing shows a weak board-papers signal to a static parser (few dated PDFs found). Papers are likely present but loaded via JS or one click into a 'papers'/'meetings' sub-page. Confirm by following the board-papers / meetings link; prefer the main combined pack. Pattern A/C — review on next pass.",
+    "access_notes": "Strategy: landing shows a weak board-papers signal to a static parser (few dated PDFs found). Papers are likely present but loaded via JS or one click into a 'papers'/'meetings' sub-page. Confirm by following the board-papers / meetings link; prefer the main combined pack. Pattern A/C \u2014 review on next pass.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "Board Papers",
