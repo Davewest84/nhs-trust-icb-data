@@ -1,8 +1,10 @@
 # Installs two Windows scheduled tasks:
 #   1. Weekly URL health check (runs check_urls.py -- covers BOTH trust_urls.json
-#      AND icb_urls.json, Sundays 04:00)
+#      AND icb_urls.json, Saturdays 04:00)
 #   2. Weekly Claude-orchestrated patch (reads both reports, fixes broken URLs,
-#      Sundays 05:00)
+#      Saturdays 05:00). Invoked via pwsh.exe (PowerShell 7+) because Windows
+#      PowerShell 5.1 misparses em-dash characters in the wrapper/prompt files
+#      under -File invocation -- silently fails the task without explanation.
 #
 # Run ONCE (normal user PowerShell is fine -- tasks register under current user):
 #   powershell -NoProfile -ExecutionPolicy Bypass -File .\install-scheduled-check.ps1
@@ -71,7 +73,7 @@ $action1 = New-ScheduledTaskAction `
     -Execute $pyExe `
     -Argument "scripts/check_urls.py" `
     -WorkingDirectory $repo
-$trigger1 = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At "04:00"
+$trigger1 = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Saturday -At "04:00"
 Register-ScheduledTask `
     -TaskName "HSJ - URL health check (weekly)" `
     -Action $action1 `
@@ -83,11 +85,22 @@ Write-Host "Installed: HSJ - URL health check (weekly)"
 
 # ==== Task 2: Claude-orchestrated patch ====
 if ($claudeTest.Count -gt 0) {
+    # IMPORTANT: invoke via pwsh.exe (PowerShell 7+), NOT powershell.exe (Windows
+    # PowerShell 5.1). PS 5.1 mis-decodes em-dashes in UTF-8 scripts under -File
+    # invocation, causing the wrapper to fail parsing on its first run with no
+    # visible error. Discovered 2026-05-29: silently broken since ~2026-05-20
+    # commits added em-dash characters.
+    $pwshExe = (Get-Command pwsh.exe -ErrorAction SilentlyContinue).Source
+    if (-not $pwshExe) {
+        Write-Error "pwsh.exe not on PATH. Install PowerShell 7+ (winget install Microsoft.PowerShell) and re-run."
+        exit 1
+    }
+    Write-Host "Found pwsh.exe: $pwshExe"
     $action2 = New-ScheduledTaskAction `
-        -Execute "powershell.exe" `
+        -Execute "pwsh.exe" `
         -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$wrapper`"" `
         -WorkingDirectory $repo
-    $trigger2 = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At "05:00"
+    $trigger2 = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Saturday -At "05:00"
     $settings2 = New-ScheduledTaskSettingsSet `
         -AllowStartIfOnBatteries `
         -DontStopIfGoingOnBatteries `
