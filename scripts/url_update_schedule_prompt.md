@@ -30,15 +30,34 @@ Plus:
 
 Steps:
 
-1. URL health check. Walks both URL JSONs and writes reports:
+1. URL health check (shallow — HTTP 200). Walks both URL JSONs:
        py scripts/check_urls.py
    Produces trust_urls_report.json + icb_urls_report.json at the repo root.
    Takes ~9-10 minutes.
 
-2. Read both reports. Collect every entry where ok == false. Track which DB
-   each broken entry came from so you patch the right file.
+1b. Deep landing validation (NEW, May 2026). Confirms each landing page
+    actually exposes dated board papers — catches the "200 OK but the URL
+    points at the wrong sub-page" case that step 1 misses:
+       py scripts/validate_landing.py
+    Produces trust_urls_validation.json + icb_urls_validation.json at the
+    repo root. Each entry's `classification` is one of:
+      papers_found      — clearly surfacing board-paper links
+      papers_partial    — weak signal (1 dated PDF, 1 year archive); review
+      no_papers_visible — 200 but no board-paper evidence (URL likely stale)
+      needs_playwright  — near-empty body, suggests JS-rendered content
+      broken            — HTTP error
+    Takes ~9-10 minutes.
 
-3. For each broken entry (identified by ods_code, with DB tagged):
+2. Read all four reports (shallow + deep, both DBs). Collect entries that
+   are either:
+   (i)  broken in step 1 (HTTP error), OR
+   (ii) `no_papers_visible` / `papers_partial` in step 1b (200 but URL
+        looks stale — likely points at wrong sub-page now).
+   Skip `needs_playwright` for URL replacement — those orgs need a working
+   URL plus an access-notes update (see step 3b), not a search-and-replace.
+   Track which DB each entry came from so you patch the right file.
+
+3. For each entry to patch (identified by ods_code, with DB tagged):
    a. Web-search the org's current board papers page:
       "{org name} board papers site:{domain-from-original-url}"
       Fall back to: "{org name} board papers 2026"; for ICBs also try
@@ -54,6 +73,44 @@ Steps:
         domain — that's expected.
    c. If the top candidate doesn't verify, try the next one (max 3).
    d. If none verify, leave the URL as-is and note in the commit message.
+
+3b. For each org patched in step 3 AND each org classified `needs_playwright`
+    in step 1b AND each org in this week's rotation batch (see step 4) —
+    populate or refresh the LLM-readable access notes. These fields exist on
+    every entry in trust_urls.json / icb_urls.json (nullable — populate over
+    time):
+
+      access_notes        — free-form prose explaining how to navigate the
+                            landing to actual board papers. Read by other
+                            Claudes (risk-tracker, scan-boards, etc) when
+                            crawling. Write ONE paragraph per the templates
+                            in the appendix.
+      needs_playwright    — true iff static fetch doesn't reach the
+                            board-paper listing (JS gallery, AJAX nav,
+                            anti-bot 403)
+      pack_pattern_hints  — short list of positive signals for the main
+                            board pack PDF (eg "Public Board Pack",
+                            "Agenda and Papers", "Combined Pack")
+      exclude_patterns    — short list of negatives to filter (eg "Board
+                            Note for Observers", "Q&A", "ICP Board",
+                            "FOI", "Minutes only", "Addendum")
+      last_validated      — today's date (ISO YYYY-MM-DD) on which the
+                            access notes were confirmed
+      validation_status   — "papers_found" | "papers_partial" |
+                            "no_papers_visible" | "needs_playwright" |
+                            "broken" — mirrors the validator's last finding
+      validation_notes    — one-sentence summary of what the validator saw
+                            (eg "Found 49 dated PDFs spanning 2022-2026
+                            including monthly Public Board Pack")
+
+    For an org needing only routine refresh (rotation batch hit), browse to
+    its landing URL, look at what's there, and update the fields. For an
+    org just patched in step 3, populate from the verification you did in
+    step 3b. For `needs_playwright` orgs, attempt a Playwright fetch — if
+    it does reach the listing, write notes describing what static fetch
+    misses ("Requires browser render; year tabs load AJAX gallery").
+
+    Access-notes templates (in the appendix) — use as starting points.
 
 4. Rotation-based contact refresh (covers BOTH trusts and ICBs). Each weekly
    run touches ~1/10 of orgs deeply. Reads contact pages, refreshes
@@ -141,6 +198,7 @@ Steps:
                   trust-contacts.json trust-contacts.csv trust-contacts.xlsx \
                   icb-contacts.json icb-contacts.csv icb-contacts.xlsx \
                   trust_urls_report.json icb_urls_report.json \
+                  trust_urls_validation.json icb_urls_validation.json \
                   refresh-rotation-state.json
        git commit -m "Weekly refresh ($(date +%Y-%m-%d)) — N1 trust URLs fixed, N2 contacts refreshed"
 
@@ -235,8 +293,16 @@ Safety rules:
   trust_urls.json / .csv / .xlsx, icb_urls.json / .csv / .xlsx,
   trust-contacts.json / .csv / .xlsx, icb-contacts.json / .csv / .xlsx,
   refresh-rotation-state.json, trust_urls_report.json, icb_urls_report.json,
+  trust_urls_validation.json, icb_urls_validation.json,
   ods_reconciliation_report.json, plus the Data/Lookup copies in steps 7-8. Do
   not touch any other file in any repo.
+- Within trust_urls.json and icb_urls.json, only these fields are
+  write-allowed: `url`, `access_notes`, `needs_playwright`,
+  `pack_pattern_hints`, `exclude_patterns`, `last_validated`,
+  `validation_status`, `validation_notes`. NEVER touch existing
+  governance/identification fields: `ods_code`, `names`, `type`, `region`,
+  `ics`, `correspondent`, `predecessor_codes`, `merger_date`, `url_root`,
+  `cluster_id`, `cluster_meeting_url`, `notes`. Those need manual review.
 - Step 8 (ODS reconciliation) is READ-ONLY with respect to trust_urls.json,
   icb_urls.json and the contacts files — it must NEVER add, remove, or edit
   entries in them. It only writes ods_reconciliation_report.json and the
@@ -287,3 +353,51 @@ Safety rules:
   WhatDoTheyKnow). Avoids paying browser-spin-up cost for every org.
 - **XLSX for humans.** Filterable, sortable in Excel. Easier to skim 200+
   rows than the CSV. Generated each Saturday, never edited by hand.
+
+---
+
+## Appendix — `access_notes` templates
+
+`access_notes` is read by other Claude-driven crawlers (risk-tracker,
+scan-boards, ad hoc agents) to know how to navigate the landing page to the
+actual board papers. Write ONE clear paragraph following the patterns below.
+
+**Pattern A — direct PDFs on landing**
+> Strategy: dated board-pack PDFs listed directly on the landing page (one per
+> meeting). Prefer titles containing "Public Board Pack" / "Board Papers".
+> Filter out observer notes (2pp), Q&A files, and addendums. Static fetch
+> works. Year coverage: 2022 to present.
+
+**Pattern B — year archives**
+> Strategy: landing lists year folders ("Board papers 2024", "Board papers
+> 2025"...). Follow each year link to find dated PDF listings. Main pack files
+> typically 5-30MB. Static fetch works.
+
+**Pattern C — per-meeting sub-pages**
+> Strategy: landing is an events calendar listing meetings with date. Each
+> meeting links to its own sub-page containing multiple PDFs (agenda, papers,
+> finance, Q&A). Filter to ICB Board only — skip ICP (Integrated Care
+> Partnership), Joint, and Cluster meetings unless they are the org's only
+> board. On each meeting page, prefer the largest combined "Agenda and Papers"
+> PDF. Static fetch works.
+
+**Pattern D — JS-rendered (needs Playwright)**
+> Strategy: landing is JS-rendered (share-my-box embed / AJAX nav / SPA).
+> Static fetch returns an empty body. Use headless Playwright with
+> `wait_until=networkidle`. Click the year tab for the desired year before
+> scraping. Main pack files typically labelled "Board Papers".
+
+**Pattern E — anti-bot protection**
+> Strategy: landing returns HTTP 403 to plain requests. WAF / Cloudflare
+> challenge in front of the site. Even Playwright may be blocked. Best
+> approach: fetch the archive via the org's RSS feed at {URL} / press contact /
+> manual download. Flag for human refresh if needed.
+
+**Pattern F — wrong-URL needs fixing**
+> The DB landing URL appears stale. Live archive moved to {new URL after
+> patch}. Fix applied {date}.
+
+Add specific quirks where useful — eg "Note: trust publishes BAF only at the
+March, June, September and December meetings; other meetings have a brief
+risk update only." These are LLM-readable, no rigid format, but keep to one
+paragraph.
