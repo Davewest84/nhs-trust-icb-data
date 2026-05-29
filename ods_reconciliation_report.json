@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-05-29T00:00:00Z",
+  "last_ods_sync_date_used": "2026-04-29",
+  "counts": {
+    "A_trust": 252,
+    "A_icb": 48,
+    "B_trust": 207,
+    "B_icb": 36,
+    "add": 3,
+    "remove": 4
+  },
+  "add_candidates": [
+    {
+      "ods": "RQF",
+      "name": "VELINDRE NHS TRUST",
+      "role": "RO197",
+      "suggested_region": "WALES",
+      "note": "OUT OF SCOPE — WALES NHS body, not an English trust; ignore."
+    },
+    {
+      "ods": "RT4",
+      "name": "WELSH AMBULANCE SERVICES NHS TRUST",
+      "role": "RO197",
+      "suggested_region": "WALES",
+      "note": "OUT OF SCOPE — WALES NHS body, not an English trust; ignore."
+    },
+    {
+      "ods": "RYT",
+      "name": "PUBLIC HEALTH WALES NHS TRUST",
+      "role": "RO197",
+      "suggested_region": "WALES",
+      "note": "OUT OF SCOPE — WALES NHS body, not an English trust; ignore."
+    }
+  ],
+  "remove_candidates": [
+    {
+      "ods": "R1C",
+      "name": "Solent NHS Trust",
+      "successor_ods": "RW1",
+      "successor_name": "HAMPSHIRE AND ISLE OF WIGHT HEALTHCARE NHS FOUNDATION TRUST",
+      "legal_end": "2024-09-30",
+      "note": "ODS gotcha: still in trust DB and Status=Active, but Date[Legal].End=2024-09-30 is past — merged/dissolved. Action removal/succession."
+    },
+    {
+      "ods": "RNK",
+      "name": "Tavistock and Portman NHS Foundation Trust",
+      "successor_ods": "G6V2S",
+      "successor_name": "NORTH LONDON NHS FOUNDATION TRUST",
+      "legal_end": "2026-03-31",
+      "note": "ODS gotcha: still in trust DB and Status=Active, but Date[Legal].End=2026-03-31 is past — merged/dissolved. Action removal/succession."
+    },
+    {
+      "ods": "RY2",
+      "name": "Bridgewater Community Healthcare NHS Foundation Trust",
+      "successor_ods": "RWW",
+      "successor_name": "NORTH CHESHIRE AND MERSEY NHS FOUNDATION TRUST",
+      "legal_end": "2026-03-31",
+      "note": "ODS gotcha: still in trust DB and Status=Active, but Date[Legal].End=2026-03-31 is past — merged/dissolved. Action removal/succession."
+    },
+    {
+      "ods": "RY9",
+      "name": "Hounslow and Richmond Community Healthcare NHS Trust",
+      "successor_ods": "RAX",
+      "successor_name": "KINGSTON AND RICHMOND NHS FOUNDATION TRUST",
+      "legal_end": "2024-10-31",
+      "note": "ODS gotcha: still in trust DB and Status=Active, but Date[Legal].End=2024-10-31 is past — merged/dissolved. Action removal/succession."
+    }
+  ]
+}
