@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T10:51:05.262345+00:00",
+  "generated_at": "2026-06-04T06:46:47.487489+00:00",
   "label": "ICB",
   "total": 36,
   "ok": 36,
@@ -316,9 +316,9 @@
       "name": "Cornwall and the Isles of Scilly ICB",
       "url": "https://cios.icb.nhs.uk/about/meetings/",
       "ok": true,
-      "status": 403,
+      "status": 202,
       "final_url": "https://cios.icb.nhs.uk/about/meetings/",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "QJK",
