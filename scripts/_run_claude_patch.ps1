@@ -188,10 +188,91 @@ $headAfter = & git rev-parse HEAD 2>$null
 Write-Log "HEAD after: $headAfter"
 
 if ($headBefore -eq $headAfter) {
-    Write-Log "WARNING: HEAD unchanged. Claude ran but made no commit. (No URL changes + no contacts in this batch?)"
-    "$(Get-Date -Format 'o') FAIL no-commit (claude exit=$claudeExit, log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
-    Send-Summary "FAIL no-commit"
-    exit 2
+    # Claude made no commit. Before declaring failure, check whether it died
+    # AFTER doing real work but BEFORE committing (session limit, premature
+    # exit). If validated changes are sitting on disk, salvage them here so the
+    # work isn't stranded — this is the failure mode that lost the 4 June run.
+    Write-Log "HEAD unchanged after Claude session. Checking for stranded uncommitted data changes..."
+
+    $savedEAP2 = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    $trackedDirty = & git diff --name-only 2>$null   # modified/deleted TRACKED files only
+
+    if ($trackedDirty) {
+        Write-Log "Found uncommitted tracked changes:`n$($trackedDirty -join "`n")"
+
+        # Guard against committing a half-written file: if a session died
+        # mid-write, the data JSON could be corrupt. Both URL JSONs must parse
+        # before we commit anything.
+        $jsonOk = $true
+        if ($pyExe) {
+            & $pyExe -c "import json; json.load(open('trust_urls.json',encoding='utf-8')); json.load(open('icb_urls.json',encoding='utf-8'))" 2>&1 |
+                Out-File -FilePath $logFile -Append -Encoding utf8
+            if ($LASTEXITCODE -ne 0) { $jsonOk = $false }
+        } else {
+            Write-Log "WARNING: no python launcher — cannot validate JSON before salvage; proceeding cautiously."
+        }
+
+        if (-not $jsonOk) {
+            $ErrorActionPreference = $savedEAP2
+            Write-Log "ERROR: trust_urls.json / icb_urls.json failed to parse — NOT committing (possible mid-write corruption). Leaving working tree dirty for manual review."
+            "$(Get-Date -Format 'o') FAIL no-commit-bad-json (claude exit=$claudeExit, log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
+            Send-Summary "FAIL no-commit-bad-json"
+            exit 3
+        }
+
+        # Rebuild CSV/XLSX derivatives + index.html so they match the salvaged JSON.
+        if ($pyExe) {
+            & $pyExe (Join-Path $repo "scripts\build_derivatives.py") 2>&1 | Out-File -FilePath $logFile -Append -Encoding utf8
+        }
+
+        # Stage only tracked changes (-u) so stray scratch/log files are never
+        # committed; explicitly add the known derivatives in case any are untracked.
+        & git add -u 2>&1 | Out-File -FilePath $logFile -Append -Encoding utf8
+        & git add -- trust_urls.csv trust_urls.xlsx icb_urls.csv icb_urls.xlsx `
+            trust-contacts.csv trust-contacts.xlsx icb-contacts.csv icb-contacts.xlsx index.html 2>&1 |
+            Out-File -FilePath $logFile -Append -Encoding utf8
+
+        $salvageMsg = @"
+[auto-salvage] Recover validated refresh data stranded by incomplete Claude session
+
+The Claude session exited (code $claudeExit) without committing but left
+validated changes on disk. The weekly-refresh bootstrap committed and pushed
+them so the work is not lost. Derivatives were rebuilt from JSON and both URL
+JSONs were confirmed to parse. Review the diff — if anything looks wrong, revert.
+
+Co-Authored-By: Claude (weekly refresh bootstrap) <noreply@anthropic.com>
+"@
+        & git commit -m $salvageMsg 2>&1 | Out-File -FilePath $logFile -Append -Encoding utf8
+        $headAfter = & git rev-parse HEAD 2>$null
+
+        if ($headBefore -ne $headAfter) {
+            Write-Log "Auto-salvage commit created: $headBefore -> $headAfter."
+            if ($env:GITHUB_TOKEN) {
+                & git -c credential.helper= push "https://x-access-token:$($env:GITHUB_TOKEN)@github.com/Davewest84/nhs-trust-icb-data.git" main 2>&1 |
+                    Out-File -FilePath $logFile -Append -Encoding utf8
+                Write-Log "Auto-salvage push exit code: $LASTEXITCODE"
+            } else {
+                Write-Log "WARNING: GITHUB_TOKEN unavailable — salvage committed locally but NOT pushed."
+            }
+            $ErrorActionPreference = $savedEAP2
+            "$(Get-Date -Format 'o') OK-SALVAGED $headAfter (claude exit=$claudeExit, log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
+            Send-Summary "OK-SALVAGED (Claude exit=$claudeExit)"
+            # Fall through to log pruning + exit 0.
+        } else {
+            $ErrorActionPreference = $savedEAP2
+            Write-Log "WARNING: salvage staged no committable change. Claude made no commit."
+            "$(Get-Date -Format 'o') FAIL no-commit (claude exit=$claudeExit, log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
+            Send-Summary "FAIL no-commit"
+            exit 2
+        }
+    } else {
+        $ErrorActionPreference = $savedEAP2
+        Write-Log "WARNING: HEAD unchanged and nothing on disk to salvage. Claude made no commit. (No URL changes + no contacts in this batch?)"
+        "$(Get-Date -Format 'o') FAIL no-commit (claude exit=$claudeExit, log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
+        Send-Summary "FAIL no-commit"
+        exit 2
+    }
 } else {
     Write-Log "OK: New commit created. HEAD moved $headBefore -> $headAfter"
     "$(Get-Date -Format 'o') OK $headAfter (log=$logFile)" | Out-File -FilePath $statusFile -Encoding utf8
