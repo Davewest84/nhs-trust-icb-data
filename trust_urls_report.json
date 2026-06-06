@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T06:45:04.525861+00:00",
+  "generated_at": "2026-06-06T04:09:54.948234+00:00",
   "label": "trust",
   "total": 206,
-  "ok": 202,
-  "broken": 4,
+  "ok": 205,
+  "broken": 1,
   "results": [
     {
       "ods_code": "RA2",
@@ -18,10 +18,10 @@
       "ods_code": "RDR",
       "name": "Sussex Community NHS Foundation Trust",
       "url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetin"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RN7",
@@ -55,9 +55,9 @@
       "name": "Ashford and St Peter's Hospitals NHS Foundation Trust",
       "url": "https://www.ashfordstpeters.nhs.uk/meetings",
       "ok": true,
-      "status": 202,
+      "status": 403,
       "final_url": "https://www.ashfordstpeters.nhs.uk/meetings",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RTP",
@@ -80,11 +80,11 @@
     {
       "ods_code": "RWF",
       "name": "Maidstone and Tunbridge Wells NHS Trust",
-      "url": "https://www.mtw.nhs.uk/about-us/trust-board/board-meetings-and-papers/",
-      "ok": false,
-      "status": 404,
-      "final_url": null,
-      "error": "http: HTTP 404; playwright: HTTP 404"
+      "url": "https://www.mtw.nhs.uk/board-meetings-and-papers",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.mtw.nhs.uk/board-meetings-and-papers",
+      "error": null
     },
     {
       "ods_code": "RX2",
@@ -102,7 +102,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RXX",
@@ -116,19 +116,19 @@
     {
       "ods_code": "RXY",
       "name": "Kent and Medway NHS and Social Care Partnership Trust",
-      "url": "https://www.kmpt.nhs.uk/about-us/trust-board/",
+      "url": "https://www.kentmedwaymentalhealth.nhs.uk/about-us/trust-board/board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.kentmedwaymentalhealth.nhs.uk:443/about-us/trust-board/",
+      "final_url": "https://www.kentmedwaymentalhealth.nhs.uk/about-us/trust-board/board-meetings/",
       "error": null
     },
     {
       "ods_code": "RYR",
       "name": "University Hospitals Sussex NHS Foundation Trust",
-      "url": "https://www.uhsussex.nhs.uk/resources/public-board-papers-10-november-2022/",
+      "url": "https://www.uhsussex.nhs.uk/about/board/board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.uhsussex.nhs.uk/resources/public-board-papers-10-november-2022/",
+      "final_url": "https://www.uhsussex.nhs.uk/about/board/board-meetings/",
       "error": null
     },
     {
@@ -161,10 +161,10 @@
     {
       "ods_code": "RK5",
       "name": "Sherwood Forest Hospitals NHS Foundation Trust",
-      "url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/",
+      "url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/",
+      "final_url": "https://www.sfh-tr.nhs.uk/about-us/board-of-directors/board-meetings/",
       "error": null
     },
     {
@@ -305,19 +305,19 @@
     {
       "ods_code": "RJC",
       "name": "South Warwickshire University NHS Foundation Trust",
-      "url": "https://www.swft.nhs.uk/meetings-and-events/board-meetings",
+      "url": "https://www.swft.nhs.uk/about-us/publications/Board-of-Directors-papers-minutes",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.swft.nhs.uk/meetings-and-events/board-meetings",
+      "final_url": "https://www.swft.nhs.uk/about-us/publications/Board-of-Directors-papers-minutes",
       "error": null
     },
     {
       "ods_code": "RJE",
       "name": "University Hospitals of North Midlands NHS Trust",
-      "url": "https://www.uhnm.nhs.uk/about-us/our-board/",
+      "url": "https://www.uhnm.nhs.uk/about-us/our-board/trust-board-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.uhnm.nhs.uk/about-us/our-board/",
+      "final_url": "https://www.uhnm.nhs.uk/about-us/our-board/trust-board-papers/",
       "error": null
     },
     {
@@ -332,10 +332,10 @@
     {
       "ods_code": "RL1",
       "name": "The Robert Jones and Agnes Hunt Orthopaedic Hospital NHS Foundation Trust",
-      "url": "https://www.rjah.nhs.uk/about-us/board-of-directors/board-of-directors-meeting-dates",
+      "url": "https://www.rjah.nhs.uk/about-us/publications/trust-board-meeting-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.rjah.nhs.uk/about-us/board-of-directors/board-of-directors-meeting-dates",
+      "final_url": "https://www.rjah.nhs.uk/about-us/publications/trust-board-meeting-papers/",
       "error": null
     },
     {
@@ -377,7 +377,7 @@
     {
       "ods_code": "RNA",
       "name": "The Dudley Group NHS Foundation Trust",
-      "url": "https://www.dgft.nhs.uk/about-us/our-board/",
+      "url": "https://www.dgft.nhs.uk/about-our-trust/our-board/",
       "ok": true,
       "status": 200,
       "final_url": "https://www.dgft.nhs.uk/about-our-trust/our-board/",
@@ -386,10 +386,10 @@
     {
       "ods_code": "RQ3",
       "name": "Birmingham Women's and Children's NHS Foundation Trust",
-      "url": "https://www.bwc.nhs.uk/board-of-directors/",
+      "url": "https://www.bwc.nhs.uk/board-meetings-and-minutes",
       "ok": true,
       "status": 200,
-      "final_url": "https://bwc.nhs.uk/board-of-directors/",
+      "final_url": "https://bwc.nhs.uk/board-meetings-and-minutes",
       "error": null
     },
     {
@@ -431,7 +431,7 @@
     {
       "ods_code": "RXK",
       "name": "Sandwell and West Birmingham Hospitals NHS Trust",
-      "url": "https://www.swbh.nhs.uk/about-us/trust-board/",
+      "url": "https://www.swbh.nhs.uk/our-trust/trust-board/",
       "ok": true,
       "status": 200,
       "final_url": "https://www.swbh.nhs.uk/our-trust/trust-board/",
@@ -467,10 +467,10 @@
     {
       "ods_code": "RYW",
       "name": "Birmingham Community Healthcare NHS Foundation Trust",
-      "url": "https://www.bhamcommunity.nhs.uk/our-board/",
+      "url": "https://www.bhamcommunity.nhs.uk/our-board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.bhamcommunity.nhs.uk/our-board/",
+      "final_url": "https://www.bhamcommunity.nhs.uk/our-board-papers",
       "error": null
     },
     {
@@ -485,10 +485,10 @@
     {
       "ods_code": "RAX",
       "name": "Kingston Hospital NHS Foundation Trust",
-      "url": "https://www.kingstonhospital.nhs.uk/about-us/board-papers/",
+      "url": "https://www.kingstonandrichmond.nhs.uk/about-us/trust-board/board-meetings",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.kingstonandrichmond.nhs.uk/",
+      "final_url": "https://www.kingstonandrichmond.nhs.uk/about-us/trust-board/board-meetings",
       "error": null
     },
     {
@@ -525,7 +525,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RJZ",
@@ -539,10 +539,10 @@
     {
       "ods_code": "RVR",
       "name": "Epsom and St Helier University Hospitals NHS Trust",
-      "url": "https://www.epsom-sthelier.nhs.uk/our-board",
+      "url": "https://www.epsom-sthelier.nhs.uk/board-papers-and-agendas",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.epsom-sthelier.nhs.uk/our-board",
+      "final_url": "https://www.epsom-sthelier.nhs.uk/board-papers-and-agendas",
       "error": null
     },
     {
@@ -557,19 +557,19 @@
     {
       "ods_code": "RPY",
       "name": "The Royal Marsden NHS Foundation Trust",
-      "url": "https://www.royalmarsden.nhs.uk/board-meetings/",
+      "url": "https://www.royalmarsden.nhs.uk/about-royal-marsden/governance/board-meetings/board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.royalmarsden.nhs.uk/about-royal-marsden/governance/board-meetings",
+      "final_url": "https://www.royalmarsden.nhs.uk/about-royal-marsden/governance/board-meetings/board-papers",
       "error": null
     },
     {
       "ods_code": "RY9",
       "name": "Hounslow and Richmond Community Healthcare NHS Trust",
-      "url": "https://www.hrch.nhs.uk/",
+      "url": "https://www.kingstonandrichmond.nhs.uk/about-us/trust-board/board-meetings",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.kingstonandrichmond.nhs.uk/",
+      "final_url": "https://www.kingstonandrichmond.nhs.uk/about-us/trust-board/board-meetings",
       "error": null
     },
     {
@@ -613,9 +613,9 @@
       "name": "Airedale NHS Foundation Trust",
       "url": "https://www.airedale-trust.nhs.uk/about-us/our-board-and-leadership/",
       "ok": true,
-      "status": 202,
+      "status": 403,
       "final_url": "https://www.airedale-trust.nhs.uk/about-us/our-board-and-leadership/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RCU",
@@ -629,10 +629,10 @@
     {
       "ods_code": "RFF",
       "name": "Barnsley Hospital NHS Foundation Trust",
-      "url": "https://www.barnsleyhospital.nhs.uk/about/how-we-are-run/board-of-directors/meetings-and-papers",
+      "url": "https://www.barnsleyhospital.nhs.uk/taxonomy/term/37",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.barnsleyhospital.nhs.uk/about/how-we-are-run/board-of-directors/meetings-and-papers",
+      "final_url": "https://www.barnsleyhospital.nhs.uk/taxonomy/term/37",
       "error": null
     },
     {
@@ -665,10 +665,10 @@
     {
       "ods_code": "RJL",
       "name": "Northern Lincolnshire and Goole NHS Foundation Trust",
-      "url": "https://www.nlg.nhs.uk/resources/board-papers-archive-2021/",
+      "url": "https://www.nlg.nhs.uk/resources/?resources_type=board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.nlg.nhs.uk/resources/board-papers-archive-2021/",
+      "final_url": "https://www.nlg.nhs.uk/resources/?resources_type=board-papers",
       "error": null
     },
     {
@@ -683,10 +683,10 @@
     {
       "ods_code": "RR8",
       "name": "Leeds Teaching Hospitals NHS Trust",
-      "url": "https://www.leedsth.nhs.uk/about-us/board-papers/",
+      "url": "https://www.leedsth.nhs.uk/about/board/meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.leedsth.nhs.uk/about/",
+      "final_url": "https://www.leedsth.nhs.uk/about/board/meetings/",
       "error": null
     },
     {
@@ -701,10 +701,10 @@
     {
       "ods_code": "RWA",
       "name": "Hull University Teaching Hospitals NHS Trust",
-      "url": "https://www.hey.nhs.uk/about-us/board-papers/",
+      "url": "https://www.nlg.nhs.uk/resources/?resources_type=board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.hull.nhs.uk/",
+      "final_url": "https://www.nlg.nhs.uk/resources/?resources_type=board-papers",
       "error": null
     },
     {
@@ -719,10 +719,10 @@
     {
       "ods_code": "RXE",
       "name": "Rotherham Doncaster and South Humber NHS Foundation Trust",
-      "url": "https://www.rdash.nhs.uk/about-us/governance/board-of-directors/board-of-directors-meetings/",
+      "url": "https://www.rdash.nhs.uk/document-sections/board-of-directors/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.rdash.nhs.uk/about-us/governance/board-of-directors/board-of-directors-meetings/",
+      "final_url": "https://www.rdash.nhs.uk/document-sections/board-of-directors/",
       "error": null
     },
     {
@@ -764,10 +764,10 @@
     {
       "ods_code": "TAH",
       "name": "Sheffield Health and Social Care NHS Foundation Trust",
-      "url": "https://www.shsc.nhs.uk/about-us/board-directors",
+      "url": "https://www.sheffieldpartnership.nhs.uk/about-us/board-directors/meeting-minutes-and-agendas",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.sheffieldpartnership.nhs.uk:443/about-us/board-directors",
+      "final_url": "https://www.sheffieldpartnership.nhs.uk/about-us/board-directors/board-directors-meeting-minutes-and-agendas",
       "error": null
     },
     {
@@ -809,10 +809,10 @@
     {
       "ods_code": "RGP",
       "name": "James Paget University Hospitals NHS Foundation Trust",
-      "url": "https://www.jpaget.nhs.uk/about-us/our-board-and-governors/our-board-of-directors/",
+      "url": "https://www.jpaget.nhs.uk/about-us/our-board-and-governors/board-and-governors-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.jpaget.nhs.uk/about-us/our-board-and-governors/our-board-of-directors/",
+      "final_url": "https://www.jpaget.nhs.uk/about-us/our-board-and-governors/board-and-governors-meetings/",
       "error": null
     },
     {
@@ -872,20 +872,20 @@
     {
       "ods_code": "R0D",
       "name": "University Hospitals Dorset NHS Foundation Trust",
-      "url": "https://www.uhd.nhs.uk/about-us/our-performance/board-papers",
+      "url": "https://www.uhd.nhs.uk/about-us/our-performance",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.uhd.nhs.uk/about-us/our-performance/board-papers",
+      "final_url": "https://www.uhd.nhs.uk/about-us/our-performance",
       "error": null
     },
     {
       "ods_code": "RA7",
       "name": "University Hospitals Bristol and Weston NHS Foundation Trust",
       "url": "https://www.uhbw.nhs.uk/about-us/board-papers/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.uhbw.nhs.uk/",
-      "error": null
+      "ok": false,
+      "status": 500,
+      "final_url": null,
+      "error": "http: HTTP 500; playwright: HTTP 500"
     },
     {
       "ods_code": "RA9",
@@ -899,10 +899,10 @@
     {
       "ods_code": "RBD",
       "name": "Dorset County Hospital NHS Foundation Trust",
-      "url": "https://www.dchft.nhs.uk/about-us/trust-board/",
+      "url": "https://www.dchft.nhs.uk/about-us/trust-board/trust-board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://dchft.nhs.uk/about-us/trust-board/",
+      "final_url": "https://dchft.nhs.uk/about-us/trust-board/trust-board-meetings/",
       "error": null
     },
     {
@@ -928,9 +928,9 @@
       "name": "Royal Cornwall Hospitals NHS Trust",
       "url": "https://royalcornwallhospitals.nhs.uk/organisation/board-meetings/",
       "ok": true,
-      "status": 202,
+      "status": 403,
       "final_url": "https://royalcornwallhospitals.nhs.uk/organisation/board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RH5",
@@ -980,10 +980,10 @@
     {
       "ods_code": "RNZ",
       "name": "Salisbury NHS Foundation Trust",
-      "url": "https://www.salisbury.nhs.uk/about-us/the-trust-board/trust-board-meetings/",
+      "url": "https://www.salisbury.nhs.uk/about-us/the-trust-board/board-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.salisbury.nhs.uk/about-us/the-trust-board/trust-board-meetings/",
+      "final_url": "https://www.salisbury.nhs.uk/about-us/the-trust-board/board-papers/",
       "error": null
     },
     {
@@ -1161,10 +1161,10 @@
       "ods_code": "RP4",
       "name": "Great Ormond Street Hospital for Children NHS Foundation Trust",
       "url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-boa"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
+      "error": null
     },
     {
       "ods_code": "RRU",
@@ -1196,10 +1196,10 @@
     {
       "ods_code": "RNK",
       "name": "Tavistock and Portman NHS Foundation Trust",
-      "url": "https://tavistockandportman.nhs.uk/about-us/our-board/",
+      "url": "https://tavistockandportman.nhs.uk/publications/?publication-types=board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://tavistockandportman.nhs.uk/about-us/our-board/",
+      "final_url": "https://tavistockandportman.nhs.uk/publications/?publication-types=board-papers",
       "error": null
     },
     {
@@ -1214,10 +1214,10 @@
     {
       "ods_code": "RWK",
       "name": "East London NHS Foundation Trust",
-      "url": "https://www.elft.nhs.uk/information-about-elft/our-board/trust-board-meetings",
+      "url": "https://www.elft.nhs.uk/information-about-elft/our-board/trust-board-meetings/trust-board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.elft.nhs.uk/information-about-elft/our-board/trust-board-meetings",
+      "final_url": "https://www.elft.nhs.uk/information-about-elft/our-board/trust-board-meetings/trust-board-papers",
       "error": null
     },
     {
@@ -1268,19 +1268,19 @@
     {
       "ods_code": "RTR",
       "name": "South Tees Hospitals NHS Foundation Trust",
-      "url": "https://www.southtees.nhs.uk/resources/board-of-directors-agenda-1-february-2022/",
+      "url": "https://www.southtees.nhs.uk/about/university-hospitals-tees/board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.southtees.nhs.uk/resources/board-of-directors-agenda-1-february-2022/",
+      "final_url": "https://www.southtees.nhs.uk/about/university-hospitals-tees/board-meetings/",
       "error": null
     },
     {
       "ods_code": "RVW",
       "name": "North Tees and Hartlepool NHS Foundation Trust",
-      "url": "https://www.nth.nhs.uk/about/board-meetings/",
+      "url": "https://www.nth.nhs.uk/about/university-hospitals-tees/board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.nth.nhs.uk/resources/board-declaration-of-interest/",
+      "final_url": "https://www.nth.nhs.uk/about/university-hospitals-tees/board-meetings/",
       "error": null
     },
     {
@@ -1295,10 +1295,10 @@
     {
       "ods_code": "RX4",
       "name": "Cumbria, Northumberland, Tyne and Wear NHS Foundation Trust",
-      "url": "https://www.cntw.nhs.uk/about/publications/board-papers-27-may-2015/agenda-item-10-i-trust-board-models-of-care-front-sheet/",
+      "url": "https://www.cntw.nhs.uk/about/publications/?filter_publication_type=344",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.cntw.nhs.uk/about/publications/board-papers-27-may-2015/agenda-item-10-i-trust-board-models-of-care-front-sheet/",
+      "final_url": "https://www.cntw.nhs.uk/about/publications/?filter_publication_type=344",
       "error": null
     },
     {
@@ -1448,19 +1448,19 @@
     {
       "ods_code": "RMC",
       "name": "Bolton NHS Foundation Trust",
-      "url": "https://www.boltonft.nhs.uk/about-us/our-board/",
+      "url": "https://www.boltonft.nhs.uk/about-us/our-board/board-of-directors-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.boltonft.nhs.uk/about-us/our-board/",
+      "final_url": "https://www.boltonft.nhs.uk/about-us/our-board/board-of-directors-meetings/",
       "error": null
     },
     {
       "ods_code": "RMP",
       "name": "Tameside and Glossop Integrated Care NHS Foundation Trust",
-      "url": "https://tamesideandglossopicft.nhs.uk/about-us/trust-oversight/trust-board",
+      "url": "https://www.tamesideandglossopicft.nhs.uk/about-us/trust-oversight/trust-board/trust-board-minutesagendas",
       "ok": true,
       "status": 200,
-      "final_url": "https://tamesideandglossopicft.nhs.uk/about-us/trust-oversight/trust-board",
+      "final_url": "https://www.tamesideandglossopicft.nhs.uk/about-us/trust-oversight/trust-board/trust-board-minutesagendas",
       "error": null
     },
     {
@@ -1547,19 +1547,19 @@
     {
       "ods_code": "RWG",
       "name": "West Hertfordshire Teaching Hospitals NHS Trust",
-      "url": "https://www.westhertshospitals.nhs.uk/about-us/our-board/board-meetings",
+      "url": "https://www.westhertshospitals.nhs.uk/about-us/our-board/board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.westhertshospitals.nhs.uk/about-us/our-board/board-meetings",
+      "final_url": "https://www.westhertshospitals.nhs.uk/about-us/our-board/board-papers",
       "error": null
     },
     {
       "ods_code": "RWH",
       "name": "East and North Hertfordshire NHS Trust",
-      "url": "https://www.enherts-tr.nhs.uk/gp-professionals/publications/board-papers-september-2023/",
+      "url": "https://www.enherts-tr.nhs.uk/about/board/board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.enherts-tr.nhs.uk/gp-professionals/publications/board-papers-september-2023/",
+      "final_url": "https://www.enherts-tr.nhs.uk/about/board/board-meetings/",
       "error": null
     },
     {
@@ -1646,10 +1646,10 @@
     {
       "ods_code": "REP",
       "name": "Liverpool Women's NHS Foundation Trust",
-      "url": "https://www.liverpoolwomens.nhs.uk/about-us/board-papers/",
+      "url": "https://www.uhliverpool.nhs.uk/about-us/meet-our-board/trust-board-meetings",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.uhliverpool.nhs.uk/our-hospitals/liverpool-womens-university-hospital",
+      "final_url": "https://www.uhliverpool.nhs.uk/about-us/meet-our-board/trust-board-meetings",
       "error": null
     },
     {
@@ -1664,10 +1664,10 @@
     {
       "ods_code": "RJN",
       "name": "East Cheshire NHS Trust",
-      "url": "https://www.eastcheshire.nhs.uk/trust/board/reports-and-meetings/agm",
+      "url": "https://trust.eastcheshire.nhs.uk/board/reports-and-meetings/meetings",
       "ok": true,
       "status": 200,
-      "final_url": "https://trust.eastcheshire.nhs.uk/board/reports-and-meetings/agm",
+      "final_url": "https://trust.eastcheshire.nhs.uk/board/reports-and-meetings/meetings",
       "error": null
     },
     {
@@ -1718,10 +1718,10 @@
     {
       "ods_code": "RXA",
       "name": "Cheshire and Wirral Partnership NHS Foundation Trust",
-      "url": "https://www.cwp.nhs.uk/about-us/our-board-and-governors/",
+      "url": "https://www.cwp.nhs.uk/board",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.cwp.nhs.uk/about-us/our-board-and-governors",
+      "final_url": "https://www.cwp.nhs.uk/board",
       "error": "(rescued by playwright fallback)"
     },
     {
@@ -1772,28 +1772,28 @@
     {
       "ods_code": "RX6",
       "name": "North East Ambulance Service NHS Foundation Trust",
-      "url": "https://www.neas.nhs.uk/about-us/trust-board",
+      "url": "https://www.neas.nhs.uk/about-us/trust-board/board-meetings/archive-board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.neas.nhs.uk/about-us/trust-board",
+      "final_url": "https://www.neas.nhs.uk/about-us/trust-board/board-meetings/archive-board-papers",
       "error": null
     },
     {
       "ods_code": "RX7",
       "name": "North West Ambulance Service NHS Trust",
-      "url": "https://www.nwas.nhs.uk/publications/board-papers-26-april-2023/",
-      "ok": false,
-      "status": 404,
-      "final_url": null,
-      "error": "http: HTTP 404; playwright: HTTP 404"
+      "url": "https://www.nwas.nhs.uk/about/directors/board-meetings/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nwas.nhs.uk/about/directors/board-meetings/",
+      "error": null
     },
     {
       "ods_code": "RX8",
       "name": "Yorkshire Ambulance Service NHS Trust",
-      "url": "https://www.yas.nhs.uk/about-us/the-trust-board/",
+      "url": "https://www.yas.nhs.uk/publications/trust-board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.yas.nhs.uk/about-us/the-trust-board/",
+      "final_url": "https://www.yas.nhs.uk/publications/trust-board-meetings/",
       "error": null
     },
     {
@@ -1826,28 +1826,28 @@
     {
       "ods_code": "RYD",
       "name": "South East Coast Ambulance Service NHS Foundation Trust",
-      "url": "https://www.secamb.nhs.uk/about-us/board-papers/",
+      "url": "https://www.secamb.nhs.uk/what-we-do/about-us/trust-board-meeting-dates-and-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.secamb.nhs.uk/document/board-papers-11-january-2018-pdf/",
+      "final_url": "https://www.secamb.nhs.uk/what-we-do/about-us/trust-board-meeting-dates-and-papers/",
       "error": null
     },
     {
       "ods_code": "RYE",
       "name": "South Central Ambulance Service NHS Foundation Trust",
-      "url": "https://www.scas.nhs.uk/about-us/board-of-directors/",
+      "url": "https://www.scas.nhs.uk/document-category/board-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.scas.nhs.uk/document/board-of-directors-in-public-meeting-papers-26-september-2024/",
+      "final_url": "https://www.scas.nhs.uk/document-category/board-papers/",
       "error": null
     },
     {
       "ods_code": "RYF",
       "name": "South Western Ambulance Service NHS Foundation Trust",
-      "url": "https://www.swast.nhs.uk/our-board/board-meeting-schedule-and-public-papers",
+      "url": "https://www.swast.nhs.uk/board-meeting-schedule-and-public-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.swast.nhs.uk/our-board/board-meeting-schedule-and-public-papers",
+      "final_url": "https://www.swast.nhs.uk/board-meeting-schedule-and-public-papers/",
       "error": null
     },
     {

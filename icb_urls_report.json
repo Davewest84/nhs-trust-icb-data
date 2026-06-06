@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T06:46:47.487489+00:00",
+  "generated_at": "2026-06-06T04:11:39.883611+00:00",
   "label": "ICB",
   "total": 36,
-  "ok": 36,
-  "broken": 0,
+  "ok": 35,
+  "broken": 1,
   "results": [
     {
       "ods_code": "QYG",
@@ -90,10 +90,10 @@
       "ods_code": "QWU",
       "name": "Coventry and Warwickshire ICB",
       "url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "error": null
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/\nCall l"
     },
     {
       "ods_code": "QGH",
@@ -143,19 +143,19 @@
     {
       "ods_code": "QPM",
       "name": "Northamptonshire ICB",
-      "url": "https://www.icnorthamptonshire.org.uk/icbboardmeetings/",
+      "url": "https://www.icnorthamptonshire.org.uk/documents?media_folder=2078&root_folder=Public%20Board%20and%20Committee%20Meeting%20papers%20-%20ICB",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.icnorthamptonshire.org.uk/icbboardmeetings/",
+      "final_url": "https://www.icnorthamptonshire.org.uk/documents?media_folder=2078&root_folder=Public%20Board%20and%20Committee%20Meeting%20papers%20-%20ICB",
       "error": null
     },
     {
       "ods_code": "QOC",
       "name": "Shropshire, Telford and Wrekin ICB",
-      "url": "https://www.shropshiretelfordandwrekin.nhs.uk/about-us/how-we-are-run/meetings-committees-and-events/governing-body-meetings/",
+      "url": "https://www.shropshiretelfordandwrekin.nhs.uk/about-us/how-we-are-run/meetings-committees-and-events/governing-body-meetings/previous-board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.shropshiretelfordandwrekin.nhs.uk/about-us/how-we-are-run/meetings-committees-and-events/governing-body-meetings/",
+      "final_url": "https://www.shropshiretelfordandwrekin.nhs.uk/about-us/how-we-are-run/meetings-committees-and-events/governing-body-meetings/previous-board-meetings/",
       "error": null
     },
     {
@@ -170,10 +170,10 @@
     {
       "ods_code": "S1Y5D",
       "name": "Central East ICB",
-      "url": "https://www.hertsandwestessex.ics.nhs.uk/about/icb/board/",
+      "url": "https://www.hertsandwestessex.ics.nhs.uk/documents/?location=all&type=board-papers&cat=all&date=",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.hertsandwestessex.ics.nhs.uk/about/icb/board/",
+      "final_url": "https://www.hertsandwestessex.ics.nhs.uk/documents/?location=all&type=board-papers&cat=all&date=",
       "error": null
     },
     {
@@ -197,10 +197,10 @@
     {
       "ods_code": "QMF",
       "name": "North East London ICB",
-      "url": "https://northeastlondon.icb.nhs.uk/board-meetings/",
+      "url": "https://northeastlondon.icb.nhs.uk/about-us/about-nhs-north-east-london/our-board/board-meetings-and-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://northeastlondon.icb.nhs.uk/board-meetings/",
+      "final_url": "https://northeastlondon.icb.nhs.uk/about-us/about-nhs-north-east-london/our-board/board-meetings-and-papers/",
       "error": null
     },
     {
@@ -251,10 +251,10 @@
     {
       "ods_code": "S0E4D",
       "name": "Thames Valley ICB",
-      "url": "https://www.thamesvalley.icb.nhs.uk/policies-and-documents/how-we-make-decisions/board-papers/",
+      "url": "https://www.thamesvalley.icb.nhs.uk/policies-and-documents/how-we-make-decisions/board-papers/nhs-thames-valley-icb",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.thamesvalley.icb.nhs.uk/policies-and-documents/how-we-make-decisions/board-papers/",
+      "final_url": "https://www.thamesvalley.icb.nhs.uk/policies-and-documents/how-we-make-decisions/board-papers/nhs-thames-valley-icb",
       "error": null
     },
     {
@@ -316,9 +316,9 @@
       "name": "Cornwall and the Isles of Scilly ICB",
       "url": "https://cios.icb.nhs.uk/about/meetings/",
       "ok": true,
-      "status": 202,
+      "status": 403,
       "final_url": "https://cios.icb.nhs.uk/about/meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "QJK",

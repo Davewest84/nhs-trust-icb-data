@@ -79,13 +79,13 @@
   {
     "trust_name": "Bedfordshire Hospitals NHS Foundation Trust",
     "ods_code": "RC9",
-    "press_email": "communications@bedfordhospital.nhs.uk",
-    "press_email_alt": "communications@ldh.nhs.uk",
+    "press_email": "communications@bedsft.nhs.uk",
+    "press_email_alt": "communications@bedfordhospital.nhs.uk",
     "press_source_url": "https://www.bedfordshirehospitals.nhs.uk/contact-us/media-enquiries/",
     "foi_email": "FOI@bedsft.nhs.uk",
     "foi_email_alt": "bhn-tr.foibedfordshirehospitals@nhs.net",
     "foi_source_url": "https://www.bedfordshirehospitals.nhs.uk/corporate-information/freedom-of-information/",
-    "notes": "Trust runs two press inboxes: communications@bedfordhospital.nhs.uk and communications@ldh.nhs.uk (Luton & Dunstable site)"
+    "notes": "Trust runs two press inboxes: communications@bedfordhospital.nhs.uk and communications@ldh.nhs.uk (Luton & Dunstable site) | press primary updated 2026-06-06 from https://www.bedfordshirehospitals.nhs.uk/contact-us/media-enquiries/ (unified communications@bedsft.nhs.uk now shown on page); prior primary communications@bedfordhospital.nhs.uk moved to _alt; legacy communications@ldh.nhs.uk retired (one alt slot)."
   },
   {
     "trust_name": "Berkshire Healthcare NHS Foundation Trust",
@@ -1096,8 +1096,8 @@
     "press_source_url": "https://www.mpft.nhs.uk/contact-us",
     "foi_email": "foi@mpft.nhs.uk",
     "foi_email_alt": null,
-    "foi_source_url": "Temp/Comms contacts.xlsx (May 2026)",
-    "notes": "MPFT FOI page directs requests via postal address or online portal (mpft.ams-sar.com); no FOI email published."
+    "foi_source_url": "https://www.mpft.nhs.uk/about-us/freedom-information",
+    "notes": "MPFT FOI page directs requests via postal address or online portal (mpft.ams-sar.com); no FOI email published. | foi_source_url set 2026-06-06 from live FOI page (no email published; FOI via online Access Request Portal); existing foi@mpft.nhs.uk retained."
   },
   {
     "trust_name": "Milton Keynes University Hospital NHS Foundation Trust",
@@ -1118,8 +1118,8 @@
     "press_source_url": "https://www.moorfields.nhs.uk/contact-us",
     "foi_email": "Moorfields.webrequests@nhs.net",
     "foi_email_alt": "moorfields.fois@nhs.net",
-    "foi_source_url": "https://www.moorfields.nhs.uk/about-us/freedom-of-information",
-    "notes": "FOI page lists webrequests inbox; may be IG-handled rather than dedicated FOI"
+    "foi_source_url": "https://www.moorfields.nhs.uk/about-us/resources/freedom-of-information",
+    "notes": "FOI page lists webrequests inbox; may be IG-handled rather than dedicated FOI | foi_source_url corrected 2026-06-06 (old about-us/freedom-of-information now 404); live page shows moorfields.fois@nhs.net (= existing _alt); primary Moorfields.webrequests@nhs.net retained."
   },
   {
     "trust_name": "East of England Community Health and Care NHS Trust",
@@ -1173,8 +1173,8 @@
     "press_source_url": "https://www.ncic.nhs.uk/contact",
     "foi_email": "FOIRequests@ncic.nhs.uk",
     "foi_email_alt": null,
-    "foi_source_url": "Temp/Comms contacts.xlsx (May 2026)",
-    "notes": "FOI page not located; North Cumbria FOI URLs all 404; contact page references FOI but only via submission portal."
+    "foi_source_url": "https://www.ncic.nhs.uk/patients-visitors/patient-information-leaflets/freedom-information",
+    "notes": "FOI page not located; North Cumbria FOI URLs all 404; contact page references FOI but only via submission portal. | foi_source_url located 2026-06-06; live page confirms FOIRequests@ncic.nhs.uk (matches primary)."
   },
   {
     "trust_name": "North East Ambulance Service NHS Foundation Trust",
@@ -1742,11 +1742,11 @@
     "ods_code": "RDR",
     "press_email": "scftcommunications@nhs.net",
     "press_email_alt": null,
-    "press_source_url": "Temp/Comms contacts.xlsx (May 2026)",
+    "press_source_url": "https://www.sussexcommunity.nhs.uk/contact-us/press-and-media",
     "foi_email": "SC-TR.freedomofinformation@nhs.net",
     "foi_email_alt": null,
-    "foi_source_url": "Temp/Comms contacts.xlsx (May 2026)",
-    "notes": "Both press and FOI pages returned 403 on direct fetch; emails are spam-obfuscated on the site. IG team based at Brighton General Hospital; Sussex Community: both press-and-media and FOI URLs returned 403 to WebFetch."
+    "foi_source_url": "https://www.sussexcommunity.nhs.uk/contact-us/freedom-of-information",
+    "notes": "Both press and FOI pages returned 403 on direct fetch; emails are spam-obfuscated on the site. IG team based at Brighton General Hospital; Sussex Community: both press-and-media and FOI URLs returned 403 to WebFetch. | source URLs set 2026-06-06 via Playwright render; press scftcommunications@nhs.net and foi sc-tr.freedomofinformation@nhs.net both confirmed on-page (match primaries)."
   },
   {
     "trust_name": "Sussex Partnership NHS Foundation Trust",
