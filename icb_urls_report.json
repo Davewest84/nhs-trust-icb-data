@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T04:11:39.883611+00:00",
+  "generated_at": "2026-06-13T04:11:38.845813+00:00",
   "label": "ICB",
   "total": 36,
   "ok": 35,
@@ -90,10 +90,10 @@
       "ods_code": "QWU",
       "name": "Coventry and Warwickshire ICB",
       "url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/\nCall l"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "QGH",
@@ -107,10 +107,10 @@
     {
       "ods_code": "QJ2",
       "name": "Derby and Derbyshire ICB",
-      "url": "https://joinedupcarederbyshire.co.uk/derbyshire-integrated-care-board/integrated-care-board-meetings/",
+      "url": "https://joinedupcarederbyshire.co.uk/derbyshire-integrated-care-board/integrated-care-board-meeting-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://joinedupcarederbyshire.co.uk/derbyshire-integrated-care-board/integrated-care-board-meetings/",
+      "final_url": "https://joinedupcarederbyshire.co.uk/derbyshire-integrated-care-board/integrated-care-board-meeting-papers/",
       "error": null
     },
     {
@@ -324,10 +324,10 @@
       "ods_code": "QJK",
       "name": "Devon ICB",
       "url": "https://devon.icb.nhs.uk/nhs-devon-board/meetings-and-papers/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://devon.icb.nhs.uk/nhs-devon-board/meetings-and-papers/",
-      "error": null
+      "ok": false,
+      "status": 404,
+      "final_url": null,
+      "error": "http: HTTP 404; playwright: HTTP 404"
     }
   ]
 }

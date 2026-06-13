@@ -13,13 +13,13 @@
     "cluster_id": null,
     "cluster_meeting_url": null,
     "notes": null,
-    "access_notes": "Strategy: 3-LEVEL navigation. Landing \u2192 year sub-page at /{YYYY}/ (eg /2026/) \u2192 per-meeting sub-page at /{DD-month-YYYY}/ (lowercase month, hyphen-separated, eg /29-january-2026/) \u2192 PDFs in /media/{8-char-hash}/{filename}.pdf. Multiple PDFs per meeting (full pack + Q&A + presentations) \u2014 grab all. Filenames are NOT predictable (some DDMMYY, some monthYYYY, some YYYYMM) \u2014 must scrape from the DOM. Upcoming meetings sit at /get-involved/upcoming-meetings-and-events/... until archived. C&M ICB publishes standalone (not a joint cluster board, despite regional cluster framing). System Primary Care Committee PDFs are a SEPARATE committee \u2014 exclude. Not JS-rendered; static HTML throughout.",
+    "access_notes": "Strategy: 3-LEVEL navigation. Landing → year sub-page at /{YYYY}/ (eg /2026/) → per-meeting sub-page at /{DD-month-YYYY}/ (lowercase month, hyphen-separated, eg /29-january-2026/) → PDFs in /media/{8-char-hash}/{filename}.pdf. Multiple PDFs per meeting (full pack + Q&A + presentations) — grab all. Filenames are NOT predictable (some DDMMYY, some monthYYYY, some YYYYMM) — must scrape from the DOM. Upcoming meetings sit at /get-involved/upcoming-meetings-and-events/... until archived. C&M ICB publishes standalone (not a joint cluster board, despite regional cluster framing). System Primary Care Committee PDFs are a SEPARATE committee — exclude. Not JS-rendered; static HTML throughout.",
     "needs_playwright": false,
     "pack_pattern_hints": "full pack; agenda and papers; combined",
     "exclude_patterns": "questions and responses; presentations; System Primary Care Committee; Committee",
     "last_validated": "2026-05-29",
     "validation_status": "papers_found",
-    "validation_notes": "16 in-window meetings via 3-level drill-down. May 2026 and March 2026 packs (4.3MB + 5.3MB) both have BAF sections \u2014 scores 87 and 367."
+    "validation_notes": "16 in-window meetings via 3-level drill-down. May 2026 and March 2026 packs (4.3MB + 5.3MB) both have BAF sections — scores 87 and 367."
   },
   {
     "ods_code": "QOP",
@@ -198,7 +198,7 @@
     "cluster_id": "BSOL-BC",
     "cluster_meeting_url": "https://www.birminghamsolihull.icb.nhs.uk/about-us/our-committees/integrated-care-board/integrated-care-board-papers/",
     "notes": "Joint ICB Cluster Board with Black Country (QUA); joint pack hosted under the B&S domain",
-    "access_notes": "Strategy: landing lists year archives (5 'Board papers 20XX' year links). The year-link URLs are Concrete CMS navigate endpoints (.../navigate/13363/NNNN) that load via AJAX \u2014 static fetch returns no PDFs from the year pages. Playwright + interactive_dom strategy (render landing, click year tabs, re-scrape DOM) recovers 9 in-window meetings. PDF titles: 'ICB Board Pack {Month YYYY}' / 'Joint ICB Cluster Board Meeting - {Month YYYY}'.",
+    "access_notes": "Strategy: landing lists year archives (5 'Board papers 20XX' year links). The year-link URLs are Concrete CMS navigate endpoints (.../navigate/13363/NNNN) that load via AJAX — static fetch returns no PDFs from the year pages. Playwright + interactive_dom strategy (render landing, click year tabs, re-scrape DOM) recovers 9 in-window meetings. PDF titles: 'ICB Board Pack {Month YYYY}' / 'Joint ICB Cluster Board Meeting - {Month YYYY}'.",
     "needs_playwright": true,
     "pack_pattern_hints": "ICB Board Pack; Joint ICB Cluster Board Meeting; Board Papers",
     "exclude_patterns": "Committee; Q&A; Confidential; Part 2",
@@ -219,7 +219,29 @@
     "url_root": "https://blackcountry.icb.nhs.uk",
     "cluster_id": "BSOL-BC",
     "cluster_meeting_url": "https://www.birminghamsolihull.icb.nhs.uk/about-us/our-committees/integrated-care-board/integrated-care-board-papers/",
-    "notes": "Joint ICB Cluster Board with Birmingham and Solihull (QHL); cluster pack PDFs hosted on blackcountryics.org.uk under /application/files/"
+    "notes": "Joint ICB Cluster Board with Birmingham and Solihull (QHL); cluster pack PDFs hosted on blackcountryics.org.uk under /application/files/",
+    "access_notes": "Static-fetchable landing ('How we make decisions') with a single table of the formal public Board (the 'Joint ICB Cluster Board', which is Black Country ICB's board) meeting ~six times a year. Columns: Date / Venue / 'Link to papers (available following each meeting)'. Each dated row carries a 'Download papers for {date}' link to a combined papers PDF hosted on the legacy blackcountryics.org.uk domain (/download_file/view/{id}/475). Pattern A — no year folders or per-meeting sub-pages. Links only appear after each meeting has taken place, so future dates may have no link yet. This page lists ONLY the Board, so include all rows, but EXCLUDE the separately-listed committees (Audit and Governance, Joint Finance and Performance, Joint Quality, Joint Strategic Commissioning, Joint Transition, Joint Remuneration), the Place Committees, the AGM, and any ICP listing.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Download papers for {DD Month Year}",
+      "blackcountryics.org.uk/download_file/view/{id}/475",
+      "Joint ICB Cluster Board"
+    ],
+    "exclude_patterns": [
+      "Audit and Governance Committee",
+      "Joint Finance and Performance Committee",
+      "Joint Quality Committee",
+      "Joint Strategic Commissioning Committee",
+      "Joint Transition Committee",
+      "Joint Remuneration Committee",
+      "Place Committees",
+      "Integrated Care Partnership",
+      "ICP",
+      "AGM"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Confirmed dated Board entries e.g. 'Download papers for 08 December 2025' (blackcountryics.org.uk/download_file/view/4017/475) and '11 May 2026' (/download_file/view/4236/475)."
   },
   {
     "ods_code": "QWU",
@@ -332,7 +354,7 @@
     "url_root": "https://lincolnshire.icb.nhs.uk",
     "cluster_id": "DLN",
     "cluster_meeting_url": "https://notts.icb.nhs.uk/about-us/our-icb-board/",
-    "notes": "DLN cluster; transformation fund page at https://lincolnshire.icb.nhs.uk/transformation-fund \u2014 note the April 2026 walk-back text",
+    "notes": "DLN cluster; transformation fund page at https://lincolnshire.icb.nhs.uk/transformation-fund — note the April 2026 walk-back text",
     "access_notes": "Strategy: landing surfaces board papers directly (mix of dated PDFs and/or year links). Static fetch works. Prefer the main combined board pack; filter observer notes and Q&A. Pattern A/B.",
     "needs_playwright": false,
     "pack_pattern_hints": [
@@ -1004,7 +1026,7 @@
     "cluster_meeting_url": "https://swpboard.nhs.uk/meetings/",
     "notes": "South West Peninsula joint board with Devon (QJK); cluster pack at swpboard.nhs.uk",
     "url": "https://cios.icb.nhs.uk/about/meetings/",
-    "access_notes": "Pattern D (JS-rendered). A static fetch of the 'Meetings in public' page returns a near-empty body; under headless Chromium it renders on cios.icb.nhs.uk (verify location.host \u2014 the shared browser drifts to other workers' pages) at ~4KB of content and exposes the ICB Board papers. The page surfaces (a) direct dated ICB Board PDFs for the current FY hosted on a SEPARATE document-library subdomain docs.cios.icb.nhs.uk, and (b) per-FY year-archive sub-pages /about/meetings/2025-to-2026-papers/, /2024-to-2025-papers/, /2023-to-2024-papers/, /2022-to-2023-papers/. The 2025-to-2026-papers archive page (also JS-rendered) lists each ICB Board meeting's papers itemised per agenda item (NOT a single combined pack) at docs.cios.icb.nhs.uk/DocumentsLibrary/NHSCornwallAndIslesOfScilly/Organisation/PublicMeetings/BoardMeetings/{FY}/{YYYYMM}/ (FY = 2526, YYYYMM = meeting month), e.g. AgendaPart1ICBBoardMay2025.pdf and ICB{seq}*.pdf reports. A crawler should anchor each meeting on the 'Agenda Part 1 ICB Board {Month} {Year}' PDF and gather the sibling ICB{seq} files in the same {YYYYMM} folder. Some links are wrapped in Outlook safelinks redirects (unwrap via url= param). Static fetch misses all of this. Filter to the ICB Board only \u2014 EXCLUDE the Integrated Care Partnership (/ics/icp/) and the South West Peninsula ICB-cluster page (/icb-cluster/).",
+    "access_notes": "Pattern D (JS-rendered). A static fetch of the 'Meetings in public' page returns a near-empty body; under headless Chromium it renders on cios.icb.nhs.uk (verify location.host — the shared browser drifts to other workers' pages) at ~4KB of content and exposes the ICB Board papers. The page surfaces (a) direct dated ICB Board PDFs for the current FY hosted on a SEPARATE document-library subdomain docs.cios.icb.nhs.uk, and (b) per-FY year-archive sub-pages /about/meetings/2025-to-2026-papers/, /2024-to-2025-papers/, /2023-to-2024-papers/, /2022-to-2023-papers/. The 2025-to-2026-papers archive page (also JS-rendered) lists each ICB Board meeting's papers itemised per agenda item (NOT a single combined pack) at docs.cios.icb.nhs.uk/DocumentsLibrary/NHSCornwallAndIslesOfScilly/Organisation/PublicMeetings/BoardMeetings/{FY}/{YYYYMM}/ (FY = 2526, YYYYMM = meeting month), e.g. AgendaPart1ICBBoardMay2025.pdf and ICB{seq}*.pdf reports. A crawler should anchor each meeting on the 'Agenda Part 1 ICB Board {Month} {Year}' PDF and gather the sibling ICB{seq} files in the same {YYYYMM} folder. Some links are wrapped in Outlook safelinks redirects (unwrap via url= param). Static fetch misses all of this. Filter to the ICB Board only — EXCLUDE the Integrated Care Partnership (/ics/icp/) and the South West Peninsula ICB-cluster page (/icb-cluster/).",
     "needs_playwright": true,
     "pack_pattern_hints": [
       "/about/meetings/{YYYY}-to-{YYYY}-papers/ year-archive sub-pages",
@@ -1034,10 +1056,25 @@
     "merger_date": null,
     "region": "South West",
     "correspondent": null,
-    "url": "https://devon.icb.nhs.uk/nhs-devon-board/meetings-and-papers/",
+    "url": "https://swpboard.nhs.uk/board-meetings/",
     "url_root": "https://onedevon.org.uk",
     "cluster_id": "SW-PEN",
     "cluster_meeting_url": "https://swpboard.nhs.uk/meetings/",
-    "notes": "South West Peninsula joint board with Cornwall and IoS (QT6); cluster pack at swpboard.nhs.uk. Standalone Devon Board last met 28 August 2025."
+    "notes": "South West Peninsula joint board with Cornwall and IoS (QT6); cluster pack at swpboard.nhs.uk. Standalone Devon Board last met 28 August 2025.",
+    "access_notes": "Pattern C + cluster (SW-PEN). NHS Devon and NHS Cornwall & Isles of Scilly delegated their board functions to the joint South West Peninsula Board (Sept 2025); the joint board pack now lives on swpboard.nhs.uk, not devon.icb.nhs.uk (old /nhs-devon-board/meetings-and-papers/ is HTTP 404). Landing lists dated meetings (e.g. 16 Oct 2025, 27 Nov 2025, 29 Jan 2026) with a 'View the meeting papers and minutes' link per meeting leading to the combined pack PDF under /wp-content/uploads/YYYY/MM/ (e.g. SWPB-Public-29.01.2026-Meeting-Papers.pdf). This pack covers BOTH Devon and Cornwall & IoS. URL fixed 2026-06-13.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "SWPB-Public-DD.MM.YYYY-Meeting-Papers.pdf",
+      "South West Peninsula Board Meeting in Public",
+      "View the meeting papers and minutes"
+    ],
+    "exclude_patterns": [
+      "committee/sub-committee papers",
+      "minutes only",
+      "legacy devon.icb.nhs.uk standalone pages"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Joint SW Peninsula Board on swpboard.nhs.uk lists 2025/26 meetings incl 29 Jan 2026 (SWPB-Public-29.01.2026-Meeting-Papers.pdf); old devon.icb.nhs.uk path is 404."
   }
 ]

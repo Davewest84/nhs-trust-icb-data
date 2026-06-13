@@ -475,7 +475,22 @@
     "region": "Midlands",
     "ics": "Leicester, Leicestershire and Rutland",
     "correspondent": "Annabelle",
-    "url": "https://www.leicspart.nhs.uk/about-us/trust-board/"
+    "url": "https://www.leicspart.nhs.uk/about/corporate-responsibilities/trust-board/",
+    "access_notes": "Pattern E (anti-bot) + A. The site forcibly closes automated connections (ConnectionReset to requests and WebFetch), so static health-checks read as 'broken'; the page is live in a browser. The board page moved path from /about-us/trust-board/ to /about/corporate-responsibilities/trust-board/ (sibling /about/corporate-responsibilities/group-board/ holds the group board). Combined paper packs are published as dated PDFs under /wp-content/uploads/YYYY/MM/ named '{DD Month YYYY} Public Trust Board Combined Paper Pack'. Trust meets ~6x/year on MS Teams with livestream. If blocked, fetch the dated combined-pack PDF URL directly or use the publication scheme. URL fixed 2026-06-13.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "DD Month YYYY Public Trust Board Combined Paper Pack",
+      "Group Trust Board Combined Paper Pack",
+      "/wp-content/uploads/YYYY/MM/"
+    ],
+    "exclude_patterns": [
+      "Declarations of Interest Report (component)",
+      "Group Board (when only trust board wanted)",
+      "minutes only"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Search-confirmed live combined packs 27 January 2026 and 26 May 2026 under leicspart.nhs.uk/wp-content/uploads/2026/; site blocks automated fetch (anti-bot)."
   },
   {
     "ods_code": "RTG",
@@ -516,7 +531,24 @@
     "region": "Midlands",
     "ics": "Leicester, Leicestershire and Rutland",
     "correspondent": "Annabelle",
-    "url": "https://www.uhleicester.nhs.uk/about/board/board-papers-and-meetings/"
+    "url": "https://www.uhleicester.nhs.uk/about/board/board-papers-and-meetings/",
+    "access_notes": "Landing page lists the full paper set for the most recent meeting directly (Pattern A): individual dated PDFs for the current 'Boards in Common' meeting (agenda, minutes, action log, committee reports, performance and quality papers) appear inline. UHL runs as a 'Boards in Common' with Leicestershire Partnership, so packs may be jointly branded. For older 2025/2026 meetings follow the 'Agenda and papers from our previous Trust Board meetings are available here' link to the publication-scheme archive. The page also lists upcoming 2026 meeting dates whose packs post in the same inline pattern shortly before each date.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda",
+      "Public/Trust Board pack",
+      "Boards in Common agenda and papers",
+      "performance report"
+    ],
+    "exclude_patterns": [
+      "minutes only",
+      "action log",
+      "observer/Q&A notes",
+      "publication-scheme generic documents"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Inline dated PDFs present for the 11 June 2026 Boards in Common meeting (agenda + committee reports); older packs via the 'previous Trust Board meetings' publication-scheme link."
   },
   {
     "ods_code": "RX1",
@@ -557,7 +589,22 @@
     "region": "Midlands",
     "ics": "Derby and Derbyshire",
     "correspondent": "Annabelle",
-    "url": "https://www.derbyshirehealthcareft.nhs.uk/about-us/our-board-directors/board-meetings"
+    "url": "https://www.derbyshirehealthcareft.nhs.uk/about-us/our-board-directors/board-meetings",
+    "access_notes": "Landing page lists meetings chronologically under expandable '2025' and '2026' year headings (Pattern A with inline accordions, no separate year pages). Each meeting shows its date and time followed by a single 'Agenda and papers' link that resolves to a download_file/view PDF (e.g. /download_file/view/6958/222). A crawler should collect every 'Agenda and papers' href under the 2025 and 2026 headings. Ignore the 'View a summary of the meeting' link (narrative recap, not the pack) and any 'Join via webinar' / 'Link to join the meeting online' safelinks.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda and papers",
+      "download_file/view"
+    ],
+    "exclude_patterns": [
+      "View a summary of the meeting",
+      "Join via webinar",
+      "Link to join the meeting online",
+      "meeting summaries"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "2026 packs listed for 27 Jan, 24 Mar, 19 May 2026; 2025 sample 'Agenda and papers' = /download_file/view/6958/222 (14 Jan 2025)."
   },
   {
     "ods_code": "RY5",
@@ -600,7 +647,21 @@
     "region": "Midlands",
     "ics": "Derby and Derbyshire",
     "correspondent": "Annabelle",
-    "url": "https://dchs.nhs.uk/about-us/our-board"
+    "url": "https://dchs.nhs.uk/about-us/our-board",
+    "access_notes": "Landing page lists papers directly under 'Agendas and Papers 2026:' and 'Agendas and Papers 2025:' headings (Pattern A). Each entry is a month link, sometimes annotated with content type in parentheses, e.g. 'January 2026 (Performance Report)', resolving to a download_file/view PDF (URLs like /download_file/view/[ID]/243). A crawler should collect every month link beneath each 'Agendas and Papers [year]' heading. Some links are component documents (e.g. a standalone Performance Report) rather than the full pack, so prefer the bare 'Month Year' agenda link where both exist.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agendas and Papers",
+      "Month Year agenda link",
+      "download_file/view"
+    ],
+    "exclude_patterns": [
+      "(Performance Report) standalone component when full pack also listed",
+      "minutes only"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Dated month links present under both 2025 and 2026 headings, e.g. 'January 2026 (Performance Report)' and 'August 2025', each a download_file/view PDF."
   },
   {
     "ods_code": "R1A",
@@ -641,23 +702,22 @@
     "ics": "Shropshire, Telford and Wrekin",
     "correspondent": "Caitlin",
     "url": "https://www.shropscommunityhealth.nhs.uk/board-meetings-and-papers",
-    "access_notes": "The supplied URL is the correct landing (rendered title 'Board meeting papers for Shropshire Community Health NHS Trust'). Static fetch returns empty because the site renders content client-side, so Playwright is required. The CURRENT meeting's papers appear inline near the bottom under a 'Board papers for <Month Year>' heading (currently 'Board papers for May 2026') with 2-3 PDF links; for older meetings use the 'Papers from previous board meetings' dropdown (select month/year, click 'Find') which loads via JS. PDFs are on-domain at content/doclib/NNNNN.pdf. Meetings roughly bi-monthly; dropdown spans 2015-2026. Prefer the combined/full pack ('Combined papers'/'Public Information Pack') over the standalone agenda. Filter the agenda-only PDF and private items; only ~5 years retained.",
-    "needs_playwright": true,
+    "access_notes": "Landing page at /board-meetings-and-papers shows the LATEST meeting's papers directly as dated PDFs at /content/doclib/<id>.pdf (server-rendered, static fetch works — the needs_playwright flag was a false positive). For the most recent meeting take the file named '01 ... Combined papers' or '02 Public Information Pack' as the main pack; '00 Public Agenda' is agenda-only. To reach earlier meetings, use the on-page dropdown <select name=\"bdts\"> whose options are month/year labels (e.g. 'April 2025', 'June 2025', 'August 2025', up to 'December 2026'); changing the selection swaps the three displayed doclib PDFs to that meeting's set via JS. Note these are 'Meetings in Common' so a single combined pack covers the joint board.",
+    "needs_playwright": false,
     "pack_pattern_hints": [
-      "content/doclib/",
-      ".pdf",
-      "Combined papers",
       "Public Information Pack",
-      "Board papers for <Month Year>"
+      "Combined papers",
+      "Board Meetings in Common - DD.MM.YYYY - Combined papers",
+      "/content/doclib/<id>.pdf"
     ],
     "exclude_patterns": [
-      "Public Agenda",
-      "agenda only",
-      "minutes"
+      "00 Public Agenda (agenda only, not full pack)",
+      "AGM",
+      "minutes-only items"
     ],
-    "last_validated": "2026-06-06",
+    "last_validated": "2026-06-13",
     "validation_status": "papers_found",
-    "validation_notes": "Inline May 2026 board pack PDFs present (agenda, combined papers, public information pack) plus a 5-year dropdown archive."
+    "validation_notes": "Saw '02 Public Information Pack 14.05.2026' (doclib/14536.pdf) and '01 Board Meetings in Common - 14.05.2026 - Combined papers' (doclib/14535.pdf) on the landing, plus dropdown entries back to April 2025."
   },
   {
     "ods_code": "RBK",
@@ -670,7 +730,21 @@
     "region": "Midlands",
     "ics": "Black Country",
     "correspondent": "Caitlin",
-    "url": "https://www.walsallhealthcare.nhs.uk/about-us/how-we-are-run/board-papers/"
+    "url": "https://www.walsallhealthcare.nhs.uk/about-us/how-we-are-run/board-papers/",
+    "access_notes": "Walsall runs a Joint Trust Board with Royal Wolverhampton (RWT); landing page shows collapsible year sections ('2026', '2025') that expand to direct 'Trust Board Papers – [Month Year]' PDF links (Pattern A with accordion). Meeting packs are available at least 3 working days before each meeting. PDFs are hosted on either the Walsall Healthcare or Royal Wolverhampton domains, so accept cross-domain hrefs. A crawler should expand each year heading and collect every 'Trust Board Papers – [Month Year]' link.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Trust Board Papers –",
+      "Joint Trust Board meeting pack"
+    ],
+    "exclude_patterns": [
+      "minutes only",
+      "ICP not ICB",
+      "standalone risk-register documents"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "2026 packs: 'Trust Board Papers – May 2026', 'March 2026', 'January 2026'; 2025 includes 'Trust Board Papers – November 2025' and 'September 2025'."
   },
   {
     "ods_code": "RJC",
@@ -684,7 +758,7 @@
     "ics": "Coventry and Warwickshire",
     "correspondent": "Caitlin",
     "url": "https://www.swft.nhs.uk/about-us/publications/Board-of-Directors-papers-minutes",
-    "access_notes": "Pattern B+F (wrong-url-fixed): old DB url /meetings-and-events/board-meetings only lists future dates ('No upcoming events') and links onward to the real archive at /about-us/publications/Board-of-Directors-papers-minutes, so point the crawler at the archive. The archive is organised by year tabs/sections (2026, 2025, 2024...). Within each year are per-meeting download links served via /download_file/{guid}/{n} (no readable extension) titled e.g. 'Public SWFT and GEH Boards Combined Meeting Pack - 07.10.2025' \u2014 take the single largest combined meeting-pack PDF per date. Quirk: South Warwickshire (SWFT) now meets as a JOINT board in common with George Eliot Hospital (GEH); the only public pack is the combined SWFT/GEH pack, so do not filter it out as a Joint board. Download URLs lack a .pdf suffix.",
+    "access_notes": "Pattern B+F (wrong-url-fixed): old DB url /meetings-and-events/board-meetings only lists future dates ('No upcoming events') and links onward to the real archive at /about-us/publications/Board-of-Directors-papers-minutes, so point the crawler at the archive. The archive is organised by year tabs/sections (2026, 2025, 2024...). Within each year are per-meeting download links served via /download_file/{guid}/{n} (no readable extension) titled e.g. 'Public SWFT and GEH Boards Combined Meeting Pack - 07.10.2025' — take the single largest combined meeting-pack PDF per date. Quirk: South Warwickshire (SWFT) now meets as a JOINT board in common with George Eliot Hospital (GEH); the only public pack is the combined SWFT/GEH pack, so do not filter it out as a Joint board. Download URLs lack a .pdf suffix.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "Combined Meeting Pack",
@@ -763,7 +837,7 @@
     "ics": "Shropshire, Telford and Wrekin",
     "correspondent": "Caitlin",
     "url": "https://www.rjah.nhs.uk/about-us/publications/trust-board-meeting-papers/",
-    "access_notes": "Pattern B+F (wrong-url-fixed): old DB url /about-us/board-of-directors/board-of-directors-meeting-dates lists only future meeting dates with NO paper links. The correct archive is /about-us/publications/trust-board-meeting-papers/, a click-through index of academic-year sub-pages: /.../2025-2026-trust-board-meeting-papers/ and /.../2026-2027-trust-board-meeting-papers/. Each year sub-page lists per-meeting combined board packs as PDFs served from /media/{slug}/...pdf, named 'Board of Directors {dd.mm.yyyy}.pdf' or 'Board of Directors Public Meeting {date}.pdf' (single combined pack ~8-18MB; some dates split Part 1/Part 2 e.g. 02.07.2025 \u2014 grab both). Crawler must go landing -> year sub-page -> PDF (two clicks). Static WebFetch works.",
+    "access_notes": "Pattern B+F (wrong-url-fixed): old DB url /about-us/board-of-directors/board-of-directors-meeting-dates lists only future meeting dates with NO paper links. The correct archive is /about-us/publications/trust-board-meeting-papers/, a click-through index of academic-year sub-pages: /.../2025-2026-trust-board-meeting-papers/ and /.../2026-2027-trust-board-meeting-papers/. Each year sub-page lists per-meeting combined board packs as PDFs served from /media/{slug}/...pdf, named 'Board of Directors {dd.mm.yyyy}.pdf' or 'Board of Directors Public Meeting {date}.pdf' (single combined pack ~8-18MB; some dates split Part 1/Part 2 e.g. 02.07.2025 — grab both). Crawler must go landing -> year sub-page -> PDF (two clicks). Static WebFetch works.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "Board of Directors Public Meeting",
@@ -852,7 +926,7 @@
     "ics": "Staffordshire and Stoke-on-Trent",
     "correspondent": "Caitlin",
     "url": "https://www.combined.nhs.uk/about/our-board/board-meetings/",
-    "access_notes": "Pattern A+C: landing page lists the next upcoming meeting with its full board pack as a single PDF under /wp-content/uploads/{yyyy}/{mm}/PUBLIC-TRUST-BOARD-PACK...pdf or PUBLIC-TRUST-BOARD-PAPERS...pdf (e.g. 14.05.26, 15.01.26). It also lists 'Previous Board Meetings' as per-meeting sub-pages (Trust board meeting - May 2026, March 2026, Jan 2026, Nov 2025...) each carrying that meeting's pack, plus a 'Board meeting archive' link at /about/our-board/board-meetings/board-meeting-archive/. Take the single combined PUBLIC TRUST BOARD PACK/PAPERS PDF per date. Quirk: the /about/ path is canonical; the /about-us/ variant returns 404. Initial WebFetch hit a transient socket close but retry succeeded \u2014 not anti-bot.",
+    "access_notes": "Pattern A+C: landing page lists the next upcoming meeting with its full board pack as a single PDF under /wp-content/uploads/{yyyy}/{mm}/PUBLIC-TRUST-BOARD-PACK...pdf or PUBLIC-TRUST-BOARD-PAPERS...pdf (e.g. 14.05.26, 15.01.26). It also lists 'Previous Board Meetings' as per-meeting sub-pages (Trust board meeting - May 2026, March 2026, Jan 2026, Nov 2025...) each carrying that meeting's pack, plus a 'Board meeting archive' link at /about/our-board/board-meetings/board-meeting-archive/. Take the single combined PUBLIC TRUST BOARD PACK/PAPERS PDF per date. Quirk: the /about/ path is canonical; the /about-us/ variant returns 404. Initial WebFetch hit a transient socket close but retry succeeded — not anti-bot.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "PUBLIC TRUST BOARD PACK",
@@ -1247,7 +1321,21 @@
     "region": "London",
     "ics": "South East London",
     "correspondent": "Ella",
-    "url": "https://www.lewishamandgreenwich.nhs.uk/board-papers/"
+    "url": "https://www.lewishamandgreenwich.nhs.uk/board-papers/",
+    "access_notes": "Single page listing all board papers chronologically under year headings (Pattern A); no calendar, year folders or sub-pages. Meetings appear as dated links such as 'Trust Board 30 September 2025' and 'Trust Board Meeting, Tuesday 28 April 2026', each resolving directly to a PDF. Beware data-quality noise: some entries are duplicated (two differently-URL'd versions of the same April 2026 meeting) and some links are standalone component documents — e.g. 'Corporate risk register and board assurance framework, Nov 2025' is a .docx, not a board pack. Prefer the 'Trust Board [date]' meeting links and de-duplicate by date.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Trust Board [date]",
+      "Trust Board Meeting, [day date]"
+    ],
+    "exclude_patterns": [
+      "Corporate risk register and board assurance framework (.docx component)",
+      "duplicate same-date links",
+      "minutes only"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "2026: 'Trust Board Meeting, Tuesday 28 April 2026'; 2025: 'Trust Board 30 September 2025' and 'Trust Board 24 June 2025'."
   },
   {
     "ods_code": "RJ6",
@@ -1439,7 +1527,7 @@
     "ics": "",
     "correspondent": "Ella",
     "url": "https://clch.nhs.uk/about-us/publications/board-papers-and-committee-tor",
-    "access_notes": "Strategy: papers under /publications/ NOT under /our-board/. Static HTML list of /download_file/ links with dates in adjacent text spans. URL pattern split: older items at /download_file/{id}/0 (no /view), newer at /download_file/view/{id}/785 \u2014 BOTH 302-redirect to the PDF. Two streams on the same page: (a) CLCH Trust Board monthly-ish meetings, and (b) Board-in-Common jointly with CNWL + West London NHS Trust (twice yearly). Multiple PDFs per meeting \u2014 typically a main agenda+papers pack PLUS an Annexes A-X pack, occasionally a third (eg Fire Safety Statement). Grab all to capture the complete pack. Old DB URL /about-us/our-board/ is a director-bios page; the only PDF it shows is the declarations of interest. Trust secretary contact for missing/older packs: clcht.trust.secretary@nhs.net.",
+    "access_notes": "Strategy: papers under /publications/ NOT under /our-board/. Static HTML list of /download_file/ links with dates in adjacent text spans. URL pattern split: older items at /download_file/{id}/0 (no /view), newer at /download_file/view/{id}/785 — BOTH 302-redirect to the PDF. Two streams on the same page: (a) CLCH Trust Board monthly-ish meetings, and (b) Board-in-Common jointly with CNWL + West London NHS Trust (twice yearly). Multiple PDFs per meeting — typically a main agenda+papers pack PLUS an Annexes A-X pack, occasionally a third (eg Fire Safety Statement). Grab all to capture the complete pack. Old DB URL /about-us/our-board/ is a director-bios page; the only PDF it shows is the declarations of interest. Trust secretary contact for missing/older packs: clcht.trust.secretary@nhs.net.",
     "needs_playwright": false,
     "pack_pattern_hints": "agenda and papers; meeting papers; agenda + papers; Board-in-Common agenda",
     "exclude_patterns": "declaration of interests; Questions for the board; annexes only; ToR",
@@ -1489,22 +1577,20 @@
     "region": "North East and Yorkshire",
     "ics": "Humber and North Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.yorkscarborough.nhs.uk/about-us/board-of-directors/board-of-directors-papers/",
-    "access_notes": "The trust has rebranded/migrated its domain from yorkhospitals.nhs.uk to yorkscarborough.nhs.uk; the old /board-of-directors-meetings/ page only lists meeting dates and points to a separate papers sub-page. Go to /board-of-directors-papers/, which lists each meeting (2025/26 and 2026/27) with a per-meeting 'Agenda' link of the form /seecmsfile/?id=NNNN that opens the combined agenda+papers document. Static fetch works (HTML renders the dated list); no JS render needed. Coverage 2025-2026 both present plus upcoming 2026/27 dates. Prefer the most recent past meeting's agenda/papers link; entries marked 'available nearer the time' have no doc yet. Filter out future undated rows and the meetings landing page.",
+    "url": "https://www.yorkhospitals.nhs.uk/about-us/board-of-directors/board-of-directors-papers/",
+    "access_notes": "Pattern A + F. The DB domain yorkscarborough.nhs.uk is dead (ECONNREFUSED); the live site is yorkhospitals.nhs.uk. Board of Directors papers are listed directly on this page as dated 'Agenda' links per meeting (newest first), with separate 'late papers' supplementary links where applicable, and an archive of prior financial years below. Static fetch works on the new domain. URL fixed 2026-06-13 (yorkscarborough -> yorkhospitals).",
     "needs_playwright": false,
     "pack_pattern_hints": [
-      "/seecmsfile/?id=",
-      "Agenda <Month> <Year>",
+      "DD Month YYYY Agenda",
       "Board of Directors papers"
     ],
     "exclude_patterns": [
-      "board-of-directors-meetings",
-      "available nearer the time",
-      "#main-content"
+      "late papers (supplementary)",
+      "minutes only"
     ],
-    "last_validated": "2026-06-06",
+    "last_validated": "2026-06-13",
     "validation_status": "papers_found",
-    "validation_notes": "Papers sub-page lists per-meeting seecmsfile agenda/paper links for 2025 and 2026 meetings on the migrated yorkscarborough.nhs.uk domain."
+    "validation_notes": "Confirmed dated agendas for 25 February 2026 and 25 March 2026 plus 2024/25 archive on the new yorkhospitals.nhs.uk domain."
   },
   {
     "ods_code": "RCD",
@@ -1532,7 +1618,7 @@
     "ics": "West Yorkshire",
     "correspondent": "Henry",
     "url": "https://www.airedale-trust.nhs.uk/about-us/our-board-and-leadership/",
-    "access_notes": "Pattern D (JS-rendered + WAF): the current leadership URL IS the board-papers location, but a static fetch returns empty because (a) the page is JS-rendered and (b) it sits behind a Sucuri WAF that intermittently serves a '.well-known/sgcaptcha' Robot Challenge Screen blocking headless Chromium \u2014 Playwright must retry until the challenge clears (it did, location.host www.airedale-trust.nhs.uk, ~25k chars). Once rendered, a 'Trust Board meetings' accordion exposes per-YEAR tabs (#tab-2026, #tab-2025 ... #tab-2018); under the 2026 tab the dated combined board packs are linked directly as single PDFs \u2014 '06 May 2026 Public Board of Directors papers', '04 March 2026 ...', '14 January 2026 ...' \u2014 hosted as WordPress uploads at /wp-content/uploads/{YYYY}/{MM}/, with 2025 packs (05.11.25, 3.9.25, 30-05-25, 2 April 2025, 5 February 2025) under the 2025 tab. A crawler must JS-render the page (handling the WAF challenge), open each year tab, and harvest the /wp-content/uploads PDFs. Static fetch misses the WAF, the year tabs and every PDF.",
+    "access_notes": "Pattern D (JS-rendered + WAF): the current leadership URL IS the board-papers location, but a static fetch returns empty because (a) the page is JS-rendered and (b) it sits behind a Sucuri WAF that intermittently serves a '.well-known/sgcaptcha' Robot Challenge Screen blocking headless Chromium — Playwright must retry until the challenge clears (it did, location.host www.airedale-trust.nhs.uk, ~25k chars). Once rendered, a 'Trust Board meetings' accordion exposes per-YEAR tabs (#tab-2026, #tab-2025 ... #tab-2018); under the 2026 tab the dated combined board packs are linked directly as single PDFs — '06 May 2026 Public Board of Directors papers', '04 March 2026 ...', '14 January 2026 ...' — hosted as WordPress uploads at /wp-content/uploads/{YYYY}/{MM}/, with 2025 packs (05.11.25, 3.9.25, 30-05-25, 2 April 2025, 5 February 2025) under the 2025 tab. A crawler must JS-render the page (handling the WAF challenge), open each year tab, and harvest the /wp-content/uploads PDFs. Static fetch misses the WAF, the year tabs and every PDF.",
     "needs_playwright": true,
     "pack_pattern_hints": [
       "#tab-{YYYY} year tabs in the 'Trust Board meetings' accordion",
@@ -1775,7 +1861,21 @@
     "region": "North East and Yorkshire",
     "ics": "Humber and North Yorkshire",
     "correspondent": "Henry",
-    "url": "https://www.humber.nhs.uk/about/trust-board/"
+    "url": "https://www.humber.nhs.uk/about/trust-board/",
+    "access_notes": "Two-hop year-folder structure (Pattern B). The main /about/trust-board/ page only links to a 'Public Board Papers' sub-page; that sub-page (/about/trust-board/public-board-papers/) then links to per-year folders 'Public Board Papers 2026' and 'Public Board Papers 2025', each of which lists single combined-pack PDFs named 'Public Board Papers - [DD Month YYYY]' under /media/. The Trust meets in public every other month. A crawler should follow Trust Board → Public Board Papers → each year folder, then collect the /media/*.pdf pack links. Use /public-board-dates/ for the forward schedule.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Papers - [date]",
+      "/media/*.pdf combined pack"
+    ],
+    "exclude_patterns": [
+      "Public Board Dates (schedule only)",
+      "Meet the Board",
+      "minutes only"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "2026 folder lists 'Public Board Papers - 27 May 2026', '25 March 2026', '28 January 2026'; 2025 folder includes 'Public Board Papers - 28 May 2025'."
   },
   {
     "ods_code": "RWA",
@@ -1966,7 +2066,7 @@
     "ics": "South Yorkshire",
     "correspondent": "Henry",
     "url": "https://www.sheffieldpartnership.nhs.uk/about-us/board-directors/meeting-minutes-and-agendas",
-    "access_notes": "Pattern A/F (wrong-url-fixed): the trust rebranded and the old shsc.nhs.uk domain 301-redirects to sheffieldpartnership.nhs.uk. The old DB url pointed at the directors bio page (/about-us/board-directors) which only lists members and meeting dates plus a link 'Agenda papers for meetings can be found here'. The correct landing page is the child /about-us/board-directors/meeting-minutes-and-agendas, where each meeting is listed newest-first with individual links to an 'Agenda' PDF and 'Unconfirmed minutes' PDF stored under /sites/default/files/YYYY-MM/. There are no combined packs \u2014 a crawler follows each per-meeting Agenda/minutes PDF link directly. Quirk: filenames are URL-encoded with spaces (e.g. '00 Agenda Public BoD May 2026 .pdf').",
+    "access_notes": "Pattern A/F (wrong-url-fixed): the trust rebranded and the old shsc.nhs.uk domain 301-redirects to sheffieldpartnership.nhs.uk. The old DB url pointed at the directors bio page (/about-us/board-directors) which only lists members and meeting dates plus a link 'Agenda papers for meetings can be found here'. The correct landing page is the child /about-us/board-directors/meeting-minutes-and-agendas, where each meeting is listed newest-first with individual links to an 'Agenda' PDF and 'Unconfirmed minutes' PDF stored under /sites/default/files/YYYY-MM/. There are no combined packs — a crawler follows each per-meeting Agenda/minutes PDF link directly. Quirk: filenames are URL-encoded with spaces (e.g. '00 Agenda Public BoD May 2026 .pdf').",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "Agenda Public BoD",
@@ -2011,7 +2111,22 @@
     "region": "East of England",
     "ics": "Suffolk and North East Essex",
     "correspondent": "James",
-    "url": "https://www.esneft.nhs.uk/about-us/how-we-work/board-of-directors-meetings/"
+    "url": "https://www.esneft.nhs.uk/about-us/how-we-work/board-of-directors-meetings/",
+    "access_notes": "Landing page lists financial-year folder links such as '2025 to 2026 Board meetings papers', '2024 to 2025 Board meetings papers' and '2026 to 2027 Board meetings papers'; follow each year link (Pattern B) to reach individual dated meeting sub-pages (e.g. 'May 2026 ESNEFT board meeting papers') which then host the downloadable PDFs (Pattern C nesting). Papers are published a few days before each meeting. No PDFs are exposed directly on the landing page, so a crawler must traverse year folder, then meeting page, then PDF. Target the per-meeting 'agenda and papers' packs.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "YYYY to YYYY Board meetings papers",
+      "Month YYYY ESNEFT board meeting papers",
+      "agenda and papers"
+    ],
+    "exclude_patterns": [
+      "approved minutes",
+      "Chief Executive office contact",
+      "draft resolutions only"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_partial",
+    "validation_notes": "Confirmed year-folder structure on landing with current folders '2025 to 2026 Board meetings papers' and a '2026 to 2027' folder containing 'May 2026 ESNEFT board meeting papers'."
   },
   {
     "ods_code": "RGM",
@@ -2151,7 +2266,21 @@
     "region": "East of England",
     "ics": "Cambridgeshire and Peterborough",
     "correspondent": "James",
-    "url": "https://www.cpft.nhs.uk/board-of-directors/"
+    "url": "https://www.cpft.nhs.uk/board-of-directors/",
+    "access_notes": "All board packs are listed directly on the single landing page (Pattern A) under a 'Previous Meetings' section, newest first, as direct PDF links with 'Public Board Meeting Papers DDMMYYYY.pdf' / 'Public Board Meeting Book - DD.MM.YYYY.pdf' naming. A crawler can harvest dated PDFs in one pass; no year folders or per-meeting sub-pages exist. Skip the 'Upcoming Meetings' section which lists future dates with no downloadable papers.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board Meeting Papers DDMMYYYY.pdf",
+      "Public Board Meeting Book - DD.MM.YYYY.pdf",
+      "Public Board Papers"
+    ],
+    "exclude_patterns": [
+      "Upcoming Meetings (dates with no PDF)",
+      "minutes only"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Direct PDFs visible e.g. 'Public Board Meeting Book - 03.06.2026.pdf' (June 2026) and 'Public Board Meeting Papers 26112025.pdf' (Nov 2025)."
   },
   {
     "ods_code": "RY3",
@@ -2352,7 +2481,7 @@
     "ics": "Cornwall and the Isles of Scilly",
     "correspondent": "Joe",
     "url": "https://royalcornwallhospitals.nhs.uk/organisation/board-meetings/",
-    "access_notes": "Pattern D (JS-rendered landing). A static fetch of this URL returns a near-empty body, so the year-archive links and the rendered 'Board meeting papers' accordion section are invisible to a static crawler. Under headless Chromium the page renders on royalcornwallhospitals.nhs.uk (the legacy royalcornwall.nhs.uk domain is WAF/Cloudflare-blocked) and exposes a set of per-financial-year links to a SEPARATE document-library subdomain: doclibrary-rcht.cornwall.nhs.uk/RoyalCornwallHospitalsTrust/Internet/DocumentsLibrary/BoardMeetings/BoardMeetings{FY}.aspx (e.g. BoardMeetings2526.aspx for 2025/26, BoardMeetings2627.aspx for 2026/27, plus a BoardMeetingsIndex.aspx). The current-FY (26/27) link is wrapped in an Outlook safelinks redirect \u2014 unwrap via the url= query parameter to recover the real .aspx archive URL; the 25/26 and earlier links are direct. Each .aspx year page is the doc library that lists the dated board-pack PDFs, which live at /DocumentsLibrary/RoyalCornwallHospitalsTrust/ChiefExecutive/TrustBoard/Minutes/{FYYY}/{YYYYMM}/ (FYYY = 4-digit FY e.g. 2526, YYYYMM = meeting month) \u2014 confirmed by a direct link on the rendered landing page to Minutes/2526/202509/AnnualReportAndAccounts202425.pdf. Six meetings/year cadence (May, Jul, Sep, Nov, Jan, Mar). NOTE: the doclibrary subdomain serves over plain HTTP and was not reachable from this sandbox (HTTPS refused / HTTP connection timed out), so the individual board-pack PDFs could not be opened here, but the navigation path and PDF path pattern are confirmed from the rendered landing page.",
+    "access_notes": "Pattern D (JS-rendered landing). A static fetch of this URL returns a near-empty body, so the year-archive links and the rendered 'Board meeting papers' accordion section are invisible to a static crawler. Under headless Chromium the page renders on royalcornwallhospitals.nhs.uk (the legacy royalcornwall.nhs.uk domain is WAF/Cloudflare-blocked) and exposes a set of per-financial-year links to a SEPARATE document-library subdomain: doclibrary-rcht.cornwall.nhs.uk/RoyalCornwallHospitalsTrust/Internet/DocumentsLibrary/BoardMeetings/BoardMeetings{FY}.aspx (e.g. BoardMeetings2526.aspx for 2025/26, BoardMeetings2627.aspx for 2026/27, plus a BoardMeetingsIndex.aspx). The current-FY (26/27) link is wrapped in an Outlook safelinks redirect — unwrap via the url= query parameter to recover the real .aspx archive URL; the 25/26 and earlier links are direct. Each .aspx year page is the doc library that lists the dated board-pack PDFs, which live at /DocumentsLibrary/RoyalCornwallHospitalsTrust/ChiefExecutive/TrustBoard/Minutes/{FYYY}/{YYYYMM}/ (FYYY = 4-digit FY e.g. 2526, YYYYMM = meeting month) — confirmed by a direct link on the rendered landing page to Minutes/2526/202509/AnnualReportAndAccounts202425.pdf. Six meetings/year cadence (May, Jul, Sep, Nov, Jan, Mar). NOTE: the doclibrary subdomain serves over plain HTTP and was not reachable from this sandbox (HTTPS refused / HTTP connection timed out), so the individual board-pack PDFs could not be opened here, but the navigation path and PDF path pattern are confirmed from the rendered landing page.",
     "needs_playwright": true,
     "pack_pattern_hints": [
       "doclibrary-rcht.cornwall.nhs.uk/RoyalCornwallHospitalsTrust/Internet/DocumentsLibrary/BoardMeetings/BoardMeetings{FY}.aspx",
@@ -2556,7 +2685,22 @@
     "region": "South West",
     "ics": "Bath and North East Somerset, Swindon and Wiltshire",
     "correspondent": "Joe",
-    "url": "https://www.awp.nhs.uk/about-us/publications/board-papers"
+    "url": "https://www.awp.nhs.uk/about-us/publications/board-papers",
+    "access_notes": "Landing page presents a document-library table of financial-year folder links (e.g. '2025 - 2026', '2024 - 2025') using internal /navigate/{id}/35520#document-library-35520 URLs; follow each year link (Pattern B) to reach that year's folder of dated board-paper PDFs. The landing page itself only exposes two reference documents ('Guidance on assurance rating', 'Risk appetite statement'), not the meeting packs. A crawler must click the year folder link to enumerate dated packs; the internal navigate IDs are dynamic so resolve them from the live landing page rather than hard-coding.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "YYYY - YYYY",
+      "navigate/{id}/35520#document-library-35520",
+      "Board papers"
+    ],
+    "exclude_patterns": [
+      "Guidance on assurance rating",
+      "Risk appetite statement",
+      "download_file reference docs"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_partial",
+    "validation_notes": "Landing confirms year folders e.g. '2025 - 2026' and '2024 - 2025'; individual dated 2025/2026 PDFs sit one level inside each year folder (navigate IDs dynamic, read from live page)."
   },
   {
     "ods_code": "RWV",
@@ -2682,7 +2826,7 @@
     "ics": "North Central London",
     "correspondent": "Matt D",
     "url": "https://www.royalfree.nhs.uk/about-us/trust-board/trust-board-meetings",
-    "access_notes": "Strategy: /about-us/trust-board/trust-board-meetings is correct (archive at /about-us/trust-board/archived-board-papers; also hosts former North Middlesex board papers). Site WAF returns 403/500 to non-browser fetchers. Pattern E anti-bot \u2014 use a browser/Playwright; bi-monthly meetings.",
+    "access_notes": "Strategy: /about-us/trust-board/trust-board-meetings is correct (archive at /about-us/trust-board/archived-board-papers; also hosts former North Middlesex board papers). Site WAF returns 403/500 to non-browser fetchers. Pattern E anti-bot — use a browser/Playwright; bi-monthly meetings.",
     "needs_playwright": true,
     "pack_pattern_hints": [
       "Board papers",
@@ -2739,7 +2883,22 @@
     "region": "London",
     "ics": "North East London",
     "correspondent": "Matt D",
-    "url": "https://www.bhrhospitals.nhs.uk/papers-minutes/"
+    "url": "https://www.bhrhospitals.nhs.uk/papers-minutes/",
+    "access_notes": "Landing page shows a 'Folders' list (e.g. 'January 2026', 'March 2026', 'May 2026', 'Previous years') as clickable month folders using /papers-minutes?smbfolder={id} URLs (Pattern B/C); follow each month folder to reach the full board pack PDF inside. Packs are full 'Trust Board (Public) Papers' documents served via /download.cfm?doc=...&ver=... links, not minutes. A crawler must enter each month folder to obtain the dated PDF; the 'Previous years' folder shows 0 files but real packs sit in the dated month folders.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Trust Board (Public) Papers DD.MM.YY",
+      "Month YYYY folder",
+      "download.cfm?doc=...&ver="
+    ],
+    "exclude_patterns": [
+      "Procedure for questions from the public",
+      "Teams meeting links",
+      "Previous years (0 files)"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_partial",
+    "validation_notes": "Inside the folder structure confirmed pack 'Trust Board (Public) Papers 15.01.26 (v2) For Website Reduced Size.pdf' (uploaded 16 Jan 2026); March/May 2026 folders present."
   },
   {
     "ods_code": "RKE",
@@ -2751,7 +2910,21 @@
     "region": "London",
     "ics": "North Central London",
     "correspondent": "Matt D",
-    "url": "https://www.whittington.nhs.uk/default.asp?c=20208"
+    "url": "https://www.whittington.nhs.uk/default.asp?c=20208",
+    "access_notes": "Classic ASP page lists board packs directly on the landing (Pattern A) under year headings ('Meetings in 2026', 'Meetings in 2025') as dated hyperlinks of the form 'Download the board papers for DD Month YYYY' pointing to internal numeric document IDs. A crawler can harvest all dated packs in a single pass; no year folders or per-meeting sub-pages. Ignore the 'printed copies on request' note.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Download the board papers for DD Month YYYY",
+      "Meetings in YYYY",
+      "numeric document ID links"
+    ],
+    "exclude_patterns": [
+      "Printed copies available on request",
+      "minutes only"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Direct dated links e.g. 'Download the board papers for 21 May 2026' (doc 16288) and 'Download the board papers for 26 November 2025' (doc 16128)."
   },
   {
     "ods_code": "RQM",
@@ -2795,7 +2968,21 @@
     "region": "London",
     "ics": "North East London",
     "correspondent": "Matt D",
-    "url": "https://www.homerton.nhs.uk/board-papers/"
+    "url": "https://www.homerton.nhs.uk/board-papers/",
+    "access_notes": "Landing page lists board packs directly (Pattern A) under year groupings ('2026', '2025', '2024') with each month name acting as a hyperlink to a dated PDF at /download/{slug}.pdf. A crawler can harvest all month PDFs from this single index in one pass; there are no intermediate folders or per-meeting sub-pages.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Month name link under YYYY heading",
+      "/download/{month}-{year}.pdf",
+      "papers-{month}-{year}.pdf"
+    ],
+    "exclude_patterns": [
+      "minutes only",
+      "non-dated reference docs"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Direct PDFs e.g. May 2026 (/download/may-2026-paperspdf.pdf) and November 2025 (/download/november-2025.pdf)."
   },
   {
     "ods_code": "RRV",
@@ -3116,7 +3303,20 @@
     "region": "North East and Yorkshire",
     "ics": "North East and North Cumbria",
     "correspondent": "Matt M",
-    "url": "https://www.northumbria.nhs.uk/about-us/corporate-information/strategies-and-reports/board-papers"
+    "url": "https://www.northumbria.nhs.uk/about-us/corporate-information/strategies-and-reports/board-papers",
+    "access_notes": "Static-fetchable landing page (HTTP 200) listing dated full board packs directly, grouped under year headings (2026, 2025). Each entry is a 'Public board papers - [Month Year]' anchor that links straight to a single PDF download at /download_file/{id}/875 — no year sub-folders or per-meeting sub-pages to traverse. Crawl the landing, collect all anchors whose text matches 'Public board papers - <Month> <Year>' and resolve the /download_file/ href as the dated board-pack PDF. Pattern A. The board meets bi-monthly so expect ~6 packs/year. Ignore the separate 'Guidance note for public meetings' and any future-dates list with no download link yet.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public board papers - {Month} {Year}",
+      "/download_file/{id}/875"
+    ],
+    "exclude_patterns": [
+      "Guidance note for public meetings",
+      "future dates with no download link"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Confirmed dated packs e.g. 'Public board papers - January 2026' (/download_file/3812/875) and 'Public board papers - November 2025' (/download_file/3764/875)."
   },
   {
     "ods_code": "RTR",
@@ -3262,7 +3462,20 @@
     "region": "South East",
     "ics": "Hampshire and Isle of Wight",
     "correspondent": "Mimi",
-    "url": "https://hiowhealthcare.nhs.uk/about-us/our-board/meetings-and-papers"
+    "url": "https://hiowhealthcare.nhs.uk/about-us/our-board/meetings-and-papers",
+    "access_notes": "Static-fetchable landing (Hampshire & IoW Healthcare, successor to Solent) listing dated public board meetings directly under year-range headings ('Board Meeting Papers 2026-2027', 'Board Meeting Papers 2025-2026', 'Most Recent Board Papers'). Each meeting is anchored by its date (e.g. 'Tuesday 09 December 2025') which links to the agenda/papers PDF; meetings run roughly bi-monthly on Tuesdays. No intermediate year folders or per-meeting hub pages — the dated anchor resolves to the PDF. Pattern A. Take date-text anchors under the 2025-2026 / 2026-2027 headings. Exclude the 'Confidential agenda' link that accompanies each public entry (closed-session agenda, not the public pack).",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Tuesday {DD} {Month} {Year}",
+      "Board Meeting Papers {Year}-{Year}"
+    ],
+    "exclude_patterns": [
+      "Confidential agenda",
+      "confidential"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Confirmed dated entries e.g. 'Tuesday 10 February 2026' and 'Tuesday 09 December 2025', each with a public agenda link plus a 'Confidential agenda' to skip."
   },
   {
     "ods_code": "R1F",
@@ -3448,7 +3661,7 @@
     "ics": "Greater Manchester",
     "correspondent": "Nick",
     "url": "https://mft.nhs.uk/the-trust/the-board/board-meetings/",
-    "access_notes": "Strategy: landing has a year-selector dropdown; each meeting has its OWN page at /board-meetings/{month}-{year}/ (lowercase month, hyphen-separated, eg /board-meetings/november-2025/, /board-meetings/may-2026/). Each meeting page contains 1-2 PDFs labelled 'Download board paper' / 'Download agenda'. Brute-force enumeration of {month}-{year} slugs across the 24-month window finds ~13 valid meeting pages. Old DB URL /about-us/board-of-directors/ exists but redirects to a single old (Jan 2021) meeting page \u2014 wrong. WARNING: landing page also has a Google Translate language selector \u2014 do not click that thinking it's the year dropdown.",
+    "access_notes": "Strategy: landing has a year-selector dropdown; each meeting has its OWN page at /board-meetings/{month}-{year}/ (lowercase month, hyphen-separated, eg /board-meetings/november-2025/, /board-meetings/may-2026/). Each meeting page contains 1-2 PDFs labelled 'Download board paper' / 'Download agenda'. Brute-force enumeration of {month}-{year} slugs across the 24-month window finds ~13 valid meeting pages. Old DB URL /about-us/board-of-directors/ exists but redirects to a single old (Jan 2021) meeting page — wrong. WARNING: landing page also has a Google Translate language selector — do not click that thinking it's the year dropdown.",
     "needs_playwright": false,
     "pack_pattern_hints": "Download board paper; board paper; agenda",
     "exclude_patterns": "Confidential; Part 2; Private; Minutes only",
@@ -3540,7 +3753,7 @@
     "ics": "Greater Manchester",
     "correspondent": "Nick",
     "url": "https://www.tamesideandglossopicft.nhs.uk/about-us/trust-oversight/trust-board/trust-board-minutesagendas",
-    "access_notes": "Pattern C (per-meeting combined PDFs) plus pattern F (wrong landing fixed). The validator hit the /trust-board overview page, which only lists future meeting dates and states 'Meeting papers will be available prior to the meeting'; the papers archive is one click deeper at .../trust-board/trust-board-minutesagendas. That page lists each public Trust Board meeting by month/year with a single 'Combined Papers' PDF per meeting; URLs are inconsistent (some are friendly application/files/.../Combined_Papers...pdf paths, others are opaque /download_file/<id>/0 endpoints), so a crawler should follow each meeting's link rather than guess a pattern. Quirk: the page states old minutes/agendas are available only up to April 2026 \u2014 for meetings from April 2026 onward the trust directs users to the South East Sector Health Care Partnership site (southeastsector-hcp.nhs.uk), so this archive will become stale for newer meetings. No JS gallery, no anti-bot.",
+    "access_notes": "Pattern C (per-meeting combined PDFs) plus pattern F (wrong landing fixed). The validator hit the /trust-board overview page, which only lists future meeting dates and states 'Meeting papers will be available prior to the meeting'; the papers archive is one click deeper at .../trust-board/trust-board-minutesagendas. That page lists each public Trust Board meeting by month/year with a single 'Combined Papers' PDF per meeting; URLs are inconsistent (some are friendly application/files/.../Combined_Papers...pdf paths, others are opaque /download_file/<id>/0 endpoints), so a crawler should follow each meeting's link rather than guess a pattern. Quirk: the page states old minutes/agendas are available only up to April 2026 — for meetings from April 2026 onward the trust directs users to the South East Sector Health Care Partnership site (southeastsector-hcp.nhs.uk), so this archive will become stale for newer meetings. No JS gallery, no anti-bot.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "application/files/",
@@ -3682,7 +3895,7 @@
     "ics": "Mid and South Essex",
     "correspondent": "TBC",
     "url": "https://www.mse.nhs.uk/board-meetings/",
-    "access_notes": "Strategy: landing lists year folders ('Board papers 2020', 'Board papers 2025', etc) but each year link is a share-my-box embedded folder at /board-meetings?smbfolder={NNN}. The share-my-box folder is JS-rendered \u2014 direct static fetch returns 0 PDFs. Requires Playwright with networkidle wait; year-tab interactive click reveals the month's PDFs. Found 1 in-window meeting (Feb 2026, 14.3MB pack) via interactive_dom strategy in the risk-tracker discoverer; gallery may show more on a longer wait.",
+    "access_notes": "Strategy: landing lists year folders ('Board papers 2020', 'Board papers 2025', etc) but each year link is a share-my-box embedded folder at /board-meetings?smbfolder={NNN}. The share-my-box folder is JS-rendered — direct static fetch returns 0 PDFs. Requires Playwright with networkidle wait; year-tab interactive click reveals the month's PDFs. Found 1 in-window meeting (Feb 2026, 14.3MB pack) via interactive_dom strategy in the risk-tracker discoverer; gallery may show more on a longer wait.",
     "needs_playwright": true,
     "pack_pattern_hints": "Board of Directors meeting in public papers; agenda and papers; combined papers",
     "exclude_patterns": "Confidential; Part 2; Private; Minutes only",
@@ -3959,7 +4172,23 @@
     "region": "North West",
     "ics": "Cheshire and Merseyside",
     "correspondent": "Zoe",
-    "url": "https://www.mcht.nhs.uk/about-us/board-directors/board-papers-and-minutes"
+    "url": "https://www.mcht.nhs.uk/about-us/board-directors/board-papers-and-minutes",
+    "access_notes": "Static-fetchable landing showing a folder hierarchy, not direct PDFs: the 'Board Papers and Minutes' page lists year-folder links ('2026-27', '2025-26', '2024-25', 'Archive') each pointing to a sub-page via /navigate/{lib}/{id} (2025-26 = /navigate/9698/2001). Follow the relevant year folder to reach the dated full board bundles, which are direct PDF links titled 'Board of Directors Bundle Part I (Public) - {date}'. Pattern B. Positive signal: 'Bundle Part I (Public)' = full public board pack. Papers are posted four working days before each meeting. Exclude the separate Minutes folder/'Summary of Agenda Items' documents and any Part II (confidential) items.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board of Directors Bundle Part I (Public) - {date}",
+      "/navigate/9698/{id}",
+      "20{25|26}-2{6|7} Board Papers and Minutes"
+    ],
+    "exclude_patterns": [
+      "Minutes",
+      "Summary of Agenda Items",
+      "Part II",
+      "confidential"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "On the 2025-26 sub-page, confirmed e.g. 'Board of Directors Bundle Part I (Public) - 29 January 2026' and '27 November 2025'."
   },
   {
     "ods_code": "REM",
@@ -3972,7 +4201,23 @@
     "region": "North West",
     "ics": "Cheshire and Merseyside",
     "correspondent": "Zoe",
-    "url": "https://www.uhliverpool.nhs.uk/about-us/meet-our-board/trust-board-meetings"
+    "url": "https://www.uhliverpool.nhs.uk/about-us/meet-our-board/trust-board-meetings",
+    "access_notes": "Static WebFetch is blocked (HTTP 403 / WAF) AND the papers sit in a JS-rendered document-library widget, so use Playwright (navigate, wait for networkidle). The 'Group Board meetings' page (NHS University Hospitals of Liverpool Group) exposes year tabs (2024, 2025, 2026) that load content via AJAX at /trust-board-meetings/navigate/4487/{id} (2026 = /navigate/4487/21268). Navigate to the year tab URL, then collect /download_file/{id}/423 anchors titled 'UHLG Board of Directors Public Pack - {date}' (and the companion 'Public Information Pack'). Pattern D + year-tab. Exclude the 'Jargon Buster Guide', the Assurance and Risk Committee meetings, and legacy LUHFT/LWH archive tabs.",
+    "needs_playwright": true,
+    "pack_pattern_hints": [
+      "UHLG Board of Directors Public Pack - {date}",
+      "UHLG Board of Directors Public Information Pack - {date}",
+      "/navigate/4487/{id}",
+      "/download_file/{id}/423"
+    ],
+    "exclude_patterns": [
+      "Jargon Buster Guide",
+      "Assurance and Risk Committee",
+      "archive"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Via Playwright on the 2026 tab, confirmed 'UHLG Board of Directors Public Pack - 15 January 2026' (/download_file/20288/423) and '14 May 2026' (/download_file/21451/423)."
   },
   {
     "ods_code": "REN",
@@ -4236,25 +4481,21 @@
     "ics": "Lancashire and South Cumbria",
     "correspondent": "Zoe",
     "url": "https://www.blackpoolteachinghospitals.nhs.uk/about-us/meet-board/board-meetings-public",
-    "access_notes": "The supplied URL is the correct landing (rendered title 'Board Meetings in Public :: Blackpool Teaching Hospitals'). Static fetch returns empty because the site (Granicus-style CMS) renders the document library client-side, so Playwright is required. The landing is only a hub of explanatory text; to reach dated papers follow 'Agendas and Reports by Year' at /about-us/meet-board/board-meetings-public/previous-meetings-year, which lists fiscal-year folders. Click a year (e.g. '2026/27 Meetings' or '2025/26 Meetings'); the URL takes the form .../previous-meetings-year/navigate/53518/<id>#doc-library-53518 and renders a table of 'Board of Directors' Meeting in Public, <date> - Full Papers' rows. PDFs served extension-less via /download_file/<docid>/2316. Coverage 2018/19 through 2026/27. Prefer the 'Full Papers' row; filter individual agendas/minutes. Bi-monthly (Jan, Mar, May, Jul, Sep, Nov).",
-    "needs_playwright": true,
+    "access_notes": "Landing /about-us/meet-board/board-meetings-public is an intro page with two links: 'Agendas and Reports by Year' (/previous-meetings-year) and 'Calendar of Meetings' (/upcoming-meetings). The papers live on the year page, which presents year tabs ('2026/27 Meetings', '2025/26 Meetings', '2024/25 Meetings', ...). On default load NO document links are present — you must follow a year tab, which is a real link of the form /about-us/meet-board/board-meetings-public/previous-meetings-year/navigate/53518/<termId>#doc-library-53518 (e.g. termId 7416 = 2025/26, 11922 = 2026/27). Plain navigation to that year URL server-renders the dated PDFs, so headless Playwright is NOT strictly required once you follow the year link. Each meeting is a single 'Full Papers' PDF at /download_file/<id>/2316. Treat the 'Board of Directors Meeting in Public - DD Month YYYY - Full Papers' item as the main pack. A separate UHLG group-board page exists on uhliverpool.nhs.uk for the joint Liverpool group board — ignore it for RXL's own trust board.",
+    "needs_playwright": false,
     "pack_pattern_hints": [
-      "/download_file/",
-      "/2316",
-      "Full Papers",
-      "navigate/53518",
-      "doc-library-53518"
+      "Board of Directors Meeting in Public - DD Month YYYY - Full Papers",
+      "/download_file/<id>/2316",
+      "previous-meetings-year/navigate/53518/<termId>"
     ],
     "exclude_patterns": [
-      "agenda",
-      "minutes",
-      "Part 2",
-      "private",
-      "confidential"
+      "UHLG / uhliverpool.nhs.uk group-board packs (different body)",
+      "Calendar of Meetings page (dates only, no papers)",
+      "minutes-only or register-of-interests items"
     ],
-    "last_validated": "2026-06-06",
+    "last_validated": "2026-06-13",
     "validation_status": "papers_found",
-    "validation_notes": "2025/26 folder lists Full Papers for 08 Jan 2026 plus Nov/Sep/Jul/May 2025 meetings as download_file links."
+    "validation_notes": "Following the 2025/26 year link (navigate/53518/7416) listed 6 dated packs including 'Board of Directors Meeting in Public - 05 March 2026 - Full Papers' (download_file/10631/2316) and '08 January 2026 - Full Papers' (download_file/10080/2316)."
   },
   {
     "ods_code": "RXN",
@@ -4281,24 +4522,21 @@
     "ics": "Lancashire and South Cumbria",
     "correspondent": "Zoe",
     "url": "https://elht.nhs.uk/about-us/our-trust-board/board-meetings-including-agenda-and-papers",
-    "access_notes": "The supplied URL is the correct landing (rendered title 'Board Meetings (including Agenda and Papers) :: East Lancashire Hospitals NHS Trust'). Static fetch returns empty because the same Granicus-style CMS renders the document table client-side, so Playwright is required. Unlike Blackpool, the dated PDFs are listed directly on this single page: a 'View the latest Board papers' link plus an 'Archive' table of rows named 'Trust Board (Public Session) Papers - <Month Year>.pdf'. PDFs served on-domain, extension-less, via /download_file/<docid>/191 (latest uses /download_file/view/<id>/191). Coverage 2024-2026 in the visible archive with older years below. Prefer rows labelled 'Public Session'/'Public'/'Open Session' full Papers; filter private/closed-session items. Bi-monthly (Jan, Mar, May, Jul, Sep, Nov).",
-    "needs_playwright": true,
+    "access_notes": "Landing /about-us/our-trust-board/board-meetings-including-agenda-and-papers lists dated board-pack PDFs directly as an archive of individual files (server-rendered, static fetch works — needs_playwright was a false positive). Each meeting is one PDF at /download_file/<id>/191 with titles like 'Trust Board (Public Session) Papers - <Month YYYY>.pdf' or 'Trust Board Agenda and Papers - <Month> <Year>'. Take the 'Public'/'Open Session' 'Papers' file as the main pack. The page also lists future meeting dates (no PDFs yet) at the bottom for forward scanning. No year folders, no per-meeting sub-pages, no JS gating.",
+    "needs_playwright": false,
     "pack_pattern_hints": [
-      "/download_file/",
-      "/191",
-      "Public Session) Papers",
-      "Trust Board",
-      "Public) Papers"
+      "Trust Board (Public Session) Papers - Month YYYY.pdf",
+      "Trust Board (Public) Papers - Month YYYY.pdf",
+      "/download_file/<id>/191"
     ],
     "exclude_patterns": [
-      "Private",
-      "Closed",
-      "Confidential",
-      "agenda only"
+      "one-off response/report items",
+      "confidential/private session items",
+      "minutes-only items"
     ],
-    "last_validated": "2026-06-06",
+    "last_validated": "2026-06-13",
     "validation_status": "papers_found",
-    "validation_notes": "Archive lists May 2026, March 2026, January 2026 and 2025 Trust Board public papers as download_file PDFs."
+    "validation_notes": "Saw 'Trust Board (Public) Papers - May 2026.pdf' (download_file/30615/191) and 'Trust Board (Public Session) Papers - March 2026 1.pdf' (download_file/30554/191), plus future dates 8 Jul 2026 and 9 Sep 2026 listed without papers yet."
   },
   {
     "ods_code": "RY2",
@@ -4323,7 +4561,23 @@
     "region": "North West",
     "ics": "Cheshire and Merseyside",
     "correspondent": "Zoe",
-    "url": "https://www.wchc.nhs.uk/about/board-governors/board-meetings-papers/"
+    "url": "https://www.wchc.nhs.uk/about/board-governors/board-meetings-papers/",
+    "access_notes": "Static-fetchable landing presenting dated board meetings as individual hyperlinks that each lead to a per-meeting sub-page (publication page) holding that meeting's PDFs, rather than direct PDFs on the landing. Meeting titles follow 'Public Board of Directors Meeting - {Weekday DD Month Year}' (the June 2026 group meeting is titled 'Group Board of Directors in Public'). Crawl the landing, follow each dated meeting link to its /about/publications/{slug}/ sub-page, then harvest the board-pack PDFs there. Pattern C. The landing is paginated (~15 pages) with month/year filter dropdowns, so for 2025/2026 take the first page(s) or filter by year. Exclude private/confidential items found on the sub-pages.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Public Board of Directors Meeting - {Weekday DD Month Year}",
+      "Group Board of Directors in Public - {date}",
+      "/about/publications/{slug}/"
+    ],
+    "exclude_patterns": [
+      "confidential",
+      "private session",
+      "minutes-only",
+      "pagination beyond target year"
+    ],
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Confirmed dated meeting links e.g. 'Public Board of Directors Meeting - Wednesday 28 January 2026' and 'Wednesday 1 October 2025', each resolving to its own publications sub-page of PDFs."
   },
   {
     "ods_code": "RX6",
@@ -4520,23 +4774,22 @@
     "region": "South East",
     "ics": "-",
     "correspondent": "Mimi",
-    "url": "https://www.scas.nhs.uk/document-category/board-papers/",
-    "access_notes": "Correct WordPress taxonomy archive ('Board Papers', category 'Board Papers 2025-26') but it is JS/dynamically rendered, a plain HTTP fetch returns only site nav chrome (hence the 'no papers' flag), so it NEEDS render to enumerate entries. Each entry is a /document/<slug>/ page (e.g. /document/scas-public-board-papers-25-sept-2025/) that links to a single combined pack PDF under /wp-content/uploads/YYYY/MM/. SCAS publishes the pack only shortly before each in-public meeting (~Feb/Apr/Jun/Sep/Nov), so the newest confirmed pack at scan time is 25 Sept 2025; the 4 Jun 2026 pack appears on the same archive around the meeting date. Prefer the single 'SCAS public Board papers - <date>' PDF; older copies by email to company.secretary@scas.nhs.uk. Filter policy/strategy PDFs in the same uploads folder.",
-    "needs_playwright": true,
+    "url": "https://www.scas.nhs.uk/about-scas/our-board/board-meetings/",
+    "access_notes": "Pattern C. Landing /about-scas/our-board/board-meetings/ lists bi-monthly public board meetings by date; each links to a per-meeting page (e.g. /board-meeting-in-public-4-june/) holding the agenda plus the combined 'SCAS Public Board papers' PDF under /wp-content/uploads/YYYY/MM/ (e.g. SCASpublic-Board-papers_02042026a.pdf). The old DB URL /document-category/board-papers/ is a JS-rendered taxonomy returning an empty body to static fetch. Papers post shortly before each meeting; minutes appear in the next meeting's pack. Contact company.secretary@scas.nhs.uk for archive. URL fixed 2026-06-13.",
+    "needs_playwright": false,
     "pack_pattern_hints": [
-      "www.scas.nhs.uk/document/scas-public-board-papers-<date>/",
-      "www.scas.nhs.uk/wp-content/uploads/<yyyy>/<mm>/SCAS-Public-Board-Papers_<date>.pdf"
+      "SCASpublic-Board-papers_DDMMYYYY.pdf",
+      "Public Board papers",
+      "Board meeting in public {date}"
     ],
     "exclude_patterns": [
-      "/wp-content/uploads/.*Policy",
-      "registers-of-interest",
-      "constitution",
-      "strategy",
-      "scas-board-members"
+      "agenda-only PDF",
+      "minutes only",
+      "Annual Members Meeting"
     ],
-    "last_validated": "2026-06-06",
-    "validation_status": "needs_playwright",
-    "validation_notes": "The archive lists dated board-pack PDFs but only after JS render; a confirmed 2025 pack PDF was retrieved via its /document/ page."
+    "last_validated": "2026-06-13",
+    "validation_status": "papers_found",
+    "validation_notes": "Board-meetings landing lists 2026 meetings (2 Apr, 4 Jun, 3 Sep); per-meeting pages host packs e.g. SCASpublic-Board-papers_02042026a.pdf."
   },
   {
     "ods_code": "RYF",
@@ -4550,7 +4803,7 @@
     "ics": "-",
     "correspondent": "Joe",
     "url": "https://www.swast.nhs.uk/board-meeting-schedule-and-public-papers/",
-    "access_notes": "Pattern A (and F: wrong URL fixed) \u2014 the validator-flagged URL https://www.swast.nhs.uk/our-board/board-meeting-schedule-and-public-papers returns HTTP 200 but renders no papers (it is the About-us submenu shell), and the /welcome/our-board/ variant 404s; the correct LIVE page is the flat https://www.swast.nhs.uk/board-meeting-schedule-and-public-papers/ on the org's own domain. That landing page lists dated 'Board in Public' agenda-pack PDFs directly (1 May 2025, 3 Jul 2025, 11 Sep 2025, 6 Nov 2025, 8 Jan 2026, 5 Mar 2026, 7 May 2026) plus a forward schedule of upcoming dates whose packs are uploaded ~1 week before each meeting. Quirk: the /download/ PDF hrefs only resolve WITH their query string (?ver=NNNN&doc=docm\u2026pdf); the bare slug (\u2026pdf.pdf) 404s, so packers must keep the full href including the ?ver=&doc= params. PDFs are large (>10MB).",
+    "access_notes": "Pattern A (and F: wrong URL fixed) — the validator-flagged URL https://www.swast.nhs.uk/our-board/board-meeting-schedule-and-public-papers returns HTTP 200 but renders no papers (it is the About-us submenu shell), and the /welcome/our-board/ variant 404s; the correct LIVE page is the flat https://www.swast.nhs.uk/board-meeting-schedule-and-public-papers/ on the org's own domain. That landing page lists dated 'Board in Public' agenda-pack PDFs directly (1 May 2025, 3 Jul 2025, 11 Sep 2025, 6 Nov 2025, 8 Jan 2026, 5 Mar 2026, 7 May 2026) plus a forward schedule of upcoming dates whose packs are uploaded ~1 week before each meeting. Quirk: the /download/ PDF hrefs only resolve WITH their query string (?ver=NNNN&doc=docm…pdf); the bare slug (…pdf.pdf) 404s, so packers must keep the full href including the ?ver=&doc= params. PDFs are large (>10MB).",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/board-meeting-schedule-and-public-papers/",

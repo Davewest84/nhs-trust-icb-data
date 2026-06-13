@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-06T04:09:54.948234+00:00",
+  "generated_at": "2026-06-13T04:09:42.307124+00:00",
   "label": "trust",
   "total": 206,
-  "ok": 205,
-  "broken": 1,
+  "ok": 203,
+  "broken": 3,
   "results": [
     {
       "ods_code": "RA2",
@@ -102,7 +102,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "RXX",
@@ -207,10 +207,10 @@
       "ods_code": "RT5",
       "name": "Leicestershire Partnership NHS Trust",
       "url": "https://www.leicspart.nhs.uk/about-us/trust-board/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.leicspart.nhs.uk/about/corporate-responsibilities/trust-board/",
-      "error": null
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.leicspart.nhs.uk/about-us/trust-board/\nCall log:\n  - navigating to \"https://ww"
     },
     {
       "ods_code": "RTG",
@@ -242,10 +242,10 @@
     {
       "ods_code": "RX1",
       "name": "Nottingham University Hospitals NHS Trust",
-      "url": "https://www.nuh.nhs.uk/board-and-board-papers/",
+      "url": "https://www.nuh.nhs.uk/board-papers",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.nuh.nhs.uk/board-and-board-papers/",
+      "final_url": "https://www.nuh.nhs.uk/board-papers",
       "error": null
     },
     {
@@ -327,7 +327,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RL1",
@@ -369,18 +369,18 @@
       "ods_code": "RLY",
       "name": "North Staffordshire Combined Healthcare NHS Trust",
       "url": "https://www.combined.nhs.uk/about/our-board/board-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.combined.nhs.uk/about/our-board/board-meetings/",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.combined.nhs.uk/about/our-board/board-meetings/\nCall log:\n  - navigating to \"h"
     },
     {
       "ods_code": "RNA",
       "name": "The Dudley Group NHS Foundation Trust",
-      "url": "https://www.dgft.nhs.uk/about-our-trust/our-board/",
+      "url": "https://www.dgft.nhs.uk/about-our-trust/our-board/board-meetings/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.dgft.nhs.uk/about-our-trust/our-board/",
+      "final_url": "https://www.dgft.nhs.uk/about-our-trust/our-board/board-meetings/",
       "error": null
     },
     {
@@ -431,10 +431,10 @@
     {
       "ods_code": "RXK",
       "name": "Sandwell and West Birmingham Hospitals NHS Trust",
-      "url": "https://www.swbh.nhs.uk/our-trust/trust-board/",
+      "url": "https://www.swbh.nhs.uk/our-trust/trust-board/public-trust-board-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.swbh.nhs.uk/our-trust/trust-board/",
+      "final_url": "https://www.swbh.nhs.uk/our-trust/trust-board/public-trust-board-papers/",
       "error": null
     },
     {
@@ -593,11 +593,11 @@
     {
       "ods_code": "RCB",
       "name": "York and Scarborough Teaching Hospitals NHS Foundation Trust",
-      "url": "https://www.yorkhospitals.nhs.uk/about-us/board-of-directors/board-of-directors-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.yorkhospitals.nhs.uk/about-us/board-of-directors/board-of-directors-meetings/",
-      "error": null
+      "url": "https://www.yorkscarborough.nhs.uk/about-us/board-of-directors/board-of-directors-papers/",
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: HTTPSConnectionPool(host='www.yorkscarborough.nhs.uk', port=443): Max retries exceeded with url: /about-us/board-of-directors/board-of-directors-paper; playwright: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.yorkscarborough.nhs.uk/about-us/board-of-directors/board-of-directors-papers/"
     },
     {
       "ods_code": "RCD",
@@ -800,10 +800,10 @@
     {
       "ods_code": "RGN",
       "name": "North West Anglia NHS Foundation Trust",
-      "url": "https://www.nwangliaft.nhs.uk/trust-board/",
+      "url": "https://www.nwangliaft.nhs.uk/our-board-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.nwangliaft.nhs.uk/trust-board/",
+      "final_url": "https://www.nwangliaft.nhs.uk/our-board-papers/",
       "error": null
     },
     {
@@ -881,11 +881,11 @@
     {
       "ods_code": "RA7",
       "name": "University Hospitals Bristol and Weston NHS Foundation Trust",
-      "url": "https://www.uhbw.nhs.uk/about-us/board-papers/",
-      "ok": false,
-      "status": 500,
-      "final_url": null,
-      "error": "http: HTTP 500; playwright: HTTP 500"
+      "url": "https://www.uhbw.nhs.uk/p/about-us/trust-board-meetings",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.uhbw.nhs.uk/p/about-us/trust-board-meetings",
+      "error": null
     },
     {
       "ods_code": "RA9",
@@ -1088,10 +1088,10 @@
     {
       "ods_code": "RAS",
       "name": "The Hillingdon Hospitals NHS Foundation Trust",
-      "url": "https://www.nwl-acute-provider-group.nhs.uk/about-us/board-in-common",
+      "url": "https://www.nwl-acute-provider-collaborative.nhs.uk/publications",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.nwl-acute-provider-group.nhs.uk/about-us/board-in-common",
+      "final_url": "https://www.nwl-acute-provider-group.nhs.uk/publications",
       "error": null
     },
     {
@@ -1164,7 +1164,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RRU",
@@ -1268,19 +1268,19 @@
     {
       "ods_code": "RTR",
       "name": "South Tees Hospitals NHS Foundation Trust",
-      "url": "https://www.southtees.nhs.uk/about/university-hospitals-tees/board-meetings/",
+      "url": "https://www.southtees.nhs.uk/resources/?topic=board-of-directors",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.southtees.nhs.uk/about/university-hospitals-tees/board-meetings/",
+      "final_url": "https://www.southtees.nhs.uk/resources/?topic=board-of-directors",
       "error": null
     },
     {
       "ods_code": "RVW",
       "name": "North Tees and Hartlepool NHS Foundation Trust",
-      "url": "https://www.nth.nhs.uk/about/university-hospitals-tees/board-meetings/",
+      "url": "https://www.southtees.nhs.uk/resources/?topic=board-of-directors",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.nth.nhs.uk/about/university-hospitals-tees/board-meetings/",
+      "final_url": "https://www.southtees.nhs.uk/resources/?topic=board-of-directors",
       "error": null
     },
     {
@@ -1817,10 +1817,10 @@
     {
       "ods_code": "RYC",
       "name": "East of England Ambulance Service NHS Trust",
-      "url": "https://www.eastamb.nhs.uk/about-us/trust-board/public-board-meetings-and-papers",
+      "url": "https://www.eastamb.nhs.uk/about-us/trust-board/in-public-board-minutes-archive",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.eastamb.nhs.uk/about-us/trust-board/public-board-meetings-and-papers",
+      "final_url": "https://www.eastamb.nhs.uk/about-us/trust-board/in-public-board-minutes-archive",
       "error": null
     },
     {
