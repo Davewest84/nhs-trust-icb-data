@@ -1,43 +1,29 @@
 {
-  "generated_at": "2026-06-06T04:35:48.536832+00:00",
-  "last_ods_sync_date_used": "2026-05-29",
+  "generated_at": "2026-06-13",
+  "last_ods_sync_date_used": "2026-06-06",
+  "method_note": "Role IDs corrected from prompt defaults: trusts=RO197+RO57+RO107 (RO107 covers FTs e.g. TAD/TAH/TAJ); ICBs=RO261 filtered to names containing INTEGRATED CARE BOARD (prompt RO318 is a non-primary role and returns 0). Status=Active is a superset; dead/merged orgs excluded via Date[Legal].End<=today.",
   "add_candidates": [
     {
       "ods": "RQF",
       "name": "VELINDRE NHS TRUST",
-      "role": "NHS trust/FT (RO197/RO57/RO107)",
-      "suggested_region": "Wales (out of scope)",
-      "note": "Active in ORD, missing from trust_urls.json; no Legal End date. Manual review."
+      "role": "trust",
+      "suggested_region": "Wales (out-of-scope)",
+      "note": "Active in ORD (trust), absent from DB; Legal.End=None; Welsh trust, out of HSJ England scope"
     },
     {
       "ods": "RT4",
       "name": "WELSH AMBULANCE SERVICES NHS TRUST",
-      "role": "NHS trust/FT (RO197/RO57/RO107)",
-      "suggested_region": "Wales (out of scope)",
-      "note": "Active in ORD, missing from trust_urls.json; no Legal End date. Manual review."
+      "role": "trust",
+      "suggested_region": "Wales (out-of-scope)",
+      "note": "Active in ORD (trust), absent from DB; Legal.End=None; Welsh trust, out of HSJ England scope"
     },
     {
       "ods": "RYT",
       "name": "PUBLIC HEALTH WALES NHS TRUST",
-      "role": "NHS trust/FT (RO197/RO57/RO107)",
-      "suggested_region": "Wales (out of scope)",
-      "note": "Active in ORD, missing from trust_urls.json; no Legal End date. Manual review."
+      "role": "trust",
+      "suggested_region": "Wales (out-of-scope)",
+      "note": "Active in ORD (trust), absent from DB; Legal.End=None; Welsh trust, out of HSJ England scope"
     }
   ],
-  "remove_candidates": [],
-  "audit_summary": {
-    "trusts_active_in_ord": 252,
-    "trusts_in_db": 207,
-    "icbs_active_in_ord": 48,
-    "icbs_in_db": 36,
-    "add_candidates": 3,
-    "remove_candidates": 0,
-    "excluded_already_dead": 54,
-    "change_feed_ok": true,
-    "change_feed_changed_total": 846,
-    "change_feed_in_db": [
-      "K0N6A"
-    ]
-  },
-  "notes": "READ-ONLY audit. ADD/REMOVE are flags for manual action only; no DB entry was added/removed/edited. Trust superset uses PrimaryRoleId RO197+RO57+RO107 (RO107 added beyond the prompt's RO197/RO57 because 3 live foundation trusts — Bradford District Care TAD, Sheffield Health & Social Care TAH, Black Country Healthcare TAJ — have RO107 as their primary role and would otherwise be false REMOVE flags). ICB superset uses non-primary Roles=RO318 (PrimaryRoleId=RO318 returns nothing). Death determined by Date[Legal].End<=today, never Status. 54 ORD-Active orgs were excluded as already-dead (Legal End passed) — e.g. predecessor trusts/ICBs kept Active post-merger. All 3 ADD candidates are Welsh NHS trusts (out of scope for an England trust/ICB dataset). Change feed since 2026-05-29 returned 846 changed orgs; only K0N6A is in the DB and remains live."
+  "remove_candidates": []
 }
