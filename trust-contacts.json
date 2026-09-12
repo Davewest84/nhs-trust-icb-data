@@ -646,7 +646,7 @@
     "foi_email": "gstt.foi@nhs.net",
     "foi_email_alt": "foi@gstt.nhs.uk",
     "foi_source_url": "https://www.guysandstthomas.nhs.uk/about-us/freedom-information",
-    "notes": "FOI email obfuscated by Cloudflare on FOI page; not confirmed; FOI email decoded from Cloudflare cfemail attribute on FOI page."
+    "notes": "FOI email obfuscated by Cloudflare on FOI page; not confirmed; FOI email decoded from Cloudflare cfemail attribute on FOI page. 2026-09-12: both pages are 403 to local fetch (documented WAF); reached via server-side WebFetch instead. Press decoded to gstt.press@nhs.net, matching the primary. The FOI token as relayed decoded one character off (w-stt.foi@nhs.net), consistent with a transcription artefact rather than a changed address, so gstt.foi@nhs.net left as primary."
   },
   {
     "trust_name": "Hampshire Hospitals NHS Foundation Trust",
@@ -668,7 +668,7 @@
     "foi_email": "foi@hdft.nhs.uk",
     "foi_email_alt": "hdft.foi@nhs.net",
     "foi_source_url": "https://www.hdft.nhs.uk/contact/",
-    "notes": "Both press and FOI emails on hdft.nhs.uk are obfuscated as [email protected]; confirmed contact phone numbers (press 01423 557470) but emails not extractable"
+    "notes": "Both press and FOI emails on hdft.nhs.uk are obfuscated as [email protected]; confirmed contact phone numbers (press 01423 557470) but emails not extractable 2026-09-12: the [email protected] obfuscation on hdft.nhs.uk was decoded this run (Cloudflare cfemail) - the contact page carries hdft.hello@nhs.net and hdft.foi@nhs.net, i.e. the values already held in the _alt fields; the earlier 'emails not extractable' note is superseded. Neither primary (communications@hdft.nhs.uk, foi@hdft.nhs.uk) appears on the page."
   },
   {
     "trust_name": "Herefordshire and Worcestershire Health and Care NHS Trust",
@@ -983,11 +983,11 @@
     "ods_code": "RWF",
     "press_email": "mtw-tr.communications@nhs.net",
     "press_email_alt": null,
-    "press_source_url": "https://www.mtw.nhs.uk/news/media-enquiries-and-contacts/",
+    "press_source_url": "https://www.mtw.nhs.uk/media-enquiries-and-press/",
     "foi_email": "mtw-tr.FOIadmin@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "https://www.mtw.nhs.uk/freedom-of-information/",
-    "notes": "2026-07-04: source URLs refreshed (old /contact/ now 404); FOI mtw-tr.foiadmin@nhs.net confirmed live, press email unchanged (media page blocks automated fetch)."
+    "notes": "2026-07-04: source URLs refreshed (old /contact/ now 404); FOI mtw-tr.foiadmin@nhs.net confirmed live, press email unchanged (media page blocks automated fetch). press_source_url updated 2026-09-12: previous /news/media-enquiries-and-contacts/ now 404s; live media page is /media-enquiries-and-press/ and it carries the same mtw-tr.communications@nhs.net (address unchanged)."
   },
   {
     "trust_name": "Manchester University NHS Foundation Trust",
@@ -1118,8 +1118,8 @@
     "press_source_url": "https://www.nnuh.nhs.uk/news-and-events/media-centre/contacting-the-communications-team/",
     "foi_email": "foi@nnuh.nhs.uk",
     "foi_email_alt": null,
-    "foi_source_url": "https://www.nnuh.nhs.uk/about-us/freedom-of-information/",
-    "notes": null
+    "foi_source_url": "https://www.nnuh.nhs.uk/departments/freedom-of-information/",
+    "notes": "foi_source_url updated 2026-09-12: old /about-us/freedom-of-information/ now 301-redirects to /departments/freedom-of-information/; foi@nnuh.nhs.uk unchanged."
   },
   {
     "trust_name": "Norfolk and Suffolk NHS Foundation Trust",
@@ -1196,7 +1196,7 @@
     "foi_email": "foi.enquiries@nwas.nhs.uk",
     "foi_email_alt": null,
     "foi_source_url": "https://www.nwas.nhs.uk/foi/",
-    "notes": "Cloudflare email-protection decoded for FOI"
+    "notes": "Cloudflare email-protection decoded for FOI 2026-09-12: contact page decoded (cfemail) - the press section reads 'Press office - For media enquiries contact press.office@nwas.nhs.uk', i.e. the _alt value; the primary press@nwas.nhs.uk does not appear on the page. Left unchanged per the alt-match rule, but worth a human check on which inbox NWAS now prefers."
   },
   {
     "trust_name": "North West Anglia NHS Foundation Trust",
@@ -1779,7 +1779,7 @@
     "foi_email": "thh@infreemation.co.uk",
     "foi_email_alt": "thh-tr.freedomofinfo@nhs.net",
     "foi_source_url": "https://thh.nhs.uk/freedom-of-information/",
-    "notes": "Trust directs FOI requests to online form at thh.disclosure-log.co.uk; no published email; Hillingdon Hospitals FOI page directs all requests via online form (thh.disclosure-log.co.uk); states attachments and links rejected; no FOI email published.; Hillingdon use the Infreemation portal — confirmed via WhatDoTheyKnow request thread, May 2026. 2026-07-04: FOI source URL refreshed (old /about-us/ page 404); still online-form only (thh.disclosure-log.co.uk), no email published."
+    "notes": "Trust directs FOI requests to online form at thh.disclosure-log.co.uk; no published email; Hillingdon Hospitals FOI page directs all requests via online form (thh.disclosure-log.co.uk); states attachments and links rejected; no FOI email published.; Hillingdon use the Infreemation portal — confirmed via WhatDoTheyKnow request thread, May 2026. 2026-07-04: FOI source URL refreshed (old /about-us/ page 404); still online-form only (thh.disclosure-log.co.uk), no email published. 2026-09-12: FOI page carries no email address at all - the trust directs all requests to its online request form (consistent with the thh@infreemation.co.uk portal already held as primary) or to post. No change made."
   },
   {
     "trust_name": "The Newcastle upon Tyne Hospitals NHS Foundation Trust",

@@ -205,8 +205,8 @@
     "press_source_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/contact/",
     "foi_email": "llricb-llr.FOI@nhs.net",
     "foi_email_alt": "llricb-llr.enquiries@nhs.net",
-    "foi_source_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/about/freedom-of-information/",
-    "notes": null
+    "foi_source_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/contact/",
+    "notes": "foi_source_url updated 2026-09-12: /about/freedom-of-information/ now 404s and no replacement FOI page exists; llricb-llr.FOI@nhs.net is published on the /contact/ page, which is now cited instead. Address unchanged."
   },
   {
     "icb_name": "Lincolnshire ICB",
@@ -312,11 +312,11 @@
     "ods_code": "QKK",
     "press_email": "media@selondonics.nhs.uk",
     "press_email_alt": null,
-    "press_source_url": "https://www.selondonics.org/contact-us/",
+    "press_source_url": "https://www.selondonics.org/who-we-are/contact-us/",
     "foi_email": "FOI@selondonics.nhs.uk",
     "foi_email_alt": null,
-    "foi_source_url": "https://www.selondonics.org/contact-us/",
-    "notes": null
+    "foi_source_url": "https://www.selondonics.org/who-we-are/contact-us/",
+    "notes": "source_urls updated 2026-09-12: /contact-us/ now 301-redirects to /who-we-are/contact-us/. Page emails are Cloudflare-obfuscated; decoded this run to media@selondonics.nhs.uk and FOI@selondonics.nhs.uk, both matching the stored values (addresses unchanged)."
   },
   {
     "icb_name": "South West London ICB",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T04:11:26.860538+00:00",
+  "generated_at": "2026-09-12T04:12:08.332490+00:00",
   "label": "ICB",
   "total": 36,
   "ok": 36,
@@ -326,7 +326,7 @@
       "url": "https://onedevon.org.uk/nhs-devon/nhs-devon-board/meeting-papers-and-minutes/",
       "ok": true,
       "status": 200,
-      "final_url": "https://onedevon.org.uk/nhs-devon/nhs-devon-board/meeting-papers-and-minutes/",
+      "final_url": "https://devon.icb.nhs.uk/nhs-devon/nhs-devon-board/meeting-papers-and-minutes/",
       "error": null
     }
   ]

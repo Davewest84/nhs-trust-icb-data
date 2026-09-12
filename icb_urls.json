@@ -82,7 +82,7 @@
     "cluster_meeting_url": null,
     "notes": null,
     "url": "https://northeastnorthcumbria.nhs.uk/about-us/corporate-information/governance/meetings-and-agendas/integrated-care-board/",
-    "access_notes": "KEEP this URL - it holds no PDFs itself but it is the only page carrying BOTH the forward meeting schedule AND a link to the current/next meeting's own page where the pack lands, so it works as a one-hop hub. Repointing to /previous-board-meetings/ would blind a crawler to upcoming packs. Strategy: fetch the landing, follow any href matching board-meeting-held-in-public-* for the current pack, and separately follow /previous-board-meetings/ (24 dated links, July 2022 to March 2026) for backfill. Each per-meeting page carries 23-46 SEPARATE /media/{8-char-hash}/item-NN-*.pdf files - there is NO consolidated board pack, so a pack analyser must pull them all. Slugs are unguessable: the weekday is embedded inconsistently (...on-wednesday-29-july-2026, ...on-tuesday-31-march-2026, ...tuesday-25-march-2025 with no 'on', ...28-november-2023 with no weekday) - always scrape hrefs, never construct them. Filter on the board-meeting-held-in-public- prefix to isolate the ICB Board: the ICP lives under /previous-integrated-care-partnership-icp-meetings/ and AGMs under /annual-general-meetings/, and the 29 July 2026 AGM ran immediately before the Board on the same day. Beware: extraordinary board meetings (16 June 2026, 12 February 2026) are never archived - they surface only as draft-minutes items inside the next ordinary pack. Umbraco CMS, plain server-rendered HTML, no JS and no anti-bot; sitemap.xml 404s.",
+    "access_notes": "KEEP this URL - it holds no PDFs itself but it is the only page carrying BOTH the forward meeting schedule AND a link to the current/next meeting's own page where the pack lands, so it works as a one-hop hub. Repointing to /previous-board-meetings/ would blind a crawler to upcoming packs. Strategy: fetch the landing, follow any href matching board-meeting-held-in-public-* for the current pack, and separately follow /previous-board-meetings/ (24 dated links, July 2022 to March 2026) for backfill. Each per-meeting page carries 23-46 SEPARATE /media/{8-char-hash}/item-NN-*.pdf files - there is NO consolidated board pack, so a pack analyser must pull them all. Slugs are unguessable: the weekday is embedded inconsistently (...on-wednesday-29-july-2026, ...on-tuesday-31-march-2026, ...tuesday-25-march-2025 with no 'on', ...28-november-2023 with no weekday) - always scrape hrefs, never construct them. Filter on the board-meeting-held-in-public- prefix to isolate the ICB Board: the ICP lives under /previous-integrated-care-partnership-icp-meetings/ and AGMs under /annual-general-meetings/, and the 29 July 2026 AGM ran immediately before the Board on the same day. Beware: extraordinary board meetings (16 June 2026, 12 February 2026) are never archived - they surface only as draft-minutes items inside the next ordinary pack. Umbraco CMS, plain server-rendered HTML, no JS and no anti-bot; sitemap.xml 404s. Re-verified 2026-09-12 by browser-UA curl (200, 35KB): landing intact, newest held meeting 29 July 2026 and dates scheduled to 31 March 2027; papers remain one hop deeper on the per-meeting sub-pages, which is the standing reason for the partial score.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "item-NN numbered agenda PDFs",
@@ -96,9 +96,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-09-05",
+    "last_validated": "2026-09-12",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-05: WebFetch reached the page; landing links the 29 July 2026 meeting sub-page plus a 'Previous Board meetings' archive - papers sit one hop deeper, which is why the validator scores it partial."
+    "validation_notes": "2026-09-12: browser-UA curl returned HTTP 200 (35KB); the landing links the 29 July 2026 meeting plus the previous-meetings archive, with 30 September 2026, 25 November 2026, 27 January 2027 and 31 March 2027 scheduled."
   },
   {
     "ods_code": "QOQ",
@@ -290,7 +290,7 @@
     "cluster_meeting_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
     "notes": "Joint Board Meeting in Common with Coventry and Warwickshire (QWU); papers hosted on both happyhealthylives.uk and hwics.org.uk",
     "url": "https://herefordshireandworcestershire.icb.nhs.uk/meetings/board-papers",
-    "access_notes": "The ICB site is a static server-rendered front-end; WebFetch works, no Playwright. /meetings/board-papers holds the NEXT meeting's pack; /meetings/past-board-papers is the dated archive (back to 2022, each date a heading with its PDF list). Board meets bi-monthly (odd months). All PDF hrefs point at the sister domain www.hwics.org.uk via /download_file/<id>/<collection> -- collection 414 = current pack, 463 = past-papers archive (numeric endpoints, not .pdf-suffixed). Single-ICB board, no ICP/Joint pages intermixed on these two pages; AGM material is bundled into the July board pack -- treat as ICB Board. Prefer /meetings/board-papers for the imminent pack and /meetings/past-board-papers to backfill.",
+    "access_notes": "The ICB site is a static server-rendered front-end; WebFetch works, no Playwright. /meetings/board-papers holds the NEXT meeting's pack; /meetings/past-board-papers is the dated archive (back to 2022, each date a heading with its PDF list). Board meets bi-monthly (odd months). All PDF hrefs point at the sister domain www.hwics.org.uk via /download_file/<id>/<collection> -- collection 414 = current pack, 463 = past-papers archive (numeric endpoints, not .pdf-suffixed). Single-ICB board, no ICP/Joint pages intermixed on these two pages; AGM material is bundled into the July board pack -- treat as ICB Board. Prefer /meetings/board-papers for the imminent pack and /meetings/past-board-papers to backfill. Re-verified 2026-09-12 by browser-UA curl (200, 53KB): the landing now holds the forthcoming 16 September 2026 pack as 10 /download_file/<id>/414 links on the hwics.org.uk sister domain, confirming the current-pack/archive split still holds.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "landing heading 'Board papers' with meeting date e.g. 'Wednesday 15 July 2026'",
@@ -303,9 +303,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-09-05",
+    "last_validated": "2026-09-12",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-05: WebFetch reached the page; 15 documents for the 15 July 2026 public board, served as https://www.hwics.org.uk/download_file/{id}/414 links."
+    "validation_notes": "2026-09-12: browser-UA curl returned HTTP 200 (53KB) with 10 www.hwics.org.uk/download_file/ links for the 16 September 2026 public board."
   },
   {
     "ods_code": "QJ2",
@@ -650,7 +650,7 @@
     "cluster_meeting_url": null,
     "notes": "Single combined papers pack per board meeting",
     "url": "https://northeastlondon.icb.nhs.uk/about-us/about-nhs-north-east-london/our-board/board-meetings-and-papers/",
-    "access_notes": "Static HTML landing renders fine via WebFetch (no Playwright). Lists ICB Board meeting dates every two months; each date links to a per-meeting event page at /board-meetings/north-east-london-icb-board-meeting-NN/ holding papers as /download-attachment/NNNNN links (the main board pack plus separate minutes/questions-log); underlying files live at /wp-content/uploads/YYYY/MM/. Papers publish at least 5 working days before each meeting, so the newest future date shows no PDFs until then. Filter to the NHS North East London ICB Board -- skip the ICP packs, borough Partnership Boards, Health & Wellbeing boards, and named sub-committees. Flag 2026-08-01: the landing's meeting list showed nothing later than 31 March 2026 on this run -- if a crawler finds no current pack here, check the /events/ pages directly before assuming a fetch failure. Update 2026-08-15: the landing's own upcoming-meetings list is stale (newest entry 31 Mar 2026). The live index is /board-meetings/, which carries meeting 22 (14 May 2026) and meeting 23 (23 July 2026). Crawl /board-meetings/ for current packs and treat the landing as background only.",
+    "access_notes": "Static HTML landing renders fine via WebFetch (no Playwright). Lists ICB Board meeting dates every two months; each date links to a per-meeting event page at /board-meetings/north-east-london-icb-board-meeting-NN/ holding papers as /download-attachment/NNNNN links (the main board pack plus separate minutes/questions-log); underlying files live at /wp-content/uploads/YYYY/MM/. Papers publish at least 5 working days before each meeting, so the newest future date shows no PDFs until then. Filter to the NHS North East London ICB Board -- skip the ICP packs, borough Partnership Boards, Health & Wellbeing boards, and named sub-committees. Flag 2026-08-01: the landing's meeting list showed nothing later than 31 March 2026 on this run -- if a crawler finds no current pack here, check the /events/ pages directly before assuming a fetch failure. Update 2026-08-15: the landing's own upcoming-meetings list is stale (newest entry 31 Mar 2026). The live index is /board-meetings/, which carries meeting 22 (14 May 2026) and meeting 23 (23 July 2026). Crawl /board-meetings/ for current packs and treat the landing as background only. Re-verified 2026-09-12: /board-meetings/ is still the live index (200, dates through 9 September 2026, paginating at /category/board-meetings/page/2/) while the landing at the DB URL yielded no meeting dates whatsoever this run. Keep crawling /board-meetings/ and filter out the primary-care-contracts and other sub-committee entries that share that path.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/wp-content/uploads/YYYY/MM/NHS-North-East-London-ICB-Board-DD.MM.YYYY*.pdf main pack",
@@ -664,9 +664,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-08-22",
+    "last_validated": "2026-09-12",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-08-22: the 29 July 2026 event page (/board-meetings/north-east-london-icb-board-meeting-23/) carries the 6MB 'NHS North East London ICB Board - 29 July 2026' pack plus an item-8.1 governance appendices pack. Note the landing renders meeting dates without years, which is why page summarisers misread the list as 2024."
+    "validation_notes": "2026-09-12: the /board-meetings/ index returned HTTP 200 with meeting dates through 9 September 2026, while the DB landing page again returned no meeting dates at all - the landing remains background only."
   },
   {
     "ods_code": "QKK",
@@ -736,7 +736,7 @@
     "cluster_meeting_url": null,
     "notes": "Formed 1 April 2026 from merger of North Central London (QMJ, nclhealthandcare.org.uk) and North West London (QRV, nwlondonicb.nhs.uk). Predecessor sites still host historical 'Boards in Common' packs from late 2025/early 2026.",
     "url": "https://www.westandnorthlondon.icb.nhs.uk/how-we-are-run/meetings/w-plus-nl-board-meetings",
-    "access_notes": "Newly merged ICB (April 2026, ex-North West London / Z9B2Z). The board-meetings landing (/how-we-are-run/meetings/w-plus-nl-board-meetings) is static HTML and lists upcoming ICB Board-of-Members dates plus a section linking into the document library at /how-we-are-run/policies-and-publications/navigate/{id}/2410. That library groups papers into per-meeting folders (1 Apr 2026, 17 Jun 2026, 22 Jul 2026, ...); each folder lists individual /download_file/{uuid}/{n} PDFs. Filter to the ICB Board of Members -- SKIP the PCCG folder, the ICP pages, and the Primary Care Commissioning Committee. First packs already fully populated (22 Jul 2026 pack has 13 papers). Static WebFetch is sufficient.",
+    "access_notes": "Newly merged ICB (April 2026, ex-North West London / Z9B2Z). The board-meetings landing (/how-we-are-run/meetings/w-plus-nl-board-meetings) is static HTML and lists upcoming ICB Board-of-Members dates plus a section linking into the document library at /how-we-are-run/policies-and-publications/navigate/{id}/2410. That library groups papers into per-meeting folders (1 Apr 2026, 17 Jun 2026, 22 Jul 2026, ...); each folder lists individual /download_file/{uuid}/{n} PDFs. Filter to the ICB Board of Members -- SKIP the PCCG folder, the ICP pages, and the Primary Care Commissioning Committee. First packs already fully populated (22 Jul 2026 pack has 13 papers). Static WebFetch is sufficient. Re-verified 2026-09-12 by browser-UA curl (200, 76KB): landing intact with the 22 July 2026 pack linked and dates scheduled to 24 March 2027; the papers themselves stay in the /navigate/{id}/2410 library one hop deeper, which is why the landing scores thin.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/download_file/{uuid}/{n} PDF endpoints",
@@ -751,9 +751,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-09-05",
+    "last_validated": "2026-09-12",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-05: WebFetch reached the page; newest entry 'Board meeting - 22 July 2026 - agenda papers' linking into the /navigate/486/2410 document library."
+    "validation_notes": "2026-09-12: browser-UA curl returned HTTP 200 (76KB); the landing lists the 22 July 2026 papers plus 23 September 2026, 21 October 2026, 27 January 2027 and 24 March 2027 scheduled, with the document library one hop deeper."
   },
   {
     "ods_code": "QRL",
