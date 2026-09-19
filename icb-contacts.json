@@ -390,9 +390,9 @@
     "press_email": "nhsnwl.media@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.nwlondonicb.nhs.uk/contact-us/media-enquiries",
-    "foi_email": "nhsnwl.foi@nhs.net",
-    "foi_email_alt": null,
+    "foi_email": "wnlicb.foi@nhs.net",
+    "foi_email_alt": "nhsnwl.foi@nhs.net",
     "foi_source_url": "https://www.westandnorthlondon.icb.nhs.uk/how-we-are-run/your-information-feedback-and-your-rights/freedom-information-requests",
-    "notes": "New merged entity from 1 April 2026 (NCL + NW London). Site is hosted at nwlondonicb.nhs.uk with new branding at westandnorthlondon.icb.nhs.uk."
+    "notes": "New merged entity from 1 April 2026 (NCL + NW London). Site is hosted at nwlondonicb.nhs.uk with new branding at westandnorthlondon.icb.nhs.uk. foi_email primary updated 2026-09-19 from https://www.westandnorthlondon.icb.nhs.uk/how-we-are-run/your-information-feedback-and-your-rights/freedom-information-requests; prior value nhsnwl.foi@nhs.net moved to foi_email_alt."
   }
 ]

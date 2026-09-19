@@ -96,9 +96,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-09-12",
+    "last_validated": "2026-09-19",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-12: browser-UA curl returned HTTP 200 (35KB); the landing links the 29 July 2026 meeting plus the previous-meetings archive, with 30 September 2026, 25 November 2026, 27 January 2027 and 31 March 2027 scheduled."
+    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: hub works as documented - links the current meeting page (board-meeting-held-in-public-on-wednesday-29-july-2026) and the Previous Board meetings archive. papers_partial reflects that the hub holds no PDFs itself."
   },
   {
     "ods_code": "QOQ",
@@ -303,9 +303,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-09-12",
+    "last_validated": "2026-09-19",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-12: browser-UA curl returned HTTP 200 (53KB) with 10 www.hwics.org.uk/download_file/ links for the 16 September 2026 public board."
+    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: /meetings/board-papers currently carries the 16 September 2026 public board pack as 10 separate PDFs, with the dated archive at /meetings/past-board-papers."
   },
   {
     "ods_code": "QJ2",
@@ -664,9 +664,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-09-12",
-    "validation_status": "papers_found",
-    "validation_notes": "2026-09-12: the /board-meetings/ index returned HTTP 200 with meeting dates through 9 September 2026, while the DB landing page again returned no meeting dates at all - the landing remains background only."
+    "last_validated": "2026-09-19",
+    "validation_status": "papers_partial",
+    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: landing renders and links per-meeting event pages under /board-meetings/, though the statically-rendered listing surfaces older meetings first - crawlers should page through rather than trust the first entries."
   },
   {
     "ods_code": "QKK",
@@ -751,9 +751,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-09-12",
+    "last_validated": "2026-09-19",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-12: browser-UA curl returned HTTP 200 (76KB); the landing lists the 22 July 2026 papers plus 23 September 2026, 21 October 2026, 27 January 2027 and 24 March 2027 scheduled, with the document library one hop deeper."
+    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: landing lists the 22 July 2026 board meeting with agenda papers in the /navigate/486/2410 document library plus a recording. The no_papers_visible flag was a local-fetch false negative."
   },
   {
     "ods_code": "QRL",
