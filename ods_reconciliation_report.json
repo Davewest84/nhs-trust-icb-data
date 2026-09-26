@@ -1,28 +1,27 @@
 {
-  "generated_at": "2026-09-19T04:28:00.790052+00:00",
-  "last_ods_sync_date_used": "2026-09-12",
-  "method_notes": "Live superset from ORD PrimaryRoleId RO197 (247) + RO57 (0 this week) + RO107 (4) = 251 trusts, and RO261 filtered to names containing INTEGRATED CARE BOARD = 48 ICBs. 61 codes present in ORD but absent from the DBs were fetched individually; 58 carry a Date[Legal].End in the past (legally dissolved, correctly absent) and are not reported. Change feed since 2026-09-12 returned 1267 changed orgs, none of which are in either DB.",
+  "generated_at": "2026-09-26T05:27:14.237400+00:00",
+  "last_ods_sync_date_used": "2026-09-19",
   "add_candidates": [
     {
       "ods": "RQF",
       "name": "VELINDRE NHS TRUST",
-      "role": "NHS Trust (Wales)",
+      "role": "trust",
       "suggested_region": "Wales (out-of-scope)",
-      "note": "Legally live in ORD with no Legal End date, but a Welsh NHS trust and therefore permanently out of scope for this England-only dataset. No action needed."
+      "note": "Out of scope: non-England organisation, no action needed."
     },
     {
       "ods": "RT4",
       "name": "WELSH AMBULANCE SERVICES NHS TRUST",
-      "role": "NHS Trust (Wales)",
+      "role": "trust",
       "suggested_region": "Wales (out-of-scope)",
-      "note": "Legally live in ORD with no Legal End date, but a Welsh NHS trust and therefore permanently out of scope for this England-only dataset. No action needed."
+      "note": "Out of scope: non-England organisation, no action needed."
     },
     {
       "ods": "RYT",
       "name": "PUBLIC HEALTH WALES NHS TRUST",
-      "role": "NHS Trust (Wales)",
+      "role": "trust",
       "suggested_region": "Wales (out-of-scope)",
-      "note": "Legally live in ORD with no Legal End date, but a Welsh NHS trust and therefore permanently out of scope for this England-only dataset. No action needed."
+      "note": "Out of scope: non-England organisation, no action needed."
     }
   ],
   "remove_candidates": []
