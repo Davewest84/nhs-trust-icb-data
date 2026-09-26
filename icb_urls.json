@@ -256,25 +256,26 @@
     "cluster_meeting_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
     "notes": "Joint Board Meeting in Common with Herefordshire and Worcestershire (QGH)",
     "url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-    "access_notes": "Current URL is correct and live; the reported failure is a WAF/bot 403 that only blocks WebFetch — load it in Playwright (page title 'ICB Board Meetings - Happy Healthy Lives' confirms). The org now runs as the CWHW cluster (Coventry & Warwickshire + Herefordshire & Worcestershire), so packs are labelled 'CWHW ICB Board' or 'CWICB Board'. Meeting papers sit inside JavaScript accordions per meeting date whose individual PDF links load dynamically on expand; the real files live at /download/clientfiles/files/. Google site:happyhealthylives.uk with the file path is the fastest way to surface a specific pack URL.",
-    "needs_playwright": true,
+    "access_notes": "The URL is correct and live. Route picture as of 2026-09-26: local browser-UA curl reaches it cleanly (HTTP 200, 56KB) and - importantly - the raw HTML already contains every paper href, so the local static path is sufficient and Playwright is NOT required (needs_playwright dropped to false this run). Server-side WebFetch is the route that is blocked here (ECONNRESET / 403); Playwright also works if you need it, so never read a block on one route as proof the page is unreachable. The org runs as the CWHW cluster (Coventry & Warwickshire + Herefordshire & Worcestershire), so packs are labelled 'CWHW ICB Board', 'Public Board', or the legacy 'CWICB Board'. Papers are NOT a single combined pack: each agenda item is its own file under /download/clientfiles/files/ named 'Agenda {NN}[{i}] {Title} {D Mon YY}.pdf', with 'Agenda 00 ... Agenda' the agenda itself, and a few items (the board governance log) are .xlsx rather than PDF. The page renders as per-meeting accordions but the hrefs sit in the static HTML, so harvest all /download/clientfiles/files/ links and group them by the meeting date carried in the filename. Forward schedule currently 16 September 2026, 18 November 2026, 20 January 2027, 17 March 2027; the July meeting doubles as the AGM ('AGM & Public Board 15 July 26'). Google site:happyhealthylives.uk plus the file path remains the fastest way to surface one specific pack.",
+    "needs_playwright": false,
     "pack_pattern_hints": [
-      "/download/clientfiles/files/ host path for all packs",
-      "Filenames like 'Papers for the {DD} {Mon} {YYYY} CWICB Board meeting'",
-      "'CWHW ICB Board' prefix on cluster governance docs",
-      "Often split into PACK 1 / PACK 2 / PACK 3",
-      "Accordion grouped by meeting date on the landing page"
+      "/download/clientfiles/files/Agenda%20{NN}%20{Title}%20{D}%20{Mon}%20{YY}.pdf",
+      "'Agenda 00 ... Agenda' = the agenda itself",
+      "'Public Board'",
+      "'CWHW ICB Board'",
+      "legacy 'CWICB Board'"
     ],
     "exclude_patterns": [
-      "ICP Board",
-      "Integrated Care Partnership",
-      "Joint Committee",
-      "Committee Escalation",
-      "Herefordshire & Worcestershire-only board"
+      "Governance Log (.xlsx)",
+      "'Board Notes'",
+      "draft minutes",
+      "Annual Report",
+      "ICP / Integrated Care Partnership",
+      "(1) duplicate-suffixed files"
     ],
-    "last_validated": "2026-06-27",
+    "last_validated": "2026-09-26",
     "validation_status": "papers_found",
-    "validation_notes": "Live landing page confirmed via Playwright with dated 2026 board entries and a recent example pack (19 Nov 2025 CWICB Board meeting papers) on-domain."
+    "validation_notes": "Re-confirmed 2026-09-26 via local browser-UA curl (HTTP 200, 56KB, title 'ICB Board Meetings - Happy Healthy Lives'): per-agenda-item PDFs current to the 16 September 2026 public board, forward dates listed to 17 March 2027. needs_playwright dropped to false because the raw HTML already carries every paper href. Server-side WebFetch was ECONNRESET this run."
   },
   {
     "ods_code": "QGH",
@@ -769,8 +770,8 @@
     "cluster_id": null,
     "cluster_meeting_url": null,
     "notes": "Boundary expanded 1 April 2026 to receive LSOAs transferred from former Frimley ICB (QNQ); ODS code unchanged",
-    "url": "https://www.hantsiow.icb.nhs.uk/icb/integrated-care-board-meetings/",
-    "access_notes": "Pattern C: the integrated-care-board-meetings landing is static HTML listing dated ICB Board meetings, each linking to a per-meeting sub-page of the form /icb/integrated-care-board-meetings/navigate/23515/<id>. Each per-meeting page does NOT offer a single combined pack; instead it lists numbered individual paper PDFs (Paper 0 Agenda, Paper 2a Minutes, Paper 4 Chair report, Paper 5 CEO report, Paper 6 BAF, etc.), each downloaded via /download_file/<file-id>/452. To assemble a full pack a crawler must follow each meeting page and fetch all Paper N download_file links (the agenda is 'Paper 0 - Public Agenda'). The /navigate/23515/ branch is the ICB Board; skip other committee/ICP listings.",
+    "url": "https://www.hantsiow.icb.nhs.uk/icb/integrated-care-board-meetings",
+    "access_notes": "Pattern C, refreshed 2026-09-26. NOTE the canonical URL has NO trailing slash - the trailing-slash form 301-redirects here, and the DB now stores the redirect target, so a crawler saves a hop. The integrated-care-board-meetings landing is static HTML (local browser-UA curl: HTTP 200, 82KB) listing dated ICB Board meetings, each linking to a per-meeting sub-page of the form /icb/integrated-care-board-meetings/navigate/23515/<id>. Each per-meeting page does NOT offer a single combined pack; instead it lists numbered individual paper PDFs (Paper 0 Agenda, Paper 2a Minutes, Paper 4 Chair report, Paper 5 CEO report, Paper 6 BAF, etc.), each downloaded via /download_file/<file-id>/452. To assemble a full pack a crawler must follow each meeting page and fetch all Paper N download_file links (the agenda is 'Paper 0'). The board meets roughly bi-monthly; the listing currently spans 5 February 2025 through 4 November 2026. Server-side WebFetch socket-hangs on this host, so prefer the local static path here - the reverse of most orgs in this DB.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/icb/integrated-care-board-meetings/navigate/23515/<id> per-meeting page",
@@ -784,9 +785,9 @@
       "Confidential",
       "Private"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-09-26",
     "validation_status": "papers_found",
-    "validation_notes": "Per-meeting page for 5 November 2025 confirmed listing ~19 individual numbered paper PDFs via /download_file/ links; no single combined pack is published."
+    "validation_notes": "Re-confirmed 2026-09-26 via local browser-UA curl following the site's own 301 to the no-trailing-slash canonical (HTTP 200, 82KB, title 'Integrated Care Board meetings :: NHS Hampshire and Isle of Wight'): 15+ /navigate/23515/<id> per-meeting pages spanning 5 February 2025 to 4 November 2026, most recent held meeting 2 September 2026. DB url updated to the redirect target. Server-side WebFetch socket-hangs on this host."
   },
   {
     "ods_code": "QKS",
@@ -1038,9 +1039,9 @@
       "Joint Committee",
       "Cluster governance committee"
     ],
-    "last_validated": "2026-09-05",
+    "last_validated": "2026-09-26",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-05: WebFetch reached the page; packs hosted on docs.cios.icb.nhs.uk with per-year archive sections, newest the 28 May 2026 extraordinary meeting."
+    "validation_notes": "Re-confirmed 2026-09-26 via server-side WebFetch (HTTP 200, title 'Meetings in public - NHS Cornwall and Isles of Scilly'): docs.cios.icb.nhs.uk pack links intact. PUBLICATION GAP - the newest entry is still the 28 May 2026 extraordinary meeting, the page is 'last reviewed 27 May 2026' and says the next board date 'will be published in due course'. Watch for papers migrating to the SW-PEN cluster board at swpboard.nhs.uk."
   },
   {
     "ods_code": "QJK",

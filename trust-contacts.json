@@ -951,10 +951,10 @@
     "press_email": "Communications@uhliverpool.nhs.uk",
     "press_email_alt": "communications@lwh.nhs.uk",
     "press_source_url": "https://www.uhliverpool.nhs.uk/contact-us/press-information",
-    "foi_email": "FOI@lwh.nhs.uk",
-    "foi_email_alt": null,
+    "foi_email": "FOIRequests@lhch.nhs.uk",
+    "foi_email_alt": "FOI@lwh.nhs.uk",
     "foi_source_url": "https://www.uhliverpool.nhs.uk/freedom-information-requests-lwh",
-    "notes": "Liverpool Women's now part of NHS University Hospitals of Liverpool Group; legacy LWH FOI inbox still in use per FOI publication scheme | foi_source_url updated 2026-07-18 to live UHL group FOI page (FOI@lwh.nhs.uk confirmed); prior liverpoolwomens.nhs.uk PDF now redirects to the group site. Group submission inbox FOIRequests@liverpoolft.nhs.uk also seen (not adopted as primary)"
+    "notes": "Liverpool Women's now part of NHS University Hospitals of Liverpool Group; legacy LWH FOI inbox still in use per FOI publication scheme | foi_source_url updated 2026-07-18 to live UHL group FOI page (FOI@lwh.nhs.uk confirmed); prior liverpoolwomens.nhs.uk PDF now redirects to the group site. Group submission inbox FOIRequests@liverpoolft.nhs.uk also seen (not adopted as primary) FOI primary updated 2026-09-26 from https://www.uhliverpool.nhs.uk/freedom-information-requests-lwh; prior value moved to _alt. The LWH freedom-of-information page on the NHS University Hospitals of Liverpool Group site now directs requesters to FOIRequests@lhch.nhs.uk and to Information Governance, Health Records, Liverpool Heart and Chest Hospital - i.e. FOI is handled by the group Access to Information team (tel 0151 702 1336 / 4645), not a LWH-specific inbox."
   },
   {
     "trust_name": "London Ambulance Service NHS Trust",

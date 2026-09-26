@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-19T04:09:43.478537+00:00",
+  "generated_at": "2026-09-26T04:09:55.612956+00:00",
   "label": "trust",
   "total": 201,
-  "ok": 199,
-  "broken": 2,
+  "ok": 196,
+  "broken": 5,
   "results": [
     {
       "ods_code": "RA2",
@@ -18,10 +18,10 @@
       "ods_code": "RDR",
       "name": "Sussex Community NHS Foundation Trust",
       "url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetin"
     },
     {
       "ods_code": "RN7",
@@ -45,19 +45,19 @@
       "ods_code": "RPC",
       "name": "Queen Victoria Hospital NHS Foundation Trust",
       "url": "https://www.qvh.nhs.uk/about-us/board-of-directors/meetings-in-public/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: HTTPSConnectionPool(host='www.qvh.nhs.uk', port=443): Max retries exceeded with url: /about-us/board-of-directors/meetings-in-public/ (Caused by Conne; playwright: Page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.qvh.nhs.uk/about-us/board-of-directors/meetings-in-public/\nCall log:\n  - n"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.qvh.nhs.uk/about-us/board-of-directors/meetings-in-public/",
+      "error": null
     },
     {
       "ods_code": "RTK",
       "name": "Ashford and St Peter's Hospitals NHS Foundation Trust",
       "url": "https://www.ashfordstpeters.nhs.uk/board-meetings",
       "ok": true,
-      "status": 202,
+      "status": 403,
       "final_url": "https://www.ashfordstpeters.nhs.uk/board-meetings",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RTP",
@@ -90,19 +90,19 @@
       "ods_code": "RX2",
       "name": "Sussex Partnership NHS Foundation Trust",
       "url": "https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/board-meetings",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/board-meetings",
-      "error": null
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/"
     },
     {
       "ods_code": "RXC",
       "name": "East Sussex Healthcare NHS Trust",
       "url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/\nCall log:\n  - navigating "
     },
     {
       "ods_code": "RXX",
@@ -324,10 +324,10 @@
       "ods_code": "RKB",
       "name": "University Hospitals Coventry and Warwickshire NHS Trust",
       "url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/\nCall log:\n  - navigating to"
     },
     {
       "ods_code": "RL1",
@@ -604,9 +604,9 @@
       "name": "Airedale NHS Foundation Trust",
       "url": "https://www.airedale-trust.nhs.uk/about-us/our-board-and-leadership/",
       "ok": true,
-      "status": 202,
+      "status": 403,
       "final_url": "https://www.airedale-trust.nhs.uk/about-us/our-board-and-leadership/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RCU",
@@ -651,7 +651,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.sth.nhs.uk/about-us/board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RJL",
@@ -730,9 +730,9 @@
       "name": "South West Yorkshire Partnership Teaching NHS Foundation Trust",
       "url": "https://www.southwestyorkshire.nhs.uk/about-us-2/how-were-run/our-trust-board/meeting-papers/",
       "ok": true,
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.southwestyorkshire.nhs.uk/about-us-2/how-were-run/our-trust-board/meeting-papers/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RY6",
@@ -822,7 +822,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.cuh.nhs.uk/about-us/board-directors/board-of-directors-meetings/",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "RM1",
@@ -919,9 +919,9 @@
       "name": "Royal Cornwall Hospitals NHS Trust",
       "url": "https://royalcornwallhospitals.nhs.uk/organisation/board-meetings/",
       "ok": true,
-      "status": 202,
+      "status": 403,
       "final_url": "https://royalcornwallhospitals.nhs.uk/organisation/board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RH5",
@@ -1074,7 +1074,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.nwl-acute-provider-group.nhs.uk/publications",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "RF4",
@@ -1127,7 +1127,7 @@
       "url": "https://www.imperial.nhs.uk/about-us/board-papers/",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.imperial.nhs.uk/about-us/board-papers/",
+      "final_url": "https://www.imperial.nhs.uk/about-us/board-papers",
       "error": null
     },
     {
@@ -1496,7 +1496,7 @@
       "url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
       "ok": true,
       "status": 403,
-      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=.WuGCHrQ_LDedf8zYxvz1ObE_QmFZq1Knj3WEqfcFMY-1789790892-1.0.1.1-4OWyJ1_QyLnxne7cU_BmvjTX.6uNX3bTZczKPfLcJeM",
+      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=fs2HAaikgVQ7_GKM00lu4NWin.XImKcco_N.vkG3EJM-1790395704-1.0.1.1-JpQyxOLNl9MK3514YZ1bZaPG9Rt38aRqBtRwjEg0Wjc",
       "error": "(rescued by playwright fallback)"
     },
     {
@@ -1685,7 +1685,7 @@
       "url": "https://www.cwp.nhs.uk/board",
       "ok": true,
       "status": 403,
-      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=cfYyujAhEmyz4xrZuiZAHazBw.yJTb_GyVNY2LuNhlo-1789790948-1.0.1.1-7QzxRCP0HGP1OirKfB21Jcjt5BbIMEnM1Dvjq3h_CKw",
+      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=JKw4LyhvBtShnbq..wEwaTwLlsrjp1cWVRc1MPwz.DU-1790395759-1.0.1.1-9bbAWdOp1j3t.rA7y_W4Zs0KfsGdyNJ0BnjmIxW5Tg8",
       "error": "(rescued by playwright fallback)"
     },
     {
