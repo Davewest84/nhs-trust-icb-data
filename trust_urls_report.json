@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26T04:09:55.612956+00:00",
+  "generated_at": "2026-10-03T04:09:17.517974+00:00",
   "label": "trust",
   "total": 201,
-  "ok": 196,
-  "broken": 5,
+  "ok": 200,
+  "broken": 1,
   "results": [
     {
       "ods_code": "RA2",
@@ -90,19 +90,19 @@
       "ods_code": "RX2",
       "name": "Sussex Partnership NHS Foundation Trust",
       "url": "https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/board-meetings",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.sussexpartnership.nhs.uk/about-us/how-our-trust-run/board-meetings",
+      "error": null
     },
     {
       "ods_code": "RXC",
       "name": "East Sussex Healthcare NHS Trust",
       "url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/\nCall log:\n  - navigating "
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
+      "error": null
     },
     {
       "ods_code": "RXX",
@@ -324,10 +324,10 @@
       "ods_code": "RKB",
       "name": "University Hospitals Coventry and Warwickshire NHS Trust",
       "url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/\nCall log:\n  - navigating to"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RL1",
@@ -522,10 +522,10 @@
       "ods_code": "RJ7",
       "name": "St George's University Hospitals NHS Foundation Trust",
       "url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RJZ",
@@ -1496,7 +1496,7 @@
       "url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
       "ok": true,
       "status": 403,
-      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=fs2HAaikgVQ7_GKM00lu4NWin.XImKcco_N.vkG3EJM-1790395704-1.0.1.1-JpQyxOLNl9MK3514YZ1bZaPG9Rt38aRqBtRwjEg0Wjc",
+      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=tPIWKZVPfbo0tVpp.LneA2N2DqRr4dtjHSLjVXosJ5o-1791000465-1.0.1.1-8s8cDArFE9Yoa3Fpf9eiF5x1xdlYo1yUBMbi6nb6qrM",
       "error": "(rescued by playwright fallback)"
     },
     {
@@ -1685,7 +1685,7 @@
       "url": "https://www.cwp.nhs.uk/board",
       "ok": true,
       "status": 403,
-      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=JKw4LyhvBtShnbq..wEwaTwLlsrjp1cWVRc1MPwz.DU-1790395759-1.0.1.1-9bbAWdOp1j3t.rA7y_W4Zs0KfsGdyNJ0BnjmIxW5Tg8",
+      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=Txomd6LCDBxjGIhPh4F1jB6MWO3dgYy.hEZfgfWDisk-1791000520-1.0.1.1-Af6V0fUmX_QxLE5A3r_8fyDFi3g9aTtx1MV42wvQ3G8",
       "error": "(rescued by playwright fallback)"
     },
     {

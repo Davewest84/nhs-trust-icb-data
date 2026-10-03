@@ -96,9 +96,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-09-19",
+    "last_validated": "2026-10-03",
     "validation_status": "papers_found",
-    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: hub works as documented - links the current meeting page (board-meeting-held-in-public-on-wednesday-29-july-2026) and the Previous Board meetings archive. papers_partial reflects that the hub holds no PDFs itself."
+    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 36KB): hub links the 30 September 2026 board-in-public page (41 /media/{hash}/*.pdf items); next date 25 Nov 2026."
   },
   {
     "ods_code": "QOQ",
@@ -273,9 +273,9 @@
       "ICP / Integrated Care Partnership",
       "(1) duplicate-suffixed files"
     ],
-    "last_validated": "2026-09-26",
+    "last_validated": "2026-10-03",
     "validation_status": "papers_found",
-    "validation_notes": "Re-confirmed 2026-09-26 via local browser-UA curl (HTTP 200, 56KB, title 'ICB Board Meetings - Happy Healthy Lives'): per-agenda-item PDFs current to the 16 September 2026 public board, forward dates listed to 17 March 2027. needs_playwright dropped to false because the raw HTML already carries every paper href. Server-side WebFetch was ECONNRESET this run."
+    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl with --retry (200, 56KB; WebFetch got ECONNRESET): static HTML holds /download/clientfiles/files/ links for the 16 Sep 2026 Public Board; next meeting 18 Nov 2026."
   },
   {
     "ods_code": "QGH",
@@ -304,9 +304,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-09-19",
+    "last_validated": "2026-10-03",
     "validation_status": "papers_found",
-    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: /meetings/board-papers currently carries the 16 September 2026 public board pack as 10 separate PDFs, with the dated archive at /meetings/past-board-papers."
+    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 53KB): /meetings/board-papers holds the 16 September 2026 pack as 10 hwics.org.uk/download_file/<id>/414 links; past-board-papers lists 2026 meetings to 15 July."
   },
   {
     "ods_code": "QJ2",
@@ -665,9 +665,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-09-19",
-    "validation_status": "papers_partial",
-    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: landing renders and links per-meeting event pages under /board-meetings/, though the statically-rendered listing surfaces older meetings first - crawlers should page through rather than trust the first entries."
+    "last_validated": "2026-10-03",
+    "validation_status": "papers_found",
+    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl: the stored landing links per-meeting pages through ICB Board meeting 23, whose page holds the 'NHS North East London ICB Board - 29 July 2026' pack (/download-attachment/55670); meeting 24 not yet posted."
   },
   {
     "ods_code": "QKK",
@@ -752,9 +752,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-09-19",
+    "last_validated": "2026-10-03",
     "validation_status": "papers_found",
-    "validation_notes": "Re-confirmed 2026-09-19 via WebFetch: landing lists the 22 July 2026 board meeting with agenda papers in the /navigate/486/2410 document library plus a recording. The no_papers_visible flag was a local-fetch false negative."
+    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 76KB): landing links the 22 July 2026 Board papers folder (navigate/486/2410) and the 23 Sep 2026 AGM folder (navigate/1617/2410)."
   },
   {
     "ods_code": "QRL",
@@ -1024,24 +1024,25 @@
     "cluster_id": "SW-PEN",
     "cluster_meeting_url": "https://swpboard.nhs.uk/meetings/",
     "notes": "South West Peninsula joint board with Devon (QJK); cluster pack at swpboard.nhs.uk",
-    "url": "https://cios.icb.nhs.uk/about/meetings/",
-    "access_notes": "The current URL is in fact live and correct (last reviewed 27 May 2026) — the reported breakage did not reproduce; WebFetch returns it cleanly. Reach it via About Us > Meetings. Packs are grouped by financial year (2025-26, 2024-25, etc.) with direct PDFs hosted on a separate docs subdomain at docs.cios.icb.nhs.uk/DocumentsLibrary/NHSCornwallAndIslesOfScilly/Organisation/PublicMeetings/BoardMeetings/{YYYY}/{YYYYMM}/. The ICB now operates in a cluster with NHS Devon, and recent sessions are 'Extraordinary' or AGM, but the board pack is published on its own cios.icb.nhs.uk domain.",
+    "url": "https://swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/",
+    "access_notes": "URL PATCHED 2026-10-03 (Pattern F + cluster board): NHS Cornwall and Isles of Scilly ICB now holds its ordinary board meetings jointly with NHS Devon ICB (QJK) as the 'South West Peninsula Board' (SW-PEN cluster), and the packs are published on the dedicated joint site swpboard.nhs.uk (site title 'NHS CIOS and Devon ICB'). The old own-domain page cios.icb.nhs.uk/about/meetings/ is still live but stops at the 28 May 2026 extraordinary meeting and says future dates are TBC; use it only for the pre-cluster archive (direct PDFs on docs.cios.icb.nhs.uk/DocumentsLibrary/NHSCornwallAndIslesOfScilly/Organisation/PublicMeetings/BoardMeetings/{YYYY}/{YYYYMM}/, grouped by financial year). Strategy on the new landing: static WordPress page (plain browser-UA curl works, no Playwright) listing each joint meeting with direct PDFs under /wp-content/uploads/YYYY/MM/. Naming varies by meeting: 'SWPB-Public-29.01.2026-Meeting-Papers-1.pdf', 'SWPB-Meeting-30-July-2026-Agenda-and-Papers-v4.pdf', 'SWP-Board-24.09.2026-Agenda-and-Reports.pdf'. Take the 'Meeting Papers' / 'Agenda and Papers' / 'Agenda and Reports' file as the main pack; separate 'Appendices' PDFs and individual SWPB26-NNN item PDFs accompany it, and minutes are uploaded months later. Bi-monthly cadence (Jan, Mar, May, Jul, Sep, Nov); next 26 Nov 2026. The joint AGM pack (NHS-CIOS-and-NHSD-AGM-*) is also listed. Note the swpboard.nhs.uk/meetings/ path recorded as cluster_meeting_url now 404s - this page is the live joint archive.",
     "needs_playwright": false,
     "pack_pattern_hints": [
-      "docs.cios.icb.nhs.uk/DocumentsLibrary/.../BoardMeetings/{fy e.g. 2526}/{yyyymm}/ path",
-      "Separate PDFs per item: Agenda, DOI Register, Minutes, individual reports",
-      "Filenames like Agenda...{Month}{Year}.pdf",
-      "Grouped by financial year on the landing page"
+      "swpboard.nhs.uk/wp-content/uploads/YYYY/MM/SWP*-*.pdf",
+      "Agenda-and-Papers / Agenda-and-Reports / Meeting-Papers = main pack",
+      "South West Peninsula Board",
+      "pre-cluster archive: docs.cios.icb.nhs.uk/DocumentsLibrary/.../BoardMeetings/{fy}/{yyyymm}/"
     ],
     "exclude_patterns": [
       "Integrated Care Partnership",
       "ICP",
       "Joint Committee",
-      "Cluster governance committee"
+      "Cluster governance committee",
+      "Minutes"
     ],
-    "last_validated": "2026-09-26",
+    "last_validated": "2026-10-03",
     "validation_status": "papers_found",
-    "validation_notes": "Re-confirmed 2026-09-26 via server-side WebFetch (HTTP 200, title 'Meetings in public - NHS Cornwall and Isles of Scilly'): docs.cios.icb.nhs.uk pack links intact. PUBLICATION GAP - the newest entry is still the 28 May 2026 extraordinary meeting, the page is 'last reviewed 27 May 2026' and says the next board date 'will be published in due course'. Watch for papers migrating to the SW-PEN cluster board at swpboard.nhs.uk."
+    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 125KB): swpboard.nhs.uk lists the joint board's 2026 packs (29 Jan, 26 Mar, 28 May, 30 Jul, 24 Sep 2026 - SWP-Board-24.09.2026-Agenda-and-Reports.pdf); the old cios.icb.nhs.uk page stops at the 28 May 2026 extraordinary meeting."
   },
   {
     "ods_code": "QJK",

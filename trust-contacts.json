@@ -345,11 +345,11 @@
     "ods_code": "RX4",
     "press_email": "communications@cntw.nhs.uk",
     "press_email_alt": null,
-    "press_source_url": "https://www.cntw.nhs.uk/contact/press/",
+    "press_source_url": "https://www.cntw.nhs.uk/about-us/contact-us/media",
     "foi_email": "foi@cntw.nhs.uk",
     "foi_email_alt": null,
-    "foi_source_url": "https://www.cntw.nhs.uk/foi/request/",
-    "notes": "Cloudflare email-protection decoded"
+    "foi_source_url": "https://www.cntw.nhs.uk/about-us/trust/other-corporate-information/information-held-trust/freedom-information",
+    "notes": "Cloudflare email-protection decoded 2026-10-03: source URLs updated (old /contact/press/ 404s; /foi/request/ redirects); both addresses re-confirmed unchanged."
   },
   {
     "trust_name": "Dartford and Gravesham NHS Trust",
@@ -447,8 +447,8 @@
     "press_source_url": "https://www.ekhuft.nhs.uk/contact-us/press-office",
     "foi_email": "ekh-tr.foi@nhs.net",
     "foi_email_alt": null,
-    "foi_source_url": "https://www.ekhuft.nhs.uk/patients-and-visitors/about-us/freedom-of-information/",
-    "notes": "FOI page not located; ekhuft.nhs.uk/foi redirects to archive that 404s; East Kent Hospitals FOI page redirects to www-archive.ekhuft.nhs.uk and 404s; site mid-migration. FOI source URL resolved 2026-07-30 to /patients-and-visitors/about-us/freedom-of-information/ (site migration complete); ekh-tr.FOI@nhs.net confirmed on page, address unchanged."
+    "foi_source_url": "https://www.ekhuft.nhs.uk/about-us/foi/",
+    "notes": "FOI page not located; ekhuft.nhs.uk/foi redirects to archive that 404s; East Kent Hospitals FOI page redirects to www-archive.ekhuft.nhs.uk and 404s; site mid-migration. FOI source URL resolved 2026-07-30 to /patients-and-visitors/about-us/freedom-of-information/ (site migration complete); ekh-tr.FOI@nhs.net confirmed on page, address unchanged. 2026-10-03: foi_source_url updated (old page redirects to /about-us/foi/); address re-confirmed unchanged."
   },
   {
     "trust_name": "East Lancashire Hospitals NHS Trust",
@@ -1811,8 +1811,8 @@
     "press_source_url": "https://www.qehkl.nhs.uk/about-us/media-enquiries/",
     "foi_email": "dpa@qehkl.nhs.uk",
     "foi_email_alt": "foi@qehkl.nhs.uk",
-    "foi_source_url": "https://www.qehkl.nhs.uk/freedom-of-information.asp",
-    "notes": "FOI uses combined data protection / FOI inbox press source URL updated 2026-07-30: /news-and-events/media-enquiries/ now 404s, page moved to /about-us/media-enquiries/; media.enquiries@qehkl.nhs.uk confirmed there, address unchanged. Note the FOI page designates foi@qehkl.nhs.uk (currently held in _alt) while dpa@ is the data-protection inbox."
+    "foi_source_url": "https://www.qehkl.nhs.uk/about-us/information-requests/",
+    "notes": "FOI uses combined data protection / FOI inbox press source URL updated 2026-07-30: /news-and-events/media-enquiries/ now 404s, page moved to /about-us/media-enquiries/; media.enquiries@qehkl.nhs.uk confirmed there, address unchanged. Note the FOI page designates foi@qehkl.nhs.uk (currently held in _alt) while dpa@ is the data-protection inbox. 2026-10-03: foi_source_url updated (freedom-of-information.asp redirects to /about-us/information-requests/); that page names foi@qehkl.nhs.uk (current _alt) as THE FOI address and dpa@ as health-records only - primary/alt swap left for manual review."
   },
   {
     "trust_name": "The Robert Jones and Agnes Hunt Orthopaedic Hospital NHS Foundation Trust",
