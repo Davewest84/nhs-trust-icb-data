@@ -114,11 +114,11 @@
     "ods_code": "QVV",
     "press_email": "communication@nhsdorset.nhs.uk",
     "press_email_alt": null,
-    "press_source_url": "https://ourdorset.org.uk/media/",
+    "press_source_url": "https://staywelldorset.nhs.uk/media/",
     "foi_email": "FOI.Requests@nhsdorset.nhs.uk",
     "foi_email_alt": null,
     "foi_source_url": "https://nhsdorset.nhs.uk/about/foi/",
-    "notes": null
+    "notes": "2026-10-10: press_source_url updated to https://staywelldorset.nhs.uk/media/ (ourdorset.org.uk/media/ now 301s there); communication@nhsdorset.nhs.uk unchanged. FOI.Requests@nhsdorset.nhs.uk confirmed on /about/foi/."
   },
   {
     "icb_name": "Gloucestershire ICB",
@@ -236,10 +236,10 @@
     "press_email": "nsicb.communications@nhs.net",
     "press_email_alt": "nwicb.communications@nhs.net",
     "press_source_url": "https://www.norfolkandsuffolk.icb.nhs.uk/contact/",
-    "foi_email": "nsicb.foi@nhs.net",
-    "foi_email_alt": "nwicb.foi@nhs.net",
+    "foi_email": "nsicb.accesstoinformation@nhs.net",
+    "foi_email_alt": "nsicb.foi@nhs.net",
     "foi_source_url": "https://www.norfolkandsuffolk.icb.nhs.uk/about/governance/foi/",
-    "notes": "Email obfuscated via Cloudflare; decoded from data-cfemail (legacy Norfolk and Waveney prefix) primary updated 2026-07-30 from https://www.norfolkandsuffolk.icb.nhs.uk/contact/ and https://www.norfolkandsuffolk.icb.nhs.uk/about/governance/foi/ (cfemail-decoded); prior nwicb.* values moved to _alt."
+    "notes": "Email obfuscated via Cloudflare; decoded from data-cfemail (legacy Norfolk and Waveney prefix) primary updated 2026-07-30 from https://www.norfolkandsuffolk.icb.nhs.uk/contact/ and https://www.norfolkandsuffolk.icb.nhs.uk/about/governance/foi/ (cfemail-decoded); prior nwicb.* values moved to _alt. | foi primary updated 2026-10-10 from https://www.norfolkandsuffolk.icb.nhs.uk/about/governance/foi/ (cfemail-decoded; the FOI page now gives nsicb.accesstoinformation@nhs.net as the sole FOI contact); prior value nsicb.foi@nhs.net moved to _alt, displacing legacy nwicb.foi@nhs.net. Press nsicb.communications@nhs.net re-confirmed same date."
   },
   {
     "icb_name": "North East London ICB",

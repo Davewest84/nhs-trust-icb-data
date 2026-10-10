@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T04:11:23.561711+00:00",
+  "generated_at": "2026-10-10T04:11:03.546255+00:00",
   "label": "ICB",
   "total": 36,
   "ok": 36,
@@ -93,7 +93,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "QGH",
@@ -314,10 +314,10 @@
     {
       "ods_code": "QT6",
       "name": "Cornwall and the Isles of Scilly ICB",
-      "url": "https://cios.icb.nhs.uk/about/meetings/",
+      "url": "https://swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/",
       "ok": true,
       "status": 403,
-      "final_url": "https://cios.icb.nhs.uk/about/meetings/",
+      "final_url": "https://swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/",
       "error": "(rescued by playwright fallback)"
     },
     {

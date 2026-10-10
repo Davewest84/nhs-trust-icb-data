@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-03T04:09:17.517974+00:00",
+  "generated_at": "2026-10-10T04:08:56.711908+00:00",
   "label": "trust",
   "total": 201,
-  "ok": 200,
-  "broken": 1,
+  "ok": 201,
+  "broken": 0,
   "results": [
     {
       "ods_code": "RA2",
@@ -18,10 +18,10 @@
       "ods_code": "RDR",
       "name": "Sussex Community NHS Foundation Trust",
       "url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetin"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
+      "error": null
     },
     {
       "ods_code": "RN7",
@@ -102,7 +102,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RXX",
@@ -525,7 +525,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "RJZ",
@@ -764,10 +764,10 @@
     {
       "ods_code": "RCX",
       "name": "The Queen Elizabeth Hospital King's Lynn NHS Foundation Trust",
-      "url": "https://www.qehkl.nhs.uk/about-us/meetings-of-the-board-of-directors/",
+      "url": "https://nw-uhg.org.uk/p/about-us/meetings-and-agendas",
       "ok": true,
       "status": 200,
-      "final_url": "https://www.qehkl.nhs.uk/about-us/meetings-of-the-board-of-directors/",
+      "final_url": "https://nw-uhg.org.uk/p/about-us/meetings-and-agendas",
       "error": null
     },
     {
@@ -926,7 +926,7 @@
     {
       "ods_code": "RH5",
       "name": "Somerset NHS Foundation Trust",
-      "url": "https://www.somersetft.nhs.uk/about-us/trust-board-meetings/",
+      "url": "https://www.somersetft.nhs.uk/about-us/about-us/our-leadership-and-governance/trust-board-sub-committees/trust-board-meetings/",
       "ok": true,
       "status": 200,
       "final_url": "https://www.somersetft.nhs.uk/about-us/about-us/our-leadership-and-governance/trust-board-sub-committees/trust-board-meetings/",
@@ -1034,7 +1034,7 @@
     {
       "ods_code": "RV5",
       "name": "South London and Maudsley NHS Foundation Trust",
-      "url": "https://www.slam.nhs.uk/about-us/trust-board/",
+      "url": "https://slam.nhs.uk/trust-board",
       "ok": true,
       "status": 200,
       "final_url": "https://slam.nhs.uk/trust-board",
@@ -1268,7 +1268,7 @@
     {
       "ods_code": "RX4",
       "name": "Cumbria, Northumberland, Tyne and Wear NHS Foundation Trust",
-      "url": "https://www.cntw.nhs.uk/about/team/board/",
+      "url": "https://www.cntw.nhs.uk/about-us/trust/our-board-and-governors",
       "ok": true,
       "status": 200,
       "final_url": "https://www.cntw.nhs.uk/about-us/trust/our-board-and-governors",
@@ -1496,7 +1496,7 @@
       "url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
       "ok": true,
       "status": 403,
-      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=tPIWKZVPfbo0tVpp.LneA2N2DqRr4dtjHSLjVXosJ5o-1791000465-1.0.1.1-8s8cDArFE9Yoa3Fpf9eiF5x1xdlYo1yUBMbi6nb6qrM",
+      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=n4kgq7iGvdKsqE2XoHu4vV2rmPye21aeSeIMQoQteLk-1791605245-1.0.1.1-cGfkKoh3l00bMo.tLoHlWKCe_ziTDUGI5JvIoDzvIIw",
       "error": "(rescued by playwright fallback)"
     },
     {
@@ -1685,7 +1685,7 @@
       "url": "https://www.cwp.nhs.uk/board",
       "ok": true,
       "status": 403,
-      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=Txomd6LCDBxjGIhPh4F1jB6MWO3dgYy.hEZfgfWDisk-1791000520-1.0.1.1-Af6V0fUmX_QxLE5A3r_8fyDFi3g9aTtx1MV42wvQ3G8",
+      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=kLA7zQWd2qYrXSr2SggfkYg3erLaNFYasqHzl5iMWqw-1791605300-1.0.1.1-D.nfPRUfJVOk5uxxa7vS7yHTbHpmaiuL_4mBnutIoB4",
       "error": "(rescued by playwright fallback)"
     },
     {

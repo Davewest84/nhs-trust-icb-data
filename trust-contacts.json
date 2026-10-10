@@ -266,13 +266,13 @@
   {
     "trust_name": "Cheshire and Wirral Partnership NHS Foundation Trust",
     "ods_code": "RXA",
-    "press_email": "jodie.denrico@cwp.nhs.uk",
-    "press_email_alt": null,
-    "press_source_url": "Temp/Comms contacts.xlsx (May 2026)",
+    "press_email": "cwp.essential@nhs.net",
+    "press_email_alt": "jodie.denrico@cwp.nhs.uk",
+    "press_source_url": "https://www.cwp.nhs.uk/contact/media-enquiries",
     "foi_email": "cwp.foi@nhs.net",
     "foi_email_alt": null,
-    "foi_source_url": "Temp/Comms contacts.xlsx (May 2026)",
-    "notes": "Cheshire and Wirral Partnership website Cloudflare bot-protected; could not retrieve contact pages; Cheshire & Wirral Partnership: all contact and FOI pages returned 403 to WebFetch (server-side bot block)."
+    "foi_source_url": "https://www.cwp.nhs.uk/contact/freedom-information",
+    "notes": "Cheshire and Wirral Partnership website Cloudflare bot-protected; could not retrieve contact pages; Cheshire & Wirral Partnership: all contact and FOI pages returned 403 to WebFetch (server-side bot block). | press primary updated 2026-10-10 from https://www.cwp.nhs.uk/contact/media-enquiries (read via local headless Playwright; curl and WebFetch get Cloudflare 403); prior value jodie.denrico@cwp.nhs.uk moved to _alt. FOI cwp.foi@nhs.net confirmed 2026-10-10 on /contact/freedom-information, source URL updated."
   },
   {
     "trust_name": "Chesterfield Royal Hospital NHS Foundation Trust",
@@ -1173,8 +1173,8 @@
     "press_source_url": "https://www.combined.nhs.uk/contact/contact-us/",
     "foi_email": "FOIRequests@combined.nhs.uk",
     "foi_email_alt": null,
-    "foi_source_url": "Temp/Comms contacts.xlsx (May 2026)",
-    "notes": "FOI page returned 404 from tested paths and connection reset on combined.nhs.uk; FOI inbox not retrievable; North Staffordshire Combined FOI sub-pages 404; no FOI email published on contact page."
+    "foi_source_url": "https://www.combined.nhs.uk/about/policies-and-procedures/freedom-of-information/about-freedom-of-information/",
+    "notes": "FOI page returned 404 from tested paths and connection reset on combined.nhs.uk; FOI inbox not retrievable; North Staffordshire Combined FOI sub-pages 404; no FOI email published on contact page. | 2026-10-10: FOIRequests@combined.nhs.uk confirmed on https://www.combined.nhs.uk/about/policies-and-procedures/freedom-of-information/about-freedom-of-information/ (source URL updated from the May 2026 spreadsheet); press address confirmed on contact page."
   },
   {
     "trust_name": "North Tees and Hartlepool NHS Foundation Trust",
@@ -1515,7 +1515,7 @@
     "foi_email": "sfh-tr.information.governance@nhs.net",
     "foi_email_alt": "sfh-tr.foi.requests@nhs.net",
     "foi_source_url": "https://www.sfh-tr.nhs.uk/about-us/regulatory-information/freedom-of-information/",
-    "notes": null
+    "notes": "2026-10-10: FOI page shows only the Director of Corporate Affairs internal-review address (sally.brookshanahan@nhs.net), no generic FOI inbox; sfh-tr.information.governance@nhs.net retained unverified. Press address confirmed."
   },
   {
     "trust_name": "Shropshire Community Health NHS Trust",

@@ -96,9 +96,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-10-03",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 36KB): hub links the 30 September 2026 board-in-public page (41 /media/{hash}/*.pdf items); next date 25 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-10 by local browser-UA curl (200, 36KB): hub links the 'Board meeting held in public on Wednesday 30 September 2026' page."
   },
   {
     "ods_code": "QOQ",
@@ -163,25 +163,21 @@
     "cluster_id": null,
     "cluster_meeting_url": null,
     "notes": "Papers hosted on wypartnership.co.uk; place-level papers also published separately by each of the 5 places (Wakefield, Leeds, Bradford, Calderdale, Kirklees)",
-    "access_notes": "Strategy: landing lists per-meeting entries (27 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "access_notes": "Strategy: the landing lists each 'NHS West Yorkshire ICB Board Meeting - <d Month yyyy>' as a sub-page at /meetings/integrated-care-board/nhs-west-yorkshire-icb-<d-month-yyyy>; each sub-page carries the agenda, the combined papers PDF and any supplementary items. Extraordinary meetings are listed with that prefix. Static fetch works (plain curl 200, no WAF). Follow each meeting link and prefer the combined board papers PDF; skip the annual report and accounts entries that share the landing. Pattern C. Refreshed 2026-10-10: newest meeting 22 September 2026.",
     "needs_playwright": false,
     "pack_pattern_hints": [
-      "Agenda and Papers",
-      "Combined Pack",
-      "Public Board Pack"
+      "nhs-west-yorkshire-icb-<d-month-yyyy>",
+      "Board papers",
+      "Agenda and papers"
     ],
     "exclude_patterns": [
-      "Observer notes",
-      "Q&A",
-      "ICP Board",
+      "Annual Report and Accounts",
       "Minutes only",
-      "Addendum",
-      "Part B",
-      "Confidential"
+      "Q&A"
     ],
-    "last_validated": "2026-05-29",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=2, meeting_subpages=27."
+    "validation_notes": "Refreshed 2026-10-10 by local browser-UA curl (200, 83KB): per-meeting pages for 10 Feb (extraordinary), 24 Mar, 15 Jun, 23 Jun and 22 September 2026 (/meetings/integrated-care-board/nhs-west-yorkshire-icb-22-september-2026)."
   },
   {
     "ods_code": "QHL",
@@ -273,9 +269,9 @@
       "ICP / Integrated Care Partnership",
       "(1) duplicate-suffixed files"
     ],
-    "last_validated": "2026-10-03",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl with --retry (200, 56KB; WebFetch got ECONNRESET): static HTML holds /download/clientfiles/files/ links for the 16 Sep 2026 Public Board; next meeting 18 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-10 by local browser-UA curl with --retry (200, 56KB; validator saw a connection reset): static HTML holds 'Agenda 00 Public Board 16 September 26' and the other 16 Sep 2026 items under /download/clientfiles/files/."
   },
   {
     "ods_code": "QGH",
@@ -304,9 +300,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-10-03",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 53KB): /meetings/board-papers holds the 16 September 2026 pack as 10 hwics.org.uk/download_file/<id>/414 links; past-board-papers lists 2026 meetings to 15 July."
+    "validation_notes": "Re-verified 2026-10-10 by local browser-UA curl (200, 53KB): /meetings/board-papers holds the 16 September 2026 pack (Agenda 00 Public Board 16 September 26, BAF, governance log) as hwics.org.uk/download_file/<id>/414 links."
   },
   {
     "ods_code": "QJ2",
@@ -616,25 +612,20 @@
     "cluster_id": null,
     "cluster_meeting_url": null,
     "notes": "Formed 1 April 2026 from Norfolk and Waveney (QMM, improvinglivesnw.org.uk) plus the Suffolk parts of former Suffolk and North East Essex (QJG, suffolkandnortheastessex.icb.nhs.uk). Predecessor sites still host historical packs.",
-    "access_notes": "Strategy: landing surfaces board papers directly (mix of dated PDFs and/or year links). Static fetch works. Prefer the main combined board pack; filter observer notes and Q&A. Pattern A/B.",
+    "access_notes": "Strategy: the landing lists each board meeting as an event page (/events/icb-board-meeting-<date>/) and a document page (/documents/board-meeting-agenda-and-reports-<d-month-yyyy>/ - the newest uses the shorter /documents/board-meeting-<d-month-yyyy>/ slug, so scrape hrefs rather than building them); the document page holds the combined agenda-and-reports PDF. Separate 'Board questions and responses' documents accompany each meeting. Bi-monthly cadence (Apr, May, Jul, Sep 2026 so far). Static fetch works (plain curl 200, no WAF; contact pages use Cloudflare email obfuscation but the board pages do not). Prefer the agenda-and-reports document; skip questions-and-responses and minutes-only files. Pattern C. Refreshed 2026-10-10: newest meeting 23 September 2026.",
     "needs_playwright": false,
     "pack_pattern_hints": [
-      "Public Board Pack",
-      "Board Papers",
-      "Agenda and Papers"
+      "Board meeting agenda and reports",
+      "/documents/board-meeting-agenda-and-reports-<date>/",
+      "/documents/board-meeting-<date>/"
     ],
     "exclude_patterns": [
-      "Observer notes",
-      "Q&A",
-      "ICP Board",
-      "Minutes only",
-      "Addendum",
-      "Part B",
-      "Confidential"
+      "questions and responses",
+      "Minutes only"
     ],
-    "last_validated": "2026-05-29",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=0, meeting_subpages=8."
+    "validation_notes": "Refreshed 2026-10-10 by local browser-UA curl (200, 58KB): 'Board meeting agenda and reports' document pages for 1 Apr, 20 May, 15 Jul and 23 September 2026 (/documents/board-meeting-23-september-2026/) plus matching event pages."
   },
   {
     "ods_code": "QMF",
@@ -665,9 +656,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-10-03",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl: the stored landing links per-meeting pages through ICB Board meeting 23, whose page holds the 'NHS North East London ICB Board - 29 July 2026' pack (/download-attachment/55670); meeting 24 not yet posted."
+    "validation_notes": "Re-verified 2026-10-10 by local browser-UA curl (200, 218KB): the stored landing links per-meeting pages through ICB Board meeting 23 (29 Jul 2026), and the live /board-meetings/ index likewise stops at meeting 23; meeting-24 is still 404, so no board pack has appeared since July."
   },
   {
     "ods_code": "QKK",
@@ -700,24 +691,21 @@
     "cluster_id": "SEL-SWL",
     "cluster_meeting_url": null,
     "notes": "Clustered with the other London ICB under joint chair Sir Richard Douglas and shared chief executive Andrew Bland; formal clustering agreed December 2025, appointments February 2026. Source: SWL ICB Annual Report 2025-26 and SWL board papers 15 July 2026.",
-    "access_notes": "Strategy: landing lists year archives (3 year links this run, e.g. 'Board papers 2025'). Follow each year link to dated PDF listings; main packs typically 5-30MB. Static fetch works. Pattern B.",
+    "access_notes": "Strategy: /publications/ is a mixed publications index (annual reports, plans, engagement reports) in which board packs appear as entries titled 'Board papers - <Month Year>' linking to a sub-page (/publications/board-papers-<month>-<year>/) that holds the PDF(s) for that meeting; older years sit behind year links. Static fetch works (plain curl 200, no WAF; the contact pages use Cloudflare email obfuscation but the publications pages do not). Filter entries to those starting 'Board papers' and follow each to its PDF; ignore the other publication types. Pattern B/C. Refreshed 2026-10-10: newest entry Board papers - July 2026.",
     "needs_playwright": false,
     "pack_pattern_hints": [
-      "Board Papers",
-      "Public Board Pack"
+      "Board papers - <Month Year>",
+      "/publications/board-papers-<month>-<year>/"
     ],
     "exclude_patterns": [
-      "Observer notes",
-      "Q&A",
-      "ICP Board",
-      "Minutes only",
-      "Addendum",
-      "Part B",
-      "Confidential"
+      "Annual report",
+      "engagement report",
+      "Capital resource use plan",
+      "Minutes only"
     ],
-    "last_validated": "2026-05-29",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=3, meeting_subpages=3."
+    "validation_notes": "Refreshed 2026-10-10 by local browser-UA curl (200, 78KB): /publications/ lists dated publication entries; the newest board entry is 'Board papers - July 2026' (/publications/board-papers-july-2026/); no September or October 2026 entry yet (both slugs 404)."
   },
   {
     "ods_code": "Z9B2Z",
@@ -752,9 +740,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-10-03",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 76KB): landing links the 22 July 2026 Board papers folder (navigate/486/2410) and the 23 Sep 2026 AGM folder (navigate/1617/2410)."
+    "validation_notes": "Re-verified 2026-10-10 by local browser-UA curl (200, 76KB): landing links the 22 July 2026 Board papers folder (navigate/486/2410) and the 23 Sep 2026 AGM folder (navigate/1617/2410); next board meeting 21 Oct 2026, papers to follow."
   },
   {
     "ods_code": "QRL",
@@ -803,25 +791,21 @@
     "cluster_id": null,
     "cluster_meeting_url": null,
     "notes": "ICB website board pack links have historically been broken; mirrors sometimes available via shepwayvox.org",
-    "access_notes": "Strategy: landing lists per-meeting entries (18 dated meeting links this run); each links to its own sub-page of PDFs (agenda, papers, finance). Filter to the main Board (skip ICP/committee/joint). Prefer the largest 'Agenda and Papers' combined PDF. Static fetch works. Pattern C.",
+    "access_notes": "Strategy: the /events-calender landing lists upcoming board meetings as event sub-pages (/events-calender/event/board-meeting-<month>-<year>-<n>/) and, lower down, past meetings with their packs linked directly as /download/icb-board-meeting-pack-<month>-<year>.pdf?ver=<n>&doc=<id>.pdf (Part 1 = public). Static fetch works (plain curl 200, no WAF). Harvest the 'ICB Board meeting pack' links from the landing; skip minutes-only files and non-board events. Pattern A with event sub-pages. Refreshed 2026-10-10: newest pack July 2026, next meeting November 2026.",
     "needs_playwright": false,
     "pack_pattern_hints": [
-      "Agenda and Papers",
-      "Combined Pack",
-      "Public Board Pack"
+      "icb-board-meeting-pack-<month>-<year>.pdf",
+      "ICB Board (Part 1) meeting pack",
+      "/download/"
     ],
     "exclude_patterns": [
-      "Observer notes",
-      "Q&A",
-      "ICP Board",
-      "Minutes only",
-      "Addendum",
-      "Part B",
-      "Confidential"
+      "minutes",
+      "Part 2",
+      "Minutes only"
     ],
-    "last_validated": "2026-05-29",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Validator (static) found dated_pdfs=0, year_archives=0, meeting_subpages=18."
+    "validation_notes": "Refreshed 2026-10-10 by local browser-UA curl (200, 33KB): events calendar carries inline /download/icb-board-meeting-pack-<month>-<year>.pdf links, newest July 2026 (plus July 2026 minutes); upcoming board events Nov 2026, Feb and Mar 2027."
   },
   {
     "ods_code": "S0E4D",
@@ -928,25 +912,22 @@
     "cluster_id": "BSW-DOR-SOM",
     "cluster_meeting_url": null,
     "notes": "Loose cluster with BSW (QOX) and Somerset (QSL); each has its own board",
-    "access_notes": "Strategy: landing surfaces board papers directly (mix of dated PDFs and/or year links). Static fetch works. Prefer the main combined board pack; filter observer notes and Q&A. Pattern A/B.",
+    "access_notes": "Strategy: the /about/board/ landing lists board meetings with their agenda packs as direct /wp-content/uploads/YYYY/MM/ PDF links. Since spring 2026 Dorset's board meets in common with the BSW and Somerset ICB boards, so the current pack is the 'In-Common BSW, Dorset and Somerset ICB Boards agenda pack' hosted on nhsdorset.nhs.uk (earlier 2026 meetings are 'ICB Board Part One papers'). Static fetch works (plain curl 200, no WAF). Prefer the combined agenda pack; skip Part Two / confidential, minutes-only and Q&A files. Pattern A. Refreshed 2026-10-10: newest pack September 2026.",
     "needs_playwright": false,
     "pack_pattern_hints": [
-      "Public Board Pack",
-      "Board Papers",
-      "Agenda and Papers"
+      "In-Common BSW, Dorset and Somerset ICB Boards agenda pack",
+      "ICB-Board-Part-One-Papers",
+      "/wp-content/uploads/YYYY/MM/"
     ],
     "exclude_patterns": [
-      "Observer notes",
-      "Q&A",
-      "ICP Board",
+      "Part Two",
+      "Confidential",
       "Minutes only",
-      "Addendum",
-      "Part B",
-      "Confidential"
+      "Q&A"
     ],
-    "last_validated": "2026-05-29",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Validator (static) found dated_pdfs=5, year_archives=1, meeting_subpages=0."
+    "validation_notes": "Refreshed 2026-10-10 by local browser-UA curl (200, 161KB): landing links the September 2026 'In-Common BSW, Dorset and Somerset ICB Boards agenda pack' plus the May 2026 in-common legacy board pack and the Mar/Jan 2026 ICB Board Part One papers under /wp-content/uploads/YYYY/MM/."
   },
   {
     "ods_code": "QSL",
@@ -1025,7 +1006,7 @@
     "cluster_meeting_url": "https://swpboard.nhs.uk/meetings/",
     "notes": "South West Peninsula joint board with Devon (QJK); cluster pack at swpboard.nhs.uk",
     "url": "https://swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/",
-    "access_notes": "URL PATCHED 2026-10-03 (Pattern F + cluster board): NHS Cornwall and Isles of Scilly ICB now holds its ordinary board meetings jointly with NHS Devon ICB (QJK) as the 'South West Peninsula Board' (SW-PEN cluster), and the packs are published on the dedicated joint site swpboard.nhs.uk (site title 'NHS CIOS and Devon ICB'). The old own-domain page cios.icb.nhs.uk/about/meetings/ is still live but stops at the 28 May 2026 extraordinary meeting and says future dates are TBC; use it only for the pre-cluster archive (direct PDFs on docs.cios.icb.nhs.uk/DocumentsLibrary/NHSCornwallAndIslesOfScilly/Organisation/PublicMeetings/BoardMeetings/{YYYY}/{YYYYMM}/, grouped by financial year). Strategy on the new landing: static WordPress page (plain browser-UA curl works, no Playwright) listing each joint meeting with direct PDFs under /wp-content/uploads/YYYY/MM/. Naming varies by meeting: 'SWPB-Public-29.01.2026-Meeting-Papers-1.pdf', 'SWPB-Meeting-30-July-2026-Agenda-and-Papers-v4.pdf', 'SWP-Board-24.09.2026-Agenda-and-Reports.pdf'. Take the 'Meeting Papers' / 'Agenda and Papers' / 'Agenda and Reports' file as the main pack; separate 'Appendices' PDFs and individual SWPB26-NNN item PDFs accompany it, and minutes are uploaded months later. Bi-monthly cadence (Jan, Mar, May, Jul, Sep, Nov); next 26 Nov 2026. The joint AGM pack (NHS-CIOS-and-NHSD-AGM-*) is also listed. Note the swpboard.nhs.uk/meetings/ path recorded as cluster_meeting_url now 404s - this page is the live joint archive.",
+    "access_notes": "URL PATCHED 2026-10-03 (Pattern F + cluster board): NHS Cornwall and Isles of Scilly ICB now holds its ordinary board meetings jointly with NHS Devon ICB (QJK) as the 'South West Peninsula Board' (SW-PEN cluster), and the packs are published on the dedicated joint site swpboard.nhs.uk (site title 'NHS CIOS and Devon ICB'). The old own-domain page cios.icb.nhs.uk/about/meetings/ is still live but stops at the 28 May 2026 extraordinary meeting and says future dates are TBC; use it only for the pre-cluster archive (direct PDFs on docs.cios.icb.nhs.uk/DocumentsLibrary/NHSCornwallAndIslesOfScilly/Organisation/PublicMeetings/BoardMeetings/{YYYY}/{YYYYMM}/, grouped by financial year). Strategy on the new landing: static WordPress page (plain browser-UA curl works, no Playwright) listing each joint meeting with direct PDFs under /wp-content/uploads/YYYY/MM/. Naming varies by meeting: 'SWPB-Public-29.01.2026-Meeting-Papers-1.pdf', 'SWPB-Meeting-30-July-2026-Agenda-and-Papers-v4.pdf', 'SWP-Board-24.09.2026-Agenda-and-Reports.pdf'. Take the 'Meeting Papers' / 'Agenda and Papers' / 'Agenda and Reports' file as the main pack; separate 'Appendices' PDFs and individual SWPB26-NNN item PDFs accompany it, and minutes are uploaded months later. Bi-monthly cadence (Jan, Mar, May, Jul, Sep, Nov); next 26 Nov 2026. The joint AGM pack (NHS-CIOS-and-NHSD-AGM-*) is also listed. Note the swpboard.nhs.uk/meetings/ path recorded as cluster_meeting_url now 404s - this page is the live joint archive. Re-verified 2026-10-10: local browser-UA curl was refused with a generic '403 - Forbidden' page (shared with three trust sites that morning) while server-side WebFetch listed every 2026 pack; try WebFetch on a local 403 before repointing.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "swpboard.nhs.uk/wp-content/uploads/YYYY/MM/SWP*-*.pdf",
@@ -1040,9 +1021,9 @@
       "Cluster governance committee",
       "Minutes"
     ],
-    "last_validated": "2026-10-03",
+    "last_validated": "2026-10-10",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-03 by local browser-UA curl (200, 125KB): swpboard.nhs.uk lists the joint board's 2026 packs (29 Jan, 26 Mar, 28 May, 30 Jul, 24 Sep 2026 - SWP-Board-24.09.2026-Agenda-and-Reports.pdf); the old cios.icb.nhs.uk page stops at the 28 May 2026 extraordinary meeting."
+    "validation_notes": "Re-verified 2026-10-10 via server-side WebFetch (local browser-UA curl got a generic '403 - Forbidden' page this run): swpboard.nhs.uk lists the joint board's 2026 packs for 29 Jan, 26 Mar, 28 May, 30 Jul and 24 Sep 2026 (SWP-Board-24.09.2026-Agenda-and-Reports.pdf)."
   },
   {
     "ods_code": "QJK",
