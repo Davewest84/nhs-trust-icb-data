@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-10-03T04:36:30.681769+00:00",
-  "last_ods_sync_date_used": "2026-09-26",
+  "generated_at": "2026-10-10T04:45:00+00:00",
+  "last_ods_sync_date_used": "2026-10-03",
+  "method": "ORD search: trusts = RO197 + RO57 + RO107 (Status=Active, single Limit=1000 page); ICBs = RO261 filtered to names containing 'INTEGRATED CARE BOARD'. Live superset 251 trusts / 48 ICB-named vs DB 202 trusts / 36 ICBs. 61 raw add candidates checked individually: 58 carry a past Legal End date (merged/dissolved predecessors) and were ignored; 3 remain live. 0 remove candidates. /sync?LastChangeDate=2026-10-03 returned 345 changed organisations, none of which is in either DB.",
   "add_candidates": [
     {
       "ods": "RQF",
