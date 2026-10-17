@@ -580,18 +580,18 @@
     "foi_email": "geh@infreemation.co.uk",
     "foi_email_alt": "freedom.ofinformation@geh.nhs.uk",
     "foi_source_url": "https://www.geh.nhs.uk/about-us/governance/freedom-information",
-    "notes": "in progress [2026-08-01] foi_email primary updated 2026-08-01 from https://www.geh.nhs.uk/about-us/governance/freedom-information — the page now routes requests to the Infreemation portal address geh@infreemation.co.uk and keeps freedom.ofinformation@geh.nhs.uk only for complaints/appeals, so that prior primary moved to _alt; the previous _alt foi@geh.nhs.uk is no longer published."
+    "notes": "in progress [2026-08-01] foi_email primary updated 2026-08-01 from https://www.geh.nhs.uk/about-us/governance/freedom-information \u2014 the page now routes requests to the Infreemation portal address geh@infreemation.co.uk and keeps freedom.ofinformation@geh.nhs.uk only for complaints/appeals, so that prior primary moved to _alt; the previous _alt foi@geh.nhs.uk is no longer published."
   },
   {
     "trust_name": "Gloucestershire Health and Care NHS Foundation Trust",
     "ods_code": "RTQ",
-    "press_email": "ghccomms@ghc.nhs.uk",
-    "press_email_alt": "2gnft.comms@nhs.net",
-    "press_source_url": "https://www.ghc.nhs.uk/contact-us/",
-    "foi_email": "foi@ghc.nhs.uk",
-    "foi_email_alt": "FreedomofInformation@ghc.nhs.uk",
+    "press_email": "ghc.comms@nhs.net",
+    "press_email_alt": "ghccomms@ghc.nhs.uk",
+    "press_source_url": "https://www.ghc.nhs.uk/get-in-touch/",
+    "foi_email": "ghc.FOI@nhs.net",
+    "foi_email_alt": "foi@ghc.nhs.uk",
     "foi_source_url": "https://www.ghc.nhs.uk/who-we-are/freedom-of-information/",
-    "notes": null
+    "notes": "[2026-10-17] press_email primary updated 2026-10-17 from [https://www.ghc.nhs.uk/get-in-touch/]; prior value moved to _alt [2026-10-17] foi_email primary updated 2026-10-17 from [https://www.ghc.nhs.uk/who-we-are/freedom-of-information/]; prior value moved to _alt"
   },
   {
     "trust_name": "Gloucestershire Hospitals NHS Foundation Trust",
@@ -1108,7 +1108,7 @@
     "foi_email": "eec.accesstoinfo@nhs.net",
     "foi_email_alt": "ccs.accesstoinfo@nhs.net",
     "foi_source_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us",
-    "notes": "Norfolk Community merged into East of England Community Health & Care; shared CCS inbox; renamed from 'Norfolk Community Health and Care NHS Trust' on 2026-05-16 after April 2026 merger with Cambridgeshire Community Services (RYV); press and FOI primaries updated 2026-08-08 from https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us — the merged trust now publishes eec.communications@nhs.net (media) and eec.accesstoinfo@nhs.net (FOI); prior values ccs.communications@nhs.net and ccs.accesstoinfo@nhs.net moved to the _alt fields, displacing the legacy Norfolk Community addresses Communications@nchc.nhs.uk and FreedomOfInformationProvider@nchc.nhs.uk, which are recorded here so they are not lost"
+    "notes": "Norfolk Community merged into East of England Community Health & Care; shared CCS inbox; renamed from 'Norfolk Community Health and Care NHS Trust' on 2026-05-16 after April 2026 merger with Cambridgeshire Community Services (RYV); press and FOI primaries updated 2026-08-08 from https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us \u2014 the merged trust now publishes eec.communications@nhs.net (media) and eec.accesstoinfo@nhs.net (FOI); prior values ccs.communications@nhs.net and ccs.accesstoinfo@nhs.net moved to the _alt fields, displacing the legacy Norfolk Community addresses Communications@nchc.nhs.uk and FreedomOfInformationProvider@nchc.nhs.uk, which are recorded here so they are not lost"
   },
   {
     "trust_name": "Norfolk and Norwich University Hospitals NHS Foundation Trust",
@@ -1779,7 +1779,7 @@
     "foi_email": "thh@infreemation.co.uk",
     "foi_email_alt": "thh-tr.freedomofinfo@nhs.net",
     "foi_source_url": "https://thh.nhs.uk/freedom-of-information/",
-    "notes": "Trust directs FOI requests to online form at thh.disclosure-log.co.uk; no published email; Hillingdon Hospitals FOI page directs all requests via online form (thh.disclosure-log.co.uk); states attachments and links rejected; no FOI email published.; Hillingdon use the Infreemation portal — confirmed via WhatDoTheyKnow request thread, May 2026. 2026-07-04: FOI source URL refreshed (old /about-us/ page 404); still online-form only (thh.disclosure-log.co.uk), no email published. 2026-09-12: FOI page carries no email address at all - the trust directs all requests to its online request form (consistent with the thh@infreemation.co.uk portal already held as primary) or to post. No change made."
+    "notes": "Trust directs FOI requests to online form at thh.disclosure-log.co.uk; no published email; Hillingdon Hospitals FOI page directs all requests via online form (thh.disclosure-log.co.uk); states attachments and links rejected; no FOI email published.; Hillingdon use the Infreemation portal \u2014 confirmed via WhatDoTheyKnow request thread, May 2026. 2026-07-04: FOI source URL refreshed (old /about-us/ page 404); still online-form only (thh.disclosure-log.co.uk), no email published. 2026-09-12: FOI page carries no email address at all - the trust directs all requests to its online request form (consistent with the thh@infreemation.co.uk portal already held as primary) or to post. No change made."
   },
   {
     "trust_name": "The Newcastle upon Tyne Hospitals NHS Foundation Trust",
@@ -2038,7 +2038,7 @@
     "trust_name": "University Hospitals of North Midlands NHS Trust",
     "ods_code": "RJE",
     "press_email": "communications@uhnm.nhs.uk",
-    "press_email_alt": "Communications@uh​nm.n​hs.uk",
+    "press_email_alt": "Communications@uh\u200bnm.n\u200bhs.uk",
     "press_source_url": "https://www.uhnm.nhs.uk/contact-us/information-for-journalists/",
     "foi_email": "foi@uhnm.nhs.uk",
     "foi_email_alt": null,

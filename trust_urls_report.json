@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T04:08:56.711908+00:00",
+  "generated_at": "2026-10-17T04:09:03.924067+00:00",
   "label": "trust",
   "total": 201,
   "ok": 201,
@@ -21,7 +21,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RN7",
@@ -449,7 +449,7 @@
     {
       "ods_code": "RXW",
       "name": "The Shrewsbury and Telford Hospital NHS Trust",
-      "url": "https://www.sath.nhs.uk/about-us/board-papers/",
+      "url": "https://www.sath.nhs.uk/about-us/trust-information/board-papers/",
       "ok": true,
       "status": 200,
       "final_url": "https://www.sath.nhs.uk/about-us/trust-information/board-papers/",
@@ -525,7 +525,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RJZ",
@@ -651,7 +651,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.sth.nhs.uk/about-us/board-meetings/",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "RJL",
@@ -1146,7 +1146,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RRU",
@@ -1495,8 +1495,8 @@
       "name": "Milton Keynes University Hospital NHS Foundation Trust",
       "url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
       "ok": true,
-      "status": 403,
-      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=n4kgq7iGvdKsqE2XoHu4vV2rmPye21aeSeIMQoQteLk-1791605245-1.0.1.1-cGfkKoh3l00bMo.tLoHlWKCe_ziTDUGI5JvIoDzvIIw",
+      "status": 200,
+      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
       "error": "(rescued by playwright fallback)"
     },
     {
@@ -1684,8 +1684,8 @@
       "name": "Cheshire and Wirral Partnership NHS Foundation Trust",
       "url": "https://www.cwp.nhs.uk/board",
       "ok": true,
-      "status": 403,
-      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=kLA7zQWd2qYrXSr2SggfkYg3erLaNFYasqHzl5iMWqw-1791605300-1.0.1.1-D.nfPRUfJVOk5uxxa7vS7yHTbHpmaiuL_4mBnutIoB4",
+      "status": 200,
+      "final_url": "https://www.cwp.nhs.uk/board",
       "error": "(rescued by playwright fallback)"
     },
     {

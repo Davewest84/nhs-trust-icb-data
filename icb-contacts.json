@@ -19,7 +19,7 @@
     "foi_email": "bswicb.foi@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "https://bsw.icb.nhs.uk/about-us/freedom-of-information/",
-    "notes": "TODO — added 4 May 2026 during schema migration; press email not yet researched.; Forwarded to South Central and West CSU for processing | press source URL set 2026-06-20 (was a placeholder); address confirmed unchanged | 2026-08-22: bswicb.media@nhs.net and bswicb.foi@nhs.net both re-confirmed on the freedom-of-information page (which carries the media address too)."
+    "notes": "TODO \u2014 added 4 May 2026 during schema migration; press email not yet researched.; Forwarded to South Central and West CSU for processing | press source URL set 2026-06-20 (was a placeholder); address confirmed unchanged | 2026-08-22: bswicb.media@nhs.net and bswicb.foi@nhs.net both re-confirmed on the freedom-of-information page (which carries the media address too)."
   },
   {
     "icb_name": "Birmingham and Solihull ICB",
@@ -49,10 +49,10 @@
     "press_email": "blmkicb.contactus@nhs.net",
     "press_email_alt": null,
     "press_source_url": "https://www.centraleast.icb.nhs.uk/contact/media-enquiries/",
-    "foi_email": "blmkicb.contactus@nhs.net",
-    "foi_email_alt": "foi@centraleast.nhs.uk",
+    "foi_email": "ceicb.contactus@nhs.net",
+    "foi_email_alt": "blmkicb.contactus@nhs.net",
     "foi_source_url": "https://www.centraleast.icb.nhs.uk/about/requests/foi/",
-    "notes": "New merged entity from 1 April 2026 (BLMK + Cambs & Peterborough + Herts & West Essex). Use BLMK predecessor address for now per Dave May 2026 â€” new ICB site offers only a contact form. [2026-08-01] foi_email primary updated 2026-08-01 from https://www.centraleast.icb.nhs.uk/about/requests/foi/ — the FOI-team address on that page is Cloudflare-obfuscated and decodes to blmkicb.contactus@nhs.net; the previous primary foi@centraleast.nhs.uk no longer appears anywhere on the page and moved to _alt."
+    "notes": "New merged entity from 1 April 2026 (BLMK + Cambs & Peterborough + Herts & West Essex). Use BLMK predecessor address for now per Dave May 2026 \u00e2\u20ac\u201d new ICB site offers only a contact form. [2026-08-01] foi_email primary updated 2026-08-01 from https://www.centraleast.icb.nhs.uk/about/requests/foi/ \u2014 the FOI-team address on that page is Cloudflare-obfuscated and decodes to blmkicb.contactus@nhs.net; the previous primary foi@centraleast.nhs.uk no longer appears anywhere on the page and moved to _alt. [2026-10-17] foi_email primary updated 2026-10-17 from [https://www.centraleast.icb.nhs.uk/about/requests/foi/]; prior value moved to _alt"
   },
   {
     "icb_name": "Cheshire and Merseyside ICB",
@@ -129,7 +129,7 @@
     "foi_email": "GLICB.FOI@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "https://www.nhsglos.nhs.uk/about-us/how-we-meet-our-duties/using-your-information/freedom-of-information/",
-    "notes": "General enquiries â€” site has dedicated press page but no email listed."
+    "notes": "General enquiries \u00e2\u20ac\u201d site has dedicated press page but no email listed."
   },
   {
     "icb_name": "Greater Manchester ICB",
@@ -184,7 +184,7 @@
     "foi_email": "kmicb.foi@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "https://www.kentandmedway.icb.nhs.uk/freedom-of-information-requests",
-    "notes": "Mailto link points here; display text shows kmicb.engagecomms@nhs.net â€” either should work. | press primary updated 2026-05-29 from [https://www.kentandmedway.icb.nhs.uk/contact-us]; prior value kmicb.comms@nhs.net moved to _alt"
+    "notes": "Mailto link points here; display text shows kmicb.engagecomms@nhs.net \u00e2\u20ac\u201d either should work. | press primary updated 2026-05-29 from [https://www.kentandmedway.icb.nhs.uk/contact-us]; prior value kmicb.comms@nhs.net moved to _alt"
   },
   {
     "icb_name": "Lancashire and South Cumbria ICB",
@@ -217,7 +217,7 @@
     "foi_email": "nnicb-nn.dln.fois@nhs.net",
     "foi_email_alt": "agem.lincolnshireicb.foi@nhs.net",
     "foi_source_url": "https://lincolnshire.icb.nhs.uk/contact/",
-    "notes": "General office address â€” no published press-specific email. [2026-08-01] press_email and foi_email primaries updated 2026-08-01 from https://lincolnshire.icb.nhs.uk/contact/, which now publishes a press-specific address (nnicb-nn.comms@nhs.net) and routes FOI to nnicb-nn.dln.fois@nhs.net; prior primaries LICB.office@nhs.net and agem.lincolnshireicb.foi@nhs.net moved to _alt (the previous press _alt charley.blyth@nhs.net, a personal address, is no longer published). Both old source URLs (/contact-us/ and /freedom-of-information) now 404."
+    "notes": "General office address \u00e2\u20ac\u201d no published press-specific email. [2026-08-01] press_email and foi_email primaries updated 2026-08-01 from https://lincolnshire.icb.nhs.uk/contact/, which now publishes a press-specific address (nnicb-nn.comms@nhs.net) and routes FOI to nnicb-nn.dln.fois@nhs.net; prior primaries LICB.office@nhs.net and agem.lincolnshireicb.foi@nhs.net moved to _alt (the previous press _alt charley.blyth@nhs.net, a personal address, is no longer published). Both old source URLs (/contact-us/ and /freedom-of-information) now 404."
   },
   {
     "icb_name": "NHS Essex ICB",
@@ -357,10 +357,10 @@
     "press_email": "sxicb.surreyandsussex.media@nhs.net",
     "press_email_alt": "sxicb.comms@nhs.net",
     "press_source_url": "https://www.surreysussex.icb.nhs.uk/contact-us/",
-    "foi_email": "sxicb.foi@nhs.net",
-    "foi_email_alt": null,
-    "foi_source_url": "https://www.sussex.ics.nhs.uk/nhs-sussex/freedom-of-information/",
-    "notes": "Legacy Sussex ICB address â€” new Surrey and Sussex site has form only. Likely still routed correctly.; Input seed was Sussex ICS website; Surrey may have separate contact [2026-08-01] press_email primary updated 2026-08-01 from https://www.surreysussex.icb.nhs.uk/contact-us/; prior value sxicb.comms@nhs.net moved to _alt. The ICB moved to the surreysussex.icb.nhs.uk domain on 1 April 2026 and states the old sussex.ics.nhs.uk site is no longer updated and will be archived — FOI is still only published on the old site (sxicb.foi@nhs.net, unchanged), so foi_source_url is left pointing there for now and should be revisited once the new site publishes an FOI page."
+    "foi_email": "sxicb.surreyandsussex.foi@nhs.net",
+    "foi_email_alt": "sxicb.foi@nhs.net",
+    "foi_source_url": "https://www.surreysussex.icb.nhs.uk/freedom-of-information-requests",
+    "notes": "Legacy Sussex ICB address \u00e2\u20ac\u201d new Surrey and Sussex site has form only. Likely still routed correctly.; Input seed was Sussex ICS website; Surrey may have separate contact [2026-08-01] press_email primary updated 2026-08-01 from https://www.surreysussex.icb.nhs.uk/contact-us/; prior value sxicb.comms@nhs.net moved to _alt. The ICB moved to the surreysussex.icb.nhs.uk domain on 1 April 2026 and states the old sussex.ics.nhs.uk site is no longer updated and will be archived \u2014 FOI is still only published on the old site (sxicb.foi@nhs.net, unchanged), so foi_source_url is left pointing there for now and should be revisited once the new site publishes an FOI page. [2026-10-17] foi_email primary updated 2026-10-17 from [https://www.surreysussex.icb.nhs.uk/freedom-of-information-requests]; prior value moved to _alt"
   },
   {
     "icb_name": "Thames Valley ICB",
@@ -371,7 +371,7 @@
     "foi_email": "frimleyicb.foi@nhs.net",
     "foi_email_alt": "SCWCSU.FOI@nhs.net",
     "foi_source_url": "https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information",
-    "notes": "Predecessor Frimley general address â€” new merged Thames Valley ICB has no dedicated press email yet.; Email obfuscated on page (joomla-hidden-mail base64); decoded from page source. Handled by South Central and West CSU | press primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us (dedicated media address bobicb.media@nhs.net now shown; prior frimleyicb.public@nhs.net to _alt); foi primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information (frimleyicb.foi@nhs.net now shown; prior SCWCSU.FOI@nhs.net to _alt)."
+    "notes": "Predecessor Frimley general address \u00e2\u20ac\u201d new merged Thames Valley ICB has no dedicated press email yet.; Email obfuscated on page (joomla-hidden-mail base64); decoded from page source. Handled by South Central and West CSU | press primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us (dedicated media address bobicb.media@nhs.net now shown; prior frimleyicb.public@nhs.net to _alt); foi primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information (frimleyicb.foi@nhs.net now shown; prior SCWCSU.FOI@nhs.net to _alt)."
   },
   {
     "icb_name": "West Yorkshire ICB",
