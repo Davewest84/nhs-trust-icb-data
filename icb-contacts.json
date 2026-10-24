@@ -346,10 +346,10 @@
     "press_email": "ssotics.comms@staffsstoke.icb.nhs.uk",
     "press_email_alt": "mediacsu@nhs.net",
     "press_source_url": "https://staffsstoke.icb.nhs.uk/contact-us/",
-    "foi_email": "staffsstokefoi@staffsstoke.icb.nhs.uk",
-    "foi_email_alt": null,
-    "foi_source_url": "https://staffsstoke.icb.nhs.uk/your-nhs-integrated-care-board/freedom-of-information/",
-    "notes": null
+    "foi_email": "stw.ssot.foi@nhs.net",
+    "foi_email_alt": "staffsstokefoi@staffsstoke.icb.nhs.uk",
+    "foi_source_url": "https://www.staffsstoke.icb.nhs.uk/contact-us/freedom-of-information/",
+    "notes": "foi primary updated 2026-10-24 from https://www.staffsstoke.icb.nhs.uk/contact-us/freedom-of-information/; prior value staffsstokefoi@staffsstoke.icb.nhs.uk moved to _alt"
   },
   {
     "icb_name": "Surrey and Sussex ICB",
@@ -365,13 +365,13 @@
   {
     "icb_name": "Thames Valley ICB",
     "ods_code": "S0E4D",
-    "press_email": "bobicb.media@nhs.net",
-    "press_email_alt": "frimleyicb.public@nhs.net",
+    "press_email": "tvicb.media@nhs.net",
+    "press_email_alt": "bobicb.media@nhs.net",
     "press_source_url": "https://thamesvalley.icb.nhs.uk/contact-us",
-    "foi_email": "frimleyicb.foi@nhs.net",
-    "foi_email_alt": "SCWCSU.FOI@nhs.net",
+    "foi_email": "tvicb.foi@nhs.net",
+    "foi_email_alt": "frimleyicb.foi@nhs.net",
     "foi_source_url": "https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information",
-    "notes": "Predecessor Frimley general address \u00e2\u20ac\u201d new merged Thames Valley ICB has no dedicated press email yet.; Email obfuscated on page (joomla-hidden-mail base64); decoded from page source. Handled by South Central and West CSU | press primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us (dedicated media address bobicb.media@nhs.net now shown; prior frimleyicb.public@nhs.net to _alt); foi primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information (frimleyicb.foi@nhs.net now shown; prior SCWCSU.FOI@nhs.net to _alt)."
+    "notes": "Predecessor Frimley general address \u00e2\u20ac\u201d new merged Thames Valley ICB has no dedicated press email yet.; Email obfuscated on page (joomla-hidden-mail base64); decoded from page source. Handled by South Central and West CSU | press primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us (dedicated media address bobicb.media@nhs.net now shown; prior frimleyicb.public@nhs.net to _alt); foi primary updated 2026-06-06 from https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information (frimleyicb.foi@nhs.net now shown; prior SCWCSU.FOI@nhs.net to _alt). | press primary updated 2026-10-24 from https://thamesvalley.icb.nhs.uk/contact-us; prior value bobicb.media@nhs.net moved to _alt (displacing prior _alt frimleyicb.public@nhs.net) | foi primary updated 2026-10-24 from https://thamesvalley.icb.nhs.uk/contact-us/freedom-of-information; prior value frimleyicb.foi@nhs.net moved to _alt (displacing prior _alt SCWCSU.FOI@nhs.net)"
   },
   {
     "icb_name": "West Yorkshire ICB",

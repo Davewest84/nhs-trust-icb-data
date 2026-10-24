@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T04:11:04.296740+00:00",
+  "generated_at": "2026-10-24T04:11:06.626449+00:00",
   "label": "ICB",
   "total": 36,
-  "ok": 36,
-  "broken": 0,
+  "ok": 35,
+  "broken": 1,
   "results": [
     {
       "ods_code": "QYG",
@@ -90,10 +90,10 @@
       "ods_code": "QWU",
       "name": "Coventry and Warwickshire ICB",
       "url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "error": null
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/\nCall l"
     },
     {
       "ods_code": "QGH",
@@ -116,7 +116,7 @@
     {
       "ods_code": "QJM",
       "name": "Lincolnshire ICB",
-      "url": "https://lincolnshire.icb.nhs.uk/about-us/our-board-and-committees/icb-board-meetings/",
+      "url": "https://lincolnshire.icb.nhs.uk/about-us/meet-the-board/icb-board-meetings/",
       "ok": true,
       "status": 200,
       "final_url": "https://lincolnshire.icb.nhs.uk/about-us/meet-the-board/icb-board-meetings/",

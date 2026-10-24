@@ -39,9 +39,9 @@
       "mailto:",
       "slugs with extra descriptors (strategic-improvement-report, appendix, supplementary, register-of-interests)"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl with --retry (200 after one connection reset): newest pack still /documents/518-board-paper-24-september-2026/file."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl with --retry (200; scanner saw a connection reset): newest pack still /documents/518-board-paper-24-september-2026/file; next meeting 26 Nov 2026."
   },
   {
     "ods_code": "RN7",
@@ -96,9 +96,9 @@
       "Agenda only",
       "private/confidential board"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): Meeting papers dropdown lists 16 Sep, 23 Jul and earlier 2026 meetings; forthcoming 12 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): Meeting papers dropdown newest 16 September 2026, then 23 Jul and 9 Jul 2026; forthcoming 12 Nov 2026."
   },
   {
     "ods_code": "RTK",
@@ -125,9 +125,9 @@
       "meet-the-directors",
       "Glossary-of-Terms"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200 this run, no 403 page): /board-meetings lists Trust Board 23 September 2026 (/board-meetings/3767-trust-board-23rd-september-2026)."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): /board-meetings newest Trust Board 23 September 2026 (/board-meetings/3767-trust-board-23rd-september-2026)."
   },
   {
     "ods_code": "RTP",
@@ -158,9 +158,9 @@
       "register of interests",
       "patient story"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "2026 and 2025 year-archive pages each list multiple dated public board meetings with agenda and paper PDFs as static download_file links."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): board-papers/2026 year page holds 107 download_file/view/<id>/2198 links; landing lists next meetings 15 Oct and 10 Dec 2026."
   },
   {
     "ods_code": "RVV",
@@ -189,9 +189,9 @@
       "/policies",
       "/foi"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200; validator SSL error is a local-path artefact): 1 October 2026 pack board-of-directors-meeting-pack-01.10.26.pdf under september2026/."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200; validator error is a local-path artefact): 1 October 2026 pack board-of-directors-meeting-pack-01.10.26.pdf under september2026/; next 3 Dec 2026."
   },
   {
     "ods_code": "RWF",
@@ -267,7 +267,7 @@
     "ics": "Sussex",
     "correspondent": "Alison",
     "url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-    "access_notes": "Current URL is live and correct; the reported 'broken' status was a transient/WAF block. WebFetch loaded fine. Page is titled 'Meetings in public' under Trust board, lists 2026 public meeting dates and a '2026 agenda papers' section with PDFs hosted at /wp-content/uploads/YYYY/MM/. Older papers under the 'Archive agenda papers' link. Standard WordPress site; retry WebFetch on 403, no JS rendering required.",
+    "access_notes": "Current URL is live and correct; the reported 'broken' status was a transient/WAF block. WebFetch loaded fine. Page is titled 'Meetings in public' under Trust board, lists 2026 public meeting dates and a '2026 agenda papers' section with PDFs hosted at /wp-content/uploads/YYYY/MM/. Older papers under the 'Archive agenda papers' link. Standard WordPress site; retry WebFetch on 403, no JS rendering required. Re-verified 2026-10-24: plain browser-UA curl also reaches the page (200, 9 dated 2026 PDFs) - the validator's \"broken\" was a transient local block, not a dead URL. Filenames follow <D-Month-YYYY>--Trust-Board-meeting-in-public.pdf (Feb, Apr, Aug, Sep and 20 Oct 2026 present).",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/wp-content/uploads/2026/",
@@ -279,9 +279,9 @@
       "financial-transparency",
       "corporate-publications"
     ],
-    "last_validated": "2026-09-05",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-05: WebFetch reached the page; newest entry '18 August 2026 - Trust Board meeting in public', papers posted a week ahead of each meeting."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200; validator \"broken\" was a transient local block): 2026 papers to 20-October-2026--Trust-Board-meeting-in-public.pdf under /wp-content/uploads/2026/10/."
   },
   {
     "ods_code": "RXX",
@@ -517,10 +517,10 @@
     "ics": "Lincolnshire",
     "correspondent": "Annabelle",
     "url": "https://www.lpft.nhs.uk/get-involved/meeting-dates-and-minutes/board-directors-meetings",
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200; validator SSL error is local): 2026 folder lists meetings to 8 October 2026, next 10 December 2026.",
-    "access_notes": "Strategy: the landing (/get-involved/meeting-dates-and-minutes/board-directors-meetings) is a schedule-plus-folders page, not a flat PDF list. It carries the forward 2026/27 timetable (12 Feb, 9 Apr, 11 Jun, 13 Aug, 8 Oct, 10 Dec 2026, 11 Feb 2027) and states that agenda and papers are posted roughly seven days before each meeting. The papers sit three hops down in a Concrete CMS document library: landing -> 'Previous meetings' / '2025' / '2026' year folder (/navigate/{folderId}/53923; 2026 = /navigate/13049/53923) -> one dated folder per meeting (e.g. '13 August 2026' = /navigate/13654/53923) -> numbered per-item papers ('1) Public Board of Directors Agenda - 13 August 2026', '2.1) Chief Executive Report...') served as /download_file/{uuid}/382 links with no .pdf extension. There is no single combined pack, so collect every item in the meeting folder and take titles from the anchor/table text. Past meetings are also recorded on YouTube. Static fetch works via server-side WebFetch and, as of 2026-10-03, also via local curl with a Chrome UA (the page carries an 'incapsula' string but serves normally). The validator's local SSL-verify failure is a local-path artefact, not a dead page. 2026-10-10: the 8 October 2026 meeting folder (/navigate/13814/53923) is now present in the 2026 year folder.",
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): 2026 folder lists meeting folders to 8 October 2026; next 10 December 2026.",
+    "access_notes": "Strategy: the landing (/get-involved/meeting-dates-and-minutes/board-directors-meetings) is a schedule-plus-folders page, not a flat PDF list. It carries the forward 2026/27 timetable (12 Feb, 9 Apr, 11 Jun, 13 Aug, 8 Oct, 10 Dec 2026, 11 Feb 2027) and states that agenda and papers are posted roughly seven days before each meeting. The papers sit three hops down in a Concrete CMS document library: landing -> 'Previous meetings' / '2025' / '2026' year folder (/navigate/{folderId}/53923; 2026 = /navigate/13049/53923) -> one dated folder per meeting (e.g. '13 August 2026' = /navigate/13654/53923) -> numbered per-item papers ('1) Public Board of Directors Agenda - 13 August 2026', '2.1) Chief Executive Report...') served as /download_file/{uuid}/382 links with no .pdf extension. There is no single combined pack, so collect every item in the meeting folder and take titles from the anchor/table text. Past meetings are also recorded on YouTube. Static fetch works via server-side WebFetch and, as of 2026-10-03, also via local curl with a Chrome UA (the page carries an 'incapsula' string but serves normally). The validator's local SSL-verify failure is a local-path artefact, not a dead page. 2026-10-10: the 8 October 2026 meeting folder (/navigate/13814/53923) is now present in the 2026 year folder. Note 2026-10-24: the /navigate/ folder paths are relative to the landing URL (landing + /navigate/13049/53923); the bare-domain form www.lpft.nhs.uk/navigate/13049/53923 returns 404.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/navigate/13049/53923 (2026 year folder)",
@@ -761,7 +761,7 @@
     "ics": "Herefordshire and Worcestershire",
     "correspondent": "Caitlin",
     "url": "https://www.hacw.nhs.uk/board-papers/",
-    "access_notes": "Pattern A with a major quirk: dated meetings are listed directly on the landing page (Jan/Mar/May 2026; Jan/Mar/May/Jul/Sep/Nov 2025) but the papers are distributed as ZIP archives, not PDFs, via relative /download/...zip?ver=&doc= links that resolve against https://www.hacw.nhs.uk. Each row also has a per-meeting summary sub-page (e.g. /board-may-26) and YouTube recording links. A crawler should grab the ZIP (filenames embed the meeting month, e.g. trust-board-papers-may-2026.zip) and unpack it to reach the individual board-pack documents; there is no plain combined PDF on the site. Static HTML, no JS needed. Future dated meetings (Jul/Sep/Nov 2026) are listed without papers yet.",
+    "access_notes": "Pattern A with a major quirk: dated meetings are listed directly on the landing page (Jan/Mar/May 2026; Jan/Mar/May/Jul/Sep/Nov 2025) but the papers are distributed as ZIP archives, not PDFs, via relative /download/...zip?ver=&doc= links that resolve against https://www.hacw.nhs.uk. Each row also has a per-meeting summary sub-page (e.g. /board-may-26) and YouTube recording links. A crawler should grab the ZIP (filenames embed the meeting month, e.g. trust-board-papers-may-2026.zip) and unpack it to reach the individual board-pack documents; there is no plain combined PDF on the site. Static HTML, no JS needed. Future dated meetings (Jul/Sep/Nov 2026) are listed without papers yet. Note 2026-10-24: the two newest download.cfm links carry .pdf doc names (docm93jijm4n14609.pdf, ...14615.pdf) rather than .zip, so accept both extensions.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/download/trust-board-papers-{month}-{year}.zip",
@@ -774,9 +774,9 @@
       "/board-",
       "summary"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Landing page lists 2025 and 2026 board meetings each with a downloadable ZIP papers archive (e.g. trust-board-papers-may-2026.zip)."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): landing lists the 17 September 2026 meeting with /download.cfm?doc=...&ver= links; next 19 Nov 2026."
   },
   {
     "ods_code": "R1D",
@@ -800,9 +800,9 @@
       "public questions / submission-procedure text",
       "governance boilerplate"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "needs_playwright",
-    "validation_notes": "2026-10-17: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl and local headless Playwright got the ~880-byte Incapsula/hCaptcha shell and server-side WebFetch returned an empty body. Wayback: no Wayback snapshot of the landing was available either. Routing block on this machine, not a withdrawal of papers."
+    "validation_notes": "2026-10-24: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl got the ~844-byte Incapsula/hCaptcha shell and server-side WebFetch returned an empty body. Newest Wayback snapshot is still 2024-04-06, so no useful archive fallback. Routing block on this machine, not a withdrawal of papers."
   },
   {
     "ods_code": "RBK",
@@ -909,7 +909,7 @@
     "url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
     "validation_status": "papers_found",
     "needs_playwright": false,
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl after two connection resets (200 on third attempt): combined public board packs for 6 Aug and 1 Oct 2026 under /download/clientfiles/files/.",
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): newest pack Public Trust Board Combined Papers 1 October 2026 v2 under /download/clientfiles/files/.",
     "access_notes": "The URL is correct and live; the shallow check failed only because uhcw.nhs.uk sits behind an aggressive WAF that resets connections from datacenter IPs (curl/Playwright both got ERR_CONNECTION_RESET intermittently, but the landing eventually returns 200). Content is static HTML, not JS-gated - a browser UA with a few retries suffices; Playwright not required but would harden against resets. Board packs are single combined PDFs at /download/clientfiles/files/ named 'Combined Public Trust Board Papers {date}' or 'Public Board Papers v{n} {date}_compressed'; crawl the landing and follow those download links. Coverage late-2025 through mid-2026 (roughly bi-monthly). Re-verified 2026-09-05: server-side WebFetch was reset/403 while browser-UA curl got 200 (43KB) with /download/clientfiles/files/Combined%20Public%20Board%20Papers%20v2%206%20August%202026-compressed.pdf as the newest pack - the WAF reset is still fetch-path specific, not an outage.",
     "pack_pattern_hints": [
       "/download/clientfiles/files/ path",
@@ -919,7 +919,7 @@
       "'_compressed'",
       ".pdf"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "exclude_patterns": [
       "confidential",
       "private",
@@ -1120,8 +1120,8 @@
     "region": "Midlands",
     "ics": "Staffordshire and Stoke-on-Trent",
     "correspondent": "Caitlin",
-    "url": "https://www.mpft.nhs.uk/about-us/board-papers/",
-    "access_notes": "Pattern A: dated board-pack PDFs are linked directly on the landing page, grouped by year, as single combined Trust Board Papers documents (2026: 09 Apr, 12 Feb; 2025: 11 Dec, 09 Oct, 14 Aug, 12 Jun, 27 Mar, 30 Jan). The meeting date is in the link text (YYYY-MM-DD MPFT Trust Board Papers) but URLs are opaque /download_file/{uuid}/256 with no date in them. Some months also have a separate short Trust Board Summary Document alongside the full pack; prefer the larger combined Papers file. Static HTML, no JS required.",
+    "url": "https://www.mpft.nhs.uk/about-us/board-papers",
+    "access_notes": "Pattern A: dated board-pack PDFs are linked directly on the landing page, grouped by year, as single combined Trust Board Papers documents (2026: 09 Apr, 12 Feb; 2025: 11 Dec, 09 Oct, 14 Aug, 12 Jun, 27 Mar, 30 Jan). The meeting date is in the link text (YYYY-MM-DD MPFT Trust Board Papers) but URLs are opaque /download_file/{uuid}/256 with no date in them. Some months also have a separate short Trust Board Summary Document alongside the full pack; prefer the larger combined Papers file. Static HTML, no JS required. Update 2026-10-24: the trailing-slash URL now 301-redirects to /about-us/board-papers (URL updated). Packs are /download_file/<uuid>/256 handler links (no .pdf suffix) labelled 'YYYY-MM-DD MPFT Trust Board Papers', each with a separate 'YYYY-MM MPFT Trust Board Summary Document' - prefer the Papers file. Latest 8 October 2026; next 10 Dec 2026. The HTML contains 'incapsula' strings but serves normally to browser-UA curl.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/download_file/{uuid}/256",
@@ -1132,9 +1132,9 @@
       "Summary Document",
       "summary"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Landing page directly lists combined Trust Board Papers PDFs for multiple 2025 and 2026 meetings via download_file links."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl and WebFetch: trailing-slash URL 301s to /about-us/board-papers (DB updated); newest '2026-10-08 MPFT Trust Board Papers' via /download_file/<uuid>/256."
   },
   {
     "ods_code": "RRJ",
@@ -1176,9 +1176,9 @@
       "council of governors",
       "'No files in here' static-render placeholder"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 via the share's WebDAV PROPFIND (207): 2026 holds January, March, June, July and September folders; no October folder yet."
+    "validation_notes": "Re-verified 2026-10-24 via the share's WebDAV PROPFIND (207): 2026 holds January, March, June, July and September folders; no October folder yet."
   },
   {
     "ods_code": "RWP",
@@ -1218,7 +1218,7 @@
     "ics": "Black Country",
     "correspondent": "Caitlin",
     "url": "https://www.swbh.nhs.uk/our-trust/trust-board/public-trust-board-papers/",
-    "access_notes": "Landing /our-trust/trust-board/public-trust-board-papers/ lists per-year sub-pages (2021-2026), e.g. /public-trust-board-papers-2026/. Each year page lists meetings by month linking to per-meeting sub-pages under /trust-board-paper/{slug}/, and those hold the actual PDFs in /wp-content/uploads/{yyyy}/{mm}/. The trust meets bi-monthly. Static fetch works at every level. Two PDF styles: some meetings publish one combined board book (e.g. May 2026 = 26-05-20_BoardAGENDA_pblc_papers.pdf, ~25MB, prefer this single pack), others publish split numbered papers (000-Agenda, 001-Minutes...). To reach current papers: landing -> 2026 year page -> latest month meeting page -> download the combined boardbook PDF (or all numbered PDFs). Filter out board-meeting-dates, board-members, sub-committees pages.",
+    "access_notes": "Landing /our-trust/trust-board/public-trust-board-papers/ lists per-year sub-pages (2021-2026), e.g. /public-trust-board-papers-2026/. Each year page lists meetings by month linking to per-meeting sub-pages under /trust-board-paper/{slug}/, and those hold the actual PDFs in /wp-content/uploads/{yyyy}/{mm}/. The trust meets bi-monthly. Static fetch works at every level. Two PDF styles: some meetings publish one combined board book (e.g. May 2026 = 26-05-20_BoardAGENDA_pblc_papers.pdf, ~25MB, prefer this single pack), others publish split numbered papers (000-Agenda, 001-Minutes...). To reach current papers: landing -> 2026 year page -> latest month meeting page -> download the combined boardbook PDF (or all numbered PDFs). Filter out board-meeting-dates, board-members, sub-committees pages. Note 2026-10-24: the September 2026 entry on the 2026 year page links straight to a PDF (/wp-content/uploads/2026/09/26-09-16-Group-Board_Agenda_PAPERSV2.pdf - a Group Board pack) instead of a /trust-board-paper/<slug>/ sub-page, so harvest both forms.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/public-trust-board-papers-{year}/",
@@ -1232,9 +1232,9 @@
       "board-sub-comittees",
       "/our-strategy/"
     ],
-    "last_validated": "2026-06-06",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "2026 year page resolves to per-meeting pages with live 2026 board-pack PDFs (May 2026 combined agenda confirmed, HTTP 200 application/pdf)."
+    "validation_notes": "Re-verified 2026-10-24 via WebFetch and by local browser-UA curl: 2026 year page lists January, May, July and September 2026; September is a direct Group Board PDF (26-09-16-Group-Board_Agenda_PAPERSV2.pdf)."
   },
   {
     "ods_code": "RXT",
@@ -1425,9 +1425,9 @@
       "minutes",
       "register-of-interests"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 via server-side WebFetch (local curl 403 WAF page): agenda and papers for the 21 October 2026 meeting now posted (/media/15187 agenda, /media/15188 papers) alongside 28 Jan, 29 Apr and 22 Jul 2026."
+    "validation_notes": "Re-verified 2026-10-24 via server-side WebFetch (local curl got the 403 WAF page): 21 October 2026 agenda (/media/15187) and papers (/media/15188) alongside 22 Jul and 29 Apr 2026."
   },
   {
     "ods_code": "RJ2",
@@ -1482,7 +1482,7 @@
     "url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
     "validation_status": "papers_found",
     "needs_playwright": false,
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl with --retry (200): group board PDFs for 9 Jul 2026 and 11 Sep 2026 (/wp-content/uploads/2026/09/11-September-2026-1.pdf).",
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): group board PDFs to 11 Sep 2026 (/wp-content/uploads/2026/09/11-September-2026-1.pdf).",
     "access_notes": "Static fetch works fully - no JS. Papers grouped by fiscal year (2025-26, 2026-27) with each meeting date linking a single combined board-pack PDF under /wp-content/uploads/YYYY/MM/. Prefer direct .pdf links whose filename encodes the meeting date (e.g. '8-May-2026-2.pdf') or 'Group-Board-Public-{date}.pdf'; this is now a GROUP board (St George's + Epsom & St Helier), so a single group-board pack per date is expected. Coverage back to early 2025. Occasional exported-bundle filenames (export-2026-...pdf) - date by the surrounding label, not the filename. Re-verified 2026-09-05: server-side WebFetch was refused 403 this run while browser-UA curl reached the page normally (200, 65KB) showing Group-Board-Public-9-July-2026.pdf - add a browser User-Agent before concluding the static route has failed.",
     "pack_pattern_hints": [
       "/wp-content/uploads/",
@@ -1490,7 +1490,7 @@
       "Group-Board-Public",
       "single large combined PDF per meeting"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "exclude_patterns": [
       "committee/",
       "council-of-governors",
@@ -1524,9 +1524,9 @@
       "private",
       "confidential"
     ],
-    "last_validated": "2026-09-05",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-05: WebFetch reached the page; 32 dated entries to July 2026, newest /wp-content/uploads/2026/07/KCH-Public-Board-pack-15-July-2026-v2.pdf."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): KCH-Public-Board-pack-16-September-2026-v3.pdf newest under /wp-content/uploads/2026/09/."
   },
   {
     "ods_code": "RVR",
@@ -1588,9 +1588,9 @@
       "committee",
       "terms-of-reference"
     ],
-    "last_validated": "2026-09-05",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "2026-09-05: WebFetch reached the page; landing carries year archives 2020-2026 with 'Board papers 2026' current."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): board-papers-2026 page newest 0-260924-tb-part-i-meeting-pack-v10.pdf (24 Sep 2026) under /mediaLocal/."
   },
   {
     "ods_code": "RPY",
@@ -1664,9 +1664,9 @@
       "confirmed minutes PDFs (not the board pack)",
       "bthft.nhs.uk contact/email links"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "needs_playwright",
-    "validation_notes": "2026-10-17: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl and local headless Playwright got the ~880-byte Incapsula/hCaptcha shell and server-side WebFetch returned an empty body. Wayback: snapshot 2026-08-05 shows the 23 July 2026 boardbook (/wp-content/uploads/2026/07/Public-BOD-23.7.26-Boardbook-v1.pdf), dates 24 Sep and 25 Nov 2026, and a previous-meetings-2026 page. Routing block on this machine, not a withdrawal of papers."
+    "validation_notes": "2026-10-24: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl got the ~843-byte Incapsula shell and server-side WebFetch returned an empty body. Newest Wayback snapshot is still 2026-08-05 (layout reference only). Routing block on this machine, not a withdrawal of papers."
   },
   {
     "ods_code": "RCB",
@@ -1691,9 +1691,9 @@
       "late papers (supplementary)",
       "minutes only"
     ],
-    "last_validated": "2026-06-13",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Confirmed dated agendas for 25 February 2026 and 25 March 2026 plus 2024/25 archive on the new yorkhospitals.nhs.uk domain."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): /seecmsfile/?id= agenda links for meetings to 30 Sep 2026; 28 Oct 2026 listed next."
   },
   {
     "ods_code": "RCD",
@@ -1737,9 +1737,9 @@
       "Terms-of-Reference",
       "Committee"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200 this run, no 403 page): 2 September 2026 Public Board of Directors papers under /wp-content/uploads/2026/09/; next meeting 4 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): Trust-Board-of-Directors-Public-meeting-2-September-2026-FINAL.pdf newest; next meeting 4 Nov 2026."
   },
   {
     "ods_code": "RCU",
@@ -1770,9 +1770,9 @@
       "Council of Governors",
       "nominations-remuneration"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Via the WPFD AJAX endpoint each 2025-26 month sub-folder returns one combined board pack and the June 2026 download URL was verified live (HTTP 200, application/pdf, 4.7MB)."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): landing lists 2026 meetings (3 Feb to 8 Sep, next 3 Nov 2026); WPFD file tree is still JS-rendered, so packs were not enumerated statically."
   },
   {
     "ods_code": "RFF",
@@ -1874,9 +1874,9 @@
       "/2025-board-papers/",
       "official-publications"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl: landing and /about-us/2026-board-papers/ both 200; 2026 page holds the 8 September 2026 lettered papers (113 paper links)."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl: landing and /about-us/2026-board-papers/ both 200; 2026 page holds 124 clientfiles paper links through the 8 September 2026 meeting; next 3 Nov 2026."
   },
   {
     "ods_code": "RJL",
@@ -1889,7 +1889,7 @@
     "ics": "Humber and North Yorkshire",
     "correspondent": "Henry",
     "url": "https://www.nlg.nhs.uk/resources/?resources_type=board-papers",
-    "access_notes": "Pattern B (year archives) + Boards-in-Common. Northern Lincolnshire and Goole runs Trust Boards-in-Common with Hull (HUTH) under the NHS Humber Health Partnership; combined packs are published on the NLG site. Landing lists year cards (\"Board papers 2026\", \"Board papers 2025\", ...); click a year card (e.g. https://www.nlg.nhs.uk/resources/board-papers-2026/) to reach a table of one combined PDF per bi-monthly meeting under /wp-content/uploads/. The previous DB URL (/resources/board-papers-archive-2021/) still resolves but is a stale year-specific page; this hub auto-surfaces the current year. Prefer the largest combined \"Board papers {Month} {Year}\" PDF; these cover both NLG and Hull.",
+    "access_notes": "Pattern B (year archives) + Boards-in-Common. Northern Lincolnshire and Goole runs Trust Boards-in-Common with Hull (HUTH) under the NHS Humber Health Partnership; combined packs are published on the NLG site. Landing lists year cards (\"Board papers 2026\", \"Board papers 2025\", ...); click a year card (e.g. https://www.nlg.nhs.uk/resources/board-papers-2026/) to reach a table of one combined PDF per bi-monthly meeting under /wp-content/uploads/. The previous DB URL (/resources/board-papers-archive-2021/) still resolves but is a stale year-specific page; this hub auto-surfaces the current year. Prefer the largest combined \"Board papers {Month} {Year}\" PDF; these cover both NLG and Hull. Note 2026-10-24: 2026 packs all sit under /wp-content/uploads/2025/10/ regardless of meeting month (e.g. Board-papers-October-2026-1.pdf, September-2026-board-papers-updated.pdf), so date packs by filename, not upload folder.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "Board papers {Month} {Year}",
@@ -1902,9 +1902,9 @@
       "committee papers",
       "2021 archive"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Live NLG Boards-in-Common hub lists 2026 year card with Feb/Mar/Apr/May 2026 combined packs; replaced stale 2021 archive URL."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): board-papers-2026 page newest Board-papers-October-2026-1.pdf."
   },
   {
     "ods_code": "RP5",
@@ -2034,9 +2034,9 @@
       "pre-2020 BoardPapers/BOD_2017/",
       "Annual Reports under Publications/Annual_Reports/"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): Combined_-_Public_Board_of_Directors_-_10_September_2026_WEBSITE.pdf under BoardPapers/2026/."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200, 104KB): Combined_-_Public_Board_of_Directors_-_10_September_2026_WEBSITE.pdf under BoardPapers/2026/."
   },
   {
     "ods_code": "RXE",
@@ -2065,9 +2065,9 @@
       "AGM",
       "YouTube playlist"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Document section lists 2026 board pack sub-pages (May/March/January 2026) each linking the meeting's combined agenda pack, plus matching minutes entries."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): landing links /documents/board-of-directors-packs-september-2026/ as the newest pack page."
   },
   {
     "ods_code": "RXF",
@@ -2127,9 +2127,9 @@
       "governance-documents",
       "register"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local curl with --compressed (200, decoded fine this run): newest Public-Trust-Board-agenda-and-papers-29.09.26.pdf."
+    "validation_notes": "Re-verified 2026-10-24 by local curl with --compressed (200): Public-agenda-and-papers-27.10.26.pdf already posted under /wp-content/uploads/2026/10/ ahead of the 27 Oct 2026 meeting."
   },
   {
     "ods_code": "RY6",
@@ -2233,8 +2233,8 @@
       "Annual Members"
     ],
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local curl (200): 7 October 2026 Group Board full pack still the newest (group_board_meeting_in_public_07.10.26_-_full_pack_4.pdf).",
-    "last_validated": "2026-10-17"
+    "validation_notes": "Re-verified 2026-10-24 by local curl (200): 7 October 2026 Group Board full pack still the newest; next 2 Dec 2026.",
+    "last_validated": "2026-10-24"
   },
   {
     "ods_code": "RDE",
@@ -2492,9 +2492,9 @@
       "partnership",
       "/media/.*-agm-"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Landing page directly lists dated meetings with agenda and item PDFs for 28 Jan, 18 Mar, 1 Apr and 20 May 2026 plus Sep and Nov 2025."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200, 166KB): 30 September 2026 trust board in public agenda (00-2026-09-30-...) and item PDFs under /media/; next 18 Nov 2026."
   },
   {
     "ods_code": "R0D",
@@ -2592,8 +2592,8 @@
     "region": "South West",
     "ics": "Dorset",
     "correspondent": "Joe",
-    "url": "https://www.dchft.nhs.uk/about-us/trust-board/trust-board-meetings/",
-    "access_notes": "Pattern A. From the landing /about-us/trust-board/ a crawler follows the one-click child 'Trust Board Meetings' link to /about-us/trust-board/trust-board-meetings/, which lists each public meeting by date with a direct link to the full Part 1 paper pack PDF hosted under /wp-content/uploads/YYYY/MM/. Dorset County Hospital now meets as part of a Dorset 'Board in Common', so recent packs are named 'Board-in-Common-Part-1-Paper-Pack' alongside older 'Board-of-Directors-part-1-papers' naming; both are the trust's own board papers. The original landing /about-us/trust-board/ shows no papers itself (validator was right) but the dated PDFs live one click down on the meetings sub-page. Only Part 1 (public) packs are published; Part 2 is confidential.",
+    "url": "https://dchft.nhs.uk/about-us/trust-board/trust-board-meetings/",
+    "access_notes": "Pattern A. From the landing /about-us/trust-board/ a crawler follows the one-click child 'Trust Board Meetings' link to /about-us/trust-board/trust-board-meetings/, which lists each public meeting by date with a direct link to the full Part 1 paper pack PDF hosted under /wp-content/uploads/YYYY/MM/. Dorset County Hospital now meets as part of a Dorset 'Board in Common', so recent packs are named 'Board-in-Common-Part-1-Paper-Pack' alongside older 'Board-of-Directors-part-1-papers' naming; both are the trust's own board papers. The original landing /about-us/trust-board/ shows no papers itself (validator was right) but the dated PDFs live one click down on the meetings sub-page. Only Part 1 (public) packs are published; Part 2 is confidential. Update 2026-10-24: the www.dchft.nhs.uk form now 301-redirects to the bare domain dchft.nhs.uk (URL updated to the redirect target). Packs are now Board-in-Common Part 1 PDFs (e.g. Oct-26-Board-of-Directors-in-Common-Part-1.pdf, Board-in-Common-Part-1-Paper-Pack-17-June-2026.pdf), so match on 'Board-in-Common' / 'in-Common-Part-1' as well as 'Paper Pack'.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "Board-in-Common-Part-1-Paper-Pack",
@@ -2608,9 +2608,9 @@
       "Front-sheet",
       "Annual-Safe-Staffing-Report"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Trust Board Meetings sub-page lists dated 2025 and 2026 Part 1 board paper pack PDFs (e.g. Feb, Apr, Jun, Aug, Oct, Dec 2025 and Feb, Apr 2026)."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl: www. URL 301s to dchft.nhs.uk (DB updated); newest Oct-26-Board-of-Directors-in-Common-Part-1.pdf under /wp-content/uploads/2026/10/."
   },
   {
     "ods_code": "RD1",
@@ -2626,13 +2626,13 @@
     "correspondent": "Joe",
     "url": "https://www.ruh.nhs.uk/about/trustboard/index.asp",
     "validation_status": "papers_found",
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "pack_pattern_hints": [
       "/about/trustboard/YYYY_MM/index.asp per-meeting page",
       "/about/trustboard/YYYY_MM/documents/YYYY_MM_DD_BSW_Hospitals_Group_Board_PUBLIC_Agenda_and_Papers.pdf main pack",
       "month dropdown enumerates all meetings"
     ],
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl: landing links the 2026_09 month page (BSW Hospitals Group Board pack); next meeting 5 Nov 2026.",
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): landing links the 2026_09 month page and group_board/2026_27; next meeting 5 Nov 2026.",
     "access_notes": "Legacy ASP CMS but fully live and current; papers are now published as the BSW Hospitals Group Board. The landing /about/trustboard/index.asp lists forthcoming meetings (to 4 March 2027 as of 2026-10-03) and a month dropdown (Jan 2020 through the latest 2026 meeting). Each meeting has its own month page /about/trustboard/YYYY_MM/index.asp, and the PDFs sit only on those month pages, never on the landing. The old single-file name /documents/Combined_paper_pack.pdf is no longer used (404 for 2026_09). Recent months (2026_07 and 2026_09 confirmed) link two files: documents/YYYY_MM_DD_BSW_Hospitals_Group_Board_PUBLIC_Agenda_and_Papers.pdf (the main pack) and documents/YYYY_MM_DD_BSW_Hospitals_Group_Board_PUBLIC_Reading_Room.pdf. Scrape the PDF hrefs off each month page rather than guessing filenames. All pages render statically and plain browser-UA requests and WebFetch both work, so no Playwright is needed. To find the newest pack, read the landing for the latest YYYY_MM, then harvest that month page's PDF links. Papers carry a press embargo until after the meeting. 2026-10-10: the landing now also links a group_board/2026_27 folder - RUH papers are published as the 'BSW Hospitals Group Board' combined pack (2026_09_03_BSW_Hospitals_Group_Board_PUBLIC_Agenda_and_Papers.pdf), so match on 'Group_Board' as well as 'Trust Board'.",
     "needs_playwright": false,
     "exclude_patterns": [
@@ -2679,7 +2679,7 @@
     "ics": "Cornwall and the Isles of Scilly",
     "correspondent": "Joe",
     "url": "https://royalcornwallhospitals.nhs.uk/organisation/board-meetings/",
-    "access_notes": "Current landing URL is live and correct; it is an index page that links OUT to the separate document subdomain doclibrary-rcht.cornwall.nhs.uk, one .aspx page per financial year (BoardMeetings2627.aspx, BoardMeetings2526.aspx, etc., plus BoardMeetingsIndex.aspx for older). The actual dated PDFs live under doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/ChiefExecutive/TrustBoard/Minutes/{2526}/{YYYYMM}/. Two-hop crawl: from landing page get the current-year .aspx, then harvest 'AgendaPack' PDFs (each monthly board has one combined Agenda Pack; alternate months carry only an IPR). WebFetch works on the doclibrary subdomain. Update 2026-10-03: the landing's 2026/27 link is wrapped in an Outlook safelinks URL (gbr01.safelinks.protection.outlook.com) - unwrap it. The real year page is doclibrary-rcht.cornwall.nhs.uk/RoyalCornwallHospitalsTrust/Internet/DocumentsLibrary/BoardMeetings/BoardMeetings2627.aspx (the /DocumentsLibrary/RoyalCornwallHospitalsTrust/ChiefExecutive/TrustBoard/BoardMeetings2627.aspx form 404s); the PDFs themselves remain under .../ChiefExecutive/TrustBoard/Minutes/{2627}/{YYYYMM}/. Local browser-UA curl also works. Re-verified 2026-10-10: the main-domain landing refused local browser-UA curl with a generic '403 - Forbidden' page (WebFetch fine) while the doclibrary subdomain still served BoardMeetings2627.aspx to plain curl - so when the landing blocks, go straight to the doclibrary year page. Route check 2026-10-17: the landing loaded by plain browser-UA curl again, but doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/Board/BoardMeetings2627.aspx returned 404 (\"The resource cannot be found\"), so take the current doclibrary link from the landing page each run rather than hardcoding that path.",
+    "access_notes": "Current landing URL is live and correct; it is an index page that links OUT to the separate document subdomain doclibrary-rcht.cornwall.nhs.uk, one .aspx page per financial year (BoardMeetings2627.aspx, BoardMeetings2526.aspx, etc., plus BoardMeetingsIndex.aspx for older). The actual dated PDFs live under doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/ChiefExecutive/TrustBoard/Minutes/{2526}/{YYYYMM}/. Two-hop crawl: from landing page get the current-year .aspx, then harvest 'AgendaPack' PDFs (each monthly board has one combined Agenda Pack; alternate months carry only an IPR). WebFetch works on the doclibrary subdomain. Update 2026-10-03: the landing's 2026/27 link is wrapped in an Outlook safelinks URL (gbr01.safelinks.protection.outlook.com) - unwrap it. The real year page is doclibrary-rcht.cornwall.nhs.uk/RoyalCornwallHospitalsTrust/Internet/DocumentsLibrary/BoardMeetings/BoardMeetings2627.aspx (the /DocumentsLibrary/RoyalCornwallHospitalsTrust/ChiefExecutive/TrustBoard/BoardMeetings2627.aspx form 404s); the PDFs themselves remain under .../ChiefExecutive/TrustBoard/Minutes/{2627}/{YYYYMM}/. Local browser-UA curl also works. Re-verified 2026-10-10: the main-domain landing refused local browser-UA curl with a generic '403 - Forbidden' page (WebFetch fine) while the doclibrary subdomain still served BoardMeetings2627.aspx to plain curl - so when the landing blocks, go straight to the doclibrary year page. Route check 2026-10-17: the landing loaded by plain browser-UA curl again, but doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/Board/BoardMeetings2627.aspx returned 404 (\"The resource cannot be found\"), so take the current doclibrary link from the landing page each run rather than hardcoding that path. Route check 2026-10-24: the safelinks-wrapped link on the landing unwraps to doclibrary-rcht.cornwall.nhs.uk/RoyalCornwallHospitalsTrust/Internet/DocumentsLibrary/BoardMeetings/BoardMeetings2627.aspx, which returned 200 to plain browser-UA curl - it is only the .../Board/BoardMeetings2627.aspx variant that 404s. Newest pack Minutes/2627/202609/AgendaPackTrustBoardPublic3September26.pdf.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/ChiefExecutive/TrustBoard/Minutes/",
@@ -2693,9 +2693,9 @@
       "AnnualReportAndAccounts",
       "Strategy"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (landing 200 this run): lists 2026 meetings through 3 and 17 Sep 2026 with next 5 Nov 2026. The doclibrary BoardMeetings2627.aspx path now returns 404 - see access notes."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl: landing 200; the unwrapped doclibrary year page (.../Internet/DocumentsLibrary/BoardMeetings/BoardMeetings2627.aspx) returned 200 with AgendaPackTrustBoardPublic3September26.pdf the newest pack."
   },
   {
     "ods_code": "RH5",
@@ -2751,9 +2751,9 @@
       "glossary_of_acronyms",
       "/archive/"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 via server-side WebFetch (local curl 403): 30 Sep 2026 pack rduh-board-of-directors-public-20260930-meeting-pack-for-the-website.pdf is the newest; archive.org route not needed.",
+    "validation_notes": "Re-verified 2026-10-24 via server-side WebFetch (local curl 403 Access Denied): 30 Sep 2026 pack rduh-board-of-directors-public-20260930-meeting-pack-for-the-website.pdf newest; 25 Nov 2026 upcoming.",
     "retrieval_route": "archive_org_save_page_now"
   },
   {
@@ -3039,7 +3039,24 @@
     "correspondent": "Matt D",
     "url": "https://www.nwl-acute-provider-group.nhs.uk/publications",
     "group_board": "NW London Acute Provider Collaborative Board in Common",
-    "group_board_url": "https://www.nwl-acute-provider-group.nhs.uk/publications"
+    "group_board_url": "https://www.nwl-acute-provider-group.nhs.uk/publications",
+    "access_notes": "London North West University Healthcare does not publish a standalone public trust board pack; it meets in the North West London Acute Provider Group 'Board in Common' (with Chelsea and Westminster, Hillingdon and Imperial), so its board papers are the group's Board-in-Common packs. The DB landing www.nwl-acute-provider-group.nhs.uk/publications is static HTML (plain browser-UA curl works, no Playwright, no WAF seen) and lists the Board-in-Common meeting dates (quarterly: 20 Jan, 28 Apr, 28 Jul and 20 Oct 2026) with a 'Download the agenda and meeting papers' PDF under /media/<8-char-id>/, e.g. /media/l5gle5tg/agenda-and-papers-nwl-apg-board-in-common-october-2026-final.pdf, plus a separate reading-room/appendices PDF. The page only surfaces the CURRENT pack link (older packs drop off), so a crawler must snapshot each run or fall back to the imperial.nhs.uk mirror for past meetings. Take the 'agenda-and-papers' pack; skip appendices/reading-room files, consultation documents and Part 2/confidential items. The old nwl-acute-provider-collaborative.nhs.uk domain now 301-redirects to this page.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "agenda-and-papers",
+      "board-in-common",
+      "full pack"
+    ],
+    "exclude_patterns": [
+      "appendices",
+      "reading room",
+      "Part 2",
+      "confidential",
+      "consultation"
+    ],
+    "last_validated": "2026-10-24",
+    "validation_status": "papers_found",
+    "validation_notes": "Verified 2026-10-24 by local browser-UA curl (200): provider-group /publications page carries the 20 October 2026 Board-in-Common pack (/media/l5gle5tg/agenda-and-papers-nwl-apg-board-in-common-october-2026-final.pdf)."
   },
   {
     "ods_code": "RAL",
@@ -3078,8 +3095,8 @@
     "region": "London",
     "ics": "North West London",
     "correspondent": "Matt D",
-    "url": "https://www.nwl-acute-provider-collaborative.nhs.uk/publications",
-    "access_notes": "Hillingdon does not publish a standalone trust board; it sits in the North West London Acute Provider Collaborative 'Board in Common' (four acute trusts), so its current board papers are the group's Board-in-Common packs. The provider-group site (nwl-acute-provider-group.nhs.uk) only has a 'meet the board' page with no papers; the actual dated packs live on the NWL Acute Provider Collaborative site under /publications (and its /events meeting pages), as single 'full pack'/'agenda and papers' PDFs at /-/media/website/nwl-acute-provider-collaborative/documents/board-in-common/...-full-pack.pdf or agenda-and-papers--board-in-common-public--DDMMYYYY.pdf. The same PDFs are mirrored on imperial.nhs.uk. Confirmed 2026 public meetings: 20 Jan, 28 Apr, 28 Jul. Note imperial.nhs.uk and the collaborative pages may 403 to bare fetchers; fetch the PDF URLs directly or render. Prefer the public 'full pack' for the latest past meeting; ignore the parallel provider-group domain and 'Part 2/confidential' items.",
+    "url": "https://www.nwl-acute-provider-group.nhs.uk/publications",
+    "access_notes": "Hillingdon does not publish a standalone trust board; it sits in the North West London Acute Provider Collaborative 'Board in Common' (four acute trusts), so its current board papers are the group's Board-in-Common packs. The provider-group site (nwl-acute-provider-group.nhs.uk) only has a 'meet the board' page with no papers; the actual dated packs live on the NWL Acute Provider Collaborative site under /publications (and its /events meeting pages), as single 'full pack'/'agenda and papers' PDFs at /-/media/website/nwl-acute-provider-collaborative/documents/board-in-common/...-full-pack.pdf or agenda-and-papers--board-in-common-public--DDMMYYYY.pdf. The same PDFs are mirrored on imperial.nhs.uk. Confirmed 2026 public meetings: 20 Jan, 28 Apr, 28 Jul. Note imperial.nhs.uk and the collaborative pages may 403 to bare fetchers; fetch the PDF URLs directly or render. Prefer the public 'full pack' for the latest past meeting; ignore the parallel provider-group domain and 'Part 2/confidential' items. Pattern F 2026-10-24: www.nwl-acute-provider-collaborative.nhs.uk/publications now 301-redirects to www.nwl-acute-provider-group.nhs.uk/publications (URL updated to the redirect target). That provider-group page now DOES carry the Board-in-Common packs (/media/<id>/agenda-and-papers-nwl-apg-board-in-common-<month>-<year>-final.pdf; latest 20 October 2026), so the earlier advice to ignore the provider-group domain is superseded - it is now the live source. Only the current pack is linked; use the imperial.nhs.uk mirror for older meetings.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/-/media/website/nwl-acute-provider-collaborative/documents/board-in-common/",
@@ -3092,9 +3109,9 @@
       "confidential",
       "private"
     ],
-    "last_validated": "2026-06-06",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Board-in-Common full-pack PDFs for 20 Jan 2026 and 28 Apr 2026 (covering Hillingdon) are published on the NWL Acute Provider Collaborative site.",
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl: the old collaborative /publications URL 301s to www.nwl-acute-provider-group.nhs.uk/publications (DB updated), which carries the 20 October 2026 Board-in-Common pack.",
     "group_board": "NW London Acute Provider Collaborative Board in Common",
     "group_board_url": "https://www.nwl-acute-provider-group.nhs.uk/publications"
   },
@@ -3307,9 +3324,9 @@
       "members-council",
       "publication-scheme"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200 after a reset): papers to July 2026 (10.3MB); the 30 Sep 2026 meeting is still listed without papers; next 19 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200 after a reset): papers to 16 July 2026; the 30 Sep 2026 meeting is still listed without papers (fourth week); next 19 Nov 2026."
   },
   {
     "ods_code": "RRU",
@@ -3439,9 +3456,9 @@
       "sunderland legacy CHSFT governor pages",
       "council-of-governors pages"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): 2026/27 group lists 8 October 2026 - Agenda and papers at the top."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): 2026/27 group lists 8 October 2026 - Agenda and papers at the top."
   },
   {
     "ods_code": "RNN",
@@ -3464,9 +3481,9 @@
       "/events/event-details",
       "occurrenceID="
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Static page lists dated combined Agenda+Papers board-pack PDFs for 2025 and 2026; sampled May 2026 link returned a multi-MB PDF."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): 17 dated 2026 download_file/view/<id>/268 pack links; next meeting 25 Nov 2026."
   },
   {
     "ods_code": "RR7",
@@ -3704,8 +3721,8 @@
       "Imperva/hCaptcha challenge shell"
     ],
     "validation_status": "needs_playwright",
-    "validation_notes": "2026-10-17: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl and local headless Playwright got the ~880-byte Incapsula/hCaptcha shell and server-side WebFetch returned an empty body. Wayback: snapshot 2026-08-05 shows meeting dates through 11 Sep and 6 Nov 2026 with /download_file/<uuid>/2265 pack links. Routing block on this machine, not a withdrawal of papers.",
-    "last_validated": "2026-10-17"
+    "validation_notes": "2026-10-24: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl got the ~845-byte Incapsula shell and server-side WebFetch returned an empty body. Newest Wayback snapshot is still 2026-08-05 (layout reference only). Routing block on this machine, not a withdrawal of papers.",
+    "last_validated": "2026-10-24"
   },
   {
     "ods_code": "RHM",
@@ -3878,9 +3895,9 @@
       "board-affiliate-blog",
       "organisational-chart"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Year sub-pages list per-meeting document folders for 2025 and 2026; the March 2026 folder contains the numbered agenda and papers PDFs (00-22)."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): 2026 year page lists document folders January to u-trust-board-papers-september-2026."
   },
   {
     "ods_code": "R0A",
@@ -3941,9 +3958,9 @@
       "Committee in Common (legacy 2019-2021 folders)",
       "watch the meeting video links"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): newest meeting with papers 2 Sep 2026; upcoming 4 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): newest meeting with papers 2 Sep 2026; upcoming 4 Nov 2026."
   },
   {
     "ods_code": "RMC",
@@ -4030,9 +4047,9 @@
       "pre-2020 archive under /2019/",
       "upcoming dates without a linked PDF"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): October 2026 public meeting bundle now posted under /media/board/Papers/2026/ (Board of Directors - public meeting bundle - October 2026)."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): October 2026 public meeting bundle under /media/board/Papers/2026/; next 2 Dec 2026."
   },
   {
     "ods_code": "RT2",
@@ -4155,9 +4172,9 @@
       "/wp-content/uploads/<yyyy>/<mm>/Meeting-Book-*.pdf"
     ],
     "exclude_patterns": [],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Landing page links to single combined Meeting Book PDFs for all 2025 meetings and the Feb and May 2026 meetings; the Feb 2026 document slug resolved directly to a multi-page PDF."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): Meeting-Book-Meeting-of-the-Board-of-Directors-in-Public-29-July-2026-compressed.pdf newest; next 4 Nov 2026."
   },
   {
     "ods_code": "RD8",
@@ -4183,9 +4200,9 @@
       "SUPPLEMENTARY-SHELF",
       "SUPPLEMENTARY"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 via server-side WebFetch (local curl Cloudflare challenge): Meeting-in-Public PDFs to 3 Sep 2026 (0-Meeting-in-Public-03.09.2026-compressed.pdf); next meeting 5 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-24 via server-side WebFetch (local curl got the Cloudflare challenge): 0-Meeting-in-Public-03.09.2026-compressed.pdf newest; next meeting 5 Nov 2026."
   },
   {
     "ods_code": "RQW",
@@ -4228,9 +4245,9 @@
       "legacy /about/board_meetings/*/default.asp",
       "acronyms glossary download"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): landing carries the 'September 2026 board papers' download_file/<uuid>/368 pack."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): landing carries the 'September 2026 board papers' download_file/<uuid>/368 pack."
   },
   {
     "ods_code": "RWH",
@@ -4289,9 +4306,9 @@
       "disclosure-log",
       "equality-delivery-system"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 via server-side WebFetch (local curl 403): meeting books to 16 Jul 2026 under /media/; still no September 2026 book."
+    "validation_notes": "Re-verified 2026-10-24 via server-side WebFetch (local curl 403): meeting books to 16 Jul 2026 under /media/; still no September 2026 book."
   },
   {
     "ods_code": "RY4",
@@ -4407,9 +4424,9 @@
       "legacy Concrete5 publications listing",
       "FOI disclosure-log PDFs"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): 3 September 2026 Trust Board pack (Agenda-Documentation-Trust-Board-Public-3.9.26-Website-Version.pdf) at the top."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): 3 September 2026 Trust Board pack still at the top of page 1."
   },
   {
     "ods_code": "RBT",
@@ -4670,9 +4687,9 @@
       "/publications-reports-policies/",
       "/corporate-registers"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 by local browser-UA curl (200): newest packs 01.10.2026 and 03.09.2026 via download_file/<uuid>/1439."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): newest packs 01 10 2026 and 03.09.2026 via download_file/<uuid>/1439."
   },
   {
     "ods_code": "RWW",
@@ -4741,9 +4758,9 @@
       "/events",
       "publication-scheme"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17 via local headless Playwright (curl hit the Cloudflare challenge): /board lists summaries to 30 Sep 2026 (/sept26)."
+    "validation_notes": "Re-verified 2026-10-24 via local headless Playwright (curl got the Cloudflare challenge, WebFetch 403): /board lists summaries to 30 Sep 2026 (/sept26)."
   },
   {
     "ods_code": "RXL",
@@ -4769,9 +4786,9 @@
       "bfwh.nhs.uk parallel/legacy pages",
       "Imperva/hCaptcha challenge shell"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "needs_playwright",
-    "validation_notes": "2026-10-17: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl and local headless Playwright got the ~880-byte Incapsula/hCaptcha shell and server-side WebFetch returned an empty body. Wayback: the 2026-10-01 snapshot captured the Incapsula shell, so Wayback is not a reliable fallback for this domain. Routing block on this machine, not a withdrawal of papers."
+    "validation_notes": "2026-10-24: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl got the ~842-byte Incapsula shell and server-side WebFetch returned an empty body. Wayback newest snapshot (2026-10-01) is the Incapsula shell. Routing block on this machine, not a withdrawal of papers."
   },
   {
     "ods_code": "RXN",
@@ -4810,9 +4827,9 @@
       "TrustBoardQuestions@ contact link",
       "Imperva/hCaptcha challenge shell"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "needs_playwright",
-    "validation_notes": "2026-10-17: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl and local headless Playwright got the ~880-byte Incapsula/hCaptcha shell and server-side WebFetch returned an empty body. Wayback: snapshot 2026-09-17 shows the meeting list with 16 Sep, 30 Sep and 11 Nov 2026 and /download_file/<id>/191 pack links. Routing block on this machine, not a withdrawal of papers."
+    "validation_notes": "2026-10-24: URL resolves (HTTP 200) but live routes were refused again - local browser-UA curl got the ~847-byte Incapsula shell and server-side WebFetch returned an empty body. Newest Wayback snapshot still 2026-09-17 (layout reference only). Routing block on this machine, not a withdrawal of papers."
   },
   {
     "ods_code": "RY7",
@@ -4951,8 +4968,8 @@
     "region": "Midlands",
     "ics": "-",
     "correspondent": "Caitlin",
-    "url": "https://www.wmas.nhs.uk/about-us/board-papers/",
-    "access_notes": "Pattern C: the landing page lists per-meeting publication sub-pages under /publications/, with SEPARATE Agenda and Minutes entries per dated meeting (e.g. 'WMAS Board Meeting Agenda - Wednesday 25th March 2026' and a matching Minutes page). All listings are in static HTML, no JS needed. Quirk: the agenda sub-page renders the agenda as HTML text listing numbered 'Paper 01..nn' items but does NOT publish downloadable PDFs of those papers - it instructs readers to email to request the full board papers. So a crawler can capture the agenda/minutes text but full board-pack PDFs are generally not available for download; prefer the Agenda sub-page for each dated meeting and skip Minutes-only pages when packs are wanted.",
+    "url": "https://www.wmas.nhs.uk/about-us/publications/?category=board-papers",
+    "access_notes": "Pattern C: the landing page lists per-meeting publication sub-pages under /publications/, with SEPARATE Agenda and Minutes entries per dated meeting (e.g. 'WMAS Board Meeting Agenda - Wednesday 25th March 2026' and a matching Minutes page). All listings are in static HTML, no JS needed. Quirk: the agenda sub-page renders the agenda as HTML text listing numbered 'Paper 01..nn' items but does NOT publish downloadable PDFs of those papers - it instructs readers to email to request the full board papers. So a crawler can capture the agenda/minutes text but full board-pack PDFs are generally not available for download; prefer the Agenda sub-page for each dated meeting and skip Minutes-only pages when packs are wanted. Update 2026-10-24: /about-us/board-papers/ now 301-redirects (via /about/publications/) to /about-us/publications/?category=board-papers (URL updated to the final target; paginates with &page_no=N). The newest entry, /publications/board-of-directors-agenda-october-2026/ (28 Oct 2026), carries no downloadable file - it tells readers to request the papers from the Trust Secretary - so a missing pack here is publication practice, not a fetch failure.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "/publications/wmas-board-meeting-agenda-<weekday>-<dd>th-<month>-<year>/",
@@ -4961,9 +4978,9 @@
     "exclude_patterns": [
       "wmas-board-meeting-minutes-"
     ],
-    "last_validated": "2026-06-04",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_partial",
-    "validation_notes": "Dated 2025 and 2026 agenda and minutes sub-pages are listed and reachable, but agenda pages show paper titles only and direct readers to email for the actual board-pack PDFs."
+    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl and WebFetch: old URL 301s to the publications listing (DB updated); newest entry 'Board of Directors Meeting Agenda - Wednesday 28th October 2026', which offers no download - papers are on request from the Trust Secretary."
   },
   {
     "ods_code": "RYC",
@@ -5050,9 +5067,9 @@
       "constitution and committee terms of reference (table _3)",
       "superseded duplicate uploads of the same meeting"
     ],
-    "last_validated": "2026-10-17",
+    "last_validated": "2026-10-24",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-17: admin-ajax dlp_load_posts recipe still works with no nonce or cookie; archive table (26 rows) newest 'SCAS public Board papers - 3 September 2026'; current-year table empty."
+    "validation_notes": "Re-verified 2026-10-24: admin-ajax dlp_load_posts recipe still works with no nonce or cookie; ids unchanged from last week (archive table dlp_3c751b4101d5e487_1, 26 rows, newest 'SCAS public Board papers - 3 September 2026'); current-year table empty; next 5 Nov 2026."
   },
   {
     "ods_code": "RYF",

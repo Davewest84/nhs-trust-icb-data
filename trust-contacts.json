@@ -1105,10 +1105,10 @@
     "press_email": "eec.communications@nhs.net",
     "press_email_alt": "ccs.communications@nhs.net",
     "press_source_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us",
-    "foi_email": "eec.accesstoinfo@nhs.net",
-    "foi_email_alt": "ccs.accesstoinfo@nhs.net",
-    "foi_source_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us",
-    "notes": "Norfolk Community merged into East of England Community Health & Care; shared CCS inbox; renamed from 'Norfolk Community Health and Care NHS Trust' on 2026-05-16 after April 2026 merger with Cambridgeshire Community Services (RYV); press and FOI primaries updated 2026-08-08 from https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us \u2014 the merged trust now publishes eec.communications@nhs.net (media) and eec.accesstoinfo@nhs.net (FOI); prior values ccs.communications@nhs.net and ccs.accesstoinfo@nhs.net moved to the _alt fields, displacing the legacy Norfolk Community addresses Communications@nchc.nhs.uk and FreedomOfInformationProvider@nchc.nhs.uk, which are recorded here so they are not lost"
+    "foi_email": "eec.foi@nhs.net",
+    "foi_email_alt": "eec.accesstoinfo@nhs.net",
+    "foi_source_url": "https://eastofenglandcommunityhealthandcare.nhs.uk/contact/",
+    "notes": "Norfolk Community merged into East of England Community Health & Care; shared CCS inbox; renamed from 'Norfolk Community Health and Care NHS Trust' on 2026-05-16 after April 2026 merger with Cambridgeshire Community Services (RYV); press and FOI primaries updated 2026-08-08 from https://eastofenglandcommunityhealthandcare.nhs.uk/contact-us \u2014 the merged trust now publishes eec.communications@nhs.net (media) and eec.accesstoinfo@nhs.net (FOI); prior values ccs.communications@nhs.net and ccs.accesstoinfo@nhs.net moved to the _alt fields, displacing the legacy Norfolk Community addresses Communications@nchc.nhs.uk and FreedomOfInformationProvider@nchc.nhs.uk, which are recorded here so they are not lost | foi primary updated 2026-10-24 from https://eastofenglandcommunityhealthandcare.nhs.uk/contact/; prior value eec.accesstoinfo@nhs.net moved to _alt (displacing prior _alt ccs.accesstoinfo@nhs.net)"
   },
   {
     "trust_name": "Norfolk and Norwich University Hospitals NHS Foundation Trust",
@@ -1687,11 +1687,11 @@
     "ods_code": "RTP",
     "press_email": "sash.communications@nhs.net",
     "press_email_alt": null,
-    "press_source_url": "https://www.surreyandsussex.nhs.uk/find-contact-us/contact-us/media-and-communications",
+    "press_source_url": "https://www.surreyandsussex.nhs.uk/find-contact-us/media-and-communications",
     "foi_email": "sash.foi@nhs.net",
     "foi_email_alt": null,
     "foi_source_url": "https://www.surreyandsussex.nhs.uk/about-us/corporate-and-regulatory-information/freedom-information/how-make-request",
-    "notes": null
+    "notes": "press_source_url updated 2026-10-24 from https://www.surreyandsussex.nhs.uk/find-contact-us/contact-us/media-and-communications to https://www.surreyandsussex.nhs.uk/find-contact-us/media-and-communications (old /find-contact-us/contact-us/media-and-communications page now 404; sash.communications@nhs.net confirmed unchanged on the new page)"
   },
   {
     "trust_name": "Sussex Community NHS Foundation Trust",

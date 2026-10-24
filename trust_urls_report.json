@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T04:09:03.924067+00:00",
+  "generated_at": "2026-10-24T04:09:05.328426+00:00",
   "label": "trust",
   "total": 201,
-  "ok": 201,
-  "broken": 0,
+  "ok": 198,
+  "broken": 3,
   "results": [
     {
       "ods_code": "RA2",
@@ -18,10 +18,10 @@
       "ods_code": "RDR",
       "name": "Sussex Community NHS Foundation Trust",
       "url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetin"
     },
     {
       "ods_code": "RN7",
@@ -102,7 +102,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.esht.nhs.uk/about-us/trust-board/meetings-in-public/",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "RXX",
@@ -327,7 +327,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
-      "error": "(rescued by playwright fallback)"
+      "error": null
     },
     {
       "ods_code": "RL1",
@@ -648,10 +648,10 @@
       "ods_code": "RHQ",
       "name": "Sheffield Teaching Hospitals NHS Foundation Trust",
       "url": "https://www.sth.nhs.uk/about-us/board-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.sth.nhs.uk/about-us/board-meetings/",
-      "error": null
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.sth.nhs.uk/about-us/board-meetings/\nCall log:\n  - navigating to \"https://www.s"
     },
     {
       "ods_code": "RJL",
@@ -746,7 +746,7 @@
     {
       "ods_code": "TAD",
       "name": "Bradford District Care NHS Foundation Trust",
-      "url": "https://www.bdct.nhs.uk/about-us/board-meetings-and-papers/",
+      "url": "https://www.bdct.nhs.uk/about-us/our-trust/our-board/board-meetings-and-papers/",
       "ok": true,
       "status": 200,
       "final_url": "https://www.bdct.nhs.uk/about-us/our-trust/our-board/board-meetings-and-papers/",
@@ -755,7 +755,7 @@
     {
       "ods_code": "TAH",
       "name": "Sheffield Health Partnership University NHS Foundation Trust",
-      "url": "https://www.sheffieldpartnership.nhs.uk/about-us/board-directors/meeting-minutes-and-agendas",
+      "url": "https://www.sheffieldpartnership.nhs.uk/about-us/board-directors/board-directors-meeting-minutes-and-agendas",
       "ok": true,
       "status": 200,
       "final_url": "https://www.sheffieldpartnership.nhs.uk/about-us/board-directors/board-directors-meeting-minutes-and-agendas",
@@ -822,7 +822,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.cuh.nhs.uk/about-us/board-directors/board-of-directors-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RM1",
@@ -1143,10 +1143,10 @@
       "ods_code": "RP4",
       "name": "Great Ormond Street Hospital for Children NHS Foundation Trust",
       "url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-boa"
     },
     {
       "ods_code": "RRU",
@@ -1466,7 +1466,7 @@
     {
       "ods_code": "R1L",
       "name": "Essex Partnership University NHS Foundation Trust",
-      "url": "https://eput.nhs.uk/about-us/board-of-directors/board-meetings/board-papers/",
+      "url": "https://www.eput.nhs.uk/about/board/board-papers/",
       "ok": true,
       "status": 200,
       "final_url": "https://www.eput.nhs.uk/about/board/board-papers/",
