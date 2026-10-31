@@ -2401,9 +2401,9 @@
       "director profile pages",
       "annual report and accounts PDFs"
     ],
-    "last_validated": "2026-10-10",
+    "last_validated": "2026-10-31",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-10 by local curl: landing links the 2026 year page, which lists event pages for 11 Mar, 10 Jun, 9 Sep and 9 Dec 2026."
+    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200, 82KB; the shallow scanner saw a transient connection reset): landing links the year pages (deep validator: 6 year archives); 2026 dates incl. 4 September 2026 shown."
   },
   {
     "ods_code": "RM1",
