@@ -895,11 +895,11 @@
     "ods_code": "RJ2",
     "press_email": "lg.communications@nhs.net",
     "press_email_alt": null,
-    "press_source_url": "https://www.lewishamandgreenwich.nhs.uk/contact-us/",
+    "press_source_url": "https://www.lewishamandgreenwich.nhs.uk/for-the-media",
     "foi_email": "foi.lg@nhs.net",
     "foi_email_alt": null,
-    "foi_source_url": "https://www.lewishamandgreenwich.nhs.uk/contact-us/",
-    "notes": null
+    "foi_source_url": "https://www.lewishamandgreenwich.nhs.uk/foi",
+    "notes": "2026-10-31: press_source_url repointed from https://www.lewishamandgreenwich.nhs.uk/contact-us/ to [https://www.lewishamandgreenwich.nhs.uk/for-the-media] (address unchanged; old page no longer lists it); foi_source_url repointed from https://www.lewishamandgreenwich.nhs.uk/contact-us/ to [https://www.lewishamandgreenwich.nhs.uk/foi] (address unchanged; old page no longer lists it)."
   },
   {
     "trust_name": "Lincolnshire Community Health Services NHS Trust",
@@ -942,8 +942,8 @@
     "press_source_url": "https://www.uhliverpool.nhs.uk/contact-us/press-information",
     "foi_email": "FOIRequests@liverpoolft.nhs.uk",
     "foi_email_alt": null,
-    "foi_source_url": "https://www.uhliverpool.nhs.uk/contact-us/freedom-information-requests",
-    "notes": "now part of NHS University Hospitals of Liverpool Group"
+    "foi_source_url": "https://www.uhliverpool.nhs.uk/freedom-of-information-requests-luhft",
+    "notes": "now part of NHS University Hospitals of Liverpool Group. 2026-10-31: foi_source_url repointed from https://www.uhliverpool.nhs.uk/contact-us/freedom-information-requests to [https://www.uhliverpool.nhs.uk/freedom-of-information-requests-luhft] (address unchanged; old page no longer lists it)."
   },
   {
     "trust_name": "Liverpool Women's NHS Foundation Trust",

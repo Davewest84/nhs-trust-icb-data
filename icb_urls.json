@@ -96,9 +96,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-10-24",
+    "last_validated": "2026-10-31",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): hub links the 'Board meeting held in public on Wednesday 30 September 2026' page."
+    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): hub links the 'Board meeting held in public on Wednesday 30 September 2026' page."
   },
   {
     "ods_code": "QOQ",
@@ -240,9 +240,9 @@
       "ICP",
       "AGM"
     ],
-    "last_validated": "2026-06-13",
+    "last_validated": "2026-10-31",
     "validation_status": "papers_found",
-    "validation_notes": "Confirmed dated Board entries e.g. 'Download papers for 08 December 2025' (blackcountryics.org.uk/download_file/view/4017/475) and '11 May 2026' (/download_file/view/4236/475)."
+    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): 'Download papers for' 12 Jan, 9 Mar, 11 May, 13 Jul 2026 listed; next 9 Nov 2026."
   },
   {
     "ods_code": "QWU",
@@ -306,9 +306,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-10-24",
+    "last_validated": "2026-10-31",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): 16 September 2026 pack items as hwics.org.uk/download_file/<id>/414 links."
+    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): 16 September 2026 pack items (e.g. Agenda 13 BAF September 2026) as download_file links."
   },
   {
     "ods_code": "QJ2",
@@ -657,9 +657,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-10-24",
+    "last_validated": "2026-10-31",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): /board-meetings/ index still stops at ICB Board meeting 23 (29 Jul 2026) although 9 September 2026 is listed; meeting-24 page still 404."
+    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): meeting index still stops at ICB Board meeting 23 (29 Jul 2026); /north-east-london-icb-board-meeting-24/ returns 404 and no later date is listed on the landing."
   },
   {
     "ods_code": "QKK",
@@ -741,9 +741,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-10-24",
+    "last_validated": "2026-10-31",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): landing now links 'Board meeting - 21 October 2026 - agenda papers' and its recording."
+    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): landing links the 21 October 2026 board meeting agenda papers; earlier 2026 dates 17 Jun, 22 Jul, 23 Sep."
   },
   {
     "ods_code": "QRL",
@@ -1016,9 +1016,9 @@
       "Cluster governance committee",
       "Minutes"
     ],
-    "last_validated": "2026-10-24",
+    "last_validated": "2026-10-31",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200): swpboard.nhs.uk lists SWP-Board-24.09.2026-Agenda-and-Reports.pdf plus appendices; next 26 Nov 2026."
+    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): swpboard.nhs.uk lists 50 PDFs incl. 40 from 2026 (scanner saw an HTTP/2 error, transient); next 26 Nov 2026."
   },
   {
     "ods_code": "QJK",

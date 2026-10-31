@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T04:11:06.626449+00:00",
+  "generated_at": "2026-10-31T05:11:14.654799+00:00",
   "label": "ICB",
   "total": 36,
   "ok": 35,
@@ -90,10 +90,10 @@
       "ods_code": "QWU",
       "name": "Coventry and Warwickshire ICB",
       "url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/\nCall l"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.happyhealthylives.uk/integrated-care-board/about-us/icb-board-meetings/",
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "QGH",
@@ -161,7 +161,7 @@
     {
       "ods_code": "QNC",
       "name": "Staffordshire and Stoke-on-Trent ICB",
-      "url": "https://staffsstoke.icb.nhs.uk/your-nhs-integrated-care-board/our-publications/board-papers/",
+      "url": "https://www.staffsstoke.icb.nhs.uk/your-nhs-integrated-care-board/our-publications/board-papers/",
       "ok": true,
       "status": 200,
       "final_url": "https://www.staffsstoke.icb.nhs.uk/your-nhs-integrated-care-board/our-publications/board-papers/",
@@ -315,10 +315,10 @@
       "ods_code": "QT6",
       "name": "Cornwall and the Isles of Scilly ICB",
       "url": "https://swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/",
-      "ok": true,
-      "status": 403,
-      "final_url": "https://swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); playwright: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/\nCall log:\n  -"
     },
     {
       "ods_code": "QJK",
