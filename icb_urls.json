@@ -96,9 +96,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-10-31",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): hub links the 'Board meeting held in public on Wednesday 30 September 2026' page."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): hub links the 'Board meeting held in public on Wednesday 30 September 2026' page."
   },
   {
     "ods_code": "QOQ",
@@ -306,9 +306,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-10-31",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): 16 September 2026 pack items (e.g. Agenda 13 BAF September 2026) as download_file links."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): 16 September 2026 pack items (e.g. Agenda 13 BAF September 2026) as download_file links."
   },
   {
     "ods_code": "QJ2",
@@ -489,9 +489,9 @@
       "ICP",
       "Appendices (when a combined pack exists)"
     ],
-    "last_validated": "2026-08-22",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Landing validator 2026-08-22: papers_found - 11 dated PDFs, 0 year archives, 1 meeting sub-pages visible on the landing (HTTP 200)."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): NHS-STW-SSOT-Agenda-Paper-Pack-September-2026-1.pdf plus June and April 2026 packs."
   },
   {
     "ods_code": "QNC",
@@ -592,9 +592,9 @@
       "committee papers",
       "non-board publication types"
     ],
-    "last_validated": "2026-08-22",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Landing validator 2026-08-22: papers_found - 0 dated PDFs, 0 year archives, 3 meeting sub-pages visible on the landing (HTTP 200)."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): filtered publications list shows 'Essex ICB Board Meeting Pack 15 October 2026' plus 16 Jul and 23 Apr 2026."
   },
   {
     "ods_code": "T6Y0W",
@@ -657,9 +657,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-10-31",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): meeting index still stops at ICB Board meeting 23 (29 Jul 2026); /north-east-london-icb-board-meeting-24/ returns 404 and no later date is listed on the landing."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): meeting index still stops at the 29 Jul 2026 board; no later date listed on the landing."
   },
   {
     "ods_code": "QKK",
@@ -741,9 +741,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-10-31",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): landing links the 21 October 2026 board meeting agenda papers; earlier 2026 dates 17 Jun, 22 Jul, 23 Sep."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): landing lists 2026 board dates 17 Jun, 22 Jul, 23 Sep and 21 Oct 2026 with the document-library link."
   },
   {
     "ods_code": "QRL",
@@ -889,9 +889,20 @@
     "cluster_id": "BSW-DOR-SOM",
     "cluster_meeting_url": null,
     "notes": "Loose cluster with Dorset (QVV) and Somerset (QSL) under shared chair Rob Whiteman; each has its own board",
-    "last_validated": "2026-08-22",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Landing validator 2026-08-22: papers_found - 0 dated PDFs, 1 year archives, 6 meeting sub-pages visible on the landing (HTTP 200)."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): BSW archive lists ICB-only packs to 18 March 2026; since spring 2026 the in-common BSW/Dorset/Somerset board pack is published on nhsdorset.nhs.uk/about/board/ (see QVV).",
+    "access_notes": "Strategy: BSW's own board-papers archive (document-category .../board-meeting-papers-archive/) lists per-meeting posts 'BSW ICB Board Meeting in Public - Paper Pack - {date}' but stops at 18 March 2026. Since spring 2026 BSW meets in common with Dorset and Somerset ICBs (cluster BSW-DOR-SOM), and the current 'In-Common BSW, Dorset and Somerset ICB Boards agenda pack' is hosted on the partner domain at nhsdorset.nhs.uk/about/board/ under /wp-content/uploads/YYYY/MM/ - go there for meetings after March 2026. Static fetch works on both.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Paper Pack",
+      "In-Common BSW, Dorset and Somerset ICB Boards agenda pack"
+    ],
+    "exclude_patterns": [
+      "Part Two",
+      "minutes",
+      "questions"
+    ]
   },
   {
     "ods_code": "QVV",
@@ -1016,9 +1027,9 @@
       "Cluster governance committee",
       "Minutes"
     ],
-    "last_validated": "2026-10-31",
+    "last_validated": "2026-11-07",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-31 by local browser-UA curl (200): swpboard.nhs.uk lists 50 PDFs incl. 40 from 2026 (scanner saw an HTTP/2 error, transient); next 26 Nov 2026."
+    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): swpboard.nhs.uk lists 50 PDFs incl. 40 from 2026 (scanner saw an HTTP/2 error, transient); dates to 24 Sep 2026."
   },
   {
     "ods_code": "QJK",

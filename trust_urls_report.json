@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T05:08:55.379474+00:00",
+  "generated_at": "2026-11-07T05:09:25.663231+00:00",
   "label": "trust",
   "total": 201,
-  "ok": 196,
-  "broken": 5,
+  "ok": 195,
+  "broken": 6,
   "results": [
     {
       "ods_code": "RA2",
@@ -18,10 +18,10 @@
       "ods_code": "RDR",
       "name": "Sussex Community NHS Foundation Trust",
       "url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetings-and-papers",
-      "error": null
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.sussexcommunity.nhs.uk/about-us/how-we-are-run/board-of-directors/board-meetin"
     },
     {
       "ods_code": "RN7",
@@ -324,10 +324,10 @@
       "ods_code": "RKB",
       "name": "University Hospitals Coventry and Warwickshire NHS Trust",
       "url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/\nCall log:\n  - navigating to"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.uhcw.nhs.uk/our-organisation/trust-board-meetings/",
+      "error": null
     },
     {
       "ods_code": "RL1",
@@ -525,7 +525,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.stgeorges.nhs.uk/about/our-board/board-meetings/group-board-papers-and-agenda/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RJZ",
@@ -651,7 +651,7 @@
       "ok": true,
       "status": 200,
       "final_url": "https://www.sth.nhs.uk/about-us/board-meetings/",
-      "error": null
+      "error": "(rescued by playwright fallback)"
     },
     {
       "ods_code": "RJL",
@@ -765,10 +765,10 @@
       "ods_code": "RCX",
       "name": "The Queen Elizabeth Hospital King's Lynn NHS Foundation Trust",
       "url": "https://nw-uhg.org.uk/p/about-us/meetings-and-agendas",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://nw-uhg.org.uk/p/about-us/meetings-and-agendas",
-      "error": null
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: HTTPSConnectionPool(host='nw-uhg.org.uk', port=443): Max retries exceeded with url: /p/about-us/meetings-and-agendas (Caused by ConnectTimeoutError(<H; playwright: Page.goto: net::ERR_CONNECTION_TIMED_OUT at https://nw-uhg.org.uk/p/about-us/meetings-and-agendas\nCall log:\n  - navigating to \"htt"
     },
     {
       "ods_code": "RDE",
@@ -819,10 +819,10 @@
       "ods_code": "RGT",
       "name": "Cambridge University Hospitals NHS Foundation Trust",
       "url": "https://www.cuh.nhs.uk/about-us/board-directors/board-of-directors-meetings/",
-      "ok": false,
-      "status": null,
-      "final_url": null,
-      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.cuh.nhs.uk/about-us/board-directors/board-of-directors-meetings/\nCall log:\n  -"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.cuh.nhs.uk/about-us/board-directors/board-of-directors-meetings/",
+      "error": null
     },
     {
       "ods_code": "RM1",
@@ -1143,10 +1143,10 @@
       "ods_code": "RP4",
       "name": "Great Ormond Street Hospital for Children NHS Foundation Trust",
       "url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-board-meetings/",
-      "error": "(rescued by playwright fallback)"
+      "ok": false,
+      "status": null,
+      "final_url": null,
+      "error": "http: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)); playwright: Page.goto: net::ERR_CONNECTION_RESET at https://www.gosh.nhs.uk/about-us/who-we-are/organisational-structure/trust-board/trust-boa"
     },
     {
       "ods_code": "RRU",
@@ -1495,8 +1495,8 @@
       "name": "Milton Keynes University Hospital NHS Foundation Trust",
       "url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
       "ok": true,
-      "status": 403,
-      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings?__cf_chl_rt_tk=eWCsY_8HMD8tgtgQ3.6lyt1RExLFJgyj_olmdZjDDKM-1793423247-1.0.1.1-3ZzB5ryIDt4Msr1sPuQ7O.9hY7IUrhp_jBPHLLGANzM",
+      "status": 200,
+      "final_url": "https://www.mkuh.nhs.uk/about-us/our-structure/board-of-directors/agendas-and-meetings",
       "error": "(rescued by playwright fallback)"
     },
     {
@@ -1684,8 +1684,8 @@
       "name": "Cheshire and Wirral Partnership NHS Foundation Trust",
       "url": "https://www.cwp.nhs.uk/board",
       "ok": true,
-      "status": 403,
-      "final_url": "https://www.cwp.nhs.uk/board?__cf_chl_rt_tk=8LGeu0z7TIX2dMoGgbeqhSms5iWVgpTjtF9ZyDoaFqk-1793423300-1.0.1.1-6JTbnbmfOO9KELHZJfNksXXF_azbtuUZXUYhWEMGD_4",
+      "status": 200,
+      "final_url": "https://www.cwp.nhs.uk/board",
       "error": "(rescued by playwright fallback)"
     },
     {
