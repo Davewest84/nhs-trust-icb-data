@@ -17,9 +17,9 @@
     "needs_playwright": false,
     "pack_pattern_hints": "full pack; agenda and papers; combined",
     "exclude_patterns": "questions and responses; presentations; System Primary Care Committee; Committee",
-    "last_validated": "2026-05-29",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "16 in-window meetings via 3-level drill-down. May 2026 and March 2026 packs (4.3MB + 5.3MB) both have BAF sections — scores 87 and 367."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): 2026 year page lists per-meeting pages 29 Jan, 26 Mar, 28 May, 30 Jul and 24 Sep 2026."
   },
   {
     "ods_code": "QOP",
@@ -96,9 +96,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-11-07",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): hub links the 'Board meeting held in public on Wednesday 30 September 2026' page."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): hub lists the 30 September 2026 board meeting page and 25 Nov 2026 as next."
   },
   {
     "ods_code": "QOQ",
@@ -275,9 +275,9 @@
       "ICP / Integrated Care Partnership",
       "(1) duplicate-suffixed files"
     ],
-    "last_validated": "2026-10-24",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-10-24 by local browser-UA curl (200; scanner saw a connection reset): 'Agenda 00 Public Board 16 September 26' and the other 16 Sep 2026 items; next 18 Nov 2026."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): 'Agenda 00 Public Board 18 November 26 FINAL' and the other 18 Nov 2026 items under /download/clientfiles/files/ (34 2026 PDFs)."
   },
   {
     "ods_code": "QGH",
@@ -306,9 +306,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-11-07",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): 16 September 2026 pack items (e.g. Agenda 13 BAF September 2026) as download_file links."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): landing carries 'Agenda 00 Public Board 18 November 26 FINAL' and draft 16 Sept 26 minutes via hwics.org.uk download_file links."
   },
   {
     "ods_code": "QJ2",
@@ -340,9 +340,9 @@
       "committee-minutes",
       "ratified-minutes"
     ],
-    "last_validated": "2026-07-04",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Derby & Derbyshire ICB meeting-papers archive confirmed live via search (papers 2020-2026, DLN meets-in-common); 503 to automated fetch is WAF."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): 2026/27 accordion links 'DLN ICB Open Board Meeting Papers 16 July 2026' and 21 May 2026 via ?wpdmdl= downloads; 17 Sep and 20 Nov 2026 listed."
   },
   {
     "ods_code": "QJM",
@@ -657,9 +657,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-11-07",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): meeting index still stops at the 29 Jul 2026 board; no later date listed on the landing."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): board-meetings events index still shows the Mar and Jul 2026 board meetings as newest; no later meeting listed."
   },
   {
     "ods_code": "QKK",
@@ -741,9 +741,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-11-07",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): landing lists 2026 board dates 17 Jun, 22 Jul, 23 Sep and 21 Oct 2026 with the document-library link."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): landing lists 2026 board dates 17 Jun, 22 Jul, 23 Sep and 21 Oct 2026 with the document-library link."
   },
   {
     "ods_code": "QRL",
@@ -1027,9 +1027,9 @@
       "Cluster governance committee",
       "Minutes"
     ],
-    "last_validated": "2026-11-07",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-07 by local browser-UA curl (200): swpboard.nhs.uk lists 50 PDFs incl. 40 from 2026 (scanner saw an HTTP/2 error, transient); dates to 24 Sep 2026."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): swpboard.nhs.uk lists 50 PDFs incl. 40 from 2026 (scanner disconnect was transient); dates to 24 Sep 2026."
   },
   {
     "ods_code": "QJK",
@@ -1046,7 +1046,7 @@
     "cluster_id": "SW-PEN",
     "cluster_meeting_url": "https://swpboard.nhs.uk/meetings/",
     "notes": "South West Peninsula joint board with Cornwall and IoS (QT6); cluster pack at swpboard.nhs.uk. Standalone Devon Board last met 28 August 2025.",
-    "access_notes": "The old swpboard.nhs.uk cluster URL is dead; the live board-papers archive is now on NHS Devon's primary domain at onedevon.org.uk/nhs-devon/nhs-devon-board/meeting-papers-and-minutes/ (reachable from homepage nav: NHS Devon > NHS Devon Board > Meeting Papers and Minutes). WebFetch works on this domain (no WAF). Each meeting has an 'Agenda and Papers' download plus separate 'Minutes'; files resolve through /download/ slug redirects (wpdmdl) to wp-content PDFs. A mirror page exists at devon.icb.nhs.uk/nhs-devon-board/meetings-and-papers/. Note the ICB now sits in a CIOS+Devon cluster, but the Devon board pack is published here.",
+    "access_notes": "The old swpboard.nhs.uk cluster URL is dead; the live board-papers archive is now on NHS Devon's primary domain at onedevon.org.uk/nhs-devon/nhs-devon-board/meeting-papers-and-minutes/ (reachable from homepage nav: NHS Devon > NHS Devon Board > Meeting Papers and Minutes). WebFetch works on this domain (no WAF). Each meeting has an 'Agenda and Papers' download plus separate 'Minutes'; files resolve through /download/ slug redirects (wpdmdl) to wp-content PDFs. A mirror page exists at devon.icb.nhs.uk/nhs-devon-board/meetings-and-papers/. Note the ICB now sits in a CIOS+Devon cluster, but the Devon board pack is published here. Update 2026-11-14: since mid-2026 the Devon archive here stops at the 28 May 2026 extraordinary board; the joint South West Peninsula board (SW-PEN cluster) now publishes its packs at swpboard.nhs.uk/board-meetings/board-meeting-papers-and-minutes/ (SWPB-Public-{date}-Meeting-Papers PDFs, live again in 2026 - the earlier \"swpboard is dead\" finding no longer holds), so check there for meetings after May 2026.",
     "needs_playwright": false,
     "pack_pattern_hints": [
       "onedevon.org.uk/download/nhs-devon-board-agenda-and-papers-{dd}-{month}-{yyyy}/ slug redirects",
@@ -1061,8 +1061,8 @@
       "Joint Committee",
       "Local Care Partnership"
     ],
-    "last_validated": "2026-06-27",
+    "last_validated": "2026-11-14",
     "validation_status": "papers_found",
-    "validation_notes": "Archive lists full ICB Board agenda/papers and minutes through 28 Aug 2025 with on-domain download links."
+    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): Devon's own archive's newest item is 'NHS Devon ICB Extraordinary Board 28 May 2026'; the joint SW Peninsula board packs for later 2026 are on swpboard.nhs.uk (QT6 URL)."
   }
 ]
