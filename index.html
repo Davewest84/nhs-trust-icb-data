@@ -25,7 +25,7 @@
 <body>
   <h1>NHS trust + ICB data</h1>
   <p class="meta">Public reference dataset for English NHS trusts and integrated care boards.<br>
-  Last built: <strong>10 October 2026</strong>. Refreshed automatically every Saturday.</p>
+  Last built: <strong id="last-built">10 October 2026</strong>. Refreshed automatically every Saturday.</p>
 
   <p>Four datasets, each available in three formats. <strong>XLSX</strong> is the most readable in
   Excel (with sortable columns); <strong>CSV</strong> is good for quick scripts; <strong>JSON</strong>
@@ -93,5 +93,22 @@ https://raw.githubusercontent.com/Davewest84/nhs-trust-icb-data/main/icb-contact
   <a href="https://github.com/Davewest84/nhs-trust-icb-data/issues">GitHub issues</a>
   or get in touch directly. The repository's <a href="README.md">README</a> has the full
   schemas, refresh cadence and maintenance details.</p>
+
+  <script>
+    (function () {
+      fetch("https://api.github.com/repos/Davewest84/nhs-trust-icb-data/commits/main")
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (c) {
+          if (!c || !c.commit || !c.commit.committer || !c.commit.committer.date) return;
+          var d = new Date(c.commit.committer.date);
+          var months = ["January","February","March","April","May","June",
+                        "July","August","September","October","November","December"];
+          var text = d.getUTCDate() + " " + months[d.getUTCMonth()] + " " + d.getUTCFullYear();
+          var el = document.getElementById("last-built");
+          if (el) el.textContent = text;
+        })
+        .catch(function () { /* keep the static fallback */ });
+    })();
+  </script>
 </body>
 </html>
