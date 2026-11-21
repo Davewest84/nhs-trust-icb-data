@@ -66,7 +66,21 @@
     "url_root": "https://www.lancashireandsouthcumbria.icb.nhs.uk",
     "cluster_id": null,
     "cluster_meeting_url": null,
-    "notes": "Some papers historically hosted on healthierlsc.co.uk via download_file links"
+    "notes": "Some papers historically hosted on healthierlsc.co.uk via download_file links",
+    "validation_status": "papers_found",
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): per-meeting page '5 November 2026 Board Meeting' lists the agenda and itemised papers via healthierlsc.co.uk download_file/{id}/14824; 17 Sep, 9 Jul, 14 May, 19 Mar and 22 Jan 2026 pages listed.",
+    "access_notes": "Strategy: per-meeting sub-pages (Pattern C). The landing lists 'future-board-meetings/...' and 'previous-board-meetings/{d-month-yyyy}-board-meeting' pages (slugs are not reliable - e.g. the 9 July 2026 page is slugged 7-may-2026-board-meeting-2 and 4 March 2027 is 5-november-2026-board-meeting-2-2, so follow the link text). Papers are NOT a single pack: each meeting page lists the agenda plus numbered 'Item N - ...' PDFs served from the partner site healthierlsc.co.uk/download_file/{id}/{folder}. Take the agenda and the Item files; skip the register of interests (ROI) and AGM items unless wanted. Static fetch works.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Agenda - L&SC ICB Board",
+      "Item "
+    ],
+    "exclude_patterns": [
+      "ROI",
+      "AGM",
+      "Action Log"
+    ],
+    "last_validated": "2026-11-21"
   },
   {
     "ods_code": "QHM",
@@ -96,9 +110,9 @@
       "Annual General Meeting papers",
       "draft minutes of prior meetings"
     ],
-    "last_validated": "2026-11-14",
+    "last_validated": "2026-11-21",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): hub lists the 30 September 2026 board meeting page and 25 Nov 2026 as next."
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): hub lists the 30 September 2026 board meeting page and 25 Nov 2026 as next."
   },
   {
     "ods_code": "QOQ",
@@ -306,9 +320,9 @@
       "committee/ICP/Joint content (not on these pages)",
       "XLSX governance-log attachments"
     ],
-    "last_validated": "2026-11-14",
+    "last_validated": "2026-11-21",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): landing carries 'Agenda 00 Public Board 18 November 26 FINAL' and draft 16 Sept 26 minutes via hwics.org.uk download_file links."
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): landing carries the 18 November 2026 public board agenda via download_file links."
   },
   {
     "ods_code": "QJ2",
@@ -421,7 +435,21 @@
     "url_root": "https://leicesterleicestershireandrutland.icb.nhs.uk",
     "cluster_id": "LNR",
     "cluster_meeting_url": "https://leicesterleicestershireandrutland.icb.nhs.uk/about-us/our-board/board-meeting-papers/",
-    "notes": "LNR cluster Board in Common with Northamptonshire (QPM)"
+    "notes": "LNR cluster Board in Common with Northamptonshire (QPM)",
+    "validation_status": "papers_found",
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): 'Board meeting papers - 15 October 2026' (Board-papers-15.10.2026-.pdf) plus 20 Aug, 18 Jun, 16 Apr, 19 Mar and 19 Feb 2026 Boards in Common packs.",
+    "access_notes": "Strategy: dated board-pack PDFs on the Board Meetings page (Pattern A), link text 'Board meeting papers - {d Month yyyy}', files under /wp-content/uploads/YYYY/MM/. Since late 2025 LLR ICB meets with Northamptonshire ICB as 'Boards in Common' (filenames 'LLR-NICB-Board-meeting-in-Common-papers-{date}', 'NHS-LLR-ICB-and-NICB-Boards-in-Common-in-Public-Meeting-Papers'); the joint pack is the LLR board pack. Some link texts are truncated ('Board meeting papers - 1', 'B') - date from the filename. Skip AGM slides and separate appendix files (e.g. 'Paper H - ... Appendices'). Static fetch works.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "Board meeting papers",
+      "Board-in-Common",
+      "PUBLIC-papers"
+    ],
+    "exclude_patterns": [
+      "AGM",
+      "Appendices"
+    ],
+    "last_validated": "2026-11-21"
   },
   {
     "ods_code": "QPM",
@@ -657,9 +685,9 @@
       "*-icb-sub-committee",
       "Health-Wellbeing / Health-Care-Partnership boards"
     ],
-    "last_validated": "2026-11-14",
+    "last_validated": "2026-11-21",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): board-meetings events index still shows the Mar and Jul 2026 board meetings as newest; no later meeting listed."
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): board-meetings events index still shows the Mar and Jul 2026 board meetings as newest; no later meeting listed."
   },
   {
     "ods_code": "QKK",
@@ -675,7 +703,21 @@
     "url_root": "https://www.selondonics.org",
     "cluster_id": "SEL-SWL",
     "cluster_meeting_url": null,
-    "notes": "Six borough place committees (Lambeth, Southwark, Lewisham, Greenwich, Bromley, Bexley) publish separately | Clustered with the other London ICB under joint chair Sir Richard Douglas and shared chief executive Andrew Bland; formal clustering agreed December 2025, appointments February 2026. Source: SWL ICB Annual Report 2025-26 and SWL board papers 15 July 2026."
+    "notes": "Six borough place committees (Lambeth, Southwark, Lewisham, Greenwich, Bromley, Bexley) publish separately | Clustered with the other London ICB under joint chair Sir Richard Douglas and shared chief executive Andrew Bland; formal clustering agreed December 2025, appointments February 2026. Source: SWL ICB Annual Report 2025-26 and SWL board papers 15 July 2026.",
+    "validation_status": "papers_found",
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): newest 'Please click here to read the meeting papers' link is 2026-11-18_18-24-56_FINAL-Boardbook.pdf; 22 Jul, 8 Apr and 28 Jan 2026 PAPERS PDFs listed.",
+    "access_notes": "Strategy: dated board-pack PDFs on the ICB meetings page (Pattern A) under /wp-content/uploads/ (no year/month folders). Older packs are 'PAPERS-Integrated-Care-Board-meeting-{date}.pdf' with a separate 'Public-Questions-and-Answers' / 'Public-QA' file; the newest meeting uses a Boardbook export named '{YYYY-MM-DD_HH-MM-SS}_FINAL-Boardbook.pdf' (link text 'Please click here to read the meeting papers'), so date it from the timestamp or surrounding text. Prefer PAPERS / Boardbook; skip Q&A. Static fetch works.",
+    "needs_playwright": false,
+    "pack_pattern_hints": [
+      "PAPERS-Integrated-Care-Board",
+      "FINAL-Boardbook"
+    ],
+    "exclude_patterns": [
+      "Questions",
+      "Q&A",
+      "QA"
+    ],
+    "last_validated": "2026-11-21"
   },
   {
     "ods_code": "QWE",
@@ -741,9 +783,9 @@
       "legacy NCL/NWL pre-merger links",
       "watch-live / YouTube recording links"
     ],
-    "last_validated": "2026-11-14",
+    "last_validated": "2026-11-21",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): landing lists 2026 board dates 17 Jun, 22 Jul, 23 Sep and 21 Oct 2026 with the document-library link."
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): landing lists 2026 board dates 17 Jun, 22 Jul, 23 Sep and 21 Oct 2026 with the document-library link."
   },
   {
     "ods_code": "QRL",
@@ -1027,9 +1069,9 @@
       "Cluster governance committee",
       "Minutes"
     ],
-    "last_validated": "2026-11-14",
+    "last_validated": "2026-11-21",
     "validation_status": "papers_found",
-    "validation_notes": "Re-verified 2026-11-14 by local browser-UA curl (200): swpboard.nhs.uk lists 50 PDFs incl. 40 from 2026 (scanner disconnect was transient); dates to 24 Sep 2026."
+    "validation_notes": "Re-verified 2026-11-21 by local browser-UA curl (200): swpboard.nhs.uk lists 50 PDFs incl. 40 from 2026 (scanner disconnect was transient); dates to 24 Sep 2026."
   },
   {
     "ods_code": "QJK",
